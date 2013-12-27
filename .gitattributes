@@ -1,5 +1,9 @@
 * text=auto !eol
+/AUTHORS -text
+/ChangeLog -text
 /Makefile.am -text
+/NEWS -text
+/README -text
 /apertium-bua.bua.lexc -text
 /apertium-bua.bua.twol -text
 /apertium-bua.pc.in -text
