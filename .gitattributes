@@ -9,4 +9,5 @@
 /apertium-bua.pc.in -text
 /autogen.sh -text
 /configure.ac -text
+dev/countstems.sh -text
 /modes.xml -text
