@@ -25,5 +25,10 @@ NonVow = Б В Г Д Е Ж З Й К Л М Н П Р С Т Ф Х Һ Ц Ч Ш Ь Ъ
 
 Rules
 
-"Simple vowel harmony for now"
-%{А%}:э <=> [ :FrontVow :NonVow :NonVow* ]/:0 _ ;
+"Vowel harmony for {А}"
+%{А%}:Vy <=> :Vx [ :NonVow* :NonVow ]/[ :0 | :%  ] _ ;
+         where Vx in ( ү э ө о ) 
+               Vy in ( э э ө о )
+         matched ;
+
+

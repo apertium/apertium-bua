@@ -12,6 +12,9 @@ Multichar_Symbols
 %<iv%>
 %<tv%>
 
+%<ifi%>
+%<aor%>
+
 %<ger%>
 
 %<adj%>
@@ -58,6 +61,8 @@ LEXICON N1
 LEXICON V-COMMON
 
 %<ger%>:х%{А%} SUBST-COMMON ;
+%<aor%>:н%{А%} SUBST-COMMON ;
+%<ifi%>:б SUBST-COMMON ;
 
 
 LEXICON V-IV
@@ -237,6 +242,7 @@ LEXICON Verbs
 хабда:хабда V-IV ; ! "пухнуть"
 хүхэ:хүхэ V-TV ; ! "сосать"
 һуу:һуу V-IV ; ! "сидеть"
+бай:бай V-IV ; ! "быть"
 
 
 LEXICON Adjectives
