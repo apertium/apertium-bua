@@ -1,3 +1,7 @@
 * text=auto !eol
+/Makefile.am -text
 /apertium-bua.bua.lexc -text
 /apertium-bua.bua.twol -text
+/apertium-bua.pc.in -text
+/autogen.sh -text
+/configure.ac -text
