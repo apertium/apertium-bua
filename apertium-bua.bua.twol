@@ -1,0 +1,29 @@
+Alphabet
+ А Б В Г Д Е Ё Ж З И Й К Л М Н О П Р С Т У Ү Ф Х Һ Ц Ч Ш Ь Ы Ъ Э Ю Я
+ а б в г д е ё ж з и й к л м н о п р с т у ү ф х һ ц ч ш ь ы ъ э ю я
+ %0 1 2 3 4 5 6 7 8 9
+ %{А%}:а                                 ! Vowels
+ ° %% %, %. %- %>:0 %  %+                ! punctuation and boundaries
+ ;
+
+Sets
+
+Aleph = А Б В Г Д Е Ё Ж З И Й К Л М Н О П Р С Т У Ү Ф Х Һ Ц Ч Ш Ь Ы Ъ Э Ю Я
+        а б в г д е ё ж з и й к л м н о п р с т у ү ф х һ ц ч ш ь ы ъ э ю я ; 
+
+Vow =      и ү э а о у ы
+           И Ү Э А О У Ы ;
+
+FrontVow = ү э и
+           Ү Э И ;
+
+NonVow = Б В Г Д Е Ж З Й К Л М Н П Р С Т Ф Х Һ Ц Ч Ш Ь Ъ Я
+         б в г д е ж з й к л м н п р с т ф х һ ц ч ш ь ъ я ; ! This is for surface forms only, so no archiphonemes
+
+
+
+
+Rules
+
+"Simple vowel harmony for now"
+%{А%}:э <=> [ :FrontVow :NonVow :NonVow* ]/:0 _ ;
