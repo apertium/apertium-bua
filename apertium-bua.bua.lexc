@@ -53,6 +53,10 @@ Multichar_Symbols
 
 %<subst%>
 
+%<np%>
+%<top%>
+
+
 ! Punctuation
 %<sent%>      ! Sentence marker
 %<guio%>      ! Hyphen
@@ -81,7 +85,8 @@ Punctuation ;
 Postpositions ;
 Pronouns ;
 Numbers ;
-
+Miscellaneous ;   ! "частицы"
+Top ;
 
 
 LEXICON SUBST-COMMON
@@ -96,6 +101,11 @@ LEXICON SUBST-COMMON
 LEXICON N1
 
 %<n%>: SUBST-COMMON ; 
+
+
+LEXICON NP-TOP
+
+%<np%>%<top%>: SUBST-COMMON ;
 
 
 LEXICON V-NON-FINITE
@@ -142,14 +152,14 @@ LEXICON V-TV
 V-COMMON ;
 
 
-LEXICON COPULA
-
-а:а%<cop%>%<aor%> # ;
-юм:а%<cop%>%<aor%>+юм%<evid%> # ;
+!LEXICON COPULA
+!
+!а:а%<cop%>%<aor%> # ;
+!юм:а%<cop%>%<aor%>+юм%<evid%> # ;
 
 LEXICON COP-PRED
 
-% : COPULA ;
+!% : COPULA ;
 # ;
 
 
@@ -241,7 +251,6 @@ LEXICON Nouns
 дайн:дайн N1 ; ! ""
 дайсан:дайсан N1 ; ! ""
 дэгдэ:дэгдэ N1 ; ! ""
-Жибэн:Жибэн N1 ; ! ""
 жэл:жэл N1 ; ! ""
 жэмэс:жэмэс N1 ; ! ""
 заан:заан N1 ; ! ""
@@ -292,6 +301,7 @@ LEXICON Nouns
 тюльпан:тюльпан N1 ; ! ""
 утаан:утаан N1 ; ! ""
 уһан:уһан N1 ; ! ""
+улас:улас N1 ; ! "страна"
 үбдэг:үбдэг N1 ; ! ""
 үбшэн:үбшэн N1 ; ! ""
 үбэл:үбэл N1 ; ! ""
@@ -411,6 +421,11 @@ LEXICON Determiners
 энэ:энэ DET ; ! "этот"
 
 
+LEXICON Miscellaneous   ! "частицы"
+
+юм%<cop%>%<evid%>:юм # ;
+
+
 LEXICON Numbers
 
 нэгэ:нэгэ NUM ; ! "1"
@@ -423,6 +438,12 @@ LEXICON Numbers
 найман:найман NUM ; ! "8"
 ес:ес NUM ; ! "9"
 арбан:арбан NUM ; ! "10"
+
+
+LEXICON Top
+
+Жибэн:Жибэн NP-TOP ; ! "Япония"
+Аази:Аази NP-TOP ; ! "Азия"
 
 
  LEXICON Punctuation
