@@ -104,6 +104,7 @@ LEXICON V-NON-FINITE
 
 LEXICON V-COMMON
 
+V-NON-FINITE ;
 
 %<aor%>:н%{А%} # ;
 %<aor%>%<qst%>:х%{А%}б # ;
