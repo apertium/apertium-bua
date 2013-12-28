@@ -29,6 +29,7 @@ Multichar_Symbols
 %<qst%>
 
 %<prn%>
+%<pers%>
 %<p1%>
 %<p2%>
 %<p3%>
@@ -185,21 +186,21 @@ LEXICON PP
 
 LEXICON PRN-BI
 
-минии:%<gen%> # ;
+би%<prn%>%<pers%>%<p1%>%<sg%>%<nom%>:би # ;
+би%<prn%>%<pers%>%<p1%>%<sg%>%<gen%>:минии # ;
 
 LEXICON PRN-SHI
 
-шинии:%<gen%> # ;
+ши%<prn%>%<pers%>%<p2%>%<sg%>%<nom%>:ши # ;
+ши%<prn%>%<pers%>%<p2%>%<sg%>%<gen%>:шинии # ;
 
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 LEXICON Pronouns
 
-би:%<prn%>%<p1%>%<sg%> PRN-BI ; ! "я"
-ши:%<prn%>%<p2%>%<sg%> PRN-SHI ; ! "ты"
-
-
+PRN-BI ; ! "я"
+PRN-SHI ; ! "ты"
 
 LEXICON Nouns 
 
