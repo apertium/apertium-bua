@@ -36,6 +36,8 @@ Multichar_Symbols
 %<pl%>
 %<sp%>
 
+%<cop%>
+
 %<adj%>
 
 %<det%>
@@ -63,6 +65,7 @@ Multichar_Symbols
 
 ! Archiphonemes
 %{А%}
+% 
 
 
 LEXICON Root
@@ -82,7 +85,7 @@ Numbers ;
 
 LEXICON SUBST-COMMON
 
-%<nom%>: # ;
+%<nom%>: COP-PRED ;
 %<gen%>:%{А%}й # ;
 %<com%>:т%{А%}й # ;
 %<ins%>:%{А%}р # ;
@@ -101,10 +104,7 @@ LEXICON V-NON-FINITE
 %<gna%>:%{А%}д # ;
 
 
-
-LEXICON V-COMMON
-
-V-NON-FINITE ;
+LEXICON V-FINITE
 
 %<aor%>:н%{А%} # ;
 %<aor%>%<qst%>:х%{А%}б # ;
@@ -125,6 +125,12 @@ V-NON-FINITE ;
 %<hab%>%<evid%>%<neg%>:д%{А%}ггүй% юм # ;
 
 
+LEXICON V-COMMON
+
+V-NON-FINITE ;
+V-FINITE ;
+
+
 LEXICON V-IV
 
 V-COMMON ;
@@ -133,6 +139,16 @@ V-COMMON ;
 LEXICON V-TV
 
 V-COMMON ;
+
+
+LEXICON COPULA
+
+а:а%<cop%>%<aor%> # ;
+юм:а%<cop%>%<aor%>+юм%<evid%> # ;
+
+LEXICON COP-PRED
+
+% : COPULA ;
 
 
 LEXICON A1
