@@ -16,6 +16,7 @@ Multichar_Symbols
 %<tv%>
 
 %<neg%>
+%<evid%>
 
 %<ifi%>
 %<aor%>
@@ -93,20 +94,34 @@ LEXICON N1
 %<n%>: SUBST-COMMON ; 
 
 
-LEXICON V-COMMON
+LEXICON V-NON-FINITE
 
 %<ger%>:х%{А%} SUBST-COMMON ;
 %<prc%>:ж%{А%} # ;
 %<gna%>:%{А%}д # ;
 
 
+
+LEXICON V-COMMON
+
+
 %<aor%>:н%{А%} # ;
 %<aor%>%<qst%>:х%{А%}б # ;
+%<aor%>%<neg%>:х%{А%}гүй # ;
+
+%<aor%>%<evid%>:х%{А%}% юм # ;
+%<aor%>%<neg%>%<evid%>:х%{А%}гүй% юм # ;
 
 %<ifi%>:б%{А%} # ;
+
 %<past%>:һ%{А%}н # ;
+%<past%>%<evid%>:һ%{А%}н% юм # ;
+
 %<hab%>:д%{А%}г # ;
 %<hab%>%<neg%>:д%{А%}ггүй # ;
+
+%<hab%>%<evid%>:д%{А%}г% юм # ;
+%<hab%>%<evid%>%<neg%>:д%{А%}ггүй% юм # ;
 
 
 LEXICON V-IV
@@ -335,6 +350,8 @@ LEXICON Verbs
 гара:гара V-TV ; ! "уйти"
 хэлэ:хэлэ V-IV ; ! "говорить"
 иигэ:иигэ V-IV ; ! ""
+шада:шада V-IV ; ! "уметь"
+хүрэ:хүрэ V-IV ; ! "достать"  ! FIXME: check
 
 
 LEXICON Adverbs
