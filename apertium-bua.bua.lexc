@@ -25,9 +25,25 @@ Multichar_Symbols
 %<prc%>
 %<gna%>
 
+%<qst%>
+
+%<prn%>
+%<p1%>
+%<p2%>
+%<p3%>
+%<sg%>
+%<pl%>
+%<sp%>
+
 %<adj%>
 
 %<det%>
+
+%<num%>
+
+%<adv%>
+
+%<cnjcoo%>
 
 %<post%>
 
@@ -53,9 +69,13 @@ LEXICON Root
 Nouns ; 
 Verbs ;
 Adjectives ;
+Adverbs ;
+Conjunctions ;
 Determiners ;
 Punctuation ;
 Postpositions ;
+Pronouns ;
+Numbers ;
 
 
 
@@ -76,13 +96,17 @@ LEXICON N1
 LEXICON V-COMMON
 
 %<ger%>:х%{А%} SUBST-COMMON ;
+%<prc%>:ж%{А%} # ;
+%<gna%>:%{А%}д # ;
+
+
 %<aor%>:н%{А%} # ;
+%<aor%>%<qst%>:х%{А%}б # ;
+
 %<ifi%>:б%{А%} # ;
 %<past%>:һ%{А%}н # ;
 %<hab%>:д%{А%}г # ;
 %<hab%>%<neg%>:д%{А%}ггүй # ;
-%<prc%>:ж%{А%} # ;
-%<gna%>:%{А%}д # ;
 
 
 LEXICON V-IV
@@ -101,9 +125,24 @@ LEXICON A1
 %<adj%>%<subst%>: SUBST-COMMON ;
 
 
+LEXICON ADV
+
+%<adv%>: # ;
+
+
+LEXICON CNJCOO
+
+%<cnjcoo%>: # ;
+
+
 LEXICON DET
 
 %<det%>: # ;
+
+
+LEXICON NUM
+
+%<num%>: # ;
 
 
 LEXICON PP
@@ -111,7 +150,23 @@ LEXICON PP
 %<post%>: # ;
 
 
+LEXICON PRN-BI
+
+минии:%<gen%> # ;
+
+LEXICON PRN-SHI
+
+шинии:%<gen%> # ;
+
+
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+LEXICON Pronouns
+
+би:%<prn%>%<p1%>%<sg%> PRN-BI ; ! "я"
+ши:%<prn%>%<p2%>%<sg%> PRN-SHI ; ! "ты"
+
+
 
 LEXICON Nouns 
 
@@ -279,7 +334,18 @@ LEXICON Verbs
 хара:хара V-TV ; ! "смотреть"
 гара:гара V-TV ; ! "уйти"
 хэлэ:хэлэ V-IV ; ! "говорить"
+иигэ:иигэ V-IV ; ! ""
 
+
+LEXICON Adverbs
+
+хамта:хамта ADV ; ! "вместе"
+бэшэ:бэшэ ADV ; ! "не"
+
+
+LEXICON Conjunctions
+
+харин:харин CNJCOO ; ! "но"
 
 
 LEXICON Adjectives
@@ -299,12 +365,28 @@ LEXICON Adjectives
 LEXICON Postpositions
 
 тухай:тухай PP ; ! "о"
+дээрэ:дээрэ PP ; ! "на вверху"
 
 
 LEXICON Determiners
 
 ямар:ямар DET ; ! "какой"
+тэрэ:тэрэ DET ; ! "тот"
+энэ:энэ DET ; ! "этот"
 
+
+LEXICON Numbers
+
+нэгэ:нэгэ NUM ; ! "1"
+хоёр:хоёр NUM ; ! "2"
+гурбан:гурбан NUM ; ! "3"
+арбан:арбан NUM ; ! "4"
+табан:табан NUM ; ! "5"
+зургаан:зургаан NUM ; ! "6"
+долоон:долоон NUM ; ! "7"
+найман:найман NUM ; ! "8"
+ес:ес NUM ; ! "9"
+арбан:арбан NUM ; ! "10"
 
 
  LEXICON Punctuation
