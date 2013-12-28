@@ -22,10 +22,14 @@ Multichar_Symbols
 %<hab%>
 
 %<ger%>
+%<prc%>
+%<gna%>
 
 %<adj%>
 
 %<det%>
+
+%<post%>
 
 %<subst%>
 
@@ -51,6 +55,7 @@ Verbs ;
 Adjectives ;
 Determiners ;
 Punctuation ;
+Postpositions ;
 
 
 
@@ -63,7 +68,7 @@ LEXICON SUBST-COMMON
 %<dat%>:т%{А%} # ;
 
 
-LEXICON N1 
+LEXICON N1
 
 %<n%>: SUBST-COMMON ; 
 
@@ -72,10 +77,12 @@ LEXICON V-COMMON
 
 %<ger%>:х%{А%} SUBST-COMMON ;
 %<aor%>:н%{А%} # ;
-%<ifi%>:б # ;
+%<ifi%>:б%{А%} # ;
+%<past%>:һ%{А%}н # ;
 %<hab%>:д%{А%}г # ;
 %<hab%>%<neg%>:д%{А%}ггүй # ;
 %<prc%>:ж%{А%} # ;
+%<gna%>:%{А%}д # ;
 
 
 LEXICON V-IV
@@ -97,6 +104,11 @@ LEXICON A1
 LEXICON DET
 
 %<det%>: # ;
+
+
+LEXICON PP
+
+%<post%>: # ;
 
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
@@ -260,6 +272,14 @@ LEXICON Verbs
 бай:бай V-IV ; ! "быть"
 наада:наада V-IV ; ! "играть"
 мэдэ:мэдэ V-TV ; ! "знать"
+гэ:гэ V-IV ; ! "сказать"  ! FIXME: check
+асуу:асуу V-TV ; ! "спросить"
+яба:яба V-IV ; ! "идти"
+гуй:гуй V-TV ; ! "просить"
+хара:хара V-TV ; ! "смотреть"
+гара:гара V-TV ; ! "уйти"
+хэлэ:хэлэ V-IV ; ! "говорить"
+
 
 
 LEXICON Adjectives
@@ -274,6 +294,11 @@ LEXICON Adjectives
 һайн:һайн A1 ; ! ""
 гоё:гоё A1 ; ! "красиво"
 хүйтэн:хүйтэн A1 ! "холодно"
+
+
+LEXICON Postpositions
+
+тухай:тухай PP ; ! "о"
 
 
 LEXICON Determiners
