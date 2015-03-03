@@ -151,7 +151,6 @@ LEXICON V-TV
 
 V-COMMON ;
 
-
 !LEXICON COPULA
 !
 !а:а%<cop%>%<aor%> # ;
@@ -162,12 +161,10 @@ LEXICON COP-PRED
 !% : COPULA ;
 # ;
 
-
 LEXICON A1
 
 %<adj%>: # ;
 %<adj%>%<subst%>: SUBST-COMMON ;
-
 
 LEXICON ADV
 
@@ -402,7 +399,7 @@ LEXICON Adjectives
 хара:хара A1 ; ! ""
 һайн:һайн A1 ; ! ""
 гоё:гоё A1 ; ! "красиво"
-хүйтэн:хүйтэн A1 ! "холодно"
+хүйтэн:хүйтэн A1 ; ! "холодно"
 
 
 LEXICON Postpositions
