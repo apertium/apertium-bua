@@ -1,5 +1,5 @@
 ###############################################################################
-## Makefile for apertium-khk
+## Makefile for apertium-bua
 ###############################################################################
 
 RELEASE=0.1
@@ -8,20 +8,15 @@ LANG1=bua
 BASENAME=apertium-$(LANG1)
 
 TARGETS_COMMON = $(LANG1).automorf.hfst $(LANG1).autogen.hfst \
-	$(LANG1).automorf.bin $(LANG1).autogen.bin \
+	$(LANG1).automorf.bin $(LANG1).autopgen.bin $(LANG1).autogen.bin \
 	$(LANG1).automorf.att.gz $(LANG1).autogen.att.gz \
-        $(LANG1).rlx.bin
+		$(LANG1).rlx.bin
 
-# Use this goal for creating .deps, otherwise make -j2 will give problems:
-.deps/.d:
-	if [ ! -d .deps ]; then mkdir .deps; fi
-	touch $@
-
-# Prevent the .d file from being removed automatically:
-.PRECIOUS: .deps/.d
+# This include defines goals for install-modes, .deps/.d and .mode files:
+@ap_include@
 
 ###############################################################################
-## Mongolian transducer
+## Buriat transducer
 ###############################################################################
 
 .deps/$(LANG1).twol.hfst: $(BASENAME).$(LANG1).twol .deps/.d
@@ -34,10 +29,10 @@ TARGETS_COMMON = $(LANG1).automorf.hfst $(LANG1).autogen.hfst \
 	cat $< | grep -v 'Dir/RL' > $@
 
 .deps/$(LANG1).RL.lexc.hfst: .deps/$(LANG1).RL.lexc
-	hfst-lexc  $< -o $@
+	hfst-lexc $< -o $@ -v
 
 .deps/$(LANG1).LR.lexc.hfst: .deps/$(LANG1).LR.lexc
-	hfst-lexc  $< -o $@
+	hfst-lexc $< -o $@ -v
 
 .deps/$(LANG1).RL.hfst: .deps/$(LANG1).RL.lexc.hfst .deps/$(LANG1).twol.hfst
 	hfst-compose-intersect -1 .deps/$(LANG1).RL.lexc.hfst -2 .deps/$(LANG1).twol.hfst -o $@
@@ -65,6 +60,9 @@ $(LANG1).automorf.bin: $(LANG1).automorf.att.gz .deps/.d
 	zcat < $< > .deps/$(LANG1).automorf.att
 	lt-comp lr .deps/$(LANG1).automorf.att $@
 
+$(LANG1).autopgen.bin: $(BASENAME).post-$(LANG1).dix
+	lt-comp lr $< $@
+
 ###############################################################################
 ## Debugging transducers (for testvoc)
 ###############################################################################
@@ -73,7 +71,7 @@ debug: .deps/$(LANG1).LR-debug.hfst .deps/$(LANG1).lexc.hfst
 
 .deps/$(LANG1).LR-debug.hfst: $(BASENAME).$(LANG1).lexc .deps/.d
 	cat $< | grep -v 'Dir/RL' | grep -v 'Use/Circ' > .deps/$(LANG1).LR-debug.lexc
-	hfst-lexc  .deps/$(LANG1).LR-debug.lexc -o .deps/$(LANG1).LR-debug.lexc.hfst
+	hfst-lexc .deps/$(LANG1).LR-debug.lexc -o .deps/$(LANG1).LR-debug.lexc.hfst -v
 	hfst-compose-intersect -1 .deps/$(LANG1).LR-debug.lexc.hfst -2 .deps/$(LANG1).twol.hfst -o $@
 
 .deps/$(LANG1).lexc.hfst: .deps/$(LANG1).RL.lexc.hfst
@@ -83,8 +81,8 @@ debug: .deps/$(LANG1).LR-debug.hfst .deps/$(LANG1).lexc.hfst
 ## Disambiguation rules
 ###############################################################################
 
-$(LANG1).rlx.bin: $(BASENAME).$(LANG1).rlx
-	cg-comp $< $@
+$(LANG1).rlx.bin: $(BASENAME).$(LANG1).rlx $(CGCOMP)
+	$(CGCOMP) $< $@
 
 ###############################################################################
 ## Spell checker
@@ -119,20 +117,23 @@ $(LANG1).zhfst: .deps/acceptor.default.hfst .deps/errmodel.default.hfst
 ###############################################################################
 ## Distribution
 ###############################################################################
+
 EXTRA_DIST=$(BASENAME).$(LANG1).lexc \
-	   $(BASENAME).$(LANG1).twol \
-	   $(BASENAME).$(LANG1).rlx  \
-	   modes.xml
+		$(BASENAME).$(LANG1).twol \
+		$(BASENAME).$(LANG1).rlx  \
+		$(BASENAME).post-$(LANG1).dix \
+		$(LANG1).prob \
+		modes.xml
 
 ###############################################################################
 ## Installation stuff
 ###############################################################################
 #
-#   apertium_khk_dir: This is where the compiled binaries go
-#   apertium_khk_srcdir: This is where the source files go
+#   apertium_bua_dir: This is where the compiled binaries go
+#   apertium_bua_srcdir: This is where the source files go
 
-apertium_khkdir=$(prefix)/share/apertium/$(BASENAME)/
-apertium_khk_srcdir=$(prefix)/share/apertium/$(BASENAME)/
+apertium_buadir=$(prefix)/share/apertium/$(BASENAME)/
+apertium_bua_srcdir=$(prefix)/share/apertium/$(BASENAME)/
 
 EXTRA_TARGETS=
 
@@ -140,25 +141,35 @@ if HAVE_HFSTOSPELL
 EXTRA_TARGETS += $(LANG1).zhfst
 endif # HAVE_HFSTOSPELL
 
-apertium_khk_DATA=$(TARGETS_COMMON) $(EXTRA_TARGETS)
+apertium_bua_DATA=$(TARGETS_COMMON) $(EXTRA_TARGETS)
 
 pkgconfigdir = $(prefix)/share/pkgconfig
 pkgconfig_DATA = $(BASENAME).pc
 
-# Modes are not installed since they're all just "debug modes". All
-# modes are created by this goal.
-modes/$(LANG1)-morph.mode: modes.xml
-	apertium-validate-modes modes.xml
-	apertium-gen-modes modes.xml
-
 noinst_DATA=modes/$(LANG1)-morph.mode
 
 install-data-local:
-	test -d $(DESTDIR)$(apertium_khk_srcdir) || mkdir -p $(DESTDIR)$(apertium_khk_srcdir)
-	$(INSTALL_DATA) $(BASENAME).$(LANG1).lexc $(DESTDIR)$(apertium_khk_srcdir)
-	$(INSTALL_DATA) $(BASENAME).$(LANG1).twol $(DESTDIR)$(apertium_khk_srcdir)
-	$(INSTALL_DATA) $(BASENAME).$(LANG1).rlx $(DESTDIR)$(apertium_khk_srcdir)
+	test -d $(DESTDIR)$(apertium_bua_srcdir) || mkdir -p $(DESTDIR)$(apertium_bua_srcdir)
+	$(INSTALL_DATA) $(BASENAME).$(LANG1).lexc $(DESTDIR)$(apertium_bua_srcdir)
+	$(INSTALL_DATA) $(BASENAME).$(LANG1).twol $(DESTDIR)$(apertium_bua_srcdir)
+	$(INSTALL_DATA) $(BASENAME).$(LANG1).rlx $(DESTDIR)$(apertium_bua_srcdir)
+	$(INSTALL_DATA) $(BASENAME).post-$(LANG1).dix $(DESTDIR)$(apertium_bua_srcdir)
+
+###############################################################################
+## Cleanup
+###############################################################################
 
 CLEANFILES = $(TARGETS_COMMON)
 clean-local:
 	-rm -rf .deps modes
+
+###############################################################################
+## Test
+###############################################################################
+
+test: all
+	echo "TODO test sentence" | apertium -d . bua-morph | tee .test-mt
+	@echo "TODO test analysis results" > .test-ref
+	@diff .test-ref .test-mt
+	@rm .test-ref .test-mt
+

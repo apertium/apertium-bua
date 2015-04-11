@@ -5,8 +5,10 @@
 /NEWS -text
 /README -text
 /apertium-bua.bua.lexc -text
+/apertium-bua.bua.rlx -text
 /apertium-bua.bua.twol -text
 /apertium-bua.pc.in -text
+/apertium-bua.post-bua.dix -text
 /autogen.sh -text
 /configure.ac -text
 dev/countstems.sh -text
