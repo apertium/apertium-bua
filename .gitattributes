@@ -10,6 +10,7 @@
 /apertium-bua.pc.in -text
 /apertium-bua.post-bua.dix -text
 /autogen.sh -text
+/bua.prob -text svneol=unset#unset
 /configure.ac -text
 dev/countstems.sh -text
 /modes.xml -text
