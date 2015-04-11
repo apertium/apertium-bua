@@ -117,11 +117,17 @@ LEXICON V-NON-FINITE
 %<gna_cnd%>:б%{А%}л # ;
 
 
+LEXICON V-FINITE-PERS
+
+%<p1%>%<sg%>:б # ;
+%<p2%>%<sg%>:ш # ;
+%<p3%>%<sg%>: # ;
+%<p1%>%<pl%>:бди # ;
+%<p3%>%<pl%>: # ;
+
 LEXICON V-FINITE
 
-%<aor%>%<p1%>%<sg%>:н%{А%}б # ;
-%<aor%>%<p2%>%<sg%>:н%{А%}ш # ;
-%<aor%>%<p3%>%<sg%>:н%{А%} # ;
+%<aor%>:н%{А%} V-FINITE-PERS ;
 
 !FIXME: CHECK
 %<aor%>%<qst%>:х%{А%}б # ;
