@@ -25,6 +25,7 @@ Multichar_Symbols
 %<ger%>
 %<prc%>
 %<gna%>
+%<gna_cnd%>
 
 %<qst%>
 
@@ -113,11 +114,16 @@ LEXICON V-NON-FINITE
 %<ger%>:х%{А%} SUBST-COMMON ;
 %<prc%>:ж%{А%} # ;
 %<gna%>:%{А%}д # ;
+%<gna_cnd%>:б%{А%}л # ;
 
 
 LEXICON V-FINITE
 
-%<aor%>:н%{А%} # ;
+%<aor%>%<p1%>%<sg%>:н%{А%}б # ;
+%<aor%>%<p2%>%<sg%>:н%{А%}ш # ;
+%<aor%>%<p3%>%<sg%>:н%{А%} # ;
+
+!FIXME: CHECK
 %<aor%>%<qst%>:х%{А%}б # ;
 %<aor%>%<neg%>:х%{А%}гүй # ;
 
@@ -195,11 +201,27 @@ LEXICON PRN-BI
 
 би%<prn%>%<pers%>%<p1%>%<sg%>%<nom%>:би # ;
 би%<prn%>%<pers%>%<p1%>%<sg%>%<gen%>:минии # ;
+би%<prn%>%<pers%>%<p1%>%<sg%>%<dat%>:намда # ;
+би%<prn%>%<pers%>%<p1%>%<sg%>%<gen%>:намай # ;
+би%<prn%>%<pers%>%<p1%>%<sg%>%<gen%>:намайе # ; ! FIXME: what's the difference?
+би%<prn%>%<pers%>%<p1%>%<sg%>%<com%>:намтай # ;
+би%<prn%>%<pers%>%<p1%>%<sg%>%<abl%>:намһаа # ;
 
 LEXICON PRN-SHI
 
 ши%<prn%>%<pers%>%<p2%>%<sg%>%<nom%>:ши # ;
 ши%<prn%>%<pers%>%<p2%>%<sg%>%<gen%>:шинии # ;
+ши%<prn%>%<pers%>%<p2%>%<sg%>%<dat%>:шамда # ;
+ши%<prn%>%<pers%>%<p2%>%<sg%>%<gen%>:шамай # ;
+ши%<prn%>%<pers%>%<p2%>%<sg%>%<gen%>:шамайе # ; ! FIXME: what's the difference?
+ши%<prn%>%<pers%>%<p2%>%<sg%>%<com%>:шамаар # ;
+ши%<prn%>%<pers%>%<p2%>%<sg%>%<abl%>:шамһаа # ;
+
+
+LEXICON PRN-BIDE
+
+бидэ%<prn%>%<pers%>%<p2%>%<sg%>%<nom%>:бидэ # ;
+
 
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
@@ -305,6 +327,7 @@ LEXICON Nouns
 үйлсэ:үйлсэ N1 ; ! ""
 үндэгэн:үндэгэн N1 ; ! ""
 үнэгэн:үнэгэн N1 ; ! ""
+үнэн:үнэн N1 ; ! "правда"
 үтэн:үтэн N1 ; ! ""
 үүлэн:үүлэн N1 ; ! ""
 үхэл:үхэл N1 ; ! ""
@@ -355,7 +378,6 @@ LEXICON Nouns
 
 
 LEXICON Verbs
-
 
 ала:ала V-TV ; ! "убивать"
 амидар:амидар V-IV ; ! "жить"
