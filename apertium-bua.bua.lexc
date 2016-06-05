@@ -5,6 +5,7 @@
 Multichar_Symbols
 
 %<n%>              ! Имя существительное
+%<np%>
 %<nom%>
 %<acc%>
 %<gen%>
@@ -25,9 +26,16 @@ Multichar_Symbols
 %<ger%>
 %<prc%>
 %<gna%>
-%<gna_cnd%>
+%<gna_cond%>
 
 %<qst%>
+
+%<ant%>
+%<cog%>
+%<top%>
+%<m%>
+%<f%>
+%<mf%>
 
 %<prn%>
 %<pers%>
@@ -87,7 +95,7 @@ Postpositions ;
 Pronouns ;
 Numbers ;
 Miscellaneous ;   ! "частицы"
-Top ;
+Proper ;
 
 
 LEXICON SUBST-COMMON
@@ -104,6 +112,19 @@ LEXICON N1
 %<n%>: SUBST-COMMON ; 
 
 
+LEXICON NP-COG-MF
+
+%<np%>%<cog%>%<mf%>: SUBST-COMMON ;
+
+
+LEXICON NP-ANT-F
+
+%<np%>%<ant%>%<f%>: SUBST-COMMON ;
+
+LEXICON NP-ANT-M
+
+%<np%>%<ant%>%<m%>: SUBST-COMMON ;
+
 LEXICON NP-TOP
 
 %<np%>%<top%>: SUBST-COMMON ;
@@ -114,7 +135,7 @@ LEXICON V-NON-FINITE
 %<ger%>:х%{А%} SUBST-COMMON ;
 %<prc%>:ж%{А%} # ;
 %<gna%>:%{А%}д # ;
-%<gna_cnd%>:б%{А%}л # ;
+%<gna_cond%>:б%{А%}л # ;
 
 
 LEXICON V-FINITE-PERS
@@ -157,12 +178,12 @@ V-FINITE ;
 
 LEXICON V-IV
 
-V-COMMON ;
+%<v%>%<iv%>: V-COMMON ;
 
 
 LEXICON V-TV
 
-V-COMMON ;
+%<v%>%<tv%>: V-COMMON ;
 
 !LEXICON COPULA
 !
@@ -229,9 +250,48 @@ LEXICON PRN-BIDE
 
 бидэ%<prn%>%<pers%>%<p2%>%<sg%>%<nom%>:бидэ # ;
 
+LEXICON PRN-SHINIIHI
 
+шиниихи%<prn%>%<pers%>%<p2%>%<sg%>%<abl%>:шиниихиһээ # ;
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+LEXICON Miscellaneous 
+
+юм%<cop%>%<evid%>:юм # ;
+гү%<qst%>:гү # ;
+
+LEXICON Conjunctions
+
+харин:харин CNJCOO ; ! "но"
+
+
+LEXICON Postpositions
+
+тухай:тухай PP ; ! "о"
+дээрэ:дээрэ PP ; ! "на вверху"
+
+
+LEXICON Determiners
+
+ямар:ямар DET ; ! "какой"
+тэрэ:тэрэ DET ; ! "тот"
+энэ:энэ DET ; ! "этот"
+
+
+LEXICON Numbers
+
+нэгэ:нэгэ NUM ; ! "1"
+хоёр:хоёр NUM ; ! "2"
+гурбан:гурбан NUM ; ! "3"
+дүрбэн:дүрбэн NUM ; ! "4"
+табан:табан NUM ; ! "5"
+зургаан:зургаан NUM ; ! "6"
+долоон:долоон NUM ; ! "7"
+найман:найман NUM ; ! "8"
+ес:ес NUM ; ! "9"
+арбан:арбан NUM ; ! "10"
+
 
 LEXICON Pronouns
 
@@ -254,6 +314,9 @@ LEXICON Nouns
 арал:арал N1 ; ! ""
 арсалан:арсалан N1 ; ! ""
 архи:архи N1 ; ! ""
+тамхия:тамхия N1 ; ! ""
+машина:машина N1 ; ! ""
+велосипед:велосипед N1 ; ! ""
 асуудал:асуудал N1 ; ! "вопрос"
 баабгай:баабгай N1 ; ! "медведь"
 байгаали:байгаали N1 ; ! ""
@@ -382,6 +445,48 @@ LEXICON Nouns
 эсэгэ:эсэгэ N1 ; ! ""
 эхэ:эхэ N1 ; ! ""
 эхэнэр:эхэнэр N1 ; ! ""
+гүрэн:гүрэн N1 ; ! ""
+медаль:медаль N1 ; ! ""
+дүүнь:дүүнь N1 ; ! ""
+һамган:һамган N1 ; ! ""
+хүршэ:хүршэ N1 ; ! ""
+
+LEXICON Proper 
+
+Жибэн:Жибэн NP-TOP ; ! "Япония"
+Аази:Аази NP-TOP ; ! "Азия"
+Парис:Парис NP-TOP ; ! ""
+Парис:Париж NP-TOP ; ! ""
+Игаузу:Игаузу NP-TOP ; ! ""
+Франци:Франци NP-TOP ; ! ""
+
+Мэри:Мэри NP-ANT-F ; ! ""
+Джейн:Джейн NP-ANT-F ; ! ""
+Питер:Питер NP-ANT-M ; ! ""
+
+Смит:Смит NP-COG-MF ; ! ""
+Браун:Браун NP-COG-MF ; ! ""
+
+
+LEXICON Adjectives
+
+амиды:амиды A1 ; ! ""
+залуу:залуу A1 ; ! ""
+ногоон:ногоон A1 ; ! ""
+бага:бага A1 ; ! ""
+нойтон:нойтон A1 ; ! ""
+сагаан:сагаан A1 ; ! ""
+томо:томо A1 ; ! ""
+хара:хара A1 ; ! ""
+һайн:һайн A1 ; ! ""
+гоё:гоё A1 ; ! "красиво"
+хүйтэн:хүйтэн A1 ; ! "холодно"
+
+
+LEXICON Adverbs
+
+хамта:хамта ADV ; ! "вместе"
+бэшэ:бэшэ ADV ; ! "не"
 
 
 LEXICON Verbs
@@ -411,69 +516,6 @@ LEXICON Verbs
 
 
 
-LEXICON Adverbs
-
-хамта:хамта ADV ; ! "вместе"
-бэшэ:бэшэ ADV ; ! "не"
-
-
-LEXICON Conjunctions
-
-харин:харин CNJCOO ; ! "но"
-
-
-LEXICON Adjectives
-
-амиды:амиды A1 ; ! ""
-залуу:залуу A1 ; ! ""
-ногоон:ногоон A1 ; ! ""
-нойтон:нойтон A1 ; ! ""
-сагаан:сагаан A1 ; ! ""
-томо:томо A1 ; ! ""
-хара:хара A1 ; ! ""
-һайн:һайн A1 ; ! ""
-гоё:гоё A1 ; ! "красиво"
-хүйтэн:хүйтэн A1 ; ! "холодно"
-
-
-LEXICON Postpositions
-
-тухай:тухай PP ; ! "о"
-дээрэ:дээрэ PP ; ! "на вверху"
-
-
-LEXICON Determiners
-
-ямар:ямар DET ; ! "какой"
-тэрэ:тэрэ DET ; ! "тот"
-энэ:энэ DET ; ! "этот"
-
-
-LEXICON Miscellaneous   ! "частицы"
-
-юм%<cop%>%<evid%>:юм # ;
-
-
-LEXICON Numbers
-
-нэгэ:нэгэ NUM ; ! "1"
-хоёр:хоёр NUM ; ! "2"
-гурбан:гурбан NUM ; ! "3"
-дүрбэн:дүрбэн NUM ; ! "4"
-табан:табан NUM ; ! "5"
-зургаан:зургаан NUM ; ! "6"
-долоон:долоон NUM ; ! "7"
-найман:найман NUM ; ! "8"
-ес:ес NUM ; ! "9"
-арбан:арбан NUM ; ! "10"
-
-
-LEXICON Top
-
-Жибэн:Жибэн NP-TOP ; ! "Япония"
-Аази:Аази NP-TOP ; ! "Азия"
-
-
  LEXICON Punctuation
 !===================!
 
@@ -484,8 +526,9 @@ LEXICON Top
 %;%<sent%>:%; # ;
 %:%<sent%>:%: # ;
 %!%<sent%>:%! # ;
-%-%<guio%>:%- # ;
-%—%<guio%>:%— # ;
+%-%<guio%>:%- # ; ! hyphen/minus
+%–%<guio%>:%– # ; ! en dash
+%—%<guio%>:%— # ; ! em dash
 ,%<cm%>:, # ;
 %?%<sent%>:%? # ;
 %'%<apos%>:%' # ;
