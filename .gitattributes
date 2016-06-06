@@ -14,4 +14,7 @@
 /configure.ac -text
 dev/countstems.sh -text
 /modes.xml -text
+tests/refl.yaml -text
+tests/run-twol-pairtests.sh -text
 texts/puupankki/udtwenty.txt -text svneol=unset#application/octet-stream
+texts/puupankki/udtwenty_annotated.txt -text

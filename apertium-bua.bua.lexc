@@ -11,10 +11,13 @@ Multichar_Symbols
 %<gen%>
 %<com%>
 %<ins%>
+%<attr%>
+%<abl%>
 
 %<v%>
 %<iv%>
 %<tv%>
+%<vaux%>
 
 %<neg%>
 %<evid%>
@@ -65,6 +68,12 @@ Multichar_Symbols
 %<np%>
 %<top%>
 
+%<itg%>
+
+%<refl%>
+
+%<imp%>
+
 
 ! Punctuation
 %<sent%>      ! Sentence marker
@@ -79,12 +88,14 @@ Multichar_Symbols
 
 ! Archiphonemes
 %{А%}
+%{г%}
+%{ь%}
 % 
 
 
 LEXICON Root
 
-Nouns ; 
+Nouns ;
 Verbs ;
 Adjectives ;
 Adverbs ;
@@ -100,16 +111,36 @@ Proper ;
 
 LEXICON SUBST-COMMON
 
-%<nom%>: COP-PRED ;
-%<gen%>:%{А%}й # ;
-%<com%>:т%{А%}й # ;
-%<ins%>:%{А%}р # ;
-%<dat%>:т%{А%} # ;
+CASES ;
 
+LEXICON CASES
+
+%<attr%>: # ;
+CASES-NO-ATTR ;
+
+LEXICON CASES-NO-ATTR
+
+%<nom%>: POSSESSIVE ;
+%<gen%>:%>%{А%}й POSSESSIVE ;
+%<com%>:%>т%{А%}й POSSESSIVE ;
+%<ins%>:%>%{А%}р POSSESSIVE ;
+%<dat%>:%>т%{А%} POSSESSIVE ; ! FIXME: which is right?
+%<dat%>:%>д%{А%} POSSESSIVE ; ! FIXME: which is right?
+%<abl%>:%>иһ POSSESSIVE ; ! FIXME: CHECK
+
+LEXICON NUM-CASES
+
+%<gen%>:%>%{А%}й POSSESSIVE ;
+
+LEXICON POSSESSIVE
+
+COP-PRED ;
+%<px3sg%>:%>нь COP-PRED ;
+%<refl%>:%>%{г%}%{А%}%{А%} COP-PRED ;
 
 LEXICON N1
 
-%<n%>: SUBST-COMMON ; 
+%<n%>: SUBST-COMMON ;
 
 
 LEXICON NP-COG-MF
@@ -129,45 +160,60 @@ LEXICON NP-TOP
 
 %<np%>%<top%>: SUBST-COMMON ;
 
+LEXICON V-NON-FINITE-CASES
+
+CASES-NO-ATTR ;
 
 LEXICON V-NON-FINITE
 
-%<ger%>:х%{А%} SUBST-COMMON ;
-%<prc%>:ж%{А%} # ;
-%<gna%>:%{А%}д # ;
-%<gna_cond%>:б%{А%}л # ;
+%<ger%>:%>х%{А%} V-NON-FINITE-CASES ;
+%<prc%>:%>ж%{А%} # ;
+!%<gna%>:%>%{А%}д # ;
+%<gna%>:%>%{А%}%{А%}д # ; ! FIXME: CHECK
+%<gna_cond%>:%>б%{А%}л # ;
+%<ger_past%>:%>һ%{А%}н V-NON-FINITE-CASES ;
+%<gpr_past%>:%>һ%{А%}н # ;
 
 
 LEXICON V-FINITE-PERS
 
-%<p1%>%<sg%>:б # ;
-%<p2%>%<sg%>:ш # ;
+%<p1%>%<sg%>:%>б # ;
+%<p2%>%<sg%>:%>ш # ;
 %<p3%>%<sg%>: # ;
-%<p1%>%<pl%>:бди # ;
-%<p2%>%<pl%>:т # ;
+%<p1%>%<pl%>:%>бди # ;
+%<p2%>%<pl%>:%>т # ;
 %<p3%>%<pl%>: # ;
+
+LEXICON V-PROG-PERS
+
+%<p2%>%<sg%>:%>ши # ;
 
 LEXICON V-FINITE
 
-%<aor%>:н%{А%} V-FINITE-PERS ;
+%<aor%>:%>н%{А%} V-FINITE-PERS ;
+%<aor%>%<neg%>:%>н%{А%}гүй V-FINITE-PERS ;
+
+%<aor%>%<prog%>:%>н%{А%}б V-PROG-PERS ;
 
 !FIXME: CHECK
-%<aor%>%<qst%>:х%{А%}б # ;
-%<aor%>%<neg%>:х%{А%}гүй # ;
+%<aor%>%<qst%>:%>х%{А%}б # ;
+%<aor%>%<neg%>:%>х%{А%}гүй # ;  ! FIXME: CHECK
 
-%<aor%>%<evid%>:х%{А%}% юм # ;
-%<aor%>%<neg%>%<evid%>:х%{А%}гүй% юм # ;
+%<aor%>%<evid%>:%>х%{А%}% юм # ;
+%<aor%>%<neg%>%<evid%>:%>х%{А%}гүй% юм # ;
 
-%<ifi%>:б%{А%} # ;
+%<ifi%>:%>б%{А%} # ;
 
-%<past%>:һ%{А%}н # ;
-%<past%>%<evid%>:һ%{А%}н% юм # ;
+%<past%>:%>һ%{А%}н # ;
+%<past%>%<evid%>:%>һ%{А%}н% юм # ;
 
-%<hab%>:д%{А%}г # ;
-%<hab%>%<neg%>:д%{А%}ггүй # ;
+%<hab%>:%>д%{А%}г # ;
+%<hab%>%<neg%>:%>д%{А%}ггүй # ;
 
-%<hab%>%<evid%>:д%{А%}г% юм # ;
-%<hab%>%<evid%>%<neg%>:д%{А%}ггүй% юм # ;
+%<hab%>%<evid%>:%>д%{А%}г% юм # ;
+%<hab%>%<evid%>%<neg%>:%>д%{А%}ггүй% юм # ;
+
+%<imp%>: # ;
 
 
 LEXICON V-COMMON
@@ -184,6 +230,10 @@ LEXICON V-IV
 LEXICON V-TV
 
 %<v%>%<tv%>: V-COMMON ;
+
+LEXICON V-AUX
+
+%<vaux%>: V-COMMON ;
 
 !LEXICON COPULA
 !
@@ -204,6 +254,10 @@ LEXICON ADV
 
 %<adv%>: # ;
 
+LEXICON ADV-ITG
+
+%<adv%>%<itg%>: COP-PRED ;
+
 
 LEXICON CNJCOO
 
@@ -218,12 +272,17 @@ LEXICON DET
 LEXICON NUM
 
 %<num%>: # ;
+%<num%>%<subst%>: NUM-CASES ;
 
 
 LEXICON PP
 
 %<post%>: # ;
 
+
+LEXICON PRN-ITG
+
+%<prn%>%<itg%>: CASES-NO-ATTR ;
 
 LEXICON PRN-BI
 
@@ -239,6 +298,7 @@ LEXICON PRN-SHI
 
 ши%<prn%>%<pers%>%<p2%>%<sg%>%<nom%>:ши # ;
 ши%<prn%>%<pers%>%<p2%>%<sg%>%<gen%>:шинии # ;
+ши%<prn%>%<pers%>%<p2%>%<sg%>%<gen%>%<subst%>:шиниих SUBST-COMMON ;
 ши%<prn%>%<pers%>%<p2%>%<sg%>%<dat%>:шамда # ;
 ши%<prn%>%<pers%>%<p2%>%<sg%>%<gen%>:шамай # ;
 ши%<prn%>%<pers%>%<p2%>%<sg%>%<gen%>:шамайе # ; ! FIXME: what's the difference?
@@ -256,10 +316,10 @@ LEXICON PRN-SHINIIHI
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
-LEXICON Miscellaneous 
+LEXICON Miscellaneous
 
 юм%<cop%>%<evid%>:юм # ;
-гү%<qst%>:гү # ;
+гү%<qst%>:гү V-FINITE-PERS ;
 
 LEXICON Conjunctions
 
@@ -297,8 +357,9 @@ LEXICON Pronouns
 
 PRN-BI ; ! "я"
 PRN-SHI ; ! "ты"
+юу:юу%{ь%} PRN-ITG ; ! "что"
 
-LEXICON Nouns 
+LEXICON Nouns
 
 ургамал:ургамал N1 ; ! "растение"
 
@@ -313,12 +374,10 @@ LEXICON Nouns
 амитан:амитан N1 ; ! ""
 арал:арал N1 ; ! ""
 арсалан:арсалан N1 ; ! ""
-архи:архи N1 ; ! ""
-тамхия:тамхия N1 ; ! ""
-машина:машина N1 ; ! ""
-велосипед:велосипед N1 ; ! ""
+архи:архи N1 ; ! "alcohol"
 асуудал:асуудал N1 ; ! "вопрос"
 баабгай:баабгай N1 ; ! "медведь"
+баабай:баабай N1 ; ! "папа"
 байгаали:байгаали N1 ; ! ""
 басаган:басаган N1 ; ! ""
 баха:баха N1 ; ! "лягушка"
@@ -328,6 +387,8 @@ LEXICON Nouns
 булуудха:булуудха N1 ; ! ""
 бурхан:бурхан N1 ; ! ""
 бүргэд:бүргэд N1 ; ! ""
+бэшэг:бэшэг N1 ; ! "letter"
+велосипед:велосипед N1 ; ! ""
 газар:газар N1 ; ! ""
 гал:гал N1 ; ! ""
 галуун:галуун N1 ; ! ""
@@ -338,6 +399,7 @@ LEXICON Nouns
 дайн:дайн N1 ; ! ""
 дайсан:дайсан N1 ; ! ""
 дэгдэ:дэгдэ N1 ; ! ""
+дүү:дүү N1 ; ! "little(?) brother"
 жэл:жэл N1 ; ! ""
 жэмэс:жэмэс N1 ; ! "фрукты"
 заан:заан N1 ; ! ""
@@ -345,9 +407,10 @@ LEXICON Nouns
 заряа:заряа N1 ; ! ""
 зун:зун N1 ; ! ""
 зүрхэн:зүрхэн N1 ; ! "сердце"
+машина:машина N1 ; ! "car"
 модон:модон N1 ; ! ""
 мүльһэн:мүльһэн N1 ; ! ""
-мүнгэн:мүнгэн N1 ; ! ""
+мүнгэн:мүнгэн N1 ; ! "silver"
 мүрэн:мүрэн N1 ; ! "река"
 мылэ:мылэ N1 ; ! ""
 наhан:наhан N1 ; ! ""
@@ -372,12 +435,13 @@ LEXICON Nouns
 саг:саг N1 ; ! ""
 сай:сай N1 ; ! ""
 саһан:саһан N1 ; ! ""
-сонхо:сонхо N1 ; ! ""
+сонхо:сонхо N1 ; ! "window"
 суббото:суббото N1 ; ! ""
 сэсэрлиг:сэсэрлиг N1 ; ! "сад"
 табгай:табгай N1 ; ! ""
 тоhо:тоhо N1 ; ! ""
 толгой:толгой N1 ; ! "голова"
+тамхи:тамхи N1 ; ! "tabacco"
 тоншуул:тоншуул N1 ; ! ""
 тооhон:тооhон N1 ; ! ""
 торгон:торгон N1 ; ! ""
@@ -388,6 +452,7 @@ LEXICON Nouns
 утаан:утаан N1 ; ! ""
 уһан:уһан N1 ; ! ""
 улас:улас N1 ; ! "страна"
+үбгэ:үбгэ N1 ; ! "husband"
 үбдэг:үбдэг N1 ; ! ""
 үбшэн:үбшэн N1 ; ! ""
 үбэл:үбэл N1 ; ! "зима"
@@ -398,10 +463,12 @@ LEXICON Nouns
 үндэгэн:үндэгэн N1 ; ! ""
 үнэгэн:үнэгэн N1 ; ! ""
 үнэн:үнэн N1 ; ! "правда"
+үһэ:үһэ N1 ; ! "hair"
 үтэн:үтэн N1 ; ! ""
 үүлэн:үүлэн N1 ; ! ""
 үхэл:үхэл N1 ; ! ""
 хγн:хγн N1 ; ! ""
+хүрэл:хүрэл N1 ; ! "бронза; bronze"
 халбага:халбага N1 ; ! ""
 хамар:хамар N1 ; ! ""
 ханяадан:ханяадан N1 ; ! ""
@@ -409,6 +476,7 @@ LEXICON Nouns
 хонин:хонин N1 ; ! ""
 хоолой:хоолой N1 ; ! ""
 хорон:хорон N1 ; ! ""
+хорёо:хорёо N1 ; ! "fence"
 хото:хото N1 ; ! "город"
 хулганаан:хулганаан N1 ; ! ""
 хундэ:хундэ N1 ; ! ""
@@ -447,22 +515,24 @@ LEXICON Nouns
 эхэнэр:эхэнэр N1 ; ! ""
 гүрэн:гүрэн N1 ; ! ""
 медаль:медаль N1 ; ! ""
-дүүнь:дүүнь N1 ; ! ""
-һамган:һамган N1 ; ! ""
-хүршэ:хүршэ N1 ; ! ""
+!дүүнь:дүүнь N1 ; ! ""
+һамган:һамган N1 ; ! "woman"
+хүршэ:хүршэ N1 ; ! "neighbour"
 
-LEXICON Proper 
+LEXICON Proper
 
 Жибэн:Жибэн NP-TOP ; ! "Япония"
 Аази:Аази NP-TOP ; ! "Азия"
 Парис:Парис NP-TOP ; ! ""
 Парис:Париж NP-TOP ; ! ""
 Игаузу:Игаузу NP-TOP ; ! ""
-Франци:Франци NP-TOP ; ! ""
+Франци:Франци NP-TOP ; ! "France"
 
-Мэри:Мэри NP-ANT-F ; ! ""
-Джейн:Джейн NP-ANT-F ; ! ""
-Питер:Питер NP-ANT-M ; ! ""
+Мэри:Мэри NP-ANT-F ; ! "Mary"
+Джейн:Джейн NP-ANT-F ; ! "Jane"
+Питер:Питер NP-ANT-M ; ! "Peter"
+Пётр:Пётр NP-ANT-M ; ! "Peter"
+Сэм:Сэм NP-ANT-M ; ! "Sam"
 
 Смит:Смит NP-COG-MF ; ! ""
 Браун:Браун NP-COG-MF ; ! ""
@@ -471,49 +541,76 @@ LEXICON Proper
 LEXICON Adjectives
 
 амиды:амиды A1 ; ! ""
+аргагүй:аргагүй A1 ; ! "impossible" ! Use/MT - productively derivational?
+бага:бага A1 ; ! ""
+бэрхэ:бэрхэ A1 ; ! ""
+гоё:гоё A1 ; ! "красиво"
 залуу:залуу A1 ; ! ""
 ногоон:ногоон A1 ; ! ""
-бага:бага A1 ; ! ""
 нойтон:нойтон A1 ; ! ""
 сагаан:сагаан A1 ; ! ""
 томо:томо A1 ; ! ""
 хара:хара A1 ; ! ""
-һайн:һайн A1 ; ! ""
-гоё:гоё A1 ; ! "красиво"
 хүйтэн:хүйтэн A1 ; ! "холодно"
+һайн:һайн A1 ; ! ""
 
 
 LEXICON Adverbs
 
 хамта:хамта ADV ; ! "вместе"
 бэшэ:бэшэ ADV ; ! "не"
+хэзээ:хэзээ ADV-ITG ; ! "when"
+ехэ:ехэ ADV ; ! "very, really"
+хурдаар:хурдаар ADV ; ! "quickly" FIXME: CHECK to make sure not compositional
+үсэгэлдэр:үсэгэлдэр ADV ; ! "yesterday"
 
 
 LEXICON Verbs
 
+бай:бай V-AUX ; ! "be"
+үзэ:үзэ V-AUX ; ! "try"
+шада:шада V-AUX ; ! "can"
+яда:яда V-AUX ; ! "not be able to (??)"
+
+
+аба:аба V-TV ; ! "take, receive"
 ала:ала V-TV ; ! "убивать"
 амидар:амидар V-IV ; ! "жить"
+асар:асар V-TV ; ! "deliver" FIXME: CHECK
 асуу:асуу V-TV ; ! "спросить"
+баала:баала V-TV ; ! "заставить"
 бай:бай V-IV ; ! "быть"
 боло:боло V-IV ; ! "быть, стать"
+бэшэ:бэшэ V-TV ; ! "write"
+гара:гара V-TV ; ! "уйти"
 гуй:гуй V-TV ; ! "просить"
+гүй:гүй V-IV ; ! "run"
 гэ:гэ V-IV ; ! "сказать"  ! FIXME: check
+ерэ:ерэ V-IV ; ! "come"
 иигэ:иигэ V-IV ; ! ""
 малта:малта V-TV ; ! "копать, рыть"
 мэдэ:мэдэ V-TV ; ! "знать"
 наада:наада V-IV ; ! "играть"
 нёлбо:нёлбо V-IV ; ! "плевать"
+онгойлго:онгойлго V-TV ; ! "open"
+оро:оро V-IV ; ! "precipitate"
+ошо:ошо V-IV ; ! "go"
+тэбэрилдэ:тэбэрилдэ V-IV ; ! "hug one another??"
+угаа:угаа V-TV ; ! "мыть"
 хабда:хабда V-IV ; ! "пухнуть"
 хара:хара V-TV ; ! "смотреть"
+хая:хая V-TV ; ! "бросать; give up"
 хэлэ:хэлэ V-IV ; ! "говорить"
 хүрэ:хүрэ V-IV ; ! "достать"  ! FIXME: check
+хүсэ:хүсэ V-TV ; ! "wait"
 хүхэ:хүхэ V-TV ; ! "сосать"
 шада:шада V-IV ; ! "уметь"
-эара:гара V-TV ; ! "уйти"
+шэлэ:шэлэ V-TV ; ! "choose"
+шэрдэ:шэрдэ V-TV ; ! "красить"
 яба:яба V-IV ; ! "идти"
 үзэ:үзэ V-IV ; ! "видеть"
+һана:һана V-IV ; ! "think"
 һуу:һуу V-IV ; ! "сидеть"
-
 
 
  LEXICON Punctuation

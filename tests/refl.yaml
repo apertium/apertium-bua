@@ -1,0 +1,19 @@
+Config:
+  hfst:
+      App: hfst-lookup
+      Gen: ../bua.autogen.hfst
+      Morph: ../bua.automorf.hfst
+
+Tests:
+
+ "[twol] after consonant":
+    үнэн<n><nom><refl> : үнэнээ
+
+ "[twol] after short vowels not э и":
+    машина<n><nom><refl> : машинаа
+
+ "[twol] after э":
+    үбгэ<n><nom><refl> : үбгэеэ
+
+ "[twol] after long vowel":
+    хорёо<n><nom><refl> : хорёогоо
