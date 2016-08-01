@@ -61,6 +61,7 @@ Multichar_Symbols
 %<adv%>
 
 %<cnjcoo%>
+%<cnjadv%>
 
 %<post%>
 
@@ -105,7 +106,7 @@ Determiners ;
 Punctuation ;
 Postpositions ;
 Pronouns ;
-Numbers ;
+Numerals ;
 Miscellaneous ;   ! "частицы"
 Interjections ;
 Proper ;
@@ -269,6 +270,11 @@ LEXICON CNJCOO
 
 %<cnjcoo%>: # ;
 
+LEXICON CNJADV
+
+%<cnjadv%>: # ;
+
+
 
 LEXICON DET
 
@@ -352,6 +358,14 @@ LEXICON Conjunctions
 
 харин:харин CNJCOO ; ! "но"
 
+ба:ба CNJCOO ; ! ""
+гγ:гγ CNJCOO ; ! ""
+али:али CNJCOO ; ! ""
+аад:аад CNJCOO ; ! ""
+hанаа:hанаа CNJCOO ; ! ""
+
+теэд:теэд CNJADV ; ! ""
+тиимэhээ:тиимэhээ CNJADV ; ! ""
 
 LEXICON Postpositions
 
@@ -381,10 +395,12 @@ LEXICON Determiners
 ямар:ямар DET ; ! "какой"
 
 
-LEXICON Numbers
+LEXICON Numerals
 
 нэгэ:нэгэ NUM ; ! "1"
+!нэгэн:нэгэн NUM ; ! "one"
 хоёр:хоёр NUM ; ! "2"
+хоёр:хоер NUM ; ! "two" ! Dir/LR
 гурбан:гурбан NUM ; ! "3"
 дүрбэн:дүрбэн NUM ; ! "4"
 табан:табан NUM ; ! "5"
@@ -393,6 +409,17 @@ LEXICON Numbers
 найман:найман NUM ; ! "8"
 ес:ес NUM ; ! "9"
 арбан:арбан NUM ; ! "10"
+
+гурбан:гурбан NUM ; ! "three"
+дγшэн:дγшэн NUM ; ! "forty"
+далаад:далаан NUM ; ! "seventy"
+далан:далан NUM ; ! "70ʔ"
+ерэн:ерэн NUM ; ! "90"
+зуун:зуун NUM ; ! "hundred"
+мянга:мянга NUM ; ! "thousand"
+хорин:хорин NUM ; ! "twenty"
+юhэн:юhэн NUM ; ! "9"
+
 
 
 LEXICON Pronouns
