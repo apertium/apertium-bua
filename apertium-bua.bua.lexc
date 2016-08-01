@@ -7,7 +7,9 @@ Multichar_Symbols
 %<n%>              ! Имя существительное
 %<np%>
 %<nom%>
+
 %<acc%>
+%<dat%>
 %<gen%>
 %<com%>
 %<ins%>
@@ -22,6 +24,10 @@ Multichar_Symbols
 
 %<neg%>
 %<evid%>
+%<past%>
+%<ger_past%>
+%<gpr_past%>
+%<prog%>
 
 %<ifi%>
 %<aor%>
@@ -32,7 +38,14 @@ Multichar_Symbols
 %<gna%>
 %<gna_cond%>
 
+%<qnt%>
+%<dem%>
+%<ind%>
+%<ref%>
+
 %<qst%>
+
+%<px3sg%>
 
 %<ant%>
 %<cog%>
@@ -308,7 +321,7 @@ LEXICON NUM
 %<num%>%<subst%>: NUM-CASES ;
 
 
-LEXICON PP
+LEXICON POST
 
 %<post%>: # ;
 
@@ -369,8 +382,15 @@ hанаа:hанаа CNJCOO ; ! ""
 
 LEXICON Postpositions
 
-тухай:тухай PP ; ! "о"
-дээрэ:дээрэ PP ; ! "на вверху"
+тухай:тухай POST ; ! "о"
+дээрэ:дээрэ POST ; ! "на вверху"
+
+тγлɵɵ:тγлɵɵ POST ; ! "for"
+тухайгаа:тухайгаа POST ; ! "about"
+хоорондоо:хоорондоо POST ; ! "between"
+хажуугаар:хажуугаар POST ; ! "by, past"
+хγрэтэрɵɵ:хγрэтэрɵɵ POST ; ! "until"
+γгыдэ:γгыдэ POST ; ! "without"
 
 
 LEXICON Determiners
@@ -434,6 +454,12 @@ PRN-SHINIIHI ; ! ""
 
 
 LEXICON Nouns
+
+! Relational nouns 
+соо:соо N1 ; ! "in"
+дээрээ:дээрээ N1 ; ! "on"
+руу:руу N1 ; ! "in" 
+
 
 ургамал:ургамал N1 ; ! "растение"
 
@@ -976,6 +1002,7 @@ LEXICON Proper
 
 Жибэн:Жибэн NP-TOP ; ! "Япония"
 Аази:Аази NP-TOP ; ! "Азия"
+Ази:Ази NP-TOP ; ! ""
 Парис:Парис NP-TOP ; ! ""
 Парис:Париж NP-TOP ; ! ""
 Игаузу:Игаузу NP-TOP ; ! ""
@@ -1057,6 +1084,12 @@ Yдэ:Yдэ NP-TOP ; ! "Uda"
 Эрхγγгэй:Эрхγγгэй NP-TOP ; ! "Irkutsk"
 Япон:Япон NP-TOP ; ! "Japan"
 
+Мургаб:Мургаб NP-TOP ; ! ""
+Герируд:Герируд NP-TOP ; ! ""
+
+Шри% Ланка:Шри% Ланка NP-TOP ; ! ""
+Ланка:Ланка NP-TOP ; ! ""
+Шри:Шри NP-TOP ; ! ""
 
 LEXICON Adjectives
 
