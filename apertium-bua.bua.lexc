@@ -149,6 +149,10 @@ LEXICON NP-COG-MF
 
 %<np%>%<cog%>%<mf%>: SUBST-COMMON ;
 
+LEXICON NP-COG-OV
+
+%<np%>%<cog%>%<m%>: SUBST-COMMON ;
+%<np%>%<cog%>%<f%>:а SUBST-COMMON ;
 
 LEXICON NP-ANT-F
 
@@ -270,6 +274,23 @@ LEXICON DET
 
 %<det%>: # ;
 
+LEXICON DET-IND
+
+%<det%>%<ind%>: # ;
+
+LEXICON DET-DEM
+
+%<det%>%<dem%>: # ;
+
+LEXICON DET-QNT
+
+%<det%>%<qnt%>: # ;
+
+LEXICON DET-REF 
+
+%<det%>%<ref%>: # ;
+
+
 LEXICON INTERJ
 
 %<ij%>: # ;
@@ -340,9 +361,24 @@ LEXICON Postpositions
 
 LEXICON Determiners
 
+тэрэ:тэрэ DET-DEM ; ! "тот"
+энэ:энэ DET-DEM ; ! "этот"
+эрэ:эрэ DET-DEM ; ! ""
+тэдэ:тэдэ DET-DEM ; ! ""
+
+бэшэн:бэшэн DET-IND ; ! ""
+нγгɵɵ:нγгɵɵ DET-IND ; ! ""
+ямаршье:ямаршье DET-IND ; ! ""
+
+булта:булта DET-QNT ; ! ""
+бухы:бухы  DET-QNT ; ! ""
+даяар:даяар DET-QNT ; ! ""
+зарим:зарим DET-QNT ; ! ""
+
+ɵɵрынгɵɵ:ɵɵрынгɵɵ DET-REF ; ! ""
+
+
 ямар:ямар DET ; ! "какой"
-тэрэ:тэрэ DET ; ! "тот"
-энэ:энэ DET ; ! "этот"
 
 
 LEXICON Numbers
@@ -928,6 +964,71 @@ Yдэ:Yдэ NP-TOP ; ! ""
 
 Смит:Смит NP-COG-MF ; ! ""
 Браун:Браун NP-COG-MF ; ! ""
+
+Yдэ:Yдэ NP-TOP ; ! "Uda"
+Ага:Ага NP-TOP ; ! "Aga"
+Азии:Азии NP-TOP ; ! "Asia"
+Албан:Албан NP-TOP ; ! "Albania"
+Александр:Александр NP-ANT-M ; ! "Alexander"
+Амударья:Амударья NP-TOP ; ! "Amudarya"
+Афганистан:Афганистан NP-TOP ; ! "Afghanistan"
+Байгал:Байгал NP-TOP ; ! "Baikal"
+Банзаров:Банзаров NP-COG-OV ; ! "Banzarov"
+Бирма:Бирма NP-TOP ; ! "Birma"
+Буряяад:Буряяад NP-TOP ; ! "Buryatia"
+Виртанен:Виртанен NP-COG-MF ; ! "Virtanen"
+Вьетнам:Вьетнам NP-TOP ; ! "Vietnam"
+Гильменд:Гильменд NP-TOP ; ! "Helmand"
+Гималайн:Гималайн NP-TOP ; ! "Himalaya"
+Дамдинова:Дамдинова NP-COG-OV ; ! "Damdinova"
+Дармаев:Дармаев NP-COG-OV ; ! "Darmaev"
+Джейн:Джейн NP-ANT-F ; ! "Jane"
+Джон:Джон NP-ANT-M ; ! "John"
+Донна:Донна NP-ANT-F ; ! "Donna"
+Ева:Ева NP-ANT-F ; ! "Eva"
+Екатерина:Екатерина NP-ANT-F ; ! "Ekaterina"
+Елиас:Елиас NP-ANT-M ; ! "Elias"
+Елизэ:Елизэ NP-ANT-F ; ! "Elisa"
+Забайкалиин:Забайкалиин NP-TOP ; ! "Zabaikalye"
+Кабул:Кабул NP-TOP ; ! "Kabul"
+Камбоджа:Камбоджа NP-TOP ; ! "Kambodja"
+Катя:Катя NP-ANT-F ; ! "Katya"
+Лаос:Лаос NP-TOP ; ! "Laos"
+Майа:Майа NP-ANT-F ; ! "Maya"
+Майя:Майя NP-ANT-F ; ! "Maya"
+Матикайнэн:Матикайнэн NP-COG-MF ; ! "Mattikainen"
+Матти:Матти NP-ANT-M ; ! "Matti"
+Монгол:Монгол NP-TOP ; ! "Mongolia"
+Мундарга:Мундарга NP-TOP ; ! "name of the peak"
+Мэри:Мэри NP-ANT-F ; ! "Meri"
+Нанхяад:Нанхяад NP-TOP ; ! "China"
+Омар:Омар NP-ANT-M ; ! "Omar"
+Оулу:Оулу NP-TOP ; ! "Oulu"
+Парис:Парис NP-TOP ; ! "Paris"
+Пекка:Пекка NP-ANT-M ; ! "Pekka"
+Пети:Пети NP-ANT-M ; ! "Petya"
+Пётр:Пётр NP-ANT-M ; ! "Petr"
+Питер:Питер NP-ANT-M ; ! "Piter"
+Португал:Португал NP-TOP ; ! "Portugal"
+России:России NP-TOP ; ! "Russia"
+Сибирь:Сибирь NP-TOP ; ! "Siberia"
+Сиддарта:Сиддарта NP-ANT-M ; ! "Siddhartha"
+Сингапур:Сингапур NP-TOP ; ! "Singapore"
+Солонгос:Солонгос NP-TOP ; ! "Korea"
+Сэм:Сэм NP-ANT-M ; ! "Sam"
+Тайвань:Тайвань NP-TOP ; ! "Taiwan"
+Тайланд:Тайланд NP-TOP ; ! "Thailand"
+Таммиинэн:Таммиинэн NP-COG-MF ; ! "Tamminen"
+Травоолтэ:Травоолтэ NP-COG-MF ; ! "Travolta"
+Улаан:Улаан NP-TOP ; ! "Ulaan-Ude"
+Финлянди:Финлянди NP-TOP ; ! "Finland"
+Франци:Франци NP-TOP ; ! "France"
+Хеэльсинки:Хеэльсинки NP-TOP ; ! "Helsinki"
+Хитад:Хитад NP-TOP ; ! "China"
+Чингис:Чингис NP-ANT-M ; ! "Tchingis"
+Шенхоров:Шенхоров NP-COG-OV ; ! "Shenkhorov"
+Эрхγγгэй:Эрхγγгэй NP-TOP ; ! "Irkutsk"
+Япон:Япон NP-TOP ; ! "Japan"
 
 
 LEXICON Adjectives
