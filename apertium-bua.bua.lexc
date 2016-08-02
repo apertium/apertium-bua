@@ -224,6 +224,8 @@ LEXICON V-FINITE
 
 %<ifi%>:%>б%{А%} # ;
 
+%<past2%>:%>г%{А%}%{A%} # ;  ! FIXME: what is this?
+
 %<past%>:%>һ%{А%}н # ;
 %<past%>%<evid%>:%>һ%{А%}н% юм # ;
 
@@ -1090,6 +1092,10 @@ Yдэ:Yдэ NP-TOP ; ! "Uda"
 
 LEXICON Adjectives
 
+хэрэг:хэрэг A1 ; ! "necessary"
+еһотой:еһотой A1 ; ! "must"
+
+
 амиды:амиды A1 ; ! ""
 аргагүй:аргагүй A1 ; ! "impossible" ! Use/MT - productively derivational?
 бага:бага A1 ; ! ""
@@ -1395,6 +1401,9 @@ LEXICON Verbs
 үзэ:үзэ V-AUX ; ! "try"
 шада:шада V-AUX ; ! "can"
 яда:яда V-AUX ; ! "not be able to (??)"
+баатай:баатай V-VAUX ; ! "have to"
+
+боло:боло V-IV ; ! "be"
 
 
 аба:аба V-TV ; ! "take, receive"
