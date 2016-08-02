@@ -325,7 +325,6 @@ LEXICON POST
 
 %<post%>: # ;
 
-
 LEXICON PRN-ITG
 
 %<prn%>%<itg%>: CASES-NO-ATTR ;
@@ -334,6 +333,7 @@ LEXICON PRN-BI
 
 би%<prn%>%<pers%>%<p1%>%<sg%>%<nom%>:би # ;
 би%<prn%>%<pers%>%<p1%>%<sg%>%<gen%>:минии # ;
+би%<prn%>%<pers%>%<p1%>%<sg%>%<gen%>%<subst%>:миниихи SUBST-COMMON ;
 би%<prn%>%<pers%>%<p1%>%<sg%>%<dat%>:намда # ;
 би%<prn%>%<pers%>%<p1%>%<sg%>%<gen%>:намай # ;
 би%<prn%>%<pers%>%<p1%>%<sg%>%<gen%>:намайе # ; ! FIXME: what's the difference?
@@ -344,7 +344,7 @@ LEXICON PRN-SHI
 
 ши%<prn%>%<pers%>%<p2%>%<sg%>%<nom%>:ши # ;
 ши%<prn%>%<pers%>%<p2%>%<sg%>%<gen%>:шинии # ;
-ши%<prn%>%<pers%>%<p2%>%<sg%>%<gen%>%<subst%>:шиниих SUBST-COMMON ;
+ши%<prn%>%<pers%>%<p2%>%<sg%>%<gen%>%<subst%>:шиниихи SUBST-COMMON ;
 ши%<prn%>%<pers%>%<p2%>%<sg%>%<dat%>:шамда # ;
 ши%<prn%>%<pers%>%<p2%>%<sg%>%<gen%>:шамай # ;
 ши%<prn%>%<pers%>%<p2%>%<sg%>%<gen%>:шамайе # ; ! FIXME: what's the difference?

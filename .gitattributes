@@ -13,6 +13,7 @@
 /bua.prob -text svneol=unset#unset
 /configure.ac -text
 dev/countstems.sh -text
+dev/merge-lemmas.py -text
 /modes.xml -text
 tests/N-various_gt-norm.yaml -text
 tests/NOTES -text
