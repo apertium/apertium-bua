@@ -7,9 +7,9 @@ sozluk = {};
 #31	VERB	байгаа	байха	be
 for line in open(lk).readlines(): #{
 	row = line.strip('\n').split('\t');
-	lem = row[3];
-	pos = row[1];
-	sur = row[2];
+	lem = row[3].strip();
+	pos = row[1].strip();
+	sur = row[2].strip();
 	
 	if (sur, pos) not in sozluk: #{
 		sozluk[(sur, pos)] = set();
@@ -24,16 +24,16 @@ for line in open(tb).readlines(): #{
 		continue;
 	#}
 	row = line.strip('\n').split('\t');
-	if (row[1], row[3]) in sozluk: #{
-		if len(sozluk[(row[1], row[3])]) == 1: #{
-			row[2] = list(sozluk[(row[1], row[3])])[0];
+	if (row[1].strip(), row[3].strip()) in sozluk: #{
+		if len(sozluk[(row[1].strip(), row[3].strip())]) == 1: #{
+			row[2] = list(sozluk[(row[1].strip(), row[3].strip())])[0];
 		else: #{
 			print('ERROR: multiple lemmas', sozluk[(row[1], row[3])], file=sys.stderr);
 		#}
 	elif row[3] == 'PUNCT': #{
-		row[2] = row[1];
+		row[2] = row[1].strip();
 	elif row[3] == 'NUM' and row[1].isnumeric(): #{
-		row[2] = row[1];
+		row[2] = row[1].strip();
 	else: #{
 		print('ERROR:', row[1], row[3], 'not in', sozluk, file=sys.stderr);
 		sys.exit(-1);
