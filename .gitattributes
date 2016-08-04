@@ -15,6 +15,7 @@
 dev/countstems.sh -text
 dev/merge-lemmas.py -text
 /modes.xml -text
+tests/N-nouns_n.yaml -text
 tests/N-various_gt-norm.yaml -text
 tests/NOTES -text
 tests/refl.yaml -text
