@@ -1,11 +1,9 @@
 Config:
   hfst:
-    Gen: ../../../src/generator-gt-norm.hfst
-    Morph: ../../../src/analyser-gt-norm.hfst
-  xerox:
-    Gen: ../../../src/generator-gt-norm.xfst
-    Morph: ../../../src/analyser-gt-norm.xfst
-    App: lookup
+    App: hfst-lookup
+    Gen: ../bua.autogen.hfst
+    Morph: ../bua.automorf.hfst
+
 
 Tests:
 
