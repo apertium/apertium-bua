@@ -176,7 +176,7 @@ LEXICON CASES-NO-ATTR-N2
 LEXICON CASES-NO-ATTR-н
 
 %<gen%>:й POSSESSIVE ;
-%<gen%>:д%{А%} POSSESSIVE ;
+%<dat%>:д%{А%} POSSESSIVE ;
 
 
 LEXICON NUM-CASES
@@ -1039,11 +1039,9 @@ LEXICON Nouns
 яһатан:яһатан N1 ; ! "nation"
 жороо:жороо N1 ; ! ""
 ан:а%{ң%} N1 ; ! ""
-хурдан:хурда N1-н ; ! ""
-хулгайша:хулгайша N1-н ; ! "robber"
-
-!хурда(н):хурда(н) N1 ; ! "run"
-!хэмжээ(н):хэмжээ(н) N1 ; ! "level"
+хурдан:хурда N1-н ; ! "run??"
+хулгайшан:хулгайша N1-н ; ! "robber"
+хэмжээн:хэмжээ N1-н ; ! "level, degree?"
 
 LEXICON Proper
 
