@@ -161,8 +161,7 @@ LEXICON CASES-NO-ATTR-N1
 %<gen%>:%>%{г%}%{А%}й POSSESSIVE ;
 %<com%>:%>т%{А%}й POSSESSIVE ;
 %<ins%>:%>%{А%}р POSSESSIVE ;
-%<dat%>:%>т%{А%} POSSESSIVE ; ! FIXME: which is right?
-%<dat%>:%>д%{А%} POSSESSIVE ; ! FIXME: which is right?
+%<dat%>:%>д%{А%} POSSESSIVE ;
 %<abl%>:%>иһ POSSESSIVE ; ! FIXME: CHECK
 
 LEXICON CASES-NO-ATTR-N2
@@ -171,8 +170,7 @@ LEXICON CASES-NO-ATTR-N2
 %<gen%>:%>%{и%}н POSSESSIVE ;
 %<com%>:%>т%{А%}й POSSESSIVE ;
 %<ins%>:%>%{А%}р POSSESSIVE ;
-%<dat%>:%>т%{А%} POSSESSIVE ; ! FIXME: which is right?
-%<dat%>:%>д%{А%} POSSESSIVE ; ! FIXME: which is right?
+%<dat%>:%>д%{А%} POSSESSIVE ;
 %<abl%>:%>иһ POSSESSIVE ; ! FIXME: CHECK
 
 LEXICON CASES-NO-ATTR-н
@@ -200,11 +198,10 @@ LEXICON N1-н
 %<n%>:н SUBST-COMMON-N1 ;
 %<n%>: CASES-NO-ATTR-н ; ! DIR/LR
 
-LEXICON N1-Ан
-
-%<n%>:%{А%}н SUBST-COMMON-N1 ;
-%<n%>:%{А%} CASES-NO-ATTR-н ; ! DIR/LR
-
+!LEXICON N1-Ан
+!
+!%<n%>:%{А%}н SUBST-COMMON-N1 ;
+!%<n%>:%{А%} CASES-NO-ATTR-н ; ! DIR/LR
 
 LEXICON N2
 
@@ -1043,10 +1040,8 @@ LEXICON Nouns
 жороо:жороо N1 ; ! ""
 ан:а%{ң%} N1 ; ! ""
 хурдан:хурда N1-н ; ! ""
-хулгайш:хулгайш N1-Ан ; ! ""
+хулгайша:хулгайша N1-н ; ! "robber"
 
-!наһа(н):наһа(н) N1 ; ! "age"
-!хулгайша(н):хулгайша(н) N1 ; ! "robber"
 !хурда(н):хурда(н) N1 ; ! "run"
 !хэмжээ(н):хэмжээ(н) N1 ; ! "level"
 
