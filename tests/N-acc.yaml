@@ -1,0 +1,24 @@
+Config:
+  hfst:
+    App: hfst-lookup
+    Gen: ../bua.autogen.hfst
+    Morph: ../bua.automorf.hfst
+
+
+Tests:
+  "nouns ending in {н}":
+    наһан<n><acc> :     наһыe 
+    хурдан<n><acc> :     хурдые 
+    хэмжээн<n><acc> :     хэмжээе 
+
+  "regular nouns":
+    аха<n><acc> : ахые
+    һургуули<n><acc> : һургуулиие
+    ном<n><acc> : номые
+    нохой<n><acc> : нохойе
+    жороо<n><acc> : жороое
+    морин<n><acc> : мориие
+    һанаан<n><acc> : һанаае
+
+  "noun with {ң}":
+    ан<n><acc> : ангые

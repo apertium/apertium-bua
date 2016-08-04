@@ -21,6 +21,9 @@ YotVow = я ё ю
 FrontVow = ү э и ө
            Ү Э И Ө ;
 
+BackVow = а о у
+          а о у ;
+
 NonVow = Б В Г Д Е Ё Ж З Й К Л М Н П Р С Т Ф Х Һ Ц Ч Ш Ь Ъ Я
          б в г д е ё ж з й к л м н п р с т ф х һ ц ч ш ь ъ я ; ! This is for surface forms only, so no archiphonemes
 
@@ -109,10 +112,11 @@ Rules
             %{ң%}:н/[ :0 - [ %{г%}: | %{А%}: ] ]* _ ;
 
 "{и} to ы"
-%{и%}:ы <=> [ а:0 ]/[ :0 - [ а: ] ]* _ ;
+%{и%}:ы <=> [ BackVow: [ :Cns - :й ]* ]/[ :0 - [ BackVow: ] ]* _ ;
+!            [ а:0 ]/[ :0 - [ а: ] ]* _ ;
 
 "{и} deletes after й"
-%{и%}:0 <=> й/[ :0 - [ а: ] ]* _ ;
+%{и%}:0 <=> :й/[ :0 - [ а: ] ]* _ ;
 
 "Some vowels delete before genitive {и}"
 Vx:0 <=> _ %{и%}:/[ :0 - [ а: ] ]* ;

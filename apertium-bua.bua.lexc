@@ -158,6 +158,7 @@ CASES-NO-ATTR-N1 ; ! FIXME CHECK ?????
 LEXICON CASES-NO-ATTR-N1
 
 %<nom%>: POSSESSIVE ;
+%<acc%>:%>%{и%}е POSSESSIVE ;
 %<gen%>:%>%{г%}%{А%}й POSSESSIVE ;
 %<com%>:%>т%{А%}й POSSESSIVE ;
 %<ins%>:%>%{А%}р POSSESSIVE ;
@@ -167,6 +168,7 @@ LEXICON CASES-NO-ATTR-N1
 LEXICON CASES-NO-ATTR-N2
 
 %<nom%>: POSSESSIVE ;
+%<acc%>:%>%{и%}е POSSESSIVE ;
 %<gen%>:%>%{и%}н POSSESSIVE ;
 %<com%>:%>т%{А%}й POSSESSIVE ;
 %<ins%>:%>%{А%}р POSSESSIVE ;
