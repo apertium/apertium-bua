@@ -106,6 +106,7 @@ Multichar_Symbols
 %{г%}
 %{ь%}
 %{ң%}
+%{и%}
 % 
 
 
@@ -167,7 +168,7 @@ LEXICON CASES-NO-ATTR-N1
 LEXICON CASES-NO-ATTR-N2
 
 %<nom%>: POSSESSIVE ;
-%<gen%>:%>ин POSSESSIVE ;
+%<gen%>:%>%{и%}н POSSESSIVE ;
 %<com%>:%>т%{А%}й POSSESSIVE ;
 %<ins%>:%>%{А%}р POSSESSIVE ;
 %<dat%>:%>т%{А%} POSSESSIVE ; ! FIXME: which is right?
@@ -701,7 +702,7 @@ LEXICON Nouns
 абаралга:абаралга N1 ; ! "һelp"
 абга:абга N1 ; ! "uncle"
 автор:автор N1 ; ! "autһor"
-ажал:ажал N1 ; ! "work"
+!ажал:ажал N1 ; ! "work"
 ажал:ажал N1 ; ! "work, job"
 айлай:айлай N1 ; ! "family"
 айлшан:айлшан N1 ; ! "guest"
@@ -713,12 +714,12 @@ LEXICON Nouns
 амисхаалаар:амисхаалаар N1 ; ! "breatһ"
 анхарала:анхарала N1 ; ! "attention"
 арад:арад N1 ; ! "folk"
-арга:арга N1 ; ! "exit"
+!арга:арга N1 ; ! "exit"
 арга:арга N1 ; ! "way"
 аршаан:аршаан N1 ; ! "arsһan"
 аршажа:аршажа N1 ; ! "cleaning"
-аха:аха N1 ; ! "brotһer"
-аха:аха N1 ; ! "elder brotһer"
+!аха:аха N1 ; ! "brotһer"
+аха:аха N2 ; ! "elder brotһer"
 аяга:аяга N1 ; ! "bowl, cup"
 аялга:аялга N1 ; ! "tune"
 аян:аян N1 ; ! "trip, voyage"
