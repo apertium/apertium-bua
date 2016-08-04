@@ -178,6 +178,7 @@ LEXICON CASES-NO-ATTR-N2
 LEXICON CASES-NO-ATTR-н
 
 %<gen%>:й POSSESSIVE ;
+%<gen%>:д%{А%} POSSESSIVE ;
 
 
 LEXICON NUM-CASES
@@ -198,6 +199,12 @@ LEXICON N1-н
 
 %<n%>:н SUBST-COMMON-N1 ;
 %<n%>: CASES-NO-ATTR-н ; ! DIR/LR
+
+LEXICON N1-Ан
+
+%<n%>:%{А%}н SUBST-COMMON-N1 ;
+%<n%>:%{А%} CASES-NO-ATTR-н ; ! DIR/LR
+
 
 LEXICON N2
 
@@ -560,7 +567,6 @@ LEXICON Nouns
 мүнгэн:мүнгэн N1 ; ! "silver"
 мүрэн:мүрэн N1 ; ! "река"
 мылэ:мылэ N1 ; ! ""
-наһан:наһа N1-н ; ! "year/age?"
 нарһан:нарһан N1 ; ! ""
 нара:нара N1 ; ! ""
 натри:натри N1 ; ! ""
@@ -852,7 +858,8 @@ LEXICON Nouns
 нүхэр:нүхэр N1 ; ! "friend"
 найр:найр N1 ; ! "party"
 наран:наран N1 ; ! "sun"
-наһан:наһан N1 ; ! "life"
+!наһан:наһан N1 ; ! "life"
+наһан:наһа N1-н ; ! "year/age?"
 ном:ном N1 ; ! "book"
 ноябрь:ноябрь N1 ; ! "November"
 нюрган:нюрган N1 ; ! "back"
@@ -1035,6 +1042,8 @@ LEXICON Nouns
 яһатан:яһатан N1 ; ! "nation"
 жороо:жороо N1 ; ! ""
 ан:а%{ң%} N1 ; ! ""
+хурдан:хурда N1-н ; ! ""
+хулгайш:хулгайш N1-Ан ; ! ""
 
 !наһа(н):наһа(н) N1 ; ! "age"
 !хулгайша(н):хулгайша(н) N1 ; ! "robber"
