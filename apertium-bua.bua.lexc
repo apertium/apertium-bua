@@ -105,6 +105,7 @@ Multichar_Symbols
 %{А%}
 %{г%}
 %{ь%}
+%{ң%}
 % 
 
 
@@ -127,22 +128,56 @@ Proper ;
 
 LEXICON SUBST-COMMON
 
-CASES ;
+SUBST-COMMON-N1 ; ! FIXME CHECK ?????
 
-LEXICON CASES
+LEXICON SUBST-COMMON-N1
+
+CASES-N1 ;
+
+LEXICON SUBST-COMMON-N2
+
+CASES-N2 ;
+
+
+LEXICON CASES-N1
 
 %<attr%>: # ;
-CASES-NO-ATTR ;
+CASES-NO-ATTR-N1 ;
+
+LEXICON CASES-N2
+
+%<attr%>: # ;
+CASES-NO-ATTR-N2 ;
+
 
 LEXICON CASES-NO-ATTR
 
+CASES-NO-ATTR-N1 ; ! FIXME CHECK ?????
+
+LEXICON CASES-NO-ATTR-N1
+
 %<nom%>: POSSESSIVE ;
-%<gen%>:%>%{А%}й POSSESSIVE ;
+%<gen%>:%>%{г%}%{А%}й POSSESSIVE ;
 %<com%>:%>т%{А%}й POSSESSIVE ;
 %<ins%>:%>%{А%}р POSSESSIVE ;
 %<dat%>:%>т%{А%} POSSESSIVE ; ! FIXME: which is right?
 %<dat%>:%>д%{А%} POSSESSIVE ; ! FIXME: which is right?
 %<abl%>:%>иһ POSSESSIVE ; ! FIXME: CHECK
+
+LEXICON CASES-NO-ATTR-N2
+
+%<nom%>: POSSESSIVE ;
+%<gen%>:%>ин POSSESSIVE ;
+%<com%>:%>т%{А%}й POSSESSIVE ;
+%<ins%>:%>%{А%}р POSSESSIVE ;
+%<dat%>:%>т%{А%} POSSESSIVE ; ! FIXME: which is right?
+%<dat%>:%>д%{А%} POSSESSIVE ; ! FIXME: which is right?
+%<abl%>:%>иһ POSSESSIVE ; ! FIXME: CHECK
+
+LEXICON CASES-NO-ATTR-н
+
+%<n%>%<gen%>:й POSSESSIVE ;
+
 
 LEXICON NUM-CASES
 
@@ -156,7 +191,16 @@ COP-PRED ;
 
 LEXICON N1
 
-%<n%>: SUBST-COMMON ;
+%<n%>: SUBST-COMMON-N1 ;
+
+LEXICON N1-н
+
+%<n%>:н SUBST-COMMON-N1 ;
+%<n%>: CASES-NO-ATTR-н ; ! DIR/LR
+
+LEXICON N2
+
+%<n%>: SUBST-COMMON-N2 ;
 
 
 LEXICON NP-COG-MF
@@ -515,15 +559,15 @@ LEXICON Nouns
 мүнгэн:мүнгэн N1 ; ! "silver"
 мүрэн:мүрэн N1 ; ! "река"
 мылэ:мылэ N1 ; ! ""
-наһан:наһан N1 ; ! ""
+наһан:наһа N1-н ; ! "year/age?"
 нарһан:нарһан N1 ; ! ""
 нара:нара N1 ; ! ""
 натри:натри N1 ; ! ""
 ниислэл:ниислэл N1 ; ! ""
 нүхэр:нүхэр N1 ; ! ""
 нэрэ:нэрэ N1 ; ! ""
-нохой:нохой N1 ; ! "собака"
-нюдэн:нюдэн N1 ; ! ""
+нохой:нохой N2 ; ! "собака"
+нюдэн:нюдэн N1 ; ! "eye?"
 нюур:нюур N1 ; ! ""
 няма:няма N1 ; ! ""
 ой:ой N1 ; ! ""
@@ -988,6 +1032,8 @@ LEXICON Nouns
 ябалга:ябалга N1 ; ! "movement, transition"
 яһанай:яһанай N1 ; ! "bone"
 яһатан:яһатан N1 ; ! "nation"
+жороо:жороо N1 ; ! ""
+ан:а%{ң%} N1 ; ! ""
 
 !наһа(н):наһа(н) N1 ; ! "age"
 !хулгайша(н):хулгайша(н) N1 ; ! "robber"
