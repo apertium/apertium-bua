@@ -139,6 +139,11 @@ LEXICON SUBST-COMMON-N2
 
 CASES-N2 ;
 
+LEXICON SUBST-COMMON-N2-н
+
+CASES-N2-н ;
+
+
 
 LEXICON CASES-N1
 
@@ -149,6 +154,11 @@ LEXICON CASES-N2
 
 %<attr%>: # ;
 CASES-NO-ATTR-N2 ;
+
+LEXICON CASES-N2-н
+
+%<attr%>: # ;
+CASES-NO-ATTR-N2-н ;
 
 
 LEXICON CASES-NO-ATTR
@@ -174,6 +184,19 @@ LEXICON CASES-NO-ATTR-N2
 %<ins%>:%>%{А%}р POSSESSIVE ;
 %<dat%>:%>д%{А%} POSSESSIVE ;
 %<abl%>:%>иһ POSSESSIVE ; ! FIXME: CHECK
+
+
+LEXICON CASES-NO-ATTR-N2-н
+
+%<nom%>: POSSESSIVE ;
+%<acc%>:%>%{и%}е POSSESSIVE ;
+%<gen%>:%>%{и%}н POSSESSIVE ;
+%<com%>:%>т%{А%}й POSSESSIVE ;
+%<ins%>:%>%{А%}р POSSESSIVE ;
+%<dat%>:%>д%{А%} POSSESSIVE ;
+%<abl%>:%>иһ POSSESSIVE ; ! FIXME: CHECK
+
+
 
 LEXICON CASES-NO-ATTR-н
 
@@ -209,6 +232,9 @@ LEXICON N2
 
 %<n%>: SUBST-COMMON-N2 ;
 
+LEXICON N2-н
+
+%<n%>: SUBST-COMMON-N2-н ;
 
 LEXICON NP-COG-MF
 
@@ -846,7 +872,7 @@ LEXICON Nouns
 метр:метр N1 ; ! "metr"
 мм:мм N1 ; ! "mm"
 мойһон:мойһон N1 ; ! "bird-cһerry tree"
-морин:морин N1 ; ! "һorse"
+морин:мори N1-н ; ! "һorse"
 морожено:морожено N1 ; ! "ice-cream"
 мүшэн:мүшэн N1 ; ! "star"
 мэдүүлэл:мэдүүлэл N1 ; ! "suggestion, sentence"
@@ -1044,6 +1070,9 @@ LEXICON Nouns
 хурдан:хурда N1-н ; ! "run??"
 хулгайшан:хулгайша N1-н ; ! "robber"
 хэмжээн:хэмжээ N1-н ; ! "level, degree?"
+
+
+хх:хх N2-н ; ! "misc"
 
 LEXICON Proper
 

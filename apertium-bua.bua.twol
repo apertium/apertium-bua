@@ -121,6 +121,8 @@ Rules
 %{и%}:0 <=> :й/[ :0 - [ а: ] ]* _ ;
             [ :Vow :Vow ]/[ :0 - [ Vow: ] ]* _ ;
 
+!"regular stem-final н deletes before и
+
 "Some vowels delete before genitive {и}"
 Vx:0 <=> _ %{и%}:/[ :0 - [ а: ] ]* ;
      where Vx in ( а )
