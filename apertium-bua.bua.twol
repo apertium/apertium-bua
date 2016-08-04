@@ -113,10 +113,13 @@ Rules
 
 "{и} to ы"
 %{и%}:ы <=> [ BackVow: [ :Cns - :й ]* ]/[ :0 - [ BackVow: ] ]* _ ;
+        except
+            [ :Vow :Vow ]/[ :0 - [ Vow: ] ]* _ ;  ! after long vowels
 !            [ а:0 ]/[ :0 - [ а: ] ]* _ ;
 
-"{и} deletes after й"
+"{и} deletes after й and long vowels"
 %{и%}:0 <=> :й/[ :0 - [ а: ] ]* _ ;
+            [ :Vow :Vow ]/[ :0 - [ Vow: ] ]* _ ;
 
 "Some vowels delete before genitive {и}"
 Vx:0 <=> _ %{и%}:/[ :0 - [ а: ] ]* ;
