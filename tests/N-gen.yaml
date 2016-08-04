@@ -1,0 +1,25 @@
+Config:
+  hfst:
+    App: hfst-lookup
+    Gen: ../bua.autogen.hfst
+    Morph: ../bua.automorf.hfst
+
+
+Tests:
+  "-{г}{A}й genitive, consonant-final":
+    ном<n><gen> : номой
+    морин<n><gen> : мориной
+    һанаан<n><gen> : һанаанай
+
+  "-{г}{A}й genitive, vowel-final":
+    жороо<n><gen> : жороогой
+  
+  "-{г}{A}й genitive, ң-final":
+    ан<n><gen> : ангай
+
+  "-ин genitive":
+    аха<n><gen> : ахын
+    һургуули<n><gen> : һургуулиин
+
+  "-ин genitive, diphthong final":
+    нохой<n><gen> : нохойн
