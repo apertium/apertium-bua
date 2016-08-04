@@ -105,6 +105,9 @@ Rules
 "{и} to ы"
 %{и%}:ы <=> [ а:0 ]/[ :0 - [ а: ] ]* _ ;
 
+"{и} deletes after й"
+%{и%}:0 <=> й/[ :0 - [ а: ] ]* _ ;
+
 "Some vowels delete before genitive {и}"
 Vx:0 <=> _ %{и%}:/[ :0 - [ а: ] ]* ;
      where Vx in ( а )
