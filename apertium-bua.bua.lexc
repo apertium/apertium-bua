@@ -51,6 +51,8 @@ Multichar_Symbols
 %<ant%>
 %<cog%>
 %<top%>
+%<al%>
+
 %<m%>
 %<f%>
 %<mf%>
@@ -104,6 +106,7 @@ Multichar_Symbols
 
 ! Archiphonemes
 %{А%}
+%{U%}
 %{г%}
 %{ь%}
 %{ң%}
@@ -135,6 +138,15 @@ SUBST-COMMON-N1 ; ! FIXME CHECK ?????
 LEXICON SUBST-COMMON-N1
 
 CASES-N1 ;
+
+! FIXME: These are placeholders and need to be fixed/merged moved to the right place
+%<pl%>:%>%{U%}%{U%}д CASES-N1 ; 
+%<pl%>:%>н%{U%}%{U%}д CASES-N1 ; 
+%<pl%>:%>г%{U%}%{U%}д CASES-N1 ; 
+%<pl%>:%>н%{А%}р CASES-N1 ; 
+%<pl%>:%>%{А%}р CASES-N1 ; 
+%<pl%>:%>д CASES-N1 ; 
+!! FIXME: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 LEXICON SUBST-COMMON-N2
 
@@ -174,6 +186,7 @@ LEXICON CASES-NO-ATTR-N1
 %<com%>:%>т%{А%}й POSSESSIVE ;
 %<ins%>:%>%{А%}р POSSESSIVE ;
 %<dat%>:%>д%{А%} POSSESSIVE ;
+%<dat%>:%>т%{А%} POSSESSIVE ; ! FIXME: DELETE THIS
 %<abl%>:%>иһ POSSESSIVE ; ! FIXME: CHECK
 
 LEXICON CASES-NO-ATTR-N2
@@ -184,6 +197,7 @@ LEXICON CASES-NO-ATTR-N2
 %<com%>:%>т%{А%}й POSSESSIVE ;
 %<ins%>:%>%{А%}р POSSESSIVE ;
 %<dat%>:%>д%{А%} POSSESSIVE ;
+%<dat%>:%>т%{А%} POSSESSIVE ; ! FIXME: DELETE THIS
 %<abl%>:%>иһ POSSESSIVE ; ! FIXME: CHECK
 
 
@@ -195,6 +209,7 @@ LEXICON CASES-NO-ATTR-N2-н
 %<com%>:%>т%{А%}й POSSESSIVE ;
 %<ins%>:%>%{А%}р POSSESSIVE ;
 %<dat%>:%>д%{А%} POSSESSIVE ;
+%<dat%>:%>т%{А%} POSSESSIVE ; ! FIXME: DELETE THIS
 %<abl%>:%>иһ POSSESSIVE ; ! FIXME: CHECK
 
 
@@ -254,6 +269,11 @@ LEXICON NP-ANT-M
 
 %<np%>%<ant%>%<m%>: SUBST-COMMON ;
 
+LEXICON NP-AL
+
+%<np%>%<al%>: SUBST-COMMON ;
+
+
 LEXICON NP-TOP
 
 %<np%>%<top%>: SUBST-COMMON ;
@@ -302,7 +322,7 @@ LEXICON V-FINITE
 
 %<ifi%>:%>б%{А%} # ;
 
-%<past2%>:%>г%{А%}%{A%} # ;  ! FIXME: what is this?
+%<past2%>:%>г%{А%}%{А%} # ;  ! FIXME: what is this?
 
 %<past%>:%>һ%{А%}н # ;
 %<past%>%<neg%>:%>%{А%}%{А%} # ;
@@ -409,7 +429,47 @@ LEXICON POST
 LEXICON PRN-ENE 
 
 %<prn%>%<dem%>%<nom%>: # ;
-%<prn%>%<dem%>%<nom%>:шни # ; ! FIXME: check
+%<prn%>%<dem%>%<gen%>:энэй # ;
+%<prn%>%<dem%>%<gen%>:нэй # ; ! Dir/LR
+%<prn%>%<dem%>%<acc%>:эниие # ;
+%<prn%>%<dem%>%<acc%>:ниие # ; ! Dir/LR
+%<prn%>%<dem%>%<dat%>:эндэ # ;
+%<prn%>%<dem%>%<ins%>:энээр # ;
+%<prn%>%<dem%>%<ins%>:эгээр # ; ! Dir/LR
+%<prn%>%<dem%>%<com%>:энтэй # ;
+%<prn%>%<dem%>%<abl%>:энһээ # ;
+%<prn%>%<dem%>%<abl%>:һээ # ; ! Dir/LR ! Use/Sub
+
+LEXICON PRN-EDE
+
+%<prn%>%<dem%>%<pl%>%<nom%>: # ;
+%<prn%>%<dem%>%<pl%>%<gen%>:энэй # ;
+%<prn%>%<dem%>%<pl%>%<gen%>:нэй # ; ! Dir/LR
+%<prn%>%<dem%>%<pl%>%<acc%>:эниие # ;
+%<prn%>%<dem%>%<pl%>%<acc%>:ниие # ; ! Dir/LR
+%<prn%>%<dem%>%<pl%>%<dat%>:эндэ # ; ! Dir/LR
+%<prn%>%<dem%>%<pl%>%<dat%>:ндэ # ; 
+%<prn%>%<dem%>%<pl%>%<ins%>:энээр # ;
+%<prn%>%<dem%>%<pl%>%<ins%>:нээр # ; ! Dir/LR
+%<prn%>%<dem%>%<pl%>%<com%>:энтэй # ;
+%<prn%>%<dem%>%<pl%>%<com%>:нтэй # ; ! Dir/LR
+%<prn%>%<dem%>%<pl%>%<abl%>:энһээ # ;
+%<prn%>%<dem%>%<pl%>%<abl%>:нһээ # ; ! Dir/LR
+
+LEXICON PRN-ÖÖRÖÖ
+
+%<prn%>%<ref%>%<nom%>:өө # ; 
+%<prn%>%<ref%>%<gen%>:ын # ;   
+%<prn%>%<ref%>%<gen%>:ынгөө # ;  ! Dir/LR
+%<prn%>%<ref%>%<dat%>:төө # ; 
+%<prn%>%<ref%>%<acc%>:ыгөө # ; 
+%<prn%>%<ref%>%<ins%>:ыгөөрөө # ; 
+%<prn%>%<ref%>%<com%>:тэйгөө # ; 
+%<prn%>%<ref%>%<abl%>:һөө # ; 
+
+LEXICON PRN-DEM
+
+%<prn%>%<dem%>: CASES-NO-ATTR ; ! FIXME: check
 
 LEXICON PRN-ITG
 
@@ -491,7 +551,13 @@ PRN-SHINIIHI ; ! ""
 
 юу:юу%{ь%} PRN-ITG ; ! "что"
 
+энэшни:энэшни PRN-DEM ; ! "this one"
 энэ:энэ PRN-ENE ; ! "этот"
+тэрэ:тэрэ PRN-ENE ; ! "этот"
+эдэ:эдэ PRN-EDE ; ! "эти"
+тэдэ:тэдэ PRN-EDE ; ! "эти"
+
+өөрөө:өөр PRN-ÖÖRÖÖ ;  ! "сам"
 
 
 LEXICON Determiners
@@ -854,7 +920,7 @@ LEXICON Nouns
 зохеолшон:зохеолшон N1 ; ! "artist"
 зохёогшо:зохёогшо N1 ; ! "autһor, creator, poet"
 зохёогшо:зохёогшо N1 ; ! "creator"
-зохёол:зохёол N1 ; ! "creation"
+зохёол:зохеол N1 ; ! "creation, project" ! Dir/LR
 зохёол:зохёол N1 ; ! "creation, project"
 зугаа:зугаа N1 ; ! "speecһ"
 зүгы:зүгы N1 ; ! "bee"
@@ -1083,6 +1149,8 @@ LEXICON Nouns
 
 хх:хх N2-н ; ! "misc"
 
+юрэнхылэгшэ:юрэнхылэгшэ N1 ; ! "president"
+
 LEXICON Proper
 
 Жибэн:Жибэн NP-TOP ; ! "Япония"
@@ -1180,6 +1248,8 @@ Yдэ:Yдэ NP-TOP ; ! "Uda"
 Шри% Ланка:Шри% Ланка NP-TOP ; ! ""
 Ланка:Ланка NP-TOP ; ! ""
 Шри:Шри NP-TOP ; ! ""
+
+Будда:Будда NP-AL ; ! ""
 
 LEXICON Adjectives
 
