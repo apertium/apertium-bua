@@ -7,6 +7,7 @@ Multichar_Symbols
 %<n%>              ! Имя существительное
 %<np%>
 %<nom%>
+%<disc%>
 
 %<acc%>
 %<dat%>
@@ -405,6 +406,11 @@ LEXICON POST
 
 %<post%>: # ;
 
+LEXICON PRN-ENE 
+
+%<prn%>%<dem%>%<nom%>: # ;
+%<prn%>%<dem%>%<nom%>:шни # ; ! FIXME: check
+
 LEXICON PRN-ITG
 
 %<prn%>%<itg%>: CASES-NO-ATTR ;
@@ -446,6 +452,8 @@ LEXICON Miscellaneous
 
 юм%<cop%>%<evid%>:юм # ;
 гү%<qst%>:гү V-FINITE-PERS ;
+һэн%<disc%>:һэн # ;
+һаа%<disc%>:һаа # ;
 
 LEXICON Conjunctions
 
@@ -471,6 +479,19 @@ LEXICON Postpositions
 хажуугаар:хажуугаар POST ; ! "by, past"
 хүрэтэрɵɵ:хүрэтэрɵɵ POST ; ! "until"
 үгыдэ:үгыдэ POST ; ! "without"
+
+
+LEXICON Pronouns
+
+PRN-BI ; ! "я"
+PRN-SHI ; ! "ты"
+
+PRN-BIDE ; ! ""
+PRN-SHINIIHI ; ! ""
+
+юу:юу%{ь%} PRN-ITG ; ! "что"
+
+энэ:энэ PRN-ENE ; ! "этот"
 
 
 LEXICON Determiners
@@ -519,18 +540,6 @@ LEXICON Numerals
 мянга:мянга NUM ; ! "thousand"
 хорин:хорин NUM ; ! "twenty"
 юһэн:юһэн NUM ; ! "9"
-
-
-
-LEXICON Pronouns
-
-PRN-BI ; ! "я"
-PRN-SHI ; ! "ты"
-
-PRN-BIDE ; ! ""
-PRN-SHINIIHI ; ! ""
-
-юу:юу%{ь%} PRN-ITG ; ! "что"
 
 
 LEXICON Nouns
@@ -970,7 +979,6 @@ LEXICON Nouns
 усалталга:усалталга N1 ; ! "accident"
 утаһан:утаһан N1 ; ! "tһread"
 үүдэн:үүдэн N1 ; ! "door"
-уула:уула N1 ; ! "mountain"
 уула:уула N1 ; ! "peak, mountain"
 уулархаг:уулархаг N1 ; ! "mountain cһain"
 ухаан:ухаан N1 ; ! "idea, desire"
@@ -1132,6 +1140,7 @@ Yдэ:Yдэ NP-TOP ; ! "Uda"
 Майя:Майя NP-ANT-F ; ! "Maya"
 Матикайнэн:Матикайнэн NP-COG-MF ; ! "Mattikainen"
 Матти:Матти NP-ANT-M ; ! "Matti"
+Маатти:Маатти NP-ANT-M ; ! "Matti"
 Монгол:Монгол NP-TOP ; ! "Mongolia"
 Мундарга:Мундарга NP-TOP ; ! "name of the peak"
 Мэри:Мэри NP-ANT-F ; ! "Meri"
@@ -1153,6 +1162,7 @@ Yдэ:Yдэ NP-TOP ; ! "Uda"
 Тайвань:Тайвань NP-TOP ; ! "Taiwan"
 Тайланд:Тайланд NP-TOP ; ! "Thailand"
 Таммиинэн:Таммиинэн NP-COG-MF ; ! "Tamminen"
+Тамминэн:Тамминэн NP-COG-MF ; ! "Tamminen"
 Травоолтэ:Травоолтэ NP-COG-MF ; ! "Travolta"
 Улаан:Улаан NP-TOP ; ! "Ulaan-Ude"
 Финлянди:Финлянди NP-TOP ; ! "Finland"
@@ -1657,6 +1667,8 @@ LEXICON Verbs
 ябуул:ябуул V-TV ; ! "send"
 ялар:ялар V-IV ; ! "sһine"
 
+хүдэл:хүдэл V-TV ; ! "without moving, processing"
+
 LEXICON Interjections 
 
 зай:зай INTERJ ;
@@ -1692,6 +1704,7 @@ LEXICON Interjections
 %)%<rpar%>:%) # ;
 %\%<sent%>:%\ # ;
 %/%<sent%>:%/ # ;
+…%<sent%>:… # ;
 
 <[%0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9]+>  DIGITLEX ; ! Use/Circ
 
