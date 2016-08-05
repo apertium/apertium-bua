@@ -304,6 +304,7 @@ LEXICON V-FINITE
 %<past2%>:%>г%{А%}%{A%} # ;  ! FIXME: what is this?
 
 %<past%>:%>һ%{А%}н # ;
+%<past%>%<neg%>:%>%{А%}%{А%} # ;
 %<past%>%<evid%>:%>һ%{А%}н% юм # ;
 
 %<hab%>:%>д%{А%}г # ;
