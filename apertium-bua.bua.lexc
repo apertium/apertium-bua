@@ -106,11 +106,12 @@ Multichar_Symbols
 
 ! Archiphonemes
 %{А%}
-%{U%}
+%{У%}
 %{г%}
 %{ь%}
 %{ң%}
 %{и%}
+%{Д%}
 % 
 
 
@@ -140,11 +141,8 @@ LEXICON SUBST-COMMON-N1
 CASES-N1 ;
 
 ! FIXME: These are placeholders and need to be fixed/merged moved to the right place
-%<pl%>:%>%{U%}%{U%}д CASES-N1 ; 
-%<pl%>:%>н%{U%}%{U%}д CASES-N1 ; 
-%<pl%>:%>г%{U%}%{U%}д CASES-N1 ; 
+%<pl%>:%>%{н%}%{г%}%{У%}%{У%}д CASES-N1 ; 
 %<pl%>:%>н%{А%}р CASES-N1 ; 
-!%<pl%>:%>%{А%}р CASES-N1 ; 
 %<pl%>:%>д CASES-N1 ; 
 !! FIXME: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
@@ -162,16 +160,19 @@ LEXICON CASES-N1
 
 %<attr%>: # ;
 CASES-NO-ATTR-N1 ;
+CASES-COMMON ;
 
 LEXICON CASES-N2
 
 %<attr%>: # ;
 CASES-NO-ATTR-N2 ;
+CASES-COMMON ;
 
 LEXICON CASES-N2-н
 
 %<attr%>: # ;
 CASES-NO-ATTR-N2-н ;
+CASES-COMMON ;
 
 
 LEXICON CASES-NO-ATTR
@@ -180,36 +181,21 @@ CASES-NO-ATTR-N1 ; ! FIXME CHECK ?????
 
 LEXICON CASES-NO-ATTR-N1
 
-%<nom%>: POSSESSIVE ;
-%<acc%>:%>%{и%}е POSSESSIVE ;
 %<gen%>:%>%{г%}%{А%}й POSSESSIVE ;
-%<com%>:%>т%{А%}й POSSESSIVE ;
 %<ins%>:%>%{А%}р POSSESSIVE ;
-%<dat%>:%>д%{А%} POSSESSIVE ;
-%<dat%>:%>т%{А%} POSSESSIVE ; ! FIXME: DELETE THIS
 %<abl%>:%>иһ POSSESSIVE ; ! FIXME: CHECK
 
 LEXICON CASES-NO-ATTR-N2
 
-%<nom%>: POSSESSIVE ;
-%<acc%>:%>%{и%}е POSSESSIVE ;
 %<gen%>:%>%{и%}н POSSESSIVE ;
-%<com%>:%>т%{А%}й POSSESSIVE ;
 %<ins%>:%>%{А%}р POSSESSIVE ;
-%<dat%>:%>д%{А%} POSSESSIVE ;
-%<dat%>:%>т%{А%} POSSESSIVE ; ! FIXME: DELETE THIS
 %<abl%>:%>иһ POSSESSIVE ; ! FIXME: CHECK
 
 
 LEXICON CASES-NO-ATTR-N2-н
 
-%<nom%>: POSSESSIVE ;
-%<acc%>:%>%{и%}е POSSESSIVE ;
 %<gen%>:%>%{и%}н POSSESSIVE ;
-%<com%>:%>т%{А%}й POSSESSIVE ;
 %<ins%>:%>%{А%}р POSSESSIVE ;
-%<dat%>:%>д%{А%} POSSESSIVE ;
-%<dat%>:%>т%{А%} POSSESSIVE ; ! FIXME: DELETE THIS
 %<abl%>:%>иһ POSSESSIVE ; ! FIXME: CHECK
 
 
@@ -219,6 +205,13 @@ LEXICON CASES-NO-ATTR-н
 %<gen%>:й POSSESSIVE ;
 %<dat%>:д%{А%} POSSESSIVE ;
 
+
+LEXICON CASES-COMMON
+
+%<nom%>: POSSESSIVE ;
+%<acc%>:%>%{и%}е POSSESSIVE ;
+%<com%>:%>т%{А%}й POSSESSIVE ;
+%<dat%>:%>%{Д%}%{А%} POSSESSIVE ;
 
 LEXICON NUM-CASES
 
