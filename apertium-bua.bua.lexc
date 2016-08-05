@@ -512,8 +512,11 @@ LEXICON Miscellaneous
 
 юм%<cop%>%<evid%>:юм # ;
 гү%<qst%>:гү V-FINITE-PERS ;
+
+! FIXME: Check these
 һэн%<disc%>:һэн # ;
 һаа%<disc%>:һаа # ;
+даа%<disc%>:даа # ;
 
 LEXICON Conjunctions
 
@@ -585,7 +588,7 @@ LEXICON Determiners
 LEXICON Numerals
 
 нэгэ:нэгэ NUM ; ! "1"
-!нэгэн:нэгэн NUM ; ! "one"
+нэгэн:нэгэн NUM ; ! "one"
 хоёр:хоёр NUM ; ! "2"
 хоёр:хоер NUM ; ! "two" ! Dir/LR
 гурбан:гурбан NUM ; ! "3"
