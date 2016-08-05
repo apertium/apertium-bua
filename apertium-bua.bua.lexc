@@ -110,6 +110,7 @@ Multichar_Symbols
 %{г%}
 %{ь%}
 %{ң%}
+%{н%}
 %{и%}
 %{Д%}
 % 
@@ -273,6 +274,9 @@ LEXICON NP-TOP
 
 LEXICON V-NON-FINITE-CASES
 
+%<nom%>: POSSESSIVE ;
+%<dat%>:%>%{Д%}%{А%} POSSESSIVE ;
+%<com%>:%>т%{А%}й POSSESSIVE ;
 CASES-NO-ATTR ;
 
 LEXICON V-NON-FINITE
