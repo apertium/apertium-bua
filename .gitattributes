@@ -13,6 +13,7 @@
 /bua.prob -text svneol=unset#unset
 /configure.ac -text
 dev/countstems.sh -text
+dev/lexicon.bxr.tsv -text
 dev/merge-lemmas.py -text
 /modes.xml -text
 tests/N-acc.yaml -text
