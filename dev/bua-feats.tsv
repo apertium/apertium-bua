@@ -11,9 +11,9 @@ _	_	ger_past	_	_	VerbForm=Ger|Tense=Past	_	_
 _	_	gna	_	_	_	VerbForm=Converb	_
 _	_	gna_cond	_	_	VerbForm=Converb|Mood=Cond	_	_
 _	_	gpr_past	_	_	VerbForm=Part|Tense=Past	_	_
-_	_	hab	_	_	_	Aspect=Hab	_
-_	_	ifi	_	_	_	Tense=Past|Aspect=Perf	_
-_	_	imp	_	_	_	Mood=Imp	_
+_	_	hab	_	_	_	VerbForm=Fin|Aspect=Hab	_
+_	_	ifi	_	_	_	VerbForm=Fin|Tense=Past|Aspect=Perf	_
+_	_	imp	_	_	_	VerbForm=Fin|Mood=Imp	_
 _	_	ind	_	_	_	PronType=Ind	_
 _	_	itg	_	_	_	PronType=Itg	_
 _	_	iv	_	_	_	_	_
@@ -21,7 +21,7 @@ _	_	m	_	_	_	Gender=Msc	_
 _	_	mf	_	_	_	_	_
 _	_	neg	_	_	_	Polarity=Neg	_
 _	_	past	_	_	_	Tense=Past	_
-_	_	past2	_	_	_	Tense=Past	_
+_	_	impf	_	_	_	VerbForm=Fin|Tense=Past|Aspect=Imp	_
 _	_	prc	_	_	_	VerbForm=Coverb	_
 _	_	prog	_	_	_	Aspect=Prog	_
 _	_	px3sg	_	_	_	Number[psor]=Sing|Person[psor]=3	_
@@ -31,7 +31,7 @@ _	_	refl	_	_	_	_	_
 _	_	subst	_	_	_	_	_
 _	_	top	_	_	_	_	_
 _	_	tv	_	_	_	_	_
-_	_	aor	_	_	_	Mood=Ind|Tense=Aor	_
+_	_	aor	_	_	_	VerbForm=Fin|Mood=Ind|Tense=Aor	_
 _	_	abl	_	_	_	Case=Abl	_
 _	_	acc	_	_	_	Case=Acc	_
 _	_	nom	_	_	_	Case=Nom	_	

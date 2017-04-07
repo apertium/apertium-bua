@@ -108,6 +108,7 @@ Multichar_Symbols
 %{А%}
 %{У%}
 %{г%}
+%{i%}         ! i / 0
 %{ь%}
 %{ң%}
 %{н%}
@@ -272,10 +273,14 @@ LEXICON NP-AL
 
 %<np%>%<al%>: SUBST-COMMON ;
 
-
-LEXICON NP-TOP
+LEXICON NP-TOP-N1
 
 %<np%>%<top%>: SUBST-COMMON ;
+
+LEXICON NP-TOP-N2
+
+%<np%>%<top%>: SUBST-COMMON-N2 ;
+
 
 LEXICON V-NON-FINITE-CASES
 
@@ -286,23 +291,35 @@ CASES-NO-ATTR ;
 
 LEXICON V-NON-FINITE
 
-%<ger%>:%>х%{А%} V-NON-FINITE-CASES ;
 %<prc%>:%>ж%{А%} # ;
+
+%<ger%>:%>х%{А%} V-NON-FINITE-CASES ;
+%<ger_past%>:%>һ%{А%}н V-NON-FINITE-CASES ;
+%<ger_ag1%>:%>гш%{А%} V-NON-FINITE-CASES ; 
+%<ger_ag2%>:%>г%{А%}%{А%}ш%{А%} V-NON-FINITE-CASES ; 
+
 !%<gna%>:%>%{А%}д # ;
 %<gna%>:%>%{А%}%{А%}д # ; ! FIXME: CHECK
 %<gna_cond%>:%>б%{А%}л # ;
-%<ger_past%>:%>һ%{А%}н V-NON-FINITE-CASES ;
+
+%<gpr_fut%>:%>х%{А%} # ; 
+%<gpr_impf%>:%>г%{А%}%{А%} # ; 
+%<gpr_hab%>:%>д%{А%}г # ; 
+%<gpr_res%>:%>нгх%{А%}и # ; 
+%<gpr_pot%>:%>х%{А%}%{А%}р # ; 
+%<gpr_qual%>:%>м%{А%}%{А%}р # ; 
 %<gpr_past%>:%>һ%{А%}н # ;
 
 
 LEXICON V-FINITE-PERS
 
-%<p1%>%<sg%>:%>б # ;
-%<p2%>%<sg%>:%>ш # ;
+%<p1%>%<sg%>:%>б%{i%} # ;
+%<p2%>%<sg%>:%>ш%{i%} # ;
 %<p3%>%<sg%>: # ;
 %<p1%>%<pl%>:%>бди # ;
 %<p2%>%<pl%>:%>т # ;
 %<p3%>%<pl%>: # ;
+%<p3%>%<pl%>:%>д # ; ! Dir/LR
 
 LEXICON V-PROG-PERS
 
@@ -324,13 +341,13 @@ LEXICON V-FINITE
 
 %<ifi%>:%>б%{А%} # ;
 
-%<past2%>:%>г%{А%}%{А%} # ;  ! FIXME: what is this?
+%<impf%>:%>г%{А%}%{А%} V-FINITE-PERS ;  ! Was <past2>
 
 %<past%>:%>һ%{А%}н # ;
 %<past%>%<neg%>:%>%{А%}%{А%} # ;
 %<past%>%<evid%>:%>һ%{А%}н% юм # ;
 
-%<hab%>:%>д%{А%}г # ;
+%<hab%>:%>д%{А%}г V-FINITE-PERS ;
 %<hab%>%<neg%>:%>д%{А%}ггүй # ;
 
 %<hab%>%<evid%>:%>д%{А%}г% юм # ;
@@ -382,7 +399,7 @@ LEXICON ADV-ITG
 %<adv%>%<itg%>: COP-PRED ;
 
 
-LEXICON CNJCOO
+LEXICON CC
 
 %<cnjcoo%>: # ;
 
@@ -522,13 +539,23 @@ LEXICON Miscellaneous
 
 LEXICON Conjunctions
 
-харин:харин CNJCOO ; ! "но"
+харин:харин CC ; ! "но"
 
-ба:ба CNJCOO ; ! ""
-гү:гү CNJCOO ; ! ""
-али:али CNJCOO ; ! ""
-аад:аад CNJCOO ; ! ""
-һанаа:һанаа CNJCOO ; ! ""
+ба:ба CC ; ! ""
+гү:гү CC ; ! ""
+али:али CC ; ! ""
+аад:аад CC ; ! ""
+һанаа:һанаа CC ; ! ""
+
+баһа:баһа CC ; ! "" ! FIXME: CHECK
+болон:болон CC ; ! "" ! FIXME: CHECK
+гадна:гадна CC ; ! "" ! FIXME: CHECK
+и:и CC ; ! "" ! FIXME: CHECK
+суг:суг CC ; ! "" ! FIXME: CHECK
+тиигээд:тиигээд CC ; ! "" ! FIXME: CHECK
+хамта:хамта CC ; ! "" ! FIXME: CHECK
+хоёр:хоёр CC ; ! "" ! FIXME: CHECK
+хоёрой:хоёрой CC ; ! "" ! FIXME: CHECK
 
 теэд:теэд CNJADV ; ! ""
 тиимэһээ:тиимэһээ CNJADV ; ! ""
@@ -544,6 +571,8 @@ LEXICON Postpositions
 хажуугаар:хажуугаар POST ; ! "by, past"
 хүрэтэрɵɵ:хүрэтэрɵɵ POST ; ! "until"
 үгыдэ:үгыдэ POST ; ! "without"
+
+саана:саана POST ; ! "" ! FIXME: CHECK
 
 
 LEXICON Pronouns
@@ -667,7 +696,7 @@ LEXICON Nouns
 заряа:заряа N1 ; ! ""
 зун:зун N1 ; ! ""
 зүрхэн:зүрхэн N1 ; ! "сердце"
-машина:машина N1 ; ! "car"
+машина:машина N2 ; ! "car"
 модон:модон N1 ; ! ""
 мүльһэн:мүльһэн N1 ; ! ""
 мүнгэн:мүнгэн N1 ; ! "silver"
@@ -750,7 +779,7 @@ LEXICON Nouns
 хюмһан:хюмһан N1 ; ! ""
 һагба:һагба N1 ; ! ""
 һалхин:һалхин N1 ; ! "ветер"
-һара:һара N1 ; ! "луна"
+һара:һара N2 ; ! "луна"
 һахал:һахал N1 ; ! ""
 һүн:һүн N1 ; ! ""
 һүүл:һүүл N1 ; ! ""
@@ -787,7 +816,7 @@ LEXICON Nouns
 һанаан:һанаан N1 ; ! "tһougһt, idea, wisһ"
 һанаархалга:һанаархалга N1 ; ! "intention"
 һандарал:һандарал N1 ; ! "destruction"
-һара:һара N1 ; ! "montһ"
+һара:һара N2 ; ! "montһ"
 һархяаг:һархяаг N1 ; ! "musһroon"
 һолонго:һолонго N1 ; ! "rainbow"
 һонирхол:һонирхол N1 ; ! "interest"
@@ -826,8 +855,8 @@ LEXICON Nouns
 амисхаалаар:амисхаалаар N1 ; ! "breatһ"
 анхарала:анхарала N1 ; ! "attention"
 арад:арад N1 ; ! "folk"
-!арга:арга N1 ; ! "exit"
-арга:арга N1 ; ! "way"
+!арга:арга N2 ; ! "exit"
+арга:арга N2 ; ! "way"
 аршаан:аршаан N1 ; ! "arsһan"
 аршажа:аршажа N1 ; ! "cleaning"
 !аха:аха N1 ; ! "brotһer"
@@ -840,15 +869,15 @@ LEXICON Nouns
 бүлэг:бүлэг N1 ; ! "group"
 бүтээл:бүтээл N1 ; ! "product"
 баар:баар N1 ; ! "bar"
-багтаамжа:багтаамжа N1 ; ! "container, jar"
-багтаамжа:багтаамжа N1 ; ! "jar, vase"
+багтаамжа:багтаамжа N2 ; ! "container, jar"
+багтаамжа:багтаамжа N2 ; ! "jar, vase"
 багша:багша N1 ; ! "teacһer"
 байгуулагда:байгуулагда N1 ; ! "foundation"
 байгуулга:байгуулга N1 ; ! "creation"
 байдалай:байдалай N1 ; ! "state, condition"
 байра:байра N1 ; ! "flat"
 байшан:байшан N1 ; ! "building"
-барилга:барилга N1 ; ! "building"
+барилга:барилга N2 ; ! "building"
 баялиг:баялиг N1 ; ! "treasure"
 баян:баян N1 ; ! "ricһ"
 баяр:баяр N1 ; ! "greeting, gladness"
@@ -863,7 +892,7 @@ LEXICON Nouns
 бүүбэй:бүүбэй N1 ; ! "baby"
 бухгалтер:бухгалтер N1 ; ! "accounter"
 бэлэг:бэлэг N1 ; ! "gift"
-ваза:ваза N1 ; ! "vase"
+ваза:ваза N2 ; ! "vase"
 гүн:гүн N1 ; ! "deptһ"
 гүрэн:гүрэн N1 ; ! "country, state"
 газаа:газаа N1 ; ! "outside"
@@ -878,13 +907,13 @@ LEXICON Nouns
 гутал:гутал N1 ; ! "sһoes"
 гэшүүн:гэшүүн N1 ; ! "member"
 дүүн:дүүн N1 ; ! "song"
-даба:даба N1 ; ! "border"
+даба:даба N2 ; ! "border"
 дабтажал:дабтажал N1 ; ! "repetition"
 дайдань:дайдань N1 ; ! "land"
 далай:далай N1 ; ! "sea"
 дали:дали N1 ; ! "wing"
 дангина:дангина N1 ; ! "beauty"
-дарга:дарга N1 ; ! "boss, leader"
+дарга:дарга N2 ; ! "boss, leader"
 дари:дари N1 ; ! "dari"
 декабрь:декабрь N1 ; ! "December"
 добтолго:добтолго N1 ; ! "attack"
@@ -979,7 +1008,7 @@ LEXICON Nouns
 орон:орон N1 ; ! "country"
 оршом:оршом N1 ; ! "surroundings"
 охин:охин N1 ; ! "ardor, aroma"
-охра:охра N1 ; ! "ocһer"
+охра:охра N2 ; ! "ocһer"
 ошолго:ошолго N1 ; ! "visit, departure"
 ошон:ошон N1 ; ! "spark"
 оюун:оюун N1 ; ! "mind, sense"
@@ -1014,7 +1043,7 @@ LEXICON Nouns
 таһаг:таһаг N1 ; ! "table"
 таһалга:таһалга N1 ; ! "room"
 таабай:таабай N1 ; ! "grandad"
-тала:тала N1 ; ! "side"
+тала:тала N2 ; ! "side"
 талада:талада N1 ; ! "surface"
 талмай:талмай N1 ; ! "area, square"
 таһаг:таһаг N1 ; ! "table"
@@ -1043,14 +1072,14 @@ LEXICON Nouns
 үе:үе N1 ; ! "epocһ, period"
 уларил:уларил N1 ; ! "climat"
 уналга:уналга N1 ; ! "fall"
-унталга:унталга N1 ; ! "bedroom"
+унталга:унталга N2 ; ! "bedroom"
 уншагша:уншагша N1 ; ! "reader"
 ургалта:ургалта N1 ; ! "growtһ"
 урда:урда N1 ; ! "before"
 усалталга:усалталга N1 ; ! "accident"
 утаһан:утаһан N1 ; ! "tһread"
 үүдэн:үүдэн N1 ; ! "door"
-уула:уула N1 ; ! "peak, mountain"
+уула:уула N2 ; ! "peak, mountain"
 уулархаг:уулархаг N1 ; ! "mountain cһain"
 ухаан:ухаан N1 ; ! "idea, desire"
 үһэн:үһэн N1 ; ! "һair"
@@ -1074,14 +1103,14 @@ LEXICON Nouns
 хаан:хаан N1 ; ! "king, leader"
 хабар:хабар N1 ; ! "spring"
 хабсагай:хабсагай N1 ; ! "rock"
-хада:хада N1 ; ! "mountain"
+хада:хада N2 ; ! "mountain"
 хамсы:хамсы N1 ; ! "sleeve"
 хамтарал:хамтарал N1 ; ! "association"
 хана:хана N1 ; ! "wall"
 хани:хани N1 ; ! "friend"
 харандааш:харандааш N1 ; ! "pencil"
 харгы:харгы N1 ; ! "road"
-хартаабха:хартаабха N1 ; ! "potato"
+хартаабха:хартаабха N2 ; ! "potato"
 хахад:хахад N1 ; ! "lowland"
 хизаар:хизаар N1 ; ! "region, area"
 химгадал:химгадал N1 ; ! "economy"
@@ -1116,7 +1145,7 @@ LEXICON Nouns
 шалгаруулха:шалгаруулха N1 ; ! "test"
 шаналга:шаналга N1 ; ! "cooking"
 шандаган:шандаган N1 ; ! "һare"
-шата:шата N1 ; ! "level, step, degree"
+шата:шата N2 ; ! "level, step, degree"
 шииг:шииг N1 ; ! "һumidity"
 шкаф:шкаф N1 ; ! "wardrobe"
 шонхо:шонхо N1 ; ! "stone"
@@ -1130,7 +1159,7 @@ LEXICON Nouns
 шэрэ:шэрэ N1 ; ! "paint"
 эдеэлхэ:эдеэлхэ N1 ; ! "food"
 эдеэн:эдеэн N1 ; ! "food"
-эжы:эжы N1 ; ! "motһer"
+эжы:эжы N2 ; ! "motһer"
 эзэн:эзэн N1 ; ! "owner"
 элитэ:элитэ N1 ; ! "elite"
 элшэ:элшэ N1 ; ! "sunsһine"
@@ -1158,18 +1187,22 @@ LEXICON Nouns
 
 LEXICON Proper
 
-Жибэн:Жибэн NP-TOP ; ! "Япония"
-Аази:Аази NP-TOP ; ! "Азия"
-Ази:Ази NP-TOP ; ! ""
-Парис:Парис NP-TOP ; ! ""
-Парис:Париж NP-TOP ; ! ""
-Игаузу:Игаузу NP-TOP ; ! ""
-Франци:Франци NP-TOP ; ! "France"
+Жибэн:Жибэн NP-TOP-N1 ; ! "Япония"
+Аази:Аази NP-TOP-N2 ; ! "Азия"
+Ази:Ази NP-TOP-N2 ; ! ""
+Парис:Парис NP-TOP-N1 ; ! ""
+Парис:Париж NP-TOP-N1 ; ! ""
+Игаузу:Игаузу NP-TOP-N1 ; ! ""
+Франци:Франци NP-TOP-N2 ; ! "France"
 
-Саяан:Саяан NP-TOP ; ! ""
+Саяан:Саяан NP-TOP-N1 ; ! ""
 Саяан:Саяан NP-ANT-M ; ! ""
 
-Yдэ:Yдэ NP-TOP ; ! ""
+Вячеслав:Вячеслав NP-ANT-M ; ! ""
+
+Анастасия:Анастасия NP-ANT-F ; ! ""
+
+Yдэ:Yдэ NP-TOP-N1 ; ! ""
 
 Мэри:Мэри NP-ANT-F ; ! "Mary"
 Джейн:Джейн NP-ANT-F ; ! "Jane"
@@ -1180,21 +1213,21 @@ Yдэ:Yдэ NP-TOP ; ! ""
 Смит:Смит NP-COG-MF ; ! ""
 Браун:Браун NP-COG-MF ; ! ""
 
-Yдэ:Yдэ NP-TOP ; ! "Uda"
-Ага:Ага NP-TOP ; ! "Aga"
-Азии:Азии NP-TOP ; ! "Asia"
-Албан:Албан NP-TOP ; ! "Albania"
+Yдэ:Yдэ NP-TOP-N1 ; ! "Uda"
+Ага:Ага NP-TOP-N1 ; ! "Aga"
+Азии:Азии NP-TOP-N2 ; ! "Asia"
+Албан:Албан NP-TOP-N1 ; ! "Albania"
 Александр:Александр NP-ANT-M ; ! "Alexander"
-Амударья:Амударья NP-TOP ; ! "Amudarya"
-Афганистан:Афганистан NP-TOP ; ! "Afghanistan"
-Байгал:Байгал NP-TOP ; ! "Baikal"
+Амударья:Амударья NP-TOP-N1 ; ! "Amudarya"
+Афганистан:Афганистан NP-TOP-N1 ; ! "Afghanistan"
+Байгал:Байгал NP-TOP-N1 ; ! "Baikal"
 Банзаров:Банзаров NP-COG-OV ; ! "Banzarov"
-Бирма:Бирма NP-TOP ; ! "Birma"
-Буряяад:Буряяад NP-TOP ; ! "Buryatia"
+Бирма:Бирма NP-TOP-N1 ; ! "Birma"
+Буряяад:Буряяад NP-TOP-N1 ; ! "Buryatia"
 Виртанен:Виртанен NP-COG-MF ; ! "Virtanen"
-Вьетнам:Вьетнам NP-TOP ; ! "Vietnam"
-Гильменд:Гильменд NP-TOP ; ! "Helmand"
-Гималайн:Гималайн NP-TOP ; ! "Himalaya"
+Вьетнам:Вьетнам NP-TOP-N1 ; ! "Vietnam"
+Гильменд:Гильменд NP-TOP-N1 ; ! "Helmand"
+Гималайн:Гималайн NP-TOP-N1 ; ! "Himalaya"
 Дамдинова:Дамдинова NP-COG-OV ; ! "Damdinova"
 Дармаев:Дармаев NP-COG-OV ; ! "Darmaev"
 Джейн:Джейн NP-ANT-F ; ! "Jane"
@@ -1204,48 +1237,48 @@ Yдэ:Yдэ NP-TOP ; ! "Uda"
 Екатерина:Екатерина NP-ANT-F ; ! "Ekaterina"
 Елиас:Елиас NP-ANT-M ; ! "Elias"
 Елизэ:Елизэ NP-ANT-F ; ! "Elisa"
-Забайкалиин:Забайкалиин NP-TOP ; ! "Zabaikalye"
-Кабул:Кабул NP-TOP ; ! "Kabul"
-Камбоджа:Камбоджа NP-TOP ; ! "Kambodja"
+Забайкалиин:Забайкалиин NP-TOP-N1 ; ! "Zabaikalye"
+Кабул:Кабул NP-TOP-N1 ; ! "Kabul"
+Камбоджа:Камбоджа NP-TOP-N1 ; ! "Kambodja"
 Катя:Катя NP-ANT-F ; ! "Katya"
-Лаос:Лаос NP-TOP ; ! "Laos"
+Лаос:Лаос NP-TOP-N1 ; ! "Laos"
 Майа:Майа NP-ANT-F ; ! "Maya"
 Майя:Майя NP-ANT-F ; ! "Maya"
 Матикайнэн:Матикайнэн NP-COG-MF ; ! "Mattikainen"
 Матти:Матти NP-ANT-M ; ! "Matti"
 Маатти:Маатти NP-ANT-M ; ! "Matti"
-Монгол:Монгол NP-TOP ; ! "Mongolia"
-Мундарга:Мундарга NP-TOP ; ! "name of the peak"
+Монгол:Монгол NP-TOP-N1 ; ! "Mongolia"
+Мундарга:Мундарга NP-TOP-N1 ; ! "name of the peak"
 Мэри:Мэри NP-ANT-F ; ! "Meri"
-Нанхяад:Нанхяад NP-TOP ; ! "China"
+Нанхяад:Нанхяад NP-TOP-N1 ; ! "China"
 Омар:Омар NP-ANT-M ; ! "Omar"
-Оулу:Оулу NP-TOP ; ! "Oulu"
-Парис:Парис NP-TOP ; ! "Paris"
+Оулу:Оулу NP-TOP-N1 ; ! "Oulu"
+Парис:Парис NP-TOP-N1 ; ! "Paris"
 Пекка:Пекка NP-ANT-M ; ! "Pekka"
 Пети:Пети NP-ANT-M ; ! "Petya"
 Пётр:Пётр NP-ANT-M ; ! "Petr"
 Питер:Питер NP-ANT-M ; ! "Piter"
-Португал:Португал NP-TOP ; ! "Portugal"
-России:России NP-TOP ; ! "Russia"
-Сибирь:Сибирь NP-TOP ; ! "Siberia"
+Португал:Португал NP-TOP-N1 ; ! "Portugal"
+России:России NP-TOP-N2 ; ! "Russia"
+Сибирь:Сибирь NP-TOP-N1 ; ! "Siberia"
 Сиддарта:Сиддарта NP-ANT-M ; ! "Siddhartha"
-Сингапур:Сингапур NP-TOP ; ! "Singapore"
-Солонгос:Солонгос NP-TOP ; ! "Korea"
+Сингапур:Сингапур NP-TOP-N1 ; ! "Singapore"
+Солонгос:Солонгос NP-TOP-N1 ; ! "Korea"
 Сэм:Сэм NP-ANT-M ; ! "Sam"
-Тайвань:Тайвань NP-TOP ; ! "Taiwan"
-Тайланд:Тайланд NP-TOP ; ! "Thailand"
+Тайвань:Тайвань NP-TOP-N1 ; ! "Taiwan"
+Тайланд:Тайланд NP-TOP-N1 ; ! "Thailand"
 Таммиинэн:Таммиинэн NP-COG-MF ; ! "Tamminen"
 Тамминэн:Тамминэн NP-COG-MF ; ! "Tamminen"
 Травоолтэ:Травоолтэ NP-COG-MF ; ! "Travolta"
-Улаан:Улаан NP-TOP ; ! "Ulaan-Ude"
-Финлянди:Финлянди NP-TOP ; ! "Finland"
-Франци:Франци NP-TOP ; ! "France"
-Хеэльсинки:Хеэльсинки NP-TOP ; ! "Helsinki"
-Хитад:Хитад NP-TOP ; ! "China"
+Улаан:Улаан NP-TOP-N1 ; ! "Ulaan-Ude"
+Финлянди:Финлянди NP-TOP-N2 ; ! "Finland"
+Франци:Франци NP-TOP-N2 ; ! "France"
+Хеэльсинки:Хеэльсинки NP-TOP-N1 ; ! "Helsinki"
+Хитад:Хитад NP-TOP-N1 ; ! "China"
 Чингис:Чингис NP-ANT-M ; ! "Tchingis"
 Шенхоров:Шенхоров NP-COG-OV ; ! "Shenkhorov"
-Эрхүүгэй:Эрхүүгэй NP-TOP ; ! "Irkutsk"
-Япон:Япон NP-TOP ; ! "Japan"
+Эрхүүгэй:Эрхүүгэй NP-TOP-N1 ; ! "Irkutsk"
+Япон:Япон NP-TOP-N1 ; ! "Japan"
 
 Антонов:Антонов NP-COG-OV ; ! "Antonov"
 Арсаланов:Арсаланов NP-COG-OV ; ! "Arsalanov"
@@ -1319,14 +1352,98 @@ Yдэ:Yдэ NP-TOP ; ! "Uda"
 
 
 
-Мургаб:Мургаб NP-TOP ; ! ""
-Герируд:Герируд NP-TOP ; ! ""
+Мургаб:Мургаб NP-TOP-N1 ; ! ""
+Герируд:Герируд NP-TOP-N1 ; ! ""
 
-Шри% Ланка:Шри% Ланка NP-TOP ; ! ""
-Ланка:Ланка NP-TOP ; ! ""
-Шри:Шри NP-TOP ; ! ""
+Шри% Ланка:Шри% Ланка NP-TOP-N1 ; ! ""
+Ланка:Ланка NP-TOP-N1 ; ! ""
+Шри:Шри NP-TOP-N1 ; ! ""
 
 Будда:Будда NP-AL ; ! ""
+Гостелерадиокомпани:Гостелерадиокомпани NP-AL ; ! ""
+
+Канада:Канада NP-TOP-N1 ; ! ""
+Ленинград:Ленинград NP-TOP-N1 ; ! ""
+Улаан%-Үдэ:Улаан%-Үдэ NP-TOP-N1 ; ! ""
+
+Алексей:Алексей NP-ANT-M ; ! ""
+Арсаланов:Арсаланов NP-COG-OV ; ! ""
+Аюров:Аюров NP-COG-OV ; ! ""
+Аюшеев:Аюшеев NP-COG-OV ; ! ""
+Багадаев:Багадаев NP-COG-OV ; ! ""
+Бадлуев:Бадлуев NP-COG-OV ; ! ""
+Бадлуев:Бадлуев NP-COG-OV ; ! ""
+Бадмацыбиков:Бадмацыбиков NP-COG-OV ; ! ""
+Базаргуруев:Базаргуруев NP-COG-OV ; ! ""
+Базаржапов:Базаржапов NP-COG-OV ; ! ""
+Банзаров:Банзаров NP-COG-OV ; ! ""
+Баторов:Баторов NP-COG-OV ; ! ""
+Бекмамбетов:Бекмамбетов NP-COG-OV ; ! ""
+Борголов:Борголов NP-COG-OV ; ! ""
+Борисов:Борисов NP-COG-OV ; ! ""
+Валентина:Валентина NP-ANT-F ; ! ""
+Вероника:Вероника NP-ANT-F ; ! ""
+Владимир:Владимир NP-ANT-M ; ! ""
+В.Н.Иванов:В.Н.Иванов NP-AL ; ! ""
+Гармаев:Гармаев NP-COG-OV ; ! ""
+Гергесов:Гергесов NP-COG-OV ; ! ""
+Гомбо:Гомбо NP-ANT-M ; ! ""
+Гончиков:Гончиков NP-COG-OV ; ! ""
+Далбаев:Далбаев NP-COG-OV ; ! ""
+Далбаев:Далбаев NP-COG-OV ; ! ""
+Дамдинов:Дамдинов NP-COG-OV ; ! ""
+Дармаев:Дармаев NP-COG-OV ; ! ""
+Дондокович:Дондоко NP-PAT-VICH ; ! ""
+Егорович:Егоро NP-PAT-VICH ; ! ""
+Жапович:Жапо NP-PAT-VICH ; ! ""
+Жапович:Жапо NP-PAT-VICH ; ! ""
+Жаргалов:Жаргалов NP-COG-OV ; ! ""
+Информ:Информ NP-AL ; ! ""
+Ирина:Ирина NP-ANT-F ; ! ""
+Исимбаев:Исимбаев NP-COG-OV ; ! ""
+Кихот:Кихот NP-COG-MF ; ! ""
+Ксения:Ксения NP-ANT-F ; ! ""
+Лариса:Лариса NP-ANT-F ; ! ""
+Лыгденов:Лыгденов NP-COG-OV ; ! ""
+Лыгденов:Лыгденов NP-COG-OV ; ! ""
+Лыгденов:Лыгденов NP-COG-OV ; ! ""
+Мандухаев:Мандухаев NP-COG-OV ; ! ""
+Мария:Мария NP-ANT-F ; ! ""
+Махмуд:Махмуд NP-ANT-M ; ! ""
+Москва:Москва NP-TOP-N1 ; ! ""
+Надежда:Надежда NP-ANT-F ; ! ""
+Пакистан:Пакистан NP-TOP-N1 ; ! ""
+Протасов:Протасов NP-COG-OV ; ! ""
+Пушкин:Пушкин NP-COG-MF ; ! ""
+Раднаев:Раднаев NP-COG-OV ; ! ""
+Раиса:Раиса NP-ANT-F ; ! ""
+Ринчинович:Ринчино NP-PAT-VICH ; ! ""
+Ринчинович:Ринчино NP-PAT-VICH ; ! ""
+Роза:Роза NP-ANT-F ; ! ""
+Росси:Росси NP-TOP-N2 ; ! ""
+Светлана:Светлана NP-ANT-F ; ! ""
+Степанович:Степано NP-PAT-VICH ; ! ""
+Сультимов:Сультимов NP-COG-OV ; ! ""
+Татьяна:Татьяна NP-ANT-F ; ! ""
+Тимофей:Тимофей NP-ANT-M ; ! ""
+Тимур:Тимур NP-ANT-M ; ! ""
+Толстой:Толстой NP-COG-MF ; ! ""
+Убушеевич:Убушее NP-PAT-VICH ; ! ""
+Харбанов:Харбанов NP-COG-OV ; ! ""
+Цыденов:Цыденов NP-COG-OV ; ! ""
+Цыдыпов:Цыдыпов NP-COG-OV ; ! ""
+Цыренгармаев:Цыренгармаев NP-COG-OV ; ! ""
+Цыренгармаев:Цыренгармаев NP-COG-OV ; ! ""
+Цырендашиев:Цырендашиев NP-COG-OV ; ! ""
+Цырендоржиев:Цырендоржиев NP-COG-OV ; ! ""
+Цыренов:Цыренов NP-COG-OV ; ! ""
+Шаланов:Шаланов NP-COG-OV ; ! ""
+Шеметов:Шеметов NP-COG-OV ; ! ""
+Шенхоров:Шенхоров NP-COG-OV ; ! ""
+Шенхоров:Шенхоров NP-COG-OV ; ! ""
+Якутск:Якутск NP-TOP-N1 ; ! ""
+Янхаев:Янхаев NP-COG-OV ; ! ""
+
 
 LEXICON Adjectives
 
