@@ -133,6 +133,28 @@ def apertium_convert(analyses, s): #{
 	return retval;
 #}
 
+def best_analysis(lema, pos, sparse, analyses): #{
+	maxoverlap = 0;
+	best_analysis = ();
+	for analysis in analyses: #{
+		set_s = set([lema, pos] + sparse.split('|'));
+		set_a = set([analysis[0], analysis[1]] + analysis[2].split('|'));
+		
+		intersect = set_a.intersection(set_s);
+		if len(intersect) >= maxoverlap: #{
+			maxoverlap = len(intersect);
+			best_analysis = analysis;
+		#}
+		
+	#}
+	#print(maxoverlap, best_analysis, file=sys.stderr);
+	if maxoverlap > 0: #{
+		return best_analysis;
+	else: #{
+		return ();
+	#}
+#}
+
 
 ###############################################################################
 
@@ -144,12 +166,15 @@ if len(sys.argv) < 3: #{
 
 istr = libhfst.HfstInputStream(sys.argv[1]);
 morf = istr.read();
-morf.remove_epsilons();
+#morf.remove_epsilons();
 
 af = open(sys.argv[2]);
 apertium_symbs = read_rules(af);
 
-print(apertium_symbs);
+#print(apertium_symbs);
+
+unknown = 0;
+known = 0;
 
 for blokk in sys.stdin.read().split('\n\n'): #{
 	if blokk.strip() == '': #{
@@ -164,7 +189,24 @@ for blokk in sys.stdin.read().split('\n\n'): #{
 			morfres = morf.lookup(row[1].lower());
 		#}
 		retres = apertium_convert(morfres, apertium_symbs);
-		print(line, morfres, retres);
+		best = best_analysis(row[2], row[3], row[5], retres);
+		if best != (): #{
+			row[2] = best[0];
+			row[3] = best[1];
+			row[5] = best[2];
+			known += 1;
+		else: #{
+			if row[9] == '_': #{
+				row[9] = 'Morf=Unknown';
+			else: #{
+				row[9] = row[9] + '|Morf=Unknown';
+			#}
+			unknown += 1;
+		#}
+		print('%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s' % (row[0], row[1], row[2], row[3], row[4], row[5], row[6], row[7], row[8], row[9]));	
+		#print(line, best,morfres, retres, file=sys.stderr);
 	#}
 	print('');
 #}
+
+print(unknown / (known+unknown), file=sys.stderr)
