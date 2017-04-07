@@ -181,7 +181,7 @@ for blokk in sys.stdin.read().split('\n\n'): #{
 		continue;
 	#}
 	tekst = plain_tekst(blokk);
-	print('# text = %s' % (tekst));
+#	print('# text = %s' % (tekst));
 	for line in blokk.split('\n'): #{
 		row = line.split('\t');
 		morfres = morf.lookup(row[1]);
