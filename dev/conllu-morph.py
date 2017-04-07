@@ -209,4 +209,4 @@ for blokk in sys.stdin.read().split('\n\n'): #{
 	print('');
 #}
 
-print(unknown / (known+unknown), file=sys.stderr)
+print(unknown / (known+unknown) *100, file=sys.stderr)
