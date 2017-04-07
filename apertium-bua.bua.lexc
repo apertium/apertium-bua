@@ -24,6 +24,7 @@ Multichar_Symbols
 %<vaux%>
 
 %<neg%>
+%<impf%>
 %<evid%>
 %<past%>
 %<ger_past%>
@@ -304,6 +305,7 @@ LEXICON V-NON-FINITE
 
 %<gpr_fut%>:%>х%{А%} # ; 
 %<gpr_impf%>:%>г%{А%}%{А%} # ; 
+%<gpr_impf%>:%>г%{А%}%{А%}%>гүй # ; 
 %<gpr_hab%>:%>д%{А%}г # ; 
 %<gpr_res%>:%>нгх%{А%}и # ; 
 %<gpr_pot%>:%>х%{А%}%{А%}р # ; 
@@ -342,6 +344,7 @@ LEXICON V-FINITE
 %<ifi%>:%>б%{А%} # ;
 
 %<impf%>:%>г%{А%}%{А%} V-FINITE-PERS ;  ! Was <past2>
+%<impf%>%<neg%>:%>г%{А%}%{А%}%>гүй V-FINITE-PERS ;  ! Was <past2>
 
 %<past%>:%>һ%{А%}н # ;
 %<past%>%<neg%>:%>%{А%}%{А%} # ;
