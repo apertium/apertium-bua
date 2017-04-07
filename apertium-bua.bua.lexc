@@ -255,6 +255,11 @@ LEXICON NP-COG-OV
 %<np%>%<cog%>%<m%>: SUBST-COMMON ;
 %<np%>%<cog%>%<f%>:а SUBST-COMMON ;
 
+LEXICON NP-PAT-VICH
+
+%<np%>%<pat%>%<m%>:вич SUBST-COMMON ;
+%<np%>%<pat%>%<f%>:вна SUBST-COMMON ;
+
 LEXICON NP-ANT-F
 
 %<np%>%<ant%>%<f%>: SUBST-COMMON ;
@@ -1275,6 +1280,43 @@ Yдэ:Yдэ NP-TOP ; ! "Uda"
 Цыденов:Цыденов NP-COG-OV ; ! "Tsydenov"
 Цыренжапов:Цыренжапов NP-COG-OV ; ! "Tsyrenzһapov"
 Чимитов:Чимитов NP-COG-OV ; ! "Cһimitov"
+
+Убушеевич:Убушее NP-PAT-VICH ; ! ""
+Михеевич:Михее NP-PAT-VICH ; ! ""
+Дашиевич:Дашие NP-PAT-VICH ; ! ""
+Николаевич:Николае NP-PAT-VICH ; ! ""
+Секретаревич:Секретаре NP-PAT-VICH ; ! ""
+Иннокентьевич:Иннокентье NP-PAT-VICH ; ! ""
+Санжеевич:Санжее NP-PAT-VICH ; ! ""
+Одоевич:Одое NP-PAT-VICH ; ! ""
+Дамдинович:Dамдино NP-PAT-VICH ; ! "" ! Dir/LR
+Дамдинович:Дамдино NP-PAT-VICH ; ! "" ! Dir/LR
+Андреевич:Андрее NP-PAT-VICH ; ! ""
+Антонович:Антоно NP-PAT-VICH ; ! ""
+Бабасанович:Бабасано NP-PAT-VICH ; ! ""
+Базарович:Базаро NP-PAT-VICH ; ! ""
+Бальжинимаевич:Бальжинимае NP-PAT-VICH ; ! ""
+Баяртуевич:Баяртуе NP-PAT-VICH ; ! ""
+Борисович:Борисо NP-PAT-VICH ; ! ""
+Валерьевич:Валерье NP-PAT-VICH ; ! ""
+Гаврилович:Гаврило NP-PAT-VICH ; ! ""
+Гатыпович:Гатыпо NP-PAT-VICH ; ! ""
+Григорьевич:Григорье NP-PAT-VICH ; ! ""
+Гутапович:Гутапо NP-PAT-VICH ; ! ""
+Дамдинович:Дамдино NP-PAT-VICH ; ! ""
+Жамсаевич:Жамсае NP-PAT-VICH ; ! ""
+Иванович:Ивано NP-PAT-VICH ; ! ""
+Иннокентьевич:Иннокентье NP-PAT-VICH ; ! ""
+Лочинович:Лочино NP-PAT-VICH ; ! ""
+Родионович:Родионо NP-PAT-VICH ; ! ""
+Санжиевич:Санжие NP-PAT-VICH ; ! ""
+Тангатович:Тангато NP-PAT-VICH ; ! ""
+Тогтохоевич:Тогтохое NP-PAT-VICH ; ! ""
+факультативич:факультати NP-PAT-VICH ; ! ""
+Хандуевич:Хандуе NP-PAT-VICH ; ! ""
+Ханхареевич:Ханхарее NP-PAT-VICH ; ! ""
+Цырендоржиевич:Цырендоржие NP-PAT-VICH ; ! ""
+
 
 
 Мургаб:Мургаб NP-TOP ; ! ""
