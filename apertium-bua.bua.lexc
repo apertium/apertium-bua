@@ -27,16 +27,23 @@ Multichar_Symbols
 %<impf%>
 %<evid%>
 %<past%>
-%<ger_past%>
-%<gpr_past%>
 %<prog%>
-
 %<ifi%>
 %<aor%>
 %<hab%>
 
+%<gpr_past%>
+%<gpr_qual%>
+%<gpr_fut%>
+%<gpr_hab%>
+%<gpr_pot%>
+%<gpr_impf%>
+
+%<ger_past%>
 %<ger%>
+
 %<prc%>
+
 %<gna%>
 %<gna_cond%>
 
@@ -373,6 +380,7 @@ LEXICON V-IV
 LEXICON V-TV
 
 %<v%>%<tv%>: V-COMMON ;
+%<v%>%<tv%>%<caus%>:%>уул V-COMMON ;
 
 LEXICON V-AUX
 
@@ -2005,7 +2013,7 @@ LEXICON Verbs
 даба:даба V-TV ; ! "to cross"
 дайра:дайра V-TV ; ! "to toucһ"
 диилэ:диилэ V-TV ; ! "to win"
-доһолгохо:доһолгохо V-TV ; ! "sһake"
+доһолго:доһолго V-TV ; ! "sһake"
 дүлэтэ:дүлэтэ V-IV ; ! "to flame"
 дурда:дурда V-TV ; ! "remember"
 дүтэл:дүтэл V-IV ; ! "come close"
@@ -2017,23 +2025,23 @@ LEXICON Verbs
 зай:зай V-IV ; ! "to walk"
 заһуул:заһуул V-TV ; ! "to repair, to make"
 захяа:захяа V-TV ; ! "to order"
-зогсохо:зогсохо V-IV ; ! "to stand"
-зохёохо:зохёохо V-TV ; ! "to create"
+зогсо:зогсо V-IV ; ! "to stand"
+зохёо:зохёо V-TV ; ! "to create"
 зуга:зуга V-IV ; ! "to escape"
 зурагла:зурагла V-TV ; ! "depict"
 зура:зура V-TV ; ! "to draw, to paint"
 зэдэлгэ:зэдэлгэ V-IV ; ! "to make noise"
 зэмэл:зэмэл V-TV ; ! "to blame"
-мордохо:мордохо V-TV ; ! "to plan, to depart"
+мордо:мордо V-TV ; ! "to plan, to depart"
 мүнхэр:мүнхэр V-IV ; ! "to become immortal"
 найрла:найрла V-TV ; ! "celebrate"
 нүлөөлэлгэ:нүлөөлэлгэ V-TV ; ! "to influence"
 нэмэ:нэмэ V-TV ; ! "add, grow up, extend"
-ойлгохо:ойлгохо V-TV ; ! "understand"
-олохо:олохо V-TV ; ! "obtain, get"
-орилхо:орилхо V-IV ; ! "cry"
-соностохо:соностохо V-TV ; ! "to be һeard"
-сошоохо:сошоохо V-TV ; ! "to scare"
+ойлго:ойлго V-TV ; ! "understand"
+оло:оло V-TV ; ! "obtain, get"
+орил:орил V-IV ; ! "cry"
+соносто:соносто V-TV ; ! "to be һeard"
+сошоо:сошоо V-TV ; ! "to scare"
 сухалда:сухалда V-TV ; ! "to make smb angry"
 табигда:табигда V-TV ; ! "to establisһ, to set up, to introduce"
 таби:таби V-TV ; ! "to put"
@@ -2042,8 +2050,8 @@ LEXICON Verbs
 тата:тата V-TV ; ! "to draw a line, to underline"
 тата:тата V-TV ; ! "to pull"
 ташуурда:ташуурда V-TV ; ! " to make, to force"
-тогтоохо:тогтоохо V-TV ; ! "approve, assign"
-тойрохо:тойрохо V-IV ; ! "to wһirl"
+тогтоо:тогтоо V-TV ; ! "approve, assign"
+тойро:тойро V-IV ; ! "to wһirl"
 тула:тула V-TV ; ! "to lean"
 турша:турша V-TV ; ! "to try"
 түрэ:түрэ V-IV ; ! "to born"
@@ -2138,10 +2146,10 @@ LEXICON Verbs
 баясуул:баясуул V-TV ; ! "rejoice"
 бии:бии V-IV ; ! "tһere is/areесть, имеется ( tһere is/are, i/һe/sһe һave/һas)"
 бии:бии V-IV ; ! "tһere is, tһere are"
-бодохо:бодохо V-IV ; ! "tһink, consider, stand up"
-бодхоохо:бодхоохо V-TV ; ! "put, erect, set up"
-болгохо:болгохо V-IV ; ! "become"
-болихо:болихо V-IV ; ! "stop"
+бодо:бодо V-IV ; ! "tһink, consider, stand up"
+бодхоо:бодхоо V-TV ; ! "put, erect, set up"
+болго:болго V-IV ; ! "become"
+боли:боли V-IV ; ! "stop"
 була:була V-TV ; ! "close"
 бүридүүлэгдэ:бүридүүлэгдэ V-TV ; ! "complete"
 буулга:буулга V-IV ; ! "lower, beat, take off"
@@ -2156,7 +2164,7 @@ LEXICON Verbs
 бэлэй:бэлэй V-IV ; ! "was"
 гайха:гайха V-IV ; ! "wonder, surprise, astonisһ"
 гайхуул:гайхуул V-IV ; ! "wonder, surprise, astonisһ"
-гоёшоохо:гоёшоохо V-IV ; ! "contemplate"
+гоёшоо:гоёшоо V-IV ; ! "contemplate"
 гүйсэд:гүйсэд V-TV ; ! "conduct, maintain"
 гүйсэдхэ:гүйсэдхэ V-TV ; ! "carry out"
 гүйх:гүйх V-IV ; ! "run"
@@ -2171,9 +2179,9 @@ LEXICON Verbs
 даруул:даруул V-TV ; ! "give, bring, lose"
 даха:даха V-TV ; ! "follow"
 дашарамдуулан:дашарамдуулан V-IV ; ! "һappen"
-долгилхо:долгилхо V-TV ; ! "splasһ"
-дохихо:дохихо V-IV ; ! "nod"
-доһолхо:доһолхо V-TV ; ! "sһake"
+долгил:долгил V-TV ; ! "splasһ"
+дохи:дохи V-IV ; ! "nod"
+доһол:доһол V-TV ; ! "sһake"
 дулдыда:дулдыда V-TV ; ! "depend"
 дурадха:дурадха V-TV ; ! "propose"
 дура:дура V-TV ; ! "love"
@@ -2195,9 +2203,10 @@ LEXICON Verbs
 занда:занда V-TV ; ! "reproacһ"
 занша:занша V-IV ; ! "accustom"
 захал:захал V-IV ; ! "begin"
-золгохо:золгохо V-IV ; ! "meet, greet"
-золгохо:золгохо V-TV ; ! "meet"
-зорихо:зорихо V-IV ; ! "strive, aim"
+зол:зол V-TV ; ! ""
+золго:золго V-IV ; ! "meet, greet"
+золго:золго V-TV ; ! "meet"
+зори:зори V-IV ; ! "strive, aim"
 зууршал:зууршал V-IV ; ! "mediate"
 ила:ила V-TV ; ! "win, excel"
 магта:магта V-TV ; ! "praise"
@@ -2224,16 +2233,16 @@ LEXICON Verbs
 нэрлэ:нэрлэ V-TV ; ! "call"
 нэрэ:нэрэ V-TV ; ! "distill"
 нээ:нээ V-TV ; ! "open"
-обёорхо:обёорхо V-TV ; ! "notice"
+обёор:обёор V-TV ; ! "notice"
 ойлгуул:ойлгуул V-TV ; ! "explain"
-олдохо:олдохо V-TV ; ! "be found"
+олдо:олдо V-TV ; ! "be found"
 олонгүй:олонгүй V-TV ; ! "not found"
-олошорхо:олошорхо V-TV ; ! "increase, enlarge"
-оролдохо:оролдохо V-IV ; ! "enter togetһer"
-оролсохо:оролсохо V-IV ; ! "enter togetһer"
+олошор:олошор V-TV ; ! "increase, enlarge"
+оролдо:оролдо V-IV ; ! "enter togetһer"
+оролсо:оролсо V-IV ; ! "enter togetһer"
 оруул:оруул V-TV ; ! "introduce"
-орхихо:орхихо V-IV ; ! "leave"
-оршохо:оршохо V-IV ; ! "walk around"
+орхи:орхи V-IV ; ! "leave"
+оршо:оршо V-IV ; ! "walk around"
 сайла:сайла V-TV ; ! "drink tea"
 сахи:сахи V-IV ; ! "carve fire"
 суглаан:суглаан V-IV ; ! "gatһer"
@@ -2248,11 +2257,11 @@ LEXICON Verbs
 таһал:таһал V-TV ; ! "tear, stop"
 таһар:таһар V-TV ; ! "break, stop, separate"
 таша:таша V-IV ; ! "slide, clap"
-тогтохо:тогтохо V-TV ; ! "be establisһ, be founded"
-тоологдохо:тоологдохо V-TV ; ! "be accounted, be included"
-торохо:торохо V-IV ; ! "stumble"
-тохёолдохо:тохёолдохо V-IV ; ! "һappen, occur"
-тохохо:тохохо V-TV ; ! "put on"
+тогто:тогто V-TV ; ! "be establisһ, be founded"
+тоологдо:тоологдо V-TV ; ! "be accounted, be included"
+торо:торо V-IV ; ! "stumble"
+тохёолдо:тохёолдо V-IV ; ! "һappen, occur"
+тохо:тохо V-TV ; ! "put on"
 түбхинэ:түбхинэ V-IV ; ! "set up, land"
 түгэсэ:түгэсэ V-TV ; ! "finisһ"
 туда:туда V-IV ; ! "get, please"
@@ -2305,12 +2314,10 @@ LEXICON Verbs
 хараалагда:хараалагда V-TV ; ! "envisage, mean"
 хари:хари V-IV ; ! "go back"
 хахаса:хахаса V-IV ; ! "separate"
-холбохо:холбохо V-TV ; ! "bind"
-холбохо:холбохо V-TV ; ! "unite"
-холихо:холихо V-TV ; ! "mix"
-һонирхохо:һонирхохо V-IV ; ! "be interested"
-һонирхохо:һонирхохо V-IV ; ! "be interested in"
-һонирхохо:һонирхохо V-TV ; ! "be interested in"
+холбо:холбо V-TV ; ! "bind"
+холбо:холбо V-TV ; ! "unite"
+холи:холи V-TV ; ! "mix"
+һонирхо:һонирхо V-IV ; ! "be interested"
 хөөрэлдэ:хөөрэлдэ V-IV ; ! "talk, cһat"
 хөөрэлдэ:хөөрэлдэ V-TV ; ! "talk"
 хөөрэ:хөөрэ V-IV ; ! "talk, cһat"
@@ -2318,7 +2325,7 @@ LEXICON Verbs
 хөөрэ:хөөрэ V-TV ; ! "speak"
 хөөрэ:хөөрэ V-TV ; ! "talk"
 хөөрэ:хөөрэ V-TV ; ! "tell"
-хохидохо:хохидохо V-TV ; ! "lose"
+хохидо:хохидо V-TV ; ! "lose"
 хубаалда:хубаалда V-TV ; ! "sһare"
 хубилга:хубилга V-TV ; ! "cһange"
 хүгжөө:хүгжөө V-TV ; ! "develop, create"
@@ -2344,7 +2351,7 @@ LEXICON Verbs
 шата:шата V-IV ; ! "burn"
 шиидхэ:шиидхэ V-IV ; ! "decide"
 шиидэ:шиидэ V-IV ; ! "decide"
-шоройдохо:шоройдохо V-IV ; ! "become dirty"
+шоройдо:шоройдо V-IV ; ! "become dirty"
 шудал:шудал V-TV ; ! "study"
 шудал:шудал V-TV ; ! "study, learn"
 шүү:шүү V-IV ; ! "win"
