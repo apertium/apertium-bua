@@ -251,6 +251,11 @@ LEXICON NP-COG-OV
 %<np%>%<cog%>%<m%>: SUBST-N1 ;
 %<np%>%<cog%>%<f%>:а SUBST-N1 ;
 
+LEXICON NP-COG-IN
+
+%<np%>%<cog%>%<m%>: SUBST-N1 ;
+%<np%>%<cog%>%<f%>:а SUBST-N1 ;
+
 LEXICON NP-PAT-VICH
 
 %<np%>%<pat%>%<m%>:вич SUBST-N1 ;
@@ -260,19 +265,23 @@ LEXICON NP-ANT-F
 
 %<np%>%<ant%>%<f%>: SUBST-N1 ;
 
-LEXICON NP-ANT-M
+LEXICON NP-ANT-M-1
 
 %<np%>%<ant%>%<m%>: SUBST-N1 ;
+
+LEXICON NP-ANT-M-2
+
+%<np%>%<ant%>%<m%>: SUBST-N2 ;
 
 LEXICON NP-AL
 
 %<np%>%<al%>: SUBST-N1 ;
 
-LEXICON NP-TOP-N1
+LEXICON NP-TOP-1
 
 %<np%>%<top%>: SUBST-N1 ;
 
-LEXICON NP-TOP-N2
+LEXICON NP-TOP-2
 
 %<np%>%<top%>: SUBST-N2 ;
 
@@ -1696,98 +1705,107 @@ dамдиновна:dамдиновна N2 ; ! "Damdinovna"
 
 LEXICON Proper
 
-Жибэн:Жибэн NP-TOP-N1 ; ! "Япония"
-Аази:Аази NP-TOP-N2 ; ! "Азия"
-Ази:Ази NP-TOP-N2 ; ! ""
-Парис:Парис NP-TOP-N1 ; ! ""
-Парис:Париж NP-TOP-N1 ; ! ""
-Игаузу:Игаузу NP-TOP-N1 ; ! ""
-Франци:Франци NP-TOP-N2 ; ! "France"
+Жибэн:Жибэн NP-TOP-1 ; ! "Япония"
+Аази:Аази NP-TOP-2 ; ! "Азия"
+Бурятия:Бурятия NP-TOP-2 ; ! "" ! Use/Sub
+Ази:Ази NP-TOP-2 ; ! ""
+Парис:Парис NP-TOP-1 ; ! ""
+Парис:Париж NP-TOP-1 ; ! ""
+Игаузу:Игаузу NP-TOP-1 ; ! ""
+Франци:Франци NP-TOP-2 ; ! "France"
 
-Саяан:Саяан NP-TOP-N1 ; ! ""
-Саяан:Саяан NP-ANT-M ; ! ""
+Гусиноозерск:Гусиноозерск NP-TOP-1 ; ! ""
 
-Вячеслав:Вячеслав NP-ANT-M ; ! ""
+Саяан:Саяан NP-TOP-1 ; ! ""
+Саяан:Саяан NP-ANT-M-1 ; ! ""
+Валерий:Валерий NP-ANT-M-1 ; ! ""
+
+Вячеслав:Вячеслав NP-ANT-M-1 ; ! ""
 
 Анастасия:Анастасия NP-ANT-F ; ! ""
 
-Yдэ:Yдэ NP-TOP-N1 ; ! ""
+Yдэ:Yдэ NP-TOP-1 ; ! ""
 
 Мэри:Мэри NP-ANT-F ; ! "Mary"
 Джейн:Джейн NP-ANT-F ; ! "Jane"
-Питер:Питер NP-ANT-M ; ! "Peter"
-Пётр:Пётр NP-ANT-M ; ! "Peter"
-Сэм:Сэм NP-ANT-M ; ! "Sam"
+Питер:Питер NP-ANT-M-1 ; ! "Peter"
+Пётр:Пётр NP-ANT-M-1 ; ! "Peter"
+Сэм:Сэм NP-ANT-M-1 ; ! "Sam"
+Намжилма:Намжилма NP-ANT-F ; ! ""
 
+Магда:Магда NP-COG-MF ; ! ""
 Смит:Смит NP-COG-MF ; ! ""
+Сагаалган:Сагаалган NP-COG-MF ; ! ""
 Браун:Браун NP-COG-MF ; ! ""
 
-Yдэ:Yдэ NP-TOP-N1 ; ! "Uda"
-Ага:Ага NP-TOP-N1 ; ! "Aga"
-Азии:Азии NP-TOP-N2 ; ! "Asia"
-Албан:Албан NP-TOP-N1 ; ! "Albania"
-Александр:Александр NP-ANT-M ; ! "Alexander"
-Амударья:Амударья NP-TOP-N1 ; ! "Amudarya"
-Афганистан:Афганистан NP-TOP-N1 ; ! "Afghanistan"
-Байгал:Байгал NP-TOP-N1 ; ! "Baikal"
+Митрошкин:Митрошкин NP-COG-IN ; ! ""
+
+Yдэ:Yдэ NP-TOP-1 ; ! "Uda"
+Ага:Ага NP-TOP-1 ; ! "Aga"
+Азии:Азии NP-TOP-2 ; ! "Asia"
+Албан:Албан NP-TOP-1 ; ! "Albania"
+Александр:Александр NP-ANT-M-1 ; ! "Alexander"
+Амударья:Амударья NP-TOP-1 ; ! "Amudarya"
+Афганистан:Афганистан NP-TOP-1 ; ! "Afghanistan"
+Байгал:Байгал NP-TOP-1 ; ! "Baikal"
 Банзаров:Банзаров NP-COG-OV ; ! "Banzarov"
-Бирма:Бирма NP-TOP-N1 ; ! "Birma"
-Буряяад:Буряяад NP-TOP-N1 ; ! "Buryatia"
+Бирма:Бирма NP-TOP-1 ; ! "Birma"
+Буряяад:Буряяад NP-TOP-1 ; ! "Buryatia"
 Виртанен:Виртанен NP-COG-MF ; ! "Virtanen"
-Вьетнам:Вьетнам NP-TOP-N1 ; ! "Vietnam"
-Гильменд:Гильменд NP-TOP-N1 ; ! "Helmand"
-Гималайн:Гималайн NP-TOP-N1 ; ! "Himalaya"
+Вьетнам:Вьетнам NP-TOP-1 ; ! "Vietnam"
+Гильменд:Гильменд NP-TOP-1 ; ! "Helmand"
+Гималайн:Гималайн NP-TOP-1 ; ! "Himalaya"
 Дамдинова:Дамдинова NP-COG-OV ; ! "Damdinova"
 Дармаев:Дармаев NP-COG-OV ; ! "Darmaev"
 Джейн:Джейн NP-ANT-F ; ! "Jane"
-Джон:Джон NP-ANT-M ; ! "John"
+Джон:Джон NP-ANT-M-1 ; ! "John"
 Донна:Донна NP-ANT-F ; ! "Donna"
 Ева:Ева NP-ANT-F ; ! "Eva"
 Екатерина:Екатерина NP-ANT-F ; ! "Ekaterina"
-Елиас:Елиас NP-ANT-M ; ! "Elias"
+Елиас:Елиас NP-ANT-M-1 ; ! "Elias"
 Елизэ:Елизэ NP-ANT-F ; ! "Elisa"
-Забайкалиин:Забайкалиин NP-TOP-N1 ; ! "Zabaikalye"
-Кабул:Кабул NP-TOP-N1 ; ! "Kabul"
-Камбоджа:Камбоджа NP-TOP-N1 ; ! "Kambodja"
+Забайкалиин:Забайкалиин NP-TOP-1 ; ! "Zabaikalye"
+Кабул:Кабул NP-TOP-1 ; ! "Kabul"
+Камбоджа:Камбоджа NP-TOP-1 ; ! "Kambodja"
 Катя:Катя NP-ANT-F ; ! "Katya"
-Лаос:Лаос NP-TOP-N1 ; ! "Laos"
+Лаос:Лаос NP-TOP-1 ; ! "Laos"
 Майа:Майа NP-ANT-F ; ! "Maya"
 Майя:Майя NP-ANT-F ; ! "Maya"
 Матикайнэн:Матикайнэн NP-COG-MF ; ! "Mattikainen"
-Матти:Матти NP-ANT-M ; ! "Matti"
-Маатти:Маатти NP-ANT-M ; ! "Matti"
-Монгол:Монгол NP-TOP-N1 ; ! "Mongolia"
-Мундарга:Мундарга NP-TOP-N1 ; ! "name of the peak"
+Матти:Матти NP-ANT-M-1 ; ! "Matti"
+Маатти:Маатти NP-ANT-M-1 ; ! "Matti"
+Монгол:Монгол NP-TOP-1 ; ! "Mongolia"
+Мундарга:Мундарга NP-TOP-1 ; ! "name of the peak"
 Мэри:Мэри NP-ANT-F ; ! "Meri"
-Нанхяад:Нанхяад NP-TOP-N1 ; ! "China"
-Омар:Омар NP-ANT-M ; ! "Omar"
-Оулу:Оулу NP-TOP-N1 ; ! "Oulu"
-Парис:Парис NP-TOP-N1 ; ! "Paris"
-Пекка:Пекка NP-ANT-M ; ! "Pekka"
-Пети:Пети NP-ANT-M ; ! "Petya"
-Пётр:Пётр NP-ANT-M ; ! "Petr"
-Питер:Питер NP-ANT-M ; ! "Piter"
-Португал:Португал NP-TOP-N1 ; ! "Portugal"
-России:России NP-TOP-N2 ; ! "Russia"
-Сибирь:Сибирь NP-TOP-N1 ; ! "Siberia"
-Сиддарта:Сиддарта NP-ANT-M ; ! "Siddhartha"
-Сингапур:Сингапур NP-TOP-N1 ; ! "Singapore"
-Солонгос:Солонгос NP-TOP-N1 ; ! "Korea"
-Сэм:Сэм NP-ANT-M ; ! "Sam"
-Тайвань:Тайвань NP-TOP-N1 ; ! "Taiwan"
-Тайланд:Тайланд NP-TOP-N1 ; ! "Thailand"
+Нанхяад:Нанхяад NP-TOP-1 ; ! "China"
+Омар:Омар NP-ANT-M-1 ; ! "Omar"
+Оулу:Оулу NP-TOP-1 ; ! "Oulu"
+Парис:Парис NP-TOP-1 ; ! "Paris"
+Пекка:Пекка NP-ANT-M-2 ; ! "Pekka"
+Пети:Пети NP-ANT-M-1 ; ! "Petya"
+Пётр:Пётр NP-ANT-M-1 ; ! "Petr"
+Питер:Питер NP-ANT-M-1 ; ! "Piter"
+Португал:Португал NP-TOP-1 ; ! "Portugal"
+России:России NP-TOP-2 ; ! "Russia"
+Сибирь:Сибирь NP-TOP-1 ; ! "Siberia"
+Сиддарта:Сиддарта NP-ANT-M-2 ; ! "Siddhartha"
+Сингапур:Сингапур NP-TOP-1 ; ! "Singapore"
+Солонгос:Солонгос NP-TOP-1 ; ! "Korea"
+Сэм:Сэм NP-ANT-M-1 ; ! "Sam"
+Тайвань:Тайвань NP-TOP-1 ; ! "Taiwan"
+Тайланд:Тайланд NP-TOP-1 ; ! "Thailand"
 Таммиинэн:Таммиинэн NP-COG-MF ; ! "Tamminen"
 Тамминэн:Тамминэн NP-COG-MF ; ! "Tamminen"
 Травоолтэ:Травоолтэ NP-COG-MF ; ! "Travolta"
-Улаан:Улаан NP-TOP-N1 ; ! "Ulaan-Ude"
-Финлянди:Финлянди NP-TOP-N2 ; ! "Finland"
-Франци:Франци NP-TOP-N2 ; ! "France"
-Хеэльсинки:Хеэльсинки NP-TOP-N1 ; ! "Helsinki"
-Хитад:Хитад NP-TOP-N1 ; ! "China"
-Чингис:Чингис NP-ANT-M ; ! "Tchingis"
+Улаан:Улаан NP-TOP-1 ; ! "Ulaan-Ude"
+Финлянди:Финлянди NP-TOP-2 ; ! "Finland"
+Франци:Франци NP-TOP-2 ; ! "France"
+Хеэльсинки:Хеэльсинки NP-TOP-1 ; ! "Helsinki"
+Хитад:Хитад NP-TOP-1 ; ! "China"
+Чингис:Чингис NP-ANT-M-1 ; ! "Tchingis"
 Шенхоров:Шенхоров NP-COG-OV ; ! "Shenkhorov"
-Эрхүүгэй:Эрхүүгэй NP-TOP-N1 ; ! "Irkutsk"
-Япон:Япон NP-TOP-N1 ; ! "Japan"
+Эрхүүгэй:Эрхүүгэй NP-TOP-1 ; ! "Irkutsk"
+Япон:Япон NP-TOP-1 ; ! "Japan"
 
 Антонов:Антонов NP-COG-OV ; ! "Antonov"
 Арсаланов:Арсаланов NP-COG-OV ; ! "Arsalanov"
@@ -1861,21 +1879,23 @@ Yдэ:Yдэ NP-TOP-N1 ; ! "Uda"
 
 
 
-Мургаб:Мургаб NP-TOP-N1 ; ! ""
-Герируд:Герируд NP-TOP-N1 ; ! ""
+Мургаб:Мургаб NP-TOP-1 ; ! ""
+Герируд:Герируд NP-TOP-1 ; ! ""
 
-Шри% Ланка:Шри% Ланка NP-TOP-N1 ; ! ""
-Ланка:Ланка NP-TOP-N1 ; ! ""
-Шри:Шри NP-TOP-N1 ; ! ""
+Шри% Ланка:Шри% Ланка NP-TOP-1 ; ! ""
+Ланка:Ланка NP-TOP-1 ; ! ""
+Шри:Шри NP-TOP-1 ; ! ""
 
 Будда:Будда NP-AL ; ! ""
+Полис:Полис NP-AL ; ! ""
+Путкинотко:Путкинотко NP-AL ; ! ""
 Гостелерадиокомпани:Гостелерадиокомпани NP-AL ; ! ""
 
-Канада:Канада NP-TOP-N1 ; ! ""
-Ленинград:Ленинград NP-TOP-N1 ; ! ""
-Улаан%-Үдэ:Улаан%-Үдэ NP-TOP-N1 ; ! ""
+Канада:Канада NP-TOP-1 ; ! ""
+Ленинград:Ленинград NP-TOP-1 ; ! ""
+Улаан%-Үдэ:Улаан%-Үдэ NP-TOP-2 ; ! ""
 
-Алексей:Алексей NP-ANT-M ; ! ""
+Алексей:Алексей NP-ANT-M-1 ; ! ""
 Арсаланов:Арсаланов NP-COG-OV ; ! ""
 Аюров:Аюров NP-COG-OV ; ! ""
 Аюшеев:Аюшеев NP-COG-OV ; ! ""
@@ -1892,13 +1912,14 @@ Yдэ:Yдэ NP-TOP-N1 ; ! "Uda"
 Борисов:Борисов NP-COG-OV ; ! ""
 Валентина:Валентина NP-ANT-F ; ! ""
 Вероника:Вероника NP-ANT-F ; ! ""
-Владимир:Владимир NP-ANT-M ; ! ""
+Владимир:Владимир NP-ANT-M-1 ; ! ""
 В.Н.Иванов:В.Н.Иванов NP-AL ; ! ""
 Гармаев:Гармаев NP-COG-OV ; ! ""
 Гергесов:Гергесов NP-COG-OV ; ! ""
-Гомбо:Гомбо NP-ANT-M ; ! ""
+Гомбо:Гомбо NP-ANT-M-1 ; ! ""
 Гончиков:Гончиков NP-COG-OV ; ! ""
 Далбаев:Далбаев NP-COG-OV ; ! ""
+Зибарев:Зибарев NP-COG-OV ; ! ""
 Далбаев:Далбаев NP-COG-OV ; ! ""
 Дамдинов:Дамдинов NP-COG-OV ; ! ""
 Дармаев:Дармаев NP-COG-OV ; ! ""
@@ -1908,6 +1929,7 @@ Yдэ:Yдэ NP-TOP-N1 ; ! "Uda"
 Жапович:Жапо NP-PAT-VICH ; ! ""
 Жаргалов:Жаргалов NP-COG-OV ; ! ""
 Информ:Информ NP-AL ; ! ""
+Гран-при:Гран-при NP-AL ; ! ""
 Ирина:Ирина NP-ANT-F ; ! ""
 Исимбаев:Исимбаев NP-COG-OV ; ! ""
 Кихот:Кихот NP-COG-MF ; ! ""
@@ -1918,10 +1940,10 @@ Yдэ:Yдэ NP-TOP-N1 ; ! "Uda"
 Лыгденов:Лыгденов NP-COG-OV ; ! ""
 Мандухаев:Мандухаев NP-COG-OV ; ! ""
 Мария:Мария NP-ANT-F ; ! ""
-Махмуд:Махмуд NP-ANT-M ; ! ""
-Москва:Москва NP-TOP-N1 ; ! ""
+Махмуд:Махмуд NP-ANT-M-1 ; ! ""
+Москва:Москва NP-TOP-1 ; ! ""
 Надежда:Надежда NP-ANT-F ; ! ""
-Пакистан:Пакистан NP-TOP-N1 ; ! ""
+Пакистан:Пакистан NP-TOP-1 ; ! ""
 Протасов:Протасов NP-COG-OV ; ! ""
 Пушкин:Пушкин NP-COG-MF ; ! ""
 Раднаев:Раднаев NP-COG-OV ; ! ""
@@ -1929,13 +1951,13 @@ Yдэ:Yдэ NP-TOP-N1 ; ! "Uda"
 Ринчинович:Ринчино NP-PAT-VICH ; ! ""
 Ринчинович:Ринчино NP-PAT-VICH ; ! ""
 Роза:Роза NP-ANT-F ; ! ""
-Росси:Росси NP-TOP-N2 ; ! ""
+Росси:Росси NP-TOP-2 ; ! ""
 Светлана:Светлана NP-ANT-F ; ! ""
 Степанович:Степано NP-PAT-VICH ; ! ""
 Сультимов:Сультимов NP-COG-OV ; ! ""
 Татьяна:Татьяна NP-ANT-F ; ! ""
-Тимофей:Тимофей NP-ANT-M ; ! ""
-Тимур:Тимур NP-ANT-M ; ! ""
+Тимофей:Тимофей NP-ANT-M-1 ; ! ""
+Тимур:Тимур NP-ANT-M-1 ; ! ""
 Толстой:Толстой NP-COG-MF ; ! ""
 Убушеевич:Убушее NP-PAT-VICH ; ! ""
 Харбанов:Харбанов NP-COG-OV ; ! ""
@@ -1950,8 +1972,28 @@ Yдэ:Yдэ NP-TOP-N1 ; ! "Uda"
 Шеметов:Шеметов NP-COG-OV ; ! ""
 Шенхоров:Шенхоров NP-COG-OV ; ! ""
 Шенхоров:Шенхоров NP-COG-OV ; ! ""
-Якутск:Якутск NP-TOP-N1 ; ! ""
+Якутск:Якутск NP-TOP-1 ; ! ""
 Янхаев:Янхаев NP-COG-OV ; ! ""
+
+Болхоев:Болхоев NP-COG-OV ; ! ""
+Бузинаев:Бузинаев NP-COG-OV ; ! ""
+Дагаев:Дагаев NP-COG-OV ; ! ""
+Зибарев:Зибарев NP-COG-OV ; ! ""
+Мархаев:Мархаев NP-COG-OV ; ! ""
+Норбоев:Норбоев NP-COG-OV ; ! ""
+Ракшаев:Ракшаев NP-COG-OV ; ! ""
+
+Анна:Анна NP-ANT-F ; ! ""
+Борис:Борис NP-ANT-M-1 ; ! ""
+Булат:Булат NP-ANT-M-1 ; ! ""
+Вениамин:Вениамин NP-ANT-M-1 ; ! ""
+Григорий:Григорий NP-ANT-M-1 ; ! ""
+Евгения:Евгения NP-ANT-F ; ! ""
+Жаргал:Жаргал NP-ANT-M-1 ; ! ""
+Ольга:Ольга NP-ANT-F ; ! ""
+Павел:Павел NP-ANT-M-1 ; ! ""
+Таисия:Таисия NP-ANT-F ; ! ""
+
 
 
 LEXICON Adjectives
