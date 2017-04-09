@@ -17,6 +17,7 @@ dev/conllu-morph.py -text
 dev/countstems.sh -text
 dev/lexicon.bxr.tsv -text
 dev/merge-lemmas.py -text
+dev/merge-lists.py -text
 dev/nouns.py -text
 /modes.xml -text
 tests/N-acc.yaml -text

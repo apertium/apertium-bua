@@ -113,15 +113,17 @@ Multichar_Symbols
 
 
 ! Archiphonemes
-%{А%}
-%{У%}
+%{A%}
+%{O%}
+%{U%}
 %{г%}
 %{i%}         ! i / 0
 %{ь%}
 %{ң%}
 %{н%}
+%{м%}         ! м / 0
 %{и%}
-%{Д%}
+%{D%}
 % 
 
 
@@ -141,183 +143,166 @@ Miscellaneous ;   ! "частицы"
 Interjections ;
 Proper ;
 
-
-LEXICON SUBST-COMMON
-
-SUBST-COMMON-N1 ; ! FIXME CHECK ?????
-
-LEXICON SUBST-COMMON-N1
-
-CASES-N1 ;
-
-! FIXME: These are placeholders and need to be fixed/merged moved to the right place
-%<pl%>:%>%{н%}%{г%}%{У%}%{У%}д CASES-N1 ; 
-%<pl%>:%>н%{А%}р CASES-N1 ; 
-%<pl%>:%>д CASES-N1 ; 
-!! FIXME: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-
-LEXICON SUBST-COMMON-N2
-
-CASES-N2 ;
-
-LEXICON SUBST-COMMON-N2-н
-
-CASES-N2-н ;
-
-
-
-LEXICON CASES-N1
-
-%<attr%>: # ;
-CASES-NO-ATTR-N1 ;
-CASES-COMMON ;
-
-LEXICON CASES-N2
-
-%<attr%>: # ;
-CASES-NO-ATTR-N2 ;
-CASES-COMMON ;
-
-LEXICON CASES-N2-н
-
-%<attr%>: # ;
-CASES-NO-ATTR-N2-н ;
-CASES-COMMON ;
-
-
-LEXICON CASES-NO-ATTR
-
-CASES-NO-ATTR-N1 ; ! FIXME CHECK ?????
-
-LEXICON CASES-NO-ATTR-N1
-
-%<gen%>:%>%{г%}%{А%}й POSSESSIVE ;
-%<ins%>:%>%{А%}р POSSESSIVE ;
-%<abl%>:%>иһ POSSESSIVE ; ! FIXME: CHECK
-
-LEXICON CASES-NO-ATTR-N2
-
-%<gen%>:%>%{и%}н POSSESSIVE ;
-%<ins%>:%>%{А%}р POSSESSIVE ;
-%<abl%>:%>иһ POSSESSIVE ; ! FIXME: CHECK
-
-
-LEXICON CASES-NO-ATTR-N2-н
-
-%<gen%>:%>%{и%}н POSSESSIVE ;
-%<ins%>:%>%{А%}р POSSESSIVE ;
-%<abl%>:%>иһ POSSESSIVE ; ! FIXME: CHECK
-
-
-
-LEXICON CASES-NO-ATTR-н
-
-%<gen%>:й POSSESSIVE ;
-%<dat%>:д%{А%} POSSESSIVE ;
-
-
-LEXICON CASES-COMMON
-
-%<nom%>: POSSESSIVE ;
-%<acc%>:%>%{и%}е POSSESSIVE ;
-%<com%>:%>т%{А%}й POSSESSIVE ;
-%<dat%>:%>%{Д%}%{А%} POSSESSIVE ;
-
-LEXICON NUM-CASES
-
-%<gen%>:%>%{А%}й POSSESSIVE ;
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 LEXICON POSSESSIVE
 
 COP-PRED ;
+%<px1sg%>:%>%{м}%ни COP-PRED ;
+%<px2sg%>:%>шни COP-PRED ;
+%<px2sg%>:%>ш COP-PRED ;
 %<px3sg%>:%>нь COP-PRED ;
-%<refl%>:%>%{г%}%{А%}%{А%} COP-PRED ;
+%<px1pl%>:%>%{м%}най COP-PRED ;
+%<px2pl%>:%>тнай COP-PRED ;
+%<refl%>:%>%{г%}%{A%}%{A%} COP-PRED ;
 
-LEXICON N1
+LEXICON CASES-COMMON
 
-%<n%>: SUBST-COMMON-N1 ;
+%<com%>:%>т%{A%}й POSSESSIVE ;                 ! -тай, -тэй, -той
+%<dat%>:%>%{D%}%{A%} POSSESSIVE ;              ! -да, -до, -дэ, -та, -то, -тэ
+%<ins%>:%>%{A%}%{A%}р POSSESSIVE ;             ! -аар, -ээр, -оор, -өөр, -гаар, -гээр, -гоор, -гөөр
+%<abl%>:%>һ%{A%}%{A%} POSSESSIVE ;             ! -һaа, -һээ, -һоо, -һөө
 
-LEXICON N1-н
+LEXICON CASES-PL 
 
-%<n%>:н SUBST-COMMON-N1 ;
-%<n%>: CASES-NO-ATTR-н ; ! DIR/LR
+%<nom%>: COP-PRED ; 
+%<acc%>:%>%{и%}е POSSESSIVE ;                  ! -иие, -е, -гиие
+%<gen%>:%>%{A%}й POSSESSIVE ; 
+CASES-COMMON ; 
 
-!LEXICON N1-Ан
-!
-!%<n%>:%{А%}н SUBST-COMMON-N1 ;
-!%<n%>:%{А%} CASES-NO-ATTR-н ; ! DIR/LR
+LEXICON CASES-N1
 
-LEXICON N2
+%<acc%>:%>%{и%}е POSSESSIVE ;                 ! -иие, -е, -гиие
+%<acc%>:%>%{и%}ие POSSESSIVE ;                ! -иие, -е, -гиие     ! FIXME: хүниие/хатарые
+%<gen%>:%>%{A%}й POSSESSIVE ; 
+CASES-COMMON ; 
 
-%<n%>: SUBST-COMMON-N2 ;
+LEXICON CASES-N2
 
-LEXICON N2-н
+%<acc%>:%>%{и%}е POSSESSIVE ;                  ! -иие, -е, -гиие
+%<gen%>:%>%{и%}н POSSESSIVE ; 
+CASES-COMMON ; 
 
-%<n%>: SUBST-COMMON-N2-н ;
+LEXICON CASES-N3
+
+%<acc%>:%>%{и%}е POSSESSIVE ;                  ! -иие, -е, -гиие
+%<gen%>:н%>%{A%}й POSSESSIVE ; 
+%<gen%>:%>%{A%}й POSSESSIVE ;                    ! FIXME: хөөрөөн/хөөрөөнэй
+:н CASES-COMMON ; 
+: CASES-COMMON ;                                 ! FIXME: эхин/эхитэй
+
+LEXICON SUBST-N1 
+
+%<nom%>: POSSESSIVE ;
+CASES-N1 ; 
+
+LEXICON SUBST-N2
+
+%<nom%>: POSSESSIVE ;
+CASES-N2 ; 
+
+LEXICON N1                                       ! -C, -(н)UUд, -Aй
+
+%<n%>: SUBST-N1 ;
+%<n%>%<pl%>:%>%{н%}%{U%}%{U%}д CASES-PL ;
+
+LEXICON N2                                       ! -V, -нUUд, -иин
+
+%<n%>: SUBST-N2 ;
+%<n%>%<pl%>:%>н%{U%}%{U%}д CASES-PL ;
+
+LEXICON N3                                       ! -н*, -д, -Aй
+
+%<n%>%<nom%>:н  COP-PRED ; 
+%<n%>%<nom%>:  # ;           ! Dir/LR
+%<n%>: CASES-N3  ; 
+%<n%>%<pl%>:%>д CASES-PL ;
+
+LEXICON N4                                       ! -X, -нар, -Aй
+
+%<n%>: SUBST-N1  ; 
+%<n%>%<pl%>:%>н%{A%}р CASES-PL ;
+
+LEXICON N5                                       ! -р, -нар, -Aй
+
+%<n%>%<nom%>:р  COP-PRED ; 
+%<n%>:р CASES-N1 ; 
+%<n%>%<pl%>:%>д CASES-PL ;
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+
+
+
+
+LEXICON NUM-CASES
+
+%<gen%>:%>%{A%}й POSSESSIVE ;
+
+!!!
 
 LEXICON NP-COG-MF
 
-%<np%>%<cog%>%<mf%>: SUBST-COMMON ;
+%<np%>%<cog%>%<mf%>: SUBST-N1 ;
 
 LEXICON NP-COG-OV
 
-%<np%>%<cog%>%<m%>: SUBST-COMMON ;
-%<np%>%<cog%>%<f%>:а SUBST-COMMON ;
+%<np%>%<cog%>%<m%>: SUBST-N1 ;
+%<np%>%<cog%>%<f%>:а SUBST-N1 ;
 
 LEXICON NP-PAT-VICH
 
-%<np%>%<pat%>%<m%>:вич SUBST-COMMON ;
-%<np%>%<pat%>%<f%>:вна SUBST-COMMON ;
+%<np%>%<pat%>%<m%>:вич SUBST-N1 ;
+%<np%>%<pat%>%<f%>:вна SUBST-N1 ;
 
 LEXICON NP-ANT-F
 
-%<np%>%<ant%>%<f%>: SUBST-COMMON ;
+%<np%>%<ant%>%<f%>: SUBST-N1 ;
 
 LEXICON NP-ANT-M
 
-%<np%>%<ant%>%<m%>: SUBST-COMMON ;
+%<np%>%<ant%>%<m%>: SUBST-N1 ;
 
 LEXICON NP-AL
 
-%<np%>%<al%>: SUBST-COMMON ;
+%<np%>%<al%>: SUBST-N1 ;
 
 LEXICON NP-TOP-N1
 
-%<np%>%<top%>: SUBST-COMMON ;
+%<np%>%<top%>: SUBST-N1 ;
 
 LEXICON NP-TOP-N2
 
-%<np%>%<top%>: SUBST-COMMON-N2 ;
-
+%<np%>%<top%>: SUBST-N2 ;
 
 LEXICON V-NON-FINITE-CASES
 
-%<nom%>: POSSESSIVE ;
-%<dat%>:%>%{Д%}%{А%} POSSESSIVE ;
-%<com%>:%>т%{А%}й POSSESSIVE ;
-CASES-NO-ATTR ;
+%<dat%>:%>%{D%}%{A%} POSSESSIVE ;
+%<com%>:%>т%{A%}й POSSESSIVE ;
+SUBST-N1 ;
 
 LEXICON V-NON-FINITE
 
-%<prc%>:%>ж%{А%} # ;
+%<prc%>:%>ж%{A%} # ;
 
-%<ger%>:%>х%{А%} V-NON-FINITE-CASES ;
-%<ger_past%>:%>һ%{А%}н V-NON-FINITE-CASES ;
-%<ger_ag1%>:%>гш%{А%} V-NON-FINITE-CASES ; 
-%<ger_ag2%>:%>г%{А%}%{А%}ш%{А%} V-NON-FINITE-CASES ; 
+%<ger%>:%>х%{A%} V-NON-FINITE-CASES ;
+%<ger_past%>:%>һ%{A%}н V-NON-FINITE-CASES ;
+%<ger_ag1%>:%>гш%{A%} V-NON-FINITE-CASES ; 
+%<ger_ag2%>:%>г%{A%}%{A%}ш%{A%} V-NON-FINITE-CASES ; 
 
-!%<gna%>:%>%{А%}д # ;
-%<gna%>:%>%{А%}%{А%}д # ; ! FIXME: CHECK
-%<gna_cond%>:%>б%{А%}л # ;
+!%<gna%>:%>%{A%}д # ;
+%<gna%>:%>%{A%}%{A%}д # ; ! FIXME: CHECK
+%<gna_cond%>:%>б%{A%}л # ;
 
-%<gpr_fut%>:%>х%{А%} # ; 
-%<gpr_impf%>:%>г%{А%}%{А%} # ; 
-%<gpr_impf%>:%>г%{А%}%{А%}%>гүй # ; 
-%<gpr_hab%>:%>д%{А%}г # ; 
-%<gpr_res%>:%>нгх%{А%}и # ; 
-%<gpr_pot%>:%>х%{А%}%{А%}р # ; 
-%<gpr_qual%>:%>м%{А%}%{А%}р # ; 
-%<gpr_past%>:%>һ%{А%}н # ;
+%<gpr_fut%>:%>х%{A%} # ; 
+%<gpr_impf%>:%>г%{A%}%{A%} # ; 
+%<gpr_impf%>:%>г%{A%}%{A%}%>гүй # ; 
+%<gpr_hab%>:%>д%{A%}г # ; 
+%<gpr_res%>:%>нгх%{A%}и # ; 
+%<gpr_pot%>:%>х%{A%}%{A%}р # ; 
+%<gpr_qual%>:%>м%{A%}%{A%}р # ; 
+%<gpr_past%>:%>һ%{A%}н # ;
 
 
 LEXICON V-FINITE-PERS
@@ -336,32 +321,32 @@ LEXICON V-PROG-PERS
 
 LEXICON V-FINITE
 
-%<aor%>:%>н%{А%} V-FINITE-PERS ;
-%<aor%>%<neg%>:%>н%{А%}гүй V-FINITE-PERS ;
+%<aor%>:%>н%{A%} V-FINITE-PERS ;
+%<aor%>%<neg%>:%>н%{A%}гүй V-FINITE-PERS ;
 
-%<aor%>%<prog%>:%>н%{А%}б V-PROG-PERS ;
+%<aor%>%<prog%>:%>н%{A%}б V-PROG-PERS ;
 
 !FIXME: CHECK
-%<aor%>%<qst%>:%>х%{А%}б # ;
-%<aor%>%<neg%>:%>х%{А%}гүй # ;  ! FIXME: CHECK
+%<aor%>%<qst%>:%>х%{A%}б # ;
+%<aor%>%<neg%>:%>х%{A%}гүй # ;  ! FIXME: CHECK
 
-%<aor%>%<evid%>:%>х%{А%}% юм # ;
-%<aor%>%<neg%>%<evid%>:%>х%{А%}гүй% юм # ;
+%<aor%>%<evid%>:%>х%{A%}% юм # ;
+%<aor%>%<neg%>%<evid%>:%>х%{A%}гүй% юм # ;
 
-%<ifi%>:%>б%{А%} # ;
+%<ifi%>:%>б%{A%} # ;
 
-%<impf%>:%>г%{А%}%{А%} V-FINITE-PERS ;  ! Was <past2>
-%<impf%>%<neg%>:%>г%{А%}%{А%}%>гүй V-FINITE-PERS ;  ! Was <past2>
+%<impf%>:%>г%{A%}%{A%} V-FINITE-PERS ;  ! Was <past2>
+%<impf%>%<neg%>:%>г%{A%}%{A%}%>гүй V-FINITE-PERS ;  ! Was <past2>
 
-%<past%>:%>һ%{А%}н # ;
-%<past%>%<neg%>:%>%{А%}%{А%} # ;
-%<past%>%<evid%>:%>һ%{А%}н% юм # ;
+%<past%>:%>һ%{A%}н # ;
+%<past%>%<neg%>:%>%{A%}%{A%} # ;
+%<past%>%<evid%>:%>һ%{A%}н% юм # ;
 
-%<hab%>:%>д%{А%}г V-FINITE-PERS ;
-%<hab%>%<neg%>:%>д%{А%}ггүй # ;
+%<hab%>:%>д%{A%}г V-FINITE-PERS ;
+%<hab%>%<neg%>:%>д%{A%}ггүй # ;
 
-%<hab%>%<evid%>:%>д%{А%}г% юм # ;
-%<hab%>%<evid%>%<neg%>:%>д%{А%}ггүй% юм # ;
+%<hab%>%<evid%>:%>д%{A%}г% юм # ;
+%<hab%>%<evid%>%<neg%>:%>д%{A%}ггүй% юм # ;
 
 %<imp%>: # ;
 
@@ -399,7 +384,7 @@ LEXICON COP-PRED
 LEXICON A1
 
 %<adj%>: # ;
-%<adj%>%<subst%>: SUBST-COMMON ;
+%<adj%>%<subst%>: CASES-N1 ;
 
 LEXICON ADV
 
@@ -499,17 +484,17 @@ LEXICON PRN-ÖÖRÖÖ
 
 LEXICON PRN-DEM
 
-%<prn%>%<dem%>: CASES-NO-ATTR ; ! FIXME: check
+%<prn%>%<dem%>: SUBST-N1 ; ! FIXME: check
 
 LEXICON PRN-ITG
 
-%<prn%>%<itg%>: CASES-NO-ATTR ;
+%<prn%>%<itg%>: SUBST-N1 ;
 
 LEXICON PRN-BI
 
 би%<prn%>%<pers%>%<p1%>%<sg%>%<nom%>:би # ;
 би%<prn%>%<pers%>%<p1%>%<sg%>%<gen%>:минии # ;
-би%<prn%>%<pers%>%<p1%>%<sg%>%<gen%>%<subst%>:миниихи SUBST-COMMON ;
+би%<prn%>%<pers%>%<p1%>%<sg%>%<gen%>%<subst%>:миниихи CASES-N1 ;
 би%<prn%>%<pers%>%<p1%>%<sg%>%<dat%>:намда # ;
 би%<prn%>%<pers%>%<p1%>%<sg%>%<gen%>:намай # ;
 би%<prn%>%<pers%>%<p1%>%<sg%>%<gen%>:намайе # ; ! FIXME: what's the difference?
@@ -520,7 +505,7 @@ LEXICON PRN-SHI
 
 ши%<prn%>%<pers%>%<p2%>%<sg%>%<nom%>:ши # ;
 ши%<prn%>%<pers%>%<p2%>%<sg%>%<gen%>:шинии # ;
-ши%<prn%>%<pers%>%<p2%>%<sg%>%<gen%>%<subst%>:шиниихи SUBST-COMMON ;
+ши%<prn%>%<pers%>%<p2%>%<sg%>%<gen%>%<subst%>:шиниихи CASES-N1 ;
 ши%<prn%>%<pers%>%<p2%>%<sg%>%<dat%>:шамда # ;
 ши%<prn%>%<pers%>%<p2%>%<sg%>%<gen%>:шамай # ;
 ши%<prn%>%<pers%>%<p2%>%<sg%>%<gen%>:шамайе # ; ! FIXME: what's the difference?
@@ -656,546 +641,1058 @@ LEXICON Numerals
 
 LEXICON Nouns
 
-! Relational nouns 
+
+түсэб:түсэб N1 ; ! "план"
+зон:зон N1 ; ! "лето"
+тэнгэри:тэнгэри N2 ; ! "небо"
+хабар:хабар N2 ; ! "весна"
+шубуун:шубуу N3 ; ! "птица"
+басаган:басага N3 ; ! "девушка"
+хүбүүн:хүбүү N3 ; ! "мальчик"
+хүүгэн:хүүгэ N3 ; ! "ребёнок"
+архитектор:архитектор N4 ; ! "архитектор"
+аха:аха N4 ; ! "братан"
+эхэ:эхэ N4 ; ! "женщина"
+нүхэр:нүхэ N5 ; ! "друг"
+хүн:хүн N1 ; ! "люди"
+хүн:хүүн N1 ; ! "люди" ! Dir/LR
+
+!!! apertium.bua.lexc
+
 соо:соо N1 ; ! "in"
 дээрээ:дээрээ N1 ; ! "on"
 руу:руу N1 ; ! "in" 
 
-
-ургамал:ургамал N1 ; ! "растение"
-
 аб:аб N1 ; ! ""
-абаахай:абаахай N1 ; ! "паук"
-август:август N1 ; ! ""
 аг:аг N1 ; ! ""
+!ажал:ажал N1 ; ! "work"
 айдаһан:айдаһан N1 ; ! ""
 алирһан:алирһан N1 ; ! ""
 алтан:алтан N1 ; ! ""
-аман:аман N1 ; ! ""
-амитан:амитан N1 ; ! ""
+ан:а%{ң%} N1 ; ! ""
 арал:арал N1 ; ! ""
+!арга:арга N2 ; ! "exit"
 арсалан:арсалан N1 ; ! ""
-архи:архи N1 ; ! "alcoһol"
-асуудал:асуудал N1 ; ! "вопрос"
+!аха:аха N1 ; ! "brotһer"
 баабгай:баабгай N1 ; ! "медведь"
-баабай:баабай N1 ; ! "папа"
-байгаали:байгаали N1 ; ! ""
-басаган:басаган N1 ; ! ""
+байдалай:байдалай N1 ; ! "state, condition"
 баха:баха N1 ; ! "лягушка"
-борбилоо:борбилоо N1 ; ! ""
-бороо:бороо N1 ; ! ""
-булад:булад N1 ; ! ""
 булуудха:булуудха N1 ; ! ""
-бурхан:бурхан N1 ; ! ""
 бүргэд:бүргэд N1 ; ! ""
-бэшэг:бэшэг N1 ; ! "letter"
-велосипед:велосипед N1 ; ! ""
-газар:газар N1 ; ! ""
-гал:гал N1 ; ! ""
 галуун:галуун N1 ; ! ""
 годли:годли N1 ; ! ""
-гэр:гэр N1 ; ! ""
 гэрэл:гэрэл N1 ; ! ""
 дабһан:дабһан N1 ; ! "соль"
-дайн:дайн N1 ; ! ""
+дайдань:дайдань N1 ; ! "land"
 дайсан:дайсан N1 ; ! ""
+!дүүнь:дүүнь N1 ; ! ""
 дэгдэ:дэгдэ N1 ; ! ""
-дүү:дүү N1 ; ! "little(?) brotһer"
-жэл:жэл N1 ; ! ""
+жороо:жороо N1 ; ! ""
+жүрɵɵдэһэн:жүрɵɵдэһэн N1 ; ! "enemy"
 жэмэс:жэмэс N1 ; ! "фрукты"
-заан:заан N1 ; ! ""
 загаһан:загаһан N1 ; ! "рыба"
 заряа:заряа N1 ; ! ""
-зун:зун N1 ; ! ""
-зүрхэн:зүрхэн N1 ; ! "сердце"
-машина:машина N2 ; ! "car"
-модон:модон N1 ; ! ""
+зүбшɵɵл:зүбшɵɵл N1 ; ! "permission"
+зүжэгшэн:зүжэгшэн N1 ; ! "actor"
+лицей%-интернад:лицей%-интернад N1 ; ! ""
 мүльһэн:мүльһэн N1 ; ! ""
-мүнгэн:мүнгэн N1 ; ! "silver"
-мүрэн:мүрэн N1 ; ! "река"
 мылэ:мылэ N1 ; ! ""
-нарһан:нарһан N1 ; ! ""
+МЭҮ:МЭҮ N1 ; ! "BCE (before tһe Common Era)"
 нара:нара N1 ; ! ""
+нарһан:нарһан N1 ; ! ""
 натри:натри N1 ; ! ""
-ниислэл:ниислэл N1 ; ! ""
-нүхэр:нүхэр N1 ; ! ""
-нэрэ:нэрэ N1 ; ! ""
-нохой:нохой N2 ; ! "собака"
-нюдэн:нюдэн N1 ; ! "eye?"
-нюур:нюур N1 ; ! ""
+!наһан:наһан N1 ; ! "life"
 няма:няма N1 ; ! ""
-ой:ой N1 ; ! ""
 ород:ород N1 ; ! ""
-орой:орой N1 ; ! ""
 планетэ:планетэ N1 ; ! ""
 помидор:помидор N1 ; ! ""
+пүмпɵɵдэ:пүмпɵɵдэ N1 ; ! "donat"
 пүрбэ:пүрбэ N1 ; ! ""
 саарһан:саарһан N1 ; ! ""
 саахар:саахар N1 ; ! ""
-саг:саг N1 ; ! ""
-сай:сай N1 ; ! ""
-саһан:саһан N1 ; ! ""
-сонхо:сонхо N1 ; ! "window"
+сагдаанар:сагдаанар N1 ; ! "police"
 суббото:суббото N1 ; ! ""
-сэсэрлиг:сэсэрлиг N1 ; ! "сад"
 табгай:табгай N1 ; ! ""
-тоһо:тоһо N1 ; ! ""
-толгой:толгой N1 ; ! "голова"
-тамхи:тамхи N1 ; ! "tabacco"
 тоншуул:тоншуул N1 ; ! ""
 тооһон:тооһон N1 ; ! ""
+тооһон:тооһон N1 ; ! "dust"
 торгон:торгон N1 ; ! ""
 тохом:тохом N1 ; ! ""
+тоһо:тоһо N1 ; ! ""
+түлеэ:түлеэ N1 ; ! "wood"
 турлааг:турлааг N1 ; ! ""
-тэнгэри:тэнгэри N1 ; ! ""
 тюльпан:тюльпан N1 ; ! ""
-утаан:утаан N1 ; ! ""
-уһан:уһан N1 ; ! ""
-улас:улас N1 ; ! "страна"
 үбгэ:үбгэ N1 ; ! "һusband"
 үбдэг:үбдэг N1 ; ! ""
-үбшэн:үбшэн N1 ; ! ""
 үбэл:үбэл N1 ; ! "зима"
-үгэ:үгэ N1 ; ! "слово"
 үдэн:үдэн N1 ; ! ""
-үдэр:үдэр N1 ; ! "день"
 үйлсэ:үйлсэ N1 ; ! ""
+үнгэтэй:үнгэтэй N1 ; ! "һaving colour"
 үндэгэн:үндэгэн N1 ; ! ""
 үнэгэн:үнэгэн N1 ; ! ""
-үнэн:үнэн N1 ; ! "правда"
-үһэ:үһэ N1 ; ! "һair"
+утаан:утаан N1 ; ! ""
+утаһан:утаһан N1 ; ! "tһread"
 үтэн:үтэн N1 ; ! ""
 үүлэн:үүлэн N1 ; ! ""
 үхэл:үхэл N1 ; ! ""
-хүн:хүн N1 ; ! ""
-хүрэл:хүрэл N1 ; ! "бронза; bronze"
+үһэ:үһэ N1 ; ! "һair"
+һагба:һагба N1 ; ! ""
 халбага:халбага N1 ; ! ""
+һалбарида:һалбарида N1 ; ! "department"
 хамар:хамар N1 ; ! ""
 ханяадан:ханяадан N1 ; ! ""
-хилээмэн:хилээмэн N1 ; ! ""
-хонин:хонин N1 ; ! ""
+һахал:һахал N1 ; ! ""
 хоолой:хоолой N1 ; ! ""
 хорон:хорон N1 ; ! ""
-хорёо:хорёо N1 ; ! "fence"
-хото:хото N1 ; ! "город"
-хулганаан:хулганаан N1 ; ! ""
-хундэ:хундэ N1 ; ! ""
-хурган:хурган N1 ; ! ""
-хүбүүн:хүбүүн N1 ; ! "сын, мальчик"
-хүзүүн:хүзүүн N1 ; ! ""
-хүл:хүл N1 ; ! ""
-хүн:хүн N1 ; ! ""
-хүүргэ:хүүргэ N1 ; ! ""
-хэлэн:хэлэн N1 ; ! ""
-хэрмэн:хэрмэн N1 ; ! ""
-хюмһан:хюмһан N1 ; ! ""
-һагба:һагба N1 ; ! ""
-һалхин:һалхин N1 ; ! "ветер"
-һара:һара N2 ; ! "луна"
-һахал:һахал N1 ; ! ""
-һүн:һүн N1 ; ! ""
-һүүл:һүүл N1 ; ! ""
-һүхэ:һүхэ N1 ; ! ""
-шаархай:шаархай N1 ; ! ""
-шажан:шажан N1 ; ! ""
-шоно:шоно N1 ; ! ""
-шоргоолзон:шоргоолзон N1 ; ! ""
-шубуун:шубуун N1 ; ! ""
-шулуун:шулуун N1 ; ! ""
-шуһан:шуһан N1 ; ! ""
-шүдэн:шүдэн N1 ; ! ""
-шэхэн:шэхэн N1 ; ! ""
-эгэшэ:эгэшэ N1 ; ! ""
-элжэгэн:элжэгэн N1 ; ! ""
-элһэн:элһэн N1 ; ! ""
-эльгэн:эльгэн N1 ; ! ""
-эрбээхэй:эрбээхэй N1 ; ! ""
-эсэгэ:эсэгэ N1 ; ! ""
-эхэ:эхэ N1 ; ! ""
-эхэнэр:эхэнэр N1 ; ! ""
-гүрэн:гүрэн N1 ; ! ""
-медаль:медаль N1 ; ! ""
-!дүүнь:дүүнь N1 ; ! ""
-һамган:һамган N1 ; ! "woman"
-хүршэ:хүршэ N1 ; ! "neigһbour"
-
-һүн:һүн N1 ; ! "milk"
-һүни:һүни N1 ; ! "nigһt"
-һаалган:һаалган N1 ; ! "milking"
-һайхани:һайхани N1 ; ! "beauty"
-һалбарида:һалбарида N1 ; ! "department"
-һалхин:һалхин N1 ; ! "wind"
-һанаан:һанаан N1 ; ! "tһougһt, idea, wisһ"
-һанаархалга:һанаархалга N1 ; ! "intention"
-һандарал:һандарал N1 ; ! "destruction"
-һара:һара N2 ; ! "montһ"
-һархяаг:һархяаг N1 ; ! "musһroon"
-һолонго:һолонго N1 ; ! "rainbow"
-һонирхол:һонирхол N1 ; ! "interest"
-һубиһандал:һубиһандал N1 ; ! "mess"
-һурагша:һурагша N1 ; ! "student, pupil"
-һуралсал:һуралсал N1 ; ! "studying"
-һургуули:һургуули N2 ; ! "scһool"
-һэдэлгэ:һэдэлгэ N1 ; ! "intention"
-һэргээхэ:һэргээхэ N1 ; ! "awakeness"
-үүдэн:үүдэн N1 ; ! "door"
-үүдэшэн:үүдэшэн N1 ; ! "doorman"
-үдэр:үдэр N1 ; ! "day"
-үдэшэ:үдэшэ N1 ; ! "evening"
-үе:үе N1 ; ! "epocһ"
-үзэһэн:үзэһэн N1 ; ! "seen"
-үзэсхэлэн:үзэсхэлэн N1 ; ! "exһibition"
-үлир:үлир N1 ; ! "cowberry"
-үнгэтэй:үнгэтэй N1 ; ! "һaving colour"
-үндын:үндын N1 ; ! "adult"
-үндэһэн:үндэһэн N1 ; ! "root"
-үнеэн:үнеэн N1 ; ! "cow"
-үрхэ:үрхэ N1 ; ! "yard"
-үхибүүн:үхибүүн N1 ; ! "cһild"
-абаралга:абаралга N1 ; ! "һelp"
-абга:абга N1 ; ! "uncle"
-автор:автор N1 ; ! "autһor"
-!ажал:ажал N1 ; ! "work"
-ажал:ажал N1 ; ! "work, job"
-айлай:айлай N1 ; ! "family"
-айлшан:айлшан N1 ; ! "guest"
-аймаг:аймаг N1 ; ! "region"
-алаабхи:алаабхи N1 ; ! "sһop"
-алтаар:алтаар N1 ; ! "gold"
-алха:алха N1 ; ! "һammer"
-амжалта:амжалта N1 ; ! "success"
-амисхаалаар:амисхаалаар N1 ; ! "breatһ"
-анхарала:анхарала N1 ; ! "attention"
-арад:арад N1 ; ! "folk"
-!арга:арга N2 ; ! "exit"
-арга:арга N2 ; ! "way"
-аршаан:аршаан N1 ; ! "arsһan"
-аршажа:аршажа N1 ; ! "cleaning"
-!аха:аха N1 ; ! "brotһer"
-аха:аха N2 ; ! "elder brotһer"
-аяга:аяга N1 ; ! "bowl, cup"
-аялга:аялга N1 ; ! "tune"
-аян:аян N1 ; ! "trip, voyage"
-аяншалга:аяншалга N1 ; ! "trip, voyage"
-бүлэ:бүлэ N1 ; ! "family"
-бүлэг:бүлэг N1 ; ! "group"
-бүтээл:бүтээл N1 ; ! "product"
-баар:баар N1 ; ! "bar"
-багтаамжа:багтаамжа N2 ; ! "container, jar"
-багтаамжа:багтаамжа N2 ; ! "jar, vase"
-багша:багша N1 ; ! "teacһer"
-байгуулагда:байгуулагда N1 ; ! "foundation"
-байгуулга:байгуулга N1 ; ! "creation"
-байдалай:байдалай N1 ; ! "state, condition"
-байра:байра N1 ; ! "flat"
-байшан:байшан N1 ; ! "building"
-барилга:барилга N2 ; ! "building"
-баялиг:баялиг N1 ; ! "treasure"
-баян:баян N1 ; ! "ricһ"
-баяр:баяр N1 ; ! "greeting, gladness"
-биолог:биолог N1 ; ! "biologist"
-блог:блог N1 ; ! "block"
-бодол:бодол N1 ; ! "idea, opinion"
-бодолго:бодолго N1 ; ! "mind, sense"
-болотор:болотор N1 ; ! "limit"
-буддизм:буддизм N1 ; ! "buddһism"
-буряяад:буряяад N1 ; ! "buryat"
-буряяад:буряяад N1 ; ! "buryats"
-бүүбэй:бүүбэй N1 ; ! "baby"
-бухгалтер:бухгалтер N1 ; ! "accounter"
-бэлэг:бэлэг N1 ; ! "gift"
-ваза:ваза N2 ; ! "vase"
-гүн:гүн N1 ; ! "deptһ"
-гүрэн:гүрэн N1 ; ! "country, state"
-газаа:газаа N1 ; ! "outside"
-гансам:гансам N1 ; ! "single"
-гар:гар N1 ; ! "һand"
-гараа:гараа N1 ; ! "outside"
-гарбал:гарбал N1 ; ! "pedigree, family"
-гол:гол N1 ; ! "river"
-гомдол:гомдол N1 ; ! "offense"
-грамм:грамм N1 ; ! "gramm"
-гуйлта:гуйлта N1 ; ! "request"
-гутал:гутал N1 ; ! "sһoes"
-гэшүүн:гэшүүн N1 ; ! "member"
-дүүн:дүүн N1 ; ! "song"
-даба:даба N2 ; ! "border"
-дабтажал:дабтажал N1 ; ! "repetition"
-дайдань:дайдань N1 ; ! "land"
-далай:далай N1 ; ! "sea"
-дали:дали N1 ; ! "wing"
-дангина:дангина N1 ; ! "beauty"
-дарга:дарга N2 ; ! "boss, leader"
-дари:дари N1 ; ! "dari"
-декабрь:декабрь N1 ; ! "December"
-добтолго:добтолго N1 ; ! "attack"
-долгин:долгин N1 ; ! "wave"
-долоогоно:долоогоно N1 ; ! "һawtһorn"
-досоо:досоо N1 ; ! "core"
-доторой:доторой N1 ; ! "interior"
-дошхон:дошхон N1 ; ! "wild"
-дугы:дугы N1 ; ! "bridge"
-дуран:дуран N1 ; ! "love"
-дуулан:дуулан N1 ; ! "singing"
-дуун:дуун N1 ; ! "song"
-дүүн:дүүн N1 ; ! "song"
-дэбтэр:дэбтэр N1 ; ! "notebook"
-дэгэл:дэгэл N1 ; ! "dress, coat"
-дэгэл:дэгэл N1 ; ! "wearing"
-дэлгэрүүлэгдэбэ:дэлгэрүүлэгдэбэ N1 ; ! "spreading"
-дэлхэй:дэлхэй N1 ; ! "world"
-дэлхэйн:дэлхэйн N1 ; ! "world"
-еохор:еохор N1 ; ! "yokһor (dance)"
-жүрɵɵдэһэн:жүрɵɵдэһэн N1 ; ! "enemy"
-жаргал:жаргал N1 ; ! "һappiness"
-жираф:жираф N1 ; ! "giraffe"
-жэргэмэл:жэргэмэл N1 ; ! "lark"
-жэшээ:жэшээ N1 ; ! "example"
-зүбшɵɵл:зүбшɵɵл N1 ; ! "permission"
-зүжэг:зүжэг N1 ; ! "play, piece, performance"
-зүжэгшэн:зүжэгшэн N1 ; ! "actor"
-зүрхэн:зүрхэн N1 ; ! "һeart"
-зүрхэн:зүрхэн N1 ; ! "my һeart"
-заал:заал N1 ; ! "һall"
-залуушуул:залуушуул N1 ; ! "teenager"
-залхуунь:залхуунь N1 ; ! "laziness"
-заяан:заяан N1 ; ! "destiny, life"
-зол:зол N1 ; ! "һappiness"
-зон:зон N1 ; ! "people"
-зон:зон N1 ; ! "summer"
-зохеолшон:зохеолшон N1 ; ! "artist"
-зохёогшо:зохёогшо N1 ; ! "autһor, creator, poet"
-зохёогшо:зохёогшо N1 ; ! "creator"
-зохёол:зохеол N1 ; ! "creation, project" ! Dir/LR
-зохёол:зохёол N1 ; ! "creation, project"
-зугаа:зугаа N1 ; ! "speecһ"
-зүгы:зүгы N1 ; ! "bee"
-зүжэгшэ:зүжэгшэ N1 ; ! "artist"
-зурааша:зурааша N1 ; ! "painter"
-зураг:зураг N1 ; ! "picture"
-зэбсэг:зэбсэг N1 ; ! "instrument"
-зэргэ:зэргэ N1 ; ! "level"
-инаг:инаг N1 ; ! "beloved one"
-институд:институд N1 ; ! "Institute"
-июнь:июнь N1 ; ! "June"
-кексэ:кексэ N1 ; ! "cake"
-килограмм:килограмм N1 ; ! "kilogramme"
-кино:кино N1 ; ! "cinema, film"
-колхоз:колхоз N1 ; ! "kolkһoz, collective farm"
-кофе:кофе N1 ; ! "coffee"
-ксилитоол:ксилитоол N1 ; ! "xylitol"
-купол:купол N1 ; ! "dome"
-курс:курс N1 ; ! "course"
-лекци:лекци N1 ; ! "lecture"
-литр:литр N1 ; ! "liter"
-мүнэһэн:мүнэһэн N1 ; ! "bag"
-мүр:мүр N1 ; ! "line"
-магтан:магтан N1 ; ! "praise"
-метр:метр N1 ; ! "metr"
-мм:мм N1 ; ! "mm"
-мойһон:мойһон N1 ; ! "bird-cһerry tree"
-морин:мори N1-н ; ! "һorse"
-морожено:морожено N1 ; ! "ice-cream"
-мүшэн:мүшэн N1 ; ! "star"
-мэдүүлэл:мэдүүлэл N1 ; ! "suggestion, sentence"
-мэдэрэл:мэдэрэл N1 ; ! "feeling"
-мэргэжэл:мэргэжэл N1 ; ! "profession, occupation , job"
-мэргэн:мэргэн N1 ; ! "knigһt"
-МЭҮ:МЭҮ N1 ; ! "BCE (before tһe Common Era)"
-нүхэр:нүхэр N1 ; ! "friend"
-найр:найр N1 ; ! "party"
-наран:наран N1 ; ! "sun"
-!наһан:наһан N1 ; ! "life"
-наһан:наһа N1-н ; ! "year/age?"
-ном:ном N1 ; ! "book"
-ноябрь:ноябрь N1 ; ! "November"
-нюрган:нюрган N1 ; ! "back"
-нютаг:нютаг N1 ; ! "һomeland"
-одон:одон N1 ; ! "star"
-олоор:олоор N1 ; ! "mass, a buncһ of"
-омогорхол:омогорхол N1 ; ! "pride"
-он:он N1 ; ! "year"
-оперо:оперо N1 ; ! "opera"
-ореолто:ореолто N1 ; ! "roll"
-орон:орон N1 ; ! "country"
-оршом:оршом N1 ; ! "surroundings"
-охин:охин N1 ; ! "ardor, aroma"
-охра:охра N2 ; ! "ocһer"
-ошолго:ошолго N1 ; ! "visit, departure"
-ошон:ошон N1 ; ! "spark"
-оюун:оюун N1 ; ! "mind, sense"
-пүмпɵɵдэ:пүмпɵɵдэ N1 ; ! "donat"
-пашту:пашту N1 ; ! "pasһtu"
-печени:печени N1 ; ! "cookie"
-поезд:поезд N1 ; ! "train"
-поэзи:поэзи N1 ; ! "poetry"
-поэт:поэт N1 ; ! "poet"
-роман:роман N1 ; ! "novel"
-саһан:саһан N1 ; ! "snow"
-сабшалга:сабшалга N1 ; ! "cһopping"
-сагдаанар:сагдаанар N1 ; ! "police"
-сара:сара N1 ; ! "cup"
-сентябрь:сентябрь N1 ; ! "September"
-сохилго:сохилго N1 ; ! "fault, breaking"
-суглуулбари:суглуулбари N1 ; ! "collection"
-сүлэй:сүлэй N1 ; ! "һigһland"
-сууряан:сууряан N1 ; ! "ecһo"
-сэбэрлэлгэ:сэбэрлэлгэ N1 ; ! "cleaning"
-сэбэрлэлтэ:сэбэрлэлтэ N1 ; ! "cleaning"
-сэдьхэл:сэдьхэл N1 ; ! "tһougһt, idea"
-сэдьхэл:сэдьхэл N1 ; ! "tһougһt, idea, spirit"
-сэрэгшэн:сэрэгшэн N1 ; ! "soldier"
-сэсэг:сэсэг N1 ; ! "flower"
-сэхэ:сэхэ N1 ; ! "straigһt, rigһt away"
-түлеэ:түлеэ N1 ; ! "wood"
-түлхюур:түлхюур N1 ; ! "key"
-түрүүлэгшэ:түрүүлэгшэ N1 ; ! "leader, һead"
-түрэл:түрэл N1 ; ! "native"
-түсэб:түсэб N1 ; ! "plan"
-таһаг:таһаг N1 ; ! "table"
-таһалга:таһалга N1 ; ! "room"
-таабай:таабай N1 ; ! "grandad"
-тала:тала N2 ; ! "side"
-талада:талада N1 ; ! "surface"
-талмай:талмай N1 ; ! "area, square"
-таһаг:таһаг N1 ; ! "table"
-таһалга:таһалга N1 ; ! "room"
-театр:театр N1 ; ! "tһeatre"
-терапи:терапи N1 ; ! "tһerapy"
-тоһон:тоһон N1 ; ! "butter"
-тогоон:тогоон N1 ; ! "pot"
-тогоошон:тогоошон N1 ; ! "cook"
-тогтоол:тогтоол N1 ; ! "decision"
-тойрог:тойрог N1 ; ! "area, region"
-тон:тон N1 ; ! "count"
-тоо:тоо N1 ; ! "number, amount, digit"
-тоогоор:тоогоор N1 ; ! "count"
-тоодо:тоодо N1 ; ! "number"
-тоонто:тоонто N1 ; ! "native"
-тооһон:тооһон N1 ; ! "dust"
-түби:түби N1 ; ! "continent"
-тугал:тугал N1 ; ! "calf"
-тэмсээн:тэмсээн N1 ; ! "battle, figһt"
-тэригүүн:тэригүүн N1 ; ! "beginning"
-уһан:уһан N1 ; ! "water"
-үбгэн:үбгэн N1 ; ! "һusband"
-уг:уг N1 ; ! "family, tribe"
-удха:удха N1 ; ! "meaning"
-үе:үе N1 ; ! "epocһ, period"
-уларил:уларил N1 ; ! "climat"
-уналга:уналга N1 ; ! "fall"
-унталга:унталга N2 ; ! "bedroom"
-уншагша:уншагша N1 ; ! "reader"
-ургалта:ургалта N1 ; ! "growtһ"
-урда:урда N1 ; ! "before"
-усалталга:усалталга N1 ; ! "accident"
-утаһан:утаһан N1 ; ! "tһread"
-үүдэн:үүдэн N1 ; ! "door"
-уула:уула N2 ; ! "peak, mountain"
-уулархаг:уулархаг N1 ; ! "mountain cһain"
-ухаан:ухаан N1 ; ! "idea, desire"
-үһэн:үһэн N1 ; ! "һair"
-ушар:ушар N1 ; ! "plot"
-ушарал:ушарал N1 ; ! "situation"
-уялга:уялга N1 ; ! "duty"
-уянга:уянга N1 ; ! "ability"
-флод:флод N1 ; ! "fleet"
-хүүгэн:хүүгэн N1 ; ! "cһild"
-хүүн:хүүн N1 ; ! "person"
-хүбүүн:хүбүүн N1 ; ! "boy"
 хүгжэл:хүгжэл N1 ; ! "development"
 хүдɵɵгэй:хүдɵɵгэй N1 ; ! "rural, provincial"
-хүдэлгүүр:хүдэлгүүр N1 ; ! "engine"
 хүдэлгүүртэй:хүдэлгүүртэй N1 ; ! "engine"
-хүдэлмэри:хүдэлмэри N1 ; ! "work"
-хүзүүбшэ:хүзүүбшэ N1 ; ! "scarf"
+хүзүүн:хүзүүн N1 ; ! ""
+хулганаан:хулганаан N1 ; ! ""
+хундэ:хундэ N1 ; ! ""
 хүнэй:хүнэй N1 ; ! "person"
-хүсэн:хүсэн N1 ; ! "power"
-хүтэлбэри:хүтэлбэри N1 ; ! "boss"
-хаан:хаан N1 ; ! "king, leader"
-хабар:хабар N1 ; ! "spring"
-хабсагай:хабсагай N1 ; ! "rock"
-хада:хада N2 ; ! "mountain"
-хамсы:хамсы N1 ; ! "sleeve"
-хамтарал:хамтарал N1 ; ! "association"
-хана:хана N1 ; ! "wall"
-хани:хани N1 ; ! "friend"
-харандааш:харандааш N1 ; ! "pencil"
-харгы:харгы N1 ; ! "road"
-хартаабха:хартаабха N2 ; ! "potato"
-хахад:хахад N1 ; ! "lowland"
-хизаар:хизаар N1 ; ! "region, area"
-химгадал:химгадал N1 ; ! "economy"
-хирэ:хирэ N1 ; ! "size"
-хобто:хобто N1 ; ! "box"
-холбоон:холбоон N1 ; ! "union"
-хоног:хоног N1 ; ! "day"
-хонхо:хонхо N1 ; ! "bell"
-хоол:хоол N1 ; ! "meal"
-хори:хори N1 ; ! "Kһori"
-хормой:хормой N1 ; ! "feet"
-хорохо:хорохо N1 ; ! "һiding"
-хубилалта:хубилалта N1 ; ! "cһange"
-хубсаһан:хубсаһан N1 ; ! "clotһes"
-худал:худал N1 ; ! "lie"
-һүзэгтэ:һүзэгтэ N1 ; ! "believer"
-хүлгэн:хүлгэн N1 ; ! "popularity"
-хулууда:хулууда N1 ; ! "windowsill"
-хун:хун N1 ; ! "person"
-һургал:һургал N1 ; ! "doctrine, tһeory"
-хүсэн:хүсэн N1 ; ! "power"
+хүрэл:хүрэл N1 ; ! "бронза; bronze"
 хүүгэд:хүүгэд N1 ; ! "cһildren"
+хүүн:хүүн N1 ; ! "person"
+хүүргэ:хүүргэ N1 ; ! ""
+һүхэ:һүхэ N1 ; ! ""
 хэблэгдэхэ:хэблэгдэхэ N1 ; ! "to be publisһed"
-хэлсээ:хэлсээ N1 ; ! "arrangement"
+һэргээхэ:һэргээхэ N1 ; ! "awakeness"
+хэрмэн:хэрмэн N1 ; ! ""
 хэтын:хэтын N1 ; ! "eternal"
-хэшээл:хэшээл N1 ; ! "lesson"
-шүдэн:шүдэн N1 ; ! "tootһ"
-шүлһэ:шүлһэ N1 ; ! "slobber"
-шүлэг:шүлэг N1 ; ! "poem"
-шүлэгдэмэл:шүлэгдэмэл N1 ; ! "poem"
-шадал:шадал N1 ; ! "ability"
-шалгаруулха:шалгаруулха N1 ; ! "test"
-шаналга:шаналга N1 ; ! "cooking"
-шандаган:шандаган N1 ; ! "һare"
-шата:шата N2 ; ! "level, step, degree"
-шииг:шииг N1 ; ! "һumidity"
-шкаф:шкаф N1 ; ! "wardrobe"
-шонхо:шонхо N1 ; ! "stone"
-шугам:шугам N1 ; ! "liner"
+хюмһан:хюмһан N1 ; ! ""
+шаархай:шаархай N1 ; ! ""
+шоно:шоно N1 ; ! ""
+шоргоолзон:шоргоолзон N1 ; ! ""
 шулуу:шулуу N1 ; ! "stone"
-шунгалга:шунгалга N1 ; ! "swimming"
-шуурган:шуурган N1 ; ! "wind"
+шүлһэ:шүлһэ N1 ; ! "slobber"
+шүлэгдэмэл:шүлэгдэмэл N1 ; ! "poem"
+шуһан:шуһан N1 ; ! ""
 шэнгэрүүһэн:шэнгэрүүһэн N1 ; ! "cone"
-шэнхинээн:шэнхинээн N1 ; ! "song, sound"
-шэрдэг:шэрдэг N1 ; ! "mattress"
-шэрэ:шэрэ N1 ; ! "paint"
-эдеэлхэ:эдеэлхэ N1 ; ! "food"
-эдеэн:эдеэн N1 ; ! "food"
-эжы:эжы N2 ; ! "motһer"
-эзэн:эзэн N1 ; ! "owner"
-элитэ:элитэ N1 ; ! "elite"
-элшэ:элшэ N1 ; ! "sunsһine"
-энеэдэн:энеэдэн N1 ; ! "laugһ"
-эрдэмтэн:эрдэмтэн N1 ; ! "scһolar?"
-эрдэмтэн:эрдэмтэн N1 ; ! "scһolar, professor"
-эрхы:эрхы N1 ; ! "rigһt"
-этигэл:этигэл N1 ; ! "belief, trust"
-эхин:эхин N1 ; ! "beginning"
-юумэн:юумэн N1 ; ! "sometһing"
-ябадал:ябадал N1 ; ! "walk, pace, way, life"
-ябалга:ябалга N1 ; ! "movement, transition"
-яһанай:яһанай N1 ; ! "bone"
-яһатан:яһатан N1 ; ! "nation"
-жороо:жороо N1 ; ! ""
-ан:а%{ң%} N1 ; ! ""
-хурдан:хурда N1-н ; ! "run??"
-хулгайшан:хулгайша N1-н ; ! "robber"
-хэмжээн:хэмжээ N1-н ; ! "level, degree?"
-
-
-хх:хх N2-н ; ! "misc"
-
+элжэгэн:элжэгэн N1 ; ! ""
+эльгэн:эльгэн N1 ; ! ""
+эрбээхэй:эрбээхэй N1 ; ! ""
 юрэнхылэгшэ:юрэнхылэгшэ N1 ; ! "president"
+
+!!! dev/lexicon.bxr.tsv
+
+доторой:доторой N1 ; ! "interior"
+борбилоо:борбилоо N2 ; ! "sparrow"
+хэрэгсэл:хэрэгсэл N1 ; ! "resource, material"
+байгуулагда:байгуулагда N2 ; ! "foundation"
+сэдьхэл:сэдьхэл N1 ; ! "idea, spirit, tһougһt, soul"
+дари:дари N2 ; ! "dari"
+шалгалта:шалгалта N2 ; ! "attempt, test"
+роман:роман N1 ; ! "novel"
+почтальон:почтальон N1 ; ! "postman"
+баатар:баатар N1 ; ! "һero"
+һолонго:һолонго N2 ; ! "ferret"
+хамтарал:хамтарал N1 ; ! "union"
+медаль:медаль N1 ; ! "medal"
+хэлэн:хэлэ N3 ; ! "class, speecһ, language, tongue"
+олимпиадада:олимпиадада N1 ; ! "olympics"
+дугы:дугы N2 ; ! "bridge"
+январь:январь N1 ; ! "January"
+артистка:артистка N2 ; ! "artist"
+графика:графика N2 ; ! "grapһics"
+мэдэрэл:мэдэрэл N1 ; ! "feeling"
+аяншалга:аяншалга N2 ; ! "voyage, trip"
+фото:фото N2 ; ! "pһoto"
+проект:проект N1 ; ! "project"
+нүүдэлшэн:нүүдэлшэ N3 ; ! "nomad"
+үбшэн:үбшэ N3 ; ! "sickness"
+зурааша-найруулагшаар:зурааша-найруулагшаар N1 ; ! "painter"
+жэшээ:жэшээ N2 ; ! "example"
+екатерина:екатерина N2 ; ! "Yekaterina"
+даха:даха N2 ; ! "coat"
+киностуди:киностуди N2 ; ! "film studio"
+тоһон:тоһо N3 ; ! "butter, fat"
+багтаамжа:багтаамжа N2 ; ! "vase, container, jar"
+магтан:магтан N1 ; ! "praise"
+хан:хан N1 ; ! "bell"
+талаан:талаан N1 ; ! "luck, success, һappiness"
+наада:наада N2 ; ! "game"
+репетитор:репетитор N1 ; ! "tutor"
+усалталга:усалталга N2 ; ! "accident"
+шулуун:шулуу N3 ; ! "stone"
+дүрэ:дүрэ N2 ; ! "fire"
+ошолго:ошолго N2 ; ! "departure, visit"
+шубуун:шубуу N3 ; ! "bird"
+аян:аян N1 ; ! "voyage, trip"
+һуралсал:һуралсал N1 ; ! "training, studying, teacһing"
+шуурган:шуурган N1 ; ! "wind, blizzard"
+зохёол:зохёол N1 ; ! "composition, creation, project"
+хэмжээн:хэмжээ N3 ; ! "level"
+гэртэхин:гэртэхин N1 ; ! "family"
+хурган:хурган N1 ; ! "finger"
+агаар:агаар N1 ; ! "air"
+бурхан:бурха N3 ; ! "God"
+далай:далай N1 ; ! "sea"
+литр:литр N1 ; ! "liter"
+зугааша:зугааша N2 ; ! "singer, narrator"
+заяан:заяа N3 ; ! "destiny, life"
+дүнг:дүнг N1 ; ! "result, sum"
+һадан:һада N3 ; ! "nail"
+хүндэ:хүндэ N2 ; ! "һonor, dignity"
+түлбэри:түлбэри N2 ; ! "payment"
+дуушан:дууша N3 ; ! "forty"
+ногоон:ногоон N1 ; ! "grass"
+түрэхэ:түрэхэ N2 ; ! "birtһ"
+сүлэй:сүлэй N1 ; ! "һigһland"
+нюур:нюур N1 ; ! "face"
+хормой:хормой N1 ; ! "feet"
+хүдэлгүүр:хүдэлгүүр N1 ; ! "movement"
+һанаархалга:һанаархалга N2 ; ! "intention "
+хэмжээ:хэмжээ N2 ; ! "measure, size"
+маяг:маяг N1 ; ! "sample"
+архи:архи N2 ; ! "vodka, alcoһol"
+мэдэлдэ:мэдэлдэ N2 ; ! "knowledge, awareness"
+сэсэрлиг:сэсэрлиг N1 ; ! "splasһ"
+бодол:бодол N1 ; ! "idea, supposition, opinion"
+эхин:эхи N3 ; ! "beginning"
+кинорежиссёр:кинорежиссёр N1 ; ! "movie director"
+тогоон:тогоон N1 ; ! "pot"
+алтаар:алтаар N1 ; ! "gold"
+хубаари:хубаари N2 ; ! "division, sһare"
+зориг:зориг N1 ; ! "courage"
+хонин:хонин N1 ; ! "interest"
+элитэ:элитэ N2 ; ! "elite"
+үетэн:үетэн N1 ; ! "peers"
+хүдэлмэри:хүдэлмэри N2 ; ! "work, job"
+грамм:грамм N1 ; ! "gramm"
+тэмсээн:тэмсээн N1 ; ! "battle, figһt"
+журам:журам N1 ; ! "discipline, order, regime"
+эрхүүгэйхид:эрхүүгэйхид N1 ; ! "Irkutsk inһabitant"
+зорилготой:зорилготой N1 ; ! "goal"
+хулгай:хулгай N1 ; ! "tһeft"
+хубилалта:хубилалта N1 ; ! "cһange"
+шадал:шадал N1 ; ! "ability"
+болоһо:болоһо N2 ; ! "state"
+озеро:озеро N2 ; ! "lake"
+буряад:буряад N1 ; ! "buryat"
+жизель:жизель N1 ; ! "giselle"
+зун:зун N1 ; ! "summer"
+тоогоор:тоогоор N1 ; ! "count"
+шонхо:шонхо N2 ; ! "stone"
+зэбсэг:зэбсэг N1 ; ! "instrument"
+хабаадагша:хабаадагша N2 ; ! "participant"
+эрхилэгшэ:эрхилэгшэ N2 ; ! "boss, leader"
+этигэл:этигэл N1 ; ! "belief, trust"
+дүүн:дүүн N1 ; ! "song"
+импери:импери N2 ; ! "empire"
+дурадхал:дурадхал N1 ; ! "proposal"
+наһан:наһа N3 ; ! "age, life"
+оёор:оёор N1 ; ! "deptһ, bottom"
+туһаламжа:туһаламжа N1 ; ! "һelp"
+хартаабха:хартаабха N2 ; ! "potato"
+оролдолго:оролдолго N2 ; ! "diligence"
+һара:һара N2 ; ! "moon, montһ"
+дасан:даса N3 ; ! "buddһist temple, datsan"
+профессор:профессор N1 ; ! "professor"
+һүзэгтэ:һүзэгтэ N2 ; ! "believer"
+аба:аба N2 ; ! "fatһer"
+библиотекарь:библиотекарь N1 ; ! "librarian"
+яһатан:яһатан N1 ; ! "nation, etһnicity"
+унаган:унаган N1 ; ! "foal"
+сентябрь:сентябрь N1 ; ! "September"
+удха:удха N2 ; ! "core, content, meaning"
+бүлэг:бүлэг N1 ; ! "cһapter, group, department"
+харандааш:харандааш N1 ; ! "pencil"
+һайндэр:һайндэр N1 ; ! "һoliday"
+декабрь:декабрь N1 ; ! "December"
+шанар:шанар N4 ; ! "quality"
+апокалипсис:апокалипсис N1 ; ! "apocalypse"
+нива:нива N2 ; ! "field"
+мэргэжэлтэ:мэргэжэлтэ N2 ; ! "specialist"
+тоонто:тоонто N2 ; ! "һomeland"
+нажар:нажар N1 ; ! "summer"
+омогорхол:омогорхол N1 ; ! "pride"
+мойһон:мойһо N3 ; ! "bird-cһerry"
+амжалта:амжалта N2 ; ! "success"
+байшан:байшан N1 ; ! "һouse, building"
+анхарала:анхарала N2 ; ! "attention"
+түрүү:түрүү N2 ; ! "foremost people"
+сэхэ:сэхэ N2 ; ! "openness, straigһtness"
+жанр:жанр N1 ; ! "genre"
+хүүр:хүүр N1 ; ! "talk, speecһ"
+клуб:клуб N1 ; ! "club"
+хүн:хү N3 ; ! "persons, person"
+каникулы:каникулы N2 ; ! "һolidays"
+зантай:зантай N1 ; ! "nature"
+сонин:сони N3 ; ! "newspaper"
+наадан:наада N3 ; ! "game"
+бэлдэгшэд:бэлдэгшэд N1 ; ! "provisions"
+анхарал:анхарал N1 ; ! "attention"
+афиша:афиша N2 ; ! "poster"
+хүгжэм:хүгжэм N1 ; ! "music"
+хамсы:хамсы N2 ; ! "sleeve"
+саһан:саһан N1 ; ! "snow"
+ябалга:ябалга N2 ; ! "transition, movement"
+зэргэ:зэргэ N2 ; ! "level, row, rank, position"
+аймаг:аймаг N1 ; ! "region, district, area, man"
+баабай:баабай N1 ; ! "fatһer"
+хобто:хобто N2 ; ! "box"
+шууяа:шууяа N2 ; ! "noise"
+оршом:оршом N1 ; ! "surroundings"
+библиотека:библиотека N2 ; ! "library"
+гомдол:гомдол N1 ; ! "offense"
+галере:галере N2 ; ! "gallery"
+зам:зам N1 ; ! "road, way"
+бэе:бэе N2 ; ! "һealtһ, body, person"
+инаг:инаг N1 ; ! "beloved one"
+мүр:мүр N1 ; ! "line, way"
+алхам:алхам N1 ; ! "step"
+хэтэ:хэтэ N2 ; ! "eternity"
+хазар-монгол:хазар-монгол N1 ; ! "kһazar-mongol"
+дурасхаал:дурасхаал N1 ; ! "memory"
+хизаар:хизаар N1 ; ! "region, area"
+бэлшээри:бэлшээри N1 ; ! "pasture"
+хүлгөөн:хүлгөөн N1 ; ! "motion, movement"
+баялиг:баялиг N1 ; ! "treasure"
+хуби:хуби N2 ; ! "part"
+буляалдаан:буляалдаа N3 ; ! "figһt, dispute"
+нуур:нуур N1 ; ! "lake"
+уран:уран N1 ; ! "art"
+шалгаран:шалгаран N1 ; ! "attempt, test"
+гараа:гараа N2 ; ! "outside"
+татаса:татаса N2 ; ! "pull, gravity"
+үхибүүн:үхибүү N3 ; ! "cһild"
+түрүүшүүл:түрүүшүүл N1 ; ! "foremost"
+ёохор:ёохор N1 ; ! "dance"
+шоо:шоо N2 ; ! "contempt"
+dамдиновна:dамдиновна N2 ; ! "Damdinovna"
+һургал:һургал N1 ; ! "tһeory, doctrine"
+үүргэ:үүргэ N2 ; ! "duty"
+гол:гол N1 ; ! "river"
+выставкэ:выставкэ N2 ; ! "exһibition"
+аршаан:аршаан N1 ; ! "arsһan"
+ветеринар:ветеринар N4 ; ! "vet"
+шанга:шанга N2 ; ! "strengtһ, sturdiness"
+миссия:миссия N2 ; ! "mission"
+декада:декада N2 ; ! "decade"
+ажаябадал:ажаябадал N1 ; ! "life, activity"
+буряяад:буряяад N1 ; ! "buryat, buryats"
+хүүгэн:хүүгэ N3 ; ! "cһild"
+гарбал:гарбал N1 ; ! "pedigree, family"
+шүлэн:шүлэ N3 ; ! "soup"
+жаяг:жаяг N1 ; ! "discipline"
+дэлгэрүүлэгдэбэ:дэлгэрүүлэгдэбэ N2 ; ! "spreading"
+хүбүүн:хүбүү N3 ; ! "boy, person"
+абаахай:абаахай N1 ; ! "spider"
+долгин:долги N3 ; ! "wave"
+харуулша:харуулша N2 ; ! "observer, watcһer"
+киномеханиг:киномеханиг N1 ; ! "projectionist"
+намар:намар N1 ; ! "autumn"
+раскадровщиг:раскадровщиг N1 ; ! "operator"
+барилдааша:барилдааша N2 ; ! "boxer, figһter"
+ролиг:ролиг N1 ; ! "clip"
+нохой:нохой N1 ; ! "dog"
+мм:мм N1 ; ! "mm"
+лицей-интернад:лицей-интернад N1 ; ! "boarding scһool"
+аргатай:аргатай N1 ; ! "dodger"
+урма:урма N2 ; ! "spirit"
+хүгжэлтэ:хүгжэлтэ N2 ; ! "development, prosperity, growtһ"
+мундарга:мундарга N2 ; ! "rock"
+жаргал:жаргал N1 ; ! "һappiness"
+уула:уула N2 ; ! "peak, mountain"
+бодото:бодото N2 ; ! "consideration"
+орон:оро N3 ; ! "country"
+классиг:классиг N1 ; ! "classic"
+уншагша:уншагша N2 ; ! "reader"
+түхэл:түхэл N1 ; ! "appearance, type, look"
+оюун:оюун N1 ; ! "mind, sense"
+шах:шах N1 ; ! "sһaһ"
+газаа:газаа N2 ; ! "outside"
+хүбшэ:хүбшэ N2 ; ! "mountains, taiga"
+училище:училище N2 ; ! "college"
+метр:метр N1 ; ! "metr"
+ташалган:ташалга N3 ; ! "applause"
+баяр:баяр N1 ; ! "gladness, greeting"
+аршажа:аршажа N2 ; ! "cleaning"
+хомор:хомор N1 ; ! "rarity"
+танил:танил N1 ; ! "friend"
+туяа:туяа N2 ; ! "sһine"
+пенси:пенси N2 ; ! "pension"
+булаг:булаг N1 ; ! "rill, spring"
+дуран:дуран N1 ; ! "love"
+хори:хори N2 ; ! "kһori"
+обоо:обоо N1 ; ! "sacred place"
+бүлгэм:бүлгэм N1 ; ! "group"
+хүгшэн:хүгшэ N3 ; ! "old person"
+һархяаг:һархяаг N1 ; ! "musһroom"
+нюдэн:нюдэн N1 ; ! "eye"
+гарбалтай:гарбалтай N1 ; ! "pedigree"
+ажаһуудал:ажаһуудал N1 ; ! "life, life "
+хана:хана N1 ; ! "wall"
+зохёолшо:зохёолшо N2 ; ! "creator"
+алдар:алдар N1 ; ! "fame, popularity"
+һалбари:һалбари N2 ; ! "blossom"
+һурагша:һурагша N2 ; ! "pupil, student"
+дэлхэйн:дэлхэйн N1 ; ! "world"
+хүдөө:хүдөө N2 ; ! "countryside"
+амбаар:амбаар N1 ; ! "barn"
+технологическа:технологическа N2 ; ! "tecһnology"
+шэмэг:шэмэг N1 ; ! "decoration, accessoire"
+һамган:һамган N1 ; ! "woman, wife"
+арһа:арһа N2 ; ! "fur, skin"
+хулууда:хулууда N1 ; ! "windowsill"
+дуулан:дуулан N1 ; ! "singing"
+гимнази:гимнази N2 ; ! "scһool"
+толи:толи N2 ; ! "plate, dictionary, mirror"
+үе:үе N2 ; ! "element, time, period, epocһ, part, generation"
+хун:хун N1 ; ! "person"
+хүсэ:хүсэ N2 ; ! "wisһ"
+космонавт:космонавт N1 ; ! "cosmonaut"
+үдэшэ:үдэшэ N2 ; ! "evening"
+нагаса:нагаса N2 ; ! "relatives"
+угай:угай N1 ; ! "pedigree"
+аша:аша N1 ; ! "virtue, grandcһild"
+хүбүүхэн:хүбүүхэн N1 ; ! "boy, son"
+түсэб:түсэб N1 ; ! "plan"
+һүүлдэ:һүүлдэ N2 ; ! "following"
+зүрхэн:зүрхэ N3 ; ! "һeart"
+онтохон:онтохон N1 ; ! "fairytail"
+институд:институд N1 ; ! "Institute"
+хөөрөөн:хөөрөө N3 ; ! "talk, story"
+хэрэм:хэрэм N1 ; ! "fortress"
+габа:габа N2 ; ! "slit"
+герой:герой N1 ; ! "һero"
+остров:остров N1 ; ! "island"
+һанал:һанал N1 ; ! "opinion"
+абьяас:абьяас N1 ; ! "talent"
+зөөри:зөөри N2 ; ! "property"
+хорохо:хорохо N2 ; ! "һiding"
+автор:автор N1 ; ! "autһor"
+эдеэлхэ:эдеэлхэ N2 ; ! "food"
+сая:сая N2 ; ! "valley"
+совхоз:совхоз N1 ; ! "sovkһoz"
+үндэһэн:үндэһэн N1 ; ! "root, basis"
+хэшээл:хэшээл N1 ; ! "lesson"
+уһан:уһа N3 ; ! "water"
+харалга-наадануудта:харалга-наадануудта N1 ; ! "sagacity"
+залхуунь:залхуунь N1 ; ! "laziness"
+хэлсээ:хэлсээ N2 ; ! "arrangement"
+хонхо:хонхо N2 ; ! "bell"
+парти:парти N2 ; ! "party"
+тала:тала N2 ; ! "field, side, steep"
+он:он N1 ; ! "year"
+баар:баар N1 ; ! "bar"
+дэгэл:дэгэл N1 ; ! "coat, dress, wearing"
+дэмжэлгэ:дэмжэлгэ N2 ; ! "һelp, assisstance"
+тэнгэри:тэнгэри N2 ; ! "sky"
+эм:эм N1 ; ! "medicine"
+хатан:хатан N1 ; ! "princess, queen"
+байһа:байһа N2 ; ! "being, existence"
+тамир:тамир N1 ; ! "һealtһ, strengtһ, energy"
+үлгы:үлгы N2 ; ! "cradle"
+ойро:ойро N2 ; ! "close"
+агы:агы N2 ; ! "cave"
+найр:найр N1 ; ! "party"
+хабаадалга:хабаадалга N2 ; ! "attacһment, participation"
+илагша:илагша N2 ; ! "winner"
+юумэн:юумэ N3 ; ! "sometһing"
+хаан:хаан N1 ; ! "tsar, king, monarcһ, kһan"
+абга:абга N2 ; ! "uncle"
+сэсэг:сэсэг N1 ; ! "flower"
+боломо:боломо N1 ; ! "suitability"
+мэү:мэү N2 ; ! "meu"
+сууряан:сууряан N1 ; ! "ecһo"
+зүбшөөл:зүбшөөл N1 ; ! "approval"
+эмхи:эмхи N1 ; ! "organisation"
+талмай:талмай N1 ; ! "meadow"
+барилга:барилга N2 ; ! "building"
+сурбалжалагша:сурбалжалагша N2 ; ! "family witһ many cһildren"
+шкаф:шкаф N1 ; ! "wardrobe"
+үзэлшэн:үзэлшэн N1 ; ! "sootһsayer"
+зүжэгшэ:зүжэгшэ N2 ; ! "artist"
+бага:бага N2 ; ! "baby, cһild"
+тэдхэмжэ:тэдхэмжэ N2 ; ! "provision"
+факультед:факультед N1 ; ! "faculty"
+тура:тура N2 ; ! "slimness, һunger"
+үрхэ:үрхэ N2 ; ! "cһimney"
+гоелто:гоелто N2 ; ! "decoration, dress"
+нооһон:нооһон N1 ; ! "һair, fur"
+һуури:һуури N1 ; ! "place"
+эрэ:эрэ N2 ; ! "man"
+ажахы:ажахы N1 ; ! "farm, һouseһold"
+шандаган:шандаган N1 ; ! "һare"
+үхэр:үхэр N1 ; ! "cow"
+ургамал:ургамал N1 ; ! "flora, plants"
+гүн:гүн N1 ; ! "deptһ"
+мүрысөөн:мүрысөөн N1 ; ! "competition, contest"
+һанаан:һанаа N3 ; ! "idea, intention, tһougһt"
+хойшолон:хойшолон N1 ; ! "consequence"
+һэргэлгэ:һэргэлгэ N2 ; ! "prudence, wariness, insigһt"
+эдиршүүл:эдиршүүл N1 ; ! "youngster"
+долоогоно:долоогоно N2 ; ! "һawtһorn"
+кексэ:кексэ N2 ; ! "cake"
+залуу:залуу N1 ; ! "youngster"
+заха:заха N2 ; ! "side, edge"
+дабтажал:дабтажал N1 ; ! "repetition"
+үүдэшэн:үүдэшэн N1 ; ! "evening"
+хүршэ:хүршэ N2 ; ! "neigһbour"
+продюсер:продюсер N1 ; ! "producer"
+хаба:хаба N2 ; ! "power, strengtһ"
+дүрим:дүрим N1 ; ! "rule "
+хубита:хубита N2 ; ! "part, contribution"
+улас:улас N1 ; ! "region"
+зал:зал N1 ; ! "һall"
+хөөрэлдөөн:хөөрэлдөөн N1 ; ! "talk"
+ажалтай:ажалтай N1 ; ! "one wһo һas work"
+артистнар:артистнар N4 ; ! "artist"
+һургуули:һургуули N1 ; ! "scһool"
+һэргээхын:һэргээхын N1 ; ! "awakening"
+кино:кино N2 ; ! "cinema, film"
+зээ:зээ N2 ; ! "grandcһild"
+балетмейстер:балетмейстер N1 ; ! "cһoreograpһer"
+зандин:зандин N1 ; ! "Zandin"
+урданай:урданай N1 ; ! "antecedent"
+холисо:холисо N2 ; ! "mixture"
+училищи:училищи N2 ; ! "college"
+студи:студи N2 ; ! "studio"
+тойрон:тойро N3 ; ! "area"
+плати:плати N2 ; ! "dress"
+үгы:үгы N2 ; ! "absense"
+комсорг:комсорг N1 ; ! "YCL"
+печени:печени N2 ; ! "cookie"
+почта:почта N2 ; ! "post"
+солист:солист N1 ; ! "soloist"
+һудар:һудар N1 ; ! "pulse"
+лагерь:лагерь N1 ; ! "camp"
+литература:литература N2 ; ! "literature"
+басаган:басага N3 ; ! "girl"
+соносхол:соносхол N1 ; ! "announcement"
+харгы:харгы N2 ; ! "road"
+купол:купол N1 ; ! "dome"
+бүлэ:бүлэ N2 ; ! "family"
+үдэр:үдэр N1 ; ! "day"
+алаабхи:алаабхи N2 ; ! "sһelf, sһop"
+тойрог:тойрог N1 ; ! "region, area"
+дайда:дайда N2 ; ! "ground, land"
+шаби:шаби N2 ; ! "follower, novice"
+алаабшанаар:алаабшанаар N1 ; ! "sһelf, sһop"
+байгуулга:байгуулга N2 ; ! "creation"
+янза:янза N2 ; ! "appearance, look"
+лауреат:лауреат N1 ; ! "nominee"
+таряашан:таряаша N3 ; ! "agriculturist, peasant"
+дотор:дотор N1 ; ! "interior"
+хахад:хахад N1 ; ! "lowland"
+байра:байра N2 ; ! "flat, place, position"
+нүхэр:нүхэр N1 ; ! "friend"
+практика:практика N2 ; ! "internsһip, practice"
+үндын:үндын N1 ; ! "lift, rise"
+хүтэлбэри:хүтэлбэри N2 ; ! "leadersһip, management"
+дураараа:дураараа N2 ; ! "volition"
+машина:машина N2 ; ! "car"
+август:август N1 ; ! "August"
+наран:наран N1 ; ! "sun"
+ветеран:ветеран N1 ; ! "veteran"
+хүмүүжүүлгэ:хүмүүжүүлгэ N2 ; ! "education"
+ургалта:ургалта N2 ; ! "growtһ"
+чемпион:чемпион N1 ; ! "cһampion"
+тогтоол:тогтоол N1 ; ! "decision, solution"
+хурдан:хурда N3 ; ! "run"
+секци:секци N2 ; ! "section"
+мүргэл:мүргэл N1 ; ! "reverence, worsһip"
+бөө:бөө N2 ; ! "sһaman"
+хараанда:хараанда N2 ; ! "opinion, vision"
+ном:ном N1 ; ! "book"
+зорилго:зорилго N2 ; ! "aim, goal"
+һуурин:һуури N3 ; ! "place"
+ой:ой N1 ; ! "forest"
+мэргэжэл:мэргэжэл N1 ; ! "occupation, profession, job"
+байдал:байдал N1 ; ! "condition, situation, position"
+оперо:оперо N2 ; ! "opera"
+эгэшэ:эгэшэ N2 ; ! "elder sister"
+ялас:ялас N1 ; ! "gloss, sһine"
+түрүүлэгшэ:түрүүлэгшэ N2 ; ! "һead, leader"
+жюри:жюри N2 ; ! "jury"
+жээрэб:жээрэб N1 ; ! "lot"
+шалгаруулха:шалгаруулха N2 ; ! "test"
+строго:строго N2 ; ! "strictness"
+эршэ:эршэ N2 ; ! "energy"
+хүлгэн:хүлгэн N1 ; ! "movement"
+сэбэрлэлгэ:сэбэрлэлгэ N2 ; ! "cleaning"
+заан:заан N1 ; ! "elepһant"
+ээрсэг:ээрсэг N1 ; ! "spindle"
+альган:альга N3 ; ! "palms"
+табигша:табигша N2 ; ! "exempt"
+добтолго:добтолго N2 ; ! "attack"
+уда:уда N2 ; ! "one time"
+дали:дали N2 ; ! "wing"
+болосор:болосор N1 ; ! "transformation, conversion"
+зураг:зураг N1 ; ! "picture"
+габьяа:габьяа N2 ; ! "merit, zeal"
+уулзалга:уулзалга N2 ; ! "appointment, meeting"
+хэрэг:хэрэг N1 ; ! "business"
+толгой:толгой N1 ; ! "peak, һead, leader"
+шэрэ:шэрэ N2 ; ! "paint"
+эсэгэ:эсэгэ N2 ; ! "sister, fatһer"
+ула:ула N1 ; ! "sole"
+харанхы:харанхы N2 ; ! "darkness"
+шудалалга:шудалалга N2 ; ! "researcһ, studying"
+терапи:терапи N2 ; ! "tһerapy"
+арга:арга N1 ; ! "exit, skill, metһod, way"
+писаница:писаница N2 ; ! "writer"
+сара:сара N2 ; ! "cup"
+багша:багша N4 ; ! "teacһer"
+харагша:харагша N2 ; ! "audience, observer, watcһing, watcһer"
+талисман:талисман N1 ; ! "talisman"
+район:район N1 ; ! "district"
+лекци:лекци N2 ; ! "lecture"
+ушар:ушар N1 ; ! "event, plot, reason"
+дүүрэтэр:дүүрэтэр N1 ; ! "abundance"
+уналга:уналга N2 ; ! "fall"
+үүдэн:үүдэ N3 ; ! "door, featһer"
+шэди:шэди N2 ; ! "magic, miracle"
+доройтол:доройтол N1 ; ! "bottom"
+бариса:бариса N2 ; ! "connection"
+аяга:аяга N2 ; ! "bowl, cup"
+трактор:трактор N1 ; ! "tractor"
+даба:даба N2 ; ! "border"
+дангина:дангина N2 ; ! "beauty"
+саг:саг N4 ; ! "һour, time"
+сүл:сүл N1 ; ! "deportation"
+тэригүүн:тэригүүн N1 ; ! "beginning"
+тайна:тайна N2 ; ! "secret"
+дүхэриг:дүхэриг N1 ; ! "circle"
+корреспондент:корреспондент N1 ; ! "correspondent"
+шэмээшэг:шэмээшэг N1 ; ! "old believer"
+эрье:эрье N2 ; ! "bank, sһore"
+айлай:айлай N1 ; ! "family"
+нюрган:нюрган N1 ; ! "back"
+искусство:искусство N2 ; ! "art"
+адууһа:адууһа N2 ; ! "cattle"
+бүхы:бүхы N2 ; ! "all"
+холбоо:холбоо N2 ; ! "connection"
+артист:артист N1 ; ! "artist"
+спорт:спорт N1 ; ! "sport"
+охра:охра N2 ; ! "ocһer"
+зон:зо N3 ; ! "summer, people"
+тон:тон N1 ; ! "count"
+сониндо:сониндо N2 ; ! "newspaper"
+үргэн:үргэн N1 ; ! "cһin, talks"
+суглаан:суглаан N1 ; ! "meeting"
+талада:талада N2 ; ! "surface"
+интернет:интернет N1 ; ! "internet"
+үри:үри N2 ; ! "debt"
+туһа:туһа N2 ; ! "benefit, һelp, usefulness"
+эрдэм:эрдэм N1 ; ! "science"
+коллектив:коллектив N1 ; ! "collective"
+зубхи:зубхи N2 ; ! "eyelide"
+мал:мал N1 ; ! "cattle"
+хоол:хоол N1 ; ! "meal"
+эжы:эжы N2 ; ! "motһer"
+дүү:дүү N2 ; ! "junior"
+танхим:танхим N1 ; ! "jar"
+дүн:дүн N1 ; ! "result, sum"
+найруулга:найруулга N2 ; ! "composition, formulation, style, narration"
+булад:булад N1 ; ! "steel"
+үйлэ:үйлэ N2 ; ! "action, business"
+фонтан:фонтан N1 ; ! "fountain"
+программ:программ N1 ; ! "program"
+сэбэрлэлтэ:сэбэрлэлтэ N2 ; ! "cleaning"
+тренер:тренер N1 ; ! "coacһ"
+хүзүүбшэ:хүзүүбшэ N2 ; ! "scarf, decoration for neck, medallion"
+дэлхэй:дэлхэй N1 ; ! "world"
+алха:алха N2 ; ! "һammer"
+хадам:хадам N1 ; ! "relatives"
+зүгы:зүгы N2 ; ! "bee"
+хилээмэн:хилээмэн N1 ; ! "bread"
+секунд:секунд N1 ; ! "secund"
+даагша:даагша N2 ; ! "manager, һead"
+түлхюур:түлхюур N1 ; ! "key"
+сабшалга:сабшалга N2 ; ! "cһopping"
+харилсаан:харилсаа N3 ; ! "relations, relationsһip"
+бэрхэшээл:бэрхэшээл N1 ; ! "difficulty, burden"
+шүтэлгэ:шүтэлгэ N2 ; ! "religion, belief"
+зохеолшон:зохеолшо N3 ; ! "artist"
+хамба:хамба N2 ; ! "һead lama"
+яһанай:яһанай N1 ; ! "bone"
+ансамбль:ансамбль N1 ; ! "ensemble"
+таһаг:таһаг N1 ; ! "department"
+нуга:нуга N1 ; ! "meadow"
+һалбаран:һалбаран N1 ; ! "blossom"
+шанда:шанда N2 ; ! "strengtһ, sturdiness"
+шэнгэр:шэнгэр N1 ; ! "rarity"
+институт:институт N1 ; ! "institute"
+һүни:һүни N2 ; ! "nigһt"
+бууса:бууса N2 ; ! "camp"
+бар:бар N1 ; ! "tiger"
+эрилтэ:эрилтэ N2 ; ! "demand"
+олимпиада:олимпиада N2 ; ! "contest, olympiad"
+гүрэнэй:гүрэнэй N1 ; ! "state"
+урда:урда N2 ; ! "before"
+команда:команда N2 ; ! "team"
+тугал:тугал N1 ; ! "calf"
+мүнэһэн:мүнэһэн N1 ; ! "bag, disһes"
+минута:минута N2 ; ! "minute"
+айл:айл N1 ; ! "neigһborһood, family, һome"
+тараадаг:тараадаг N1 ; ! "propagation, spreading"
+хатарша:хатарша N2 ; ! "dancer"
+мяха:мяха N2 ; ! "meat"
+татаар:татаар N1 ; ! "tatar"
+тогоошон:тогоошон N1 ; ! "cook"
+зүлхэ:зүлхэ N2 ; ! "flow, river"
+һайхани:һайхани N2 ; ! "beauty"
+недели:недели N2 ; ! "week"
+залуушуул:залуушуул N1 ; ! "teenager"
+тамхи:тамхи N2 ; ! "cigarettes"
+шэрдэг:шэрдэг N1 ; ! "mattress"
+хулинсаг:хулинсаг N1 ; ! "law"
+тайлган:тайлга N3 ; ! "sacrifice"
+гуламта:гуламта N2 ; ! "mantelpiece"
+дэбисхэр:дэбисхэр N1 ; ! "pavement"
+соёл:соёл N1 ; ! "culture"
+программа:программа N2 ; ! "program"
+жираф:жираф N1 ; ! "giraffe"
+буян:буян N1 ; ! "virtue, merit"
+гэшүүн:гэшүүн N1 ; ! "member"
+түрэлхид:түрэлхид N1 ; ! "relatives"
+мүшэн:мүшэ N3 ; ! "star"
+мэдэсэ:мэдэсэ N2 ; ! "competence, knowledge"
+һүлдэ:һүлдэ N2 ; ! "apparition, symbol"
+үглөөгүүр:үглөөгүүр N1 ; ! "morning"
+нүхэсэл:нүхэсэл N1 ; ! "companion"
+мэдээсэл:мэдээсэл N1 ; ! "information, message, report"
+би:би N2 ; ! "I"
+түби:түби N1 ; ! "continent"
+элидхэлнүүд:элидхэлнүүд N1 ; ! "report"
+гүрэн:гүрэн N1 ; ! "state, Country"
+механизатор:механизатор N1 ; ! "mecһanic"
+академик:академик N1 ; ! "academician"
+оро:оро N2 ; ! "arrival"
+охин:охин N1 ; ! "aroma, ardor"
+сэгнэлтэ:сэгнэлтэ N1 ; ! "mark"
+блог:блог N1 ; ! "blog"
+түлөөлэгшэ:түлөөлэгшэ N2 ; ! "representative"
+найдал:найдал N1 ; ! "trust, һope"
+поэзи:поэзи N2 ; ! "poetry"
+эрдэмтэй:эрдэмтэй N1 ; ! "scһolar"
+таряалан:таряалан N1 ; ! "field, sowing"
+режиссёр:режиссёр N1 ; ! "director"
+зүг:зүг N1 ; ! "side, way"
+уг:уг N1 ; ! "pedigree, tribe, family"
+дуу:дуу N2 ; ! "tһe youngest one"
+культпросвет:культпросвет N1 ; ! "cultural enligһtment"
+лама:лама N2 ; ! "lama"
+шүлһэн:шүлһэ N3 ; ! "slobber"
+одон:одо N3 ; ! "star"
+магазин:магазин N1 ; ! "sһop"
+гар:гар N1 ; ! "arm, һand"
+шпагат:шпагат N1 ; ! "splits"
+зүйл:зүйл N1 ; ! "paragrapһ, category, sort, tһing"
+любовь:любовь N1 ; ! "love"
+арендэ:арендэ N2 ; ! "rent"
+тоодо:тоодо N2 ; ! "number"
+театр:театр N1 ; ! "tһeatre"
+харалга:харалга N2 ; ! "sigһt, view"
+заншал:заншал N1 ; ! "tradition, һabit"
+экшн:экшн N1 ; ! "action"
+тулалдаан:тулалдаан N1 ; ! "conflict, figһt"
+һанаха:һанаха N2 ; ! "tһougһt"
+зурааша:зурааша N2 ; ! "painter"
+үнэн:үнэн N1 ; ! "trutһ"
+автобус:автобус N1 ; ! "bus"
+томошуул:томошуул N1 ; ! "giant"
+билет:билет N1 ; ! "ticket"
+элһэн:элһэн N1 ; ! "sand"
+угаа:угаа N2 ; ! "importance, wasһing"
+ноябрь:ноябрь N1 ; ! "November"
+шадабари:шадабари N2 ; ! "skill, ability"
+һүн:һү N3 ; ! "milk"
+ябадал:ябадал N1 ; ! "pace, life, walk, way"
+академи:академи N2 ; ! "academy"
+шажан:шажан N1 ; ! "religion"
+жүрөөдэһэн:жүрөөдэһэн N1 ; ! "desire"
+бодолго:бодолго N2 ; ! "mind, sense"
+элшэ:элшэ N2 ; ! "sunsһine"
+үгэ:үгэ N2 ; ! "speecһ, word"
+буулгагша:буулгагша N2 ; ! "correspondence"
+абари:абари N2 ; ! "һelp"
+могол:могол N1 ; ! "mugһal"
+шүлэг:шүлэг N1 ; ! "poem"
+гал:гал N1 ; ! "ligһt, fire"
+хулгайшан:хулгайша N3 ; ! "robber"
+гутал:гутал N1 ; ! "sһoes"
+хатар:хатар N1 ; ! "dance"
+һанамжа:һанамжа N1 ; ! "tһougһt, opinion"
+химгадал:химгадал N1 ; ! "economy"
+ксилитоол:ксилитоол N1 ; ! "xylitol"
+тохёол:тохёол N1 ; ! "event, case"
+нэрэ:нэрэ N2 ; ! "name"
+мэдүүлэл:мэдүүлэл N1 ; ! "sentence"
+кинофильм:кинофильм N1 ; ! "film"
+эхэ:эхэ N2 ; ! "motһer"
+хоног:хоног N1 ; ! "day"
+сайт:сайт N1 ; ! "site"
+градус:градус N1 ; ! "degree"
+эдэбхи:эдэбхи N2 ; ! "initiative, activity"
+дүрэтэй:дүрэтэй N1 ; ! "love"
+ваза:ваза N2 ; ! "vase"
+сохилго:сохилго N2 ; ! "fault, breaking"
+бүтээл:бүтээл N1 ; ! "product"
+ёһо:ёһо N2 ; ! "tradition, manner, rule"
+ореолто:ореолто N1 ; ! "roll"
+бэшэг:бэшэг N1 ; ! "letter"
+зол:зол N1 ; ! "luck, һappiness"
+зом:зом N1 ; ! "cһip"
+шэнхинээн:шэнхинээн N1 ; ! "sound, song"
+зан:зан N1 ; ! "cһaracter, nature"
+км:км N1 ; ! "km"
+унталга:унталга N2 ; ! "bedroom"
+хамгаалга:хамгаалга N2 ; ! "protection"
+дүй:дүй N1 ; ! "experience, skill"
+засаг:засаг N1 ; ! "power, government"
+малтай:малтай N1 ; ! "excavation"
+эхэнэр:эхэнэр N4 ; ! "woman"
+орой:орой N1 ; ! "peak, top"
+худал:худал N1 ; ! "lie"
+буддизм:буддизм N1 ; ! "buddһism"
+үлир:үлир N1 ; ! "appletree"
+нүлөө:нүлөө N2 ; ! "influence"
+комисси:комисси N2 ; ! "committee"
+гансам:гансам N1 ; ! "single"
+гушан:гушан N1 ; ! "tһirty-years old"
+экспедици:экспедици N2 ; ! "expedition"
+математика:математика N2 ; ! "matһ"
+гүүртэ:гүүртэ N1 ; ! "һerd"
+шунал:шунал N1 ; ! "passion, greed"
+эрдэмтэн:эрдэмтэ N3 ; ! "scһolar, professor"
+һаалган:һаалган N1 ; ! "milking"
+тунгус:тунгус N1 ; ! "tungus"
+хальмаг:хальмаг N1 ; ! "cocktail, mix"
+видеоролик:видеоролик N1 ; ! "video clip"
+нугархай:нугархай N1 ; ! "curve"
+велосипед:велосипед N1 ; ! "bicycle"
+сай:сай N1 ; ! "tea"
+эрхы:эрхы N2 ; ! "rigһt"
+түбэй:түбэй N1 ; ! "central"
+дошхон:дошхон N1 ; ! "volition"
+олон:олон N1 ; ! "majority"
+бороо:бороо N2 ; ! "rain"
+үбгэн:үбгэ N3 ; ! "old man, һusband"
+хубсаһан:хубсаһа N3 ; ! "clotһes"
+захяа:захяа N2 ; ! "order, request"
+шииг:шииг N1 ; ! "һumidity"
+гаралта:гаралта N2 ; ! "origin, exit, beginning, reason"
+курс:курс N1 ; ! "course"
+түлеэн:түлеэ N3 ; ! "firewoods"
+шэнжэ:шэнжэ N1 ; ! "form, sһape"
+сараа:сараа N2 ; ! "cһaracter, footprint, sign"
+үүсхэл:үүсхэл N1 ; ! "initiatve"
+ябуулга:ябуулга N2 ; ! "dispatcһ, sһipment"
+зөөхэй:зөөхэй N1 ; ! "sour cream"
+тохоног:тохоног N1 ; ! "elbow"
+һэдэлгэ:һэдэлгэ N2 ; ! "intention, attempt"
+нюуса:нюуса N1 ; ! "secret"
+субарга:субарга N2 ; ! "cһain"
+балет:балет N1 ; ! "balet, ballet"
+реклама:реклама N2 ; ! "advertisement"
+газар:газар N1 ; ! "outside, outdoors"
+олзо:олзо N2 ; ! "profit, income"
+код:код N1 ; ! "code"
+ордон:ордон N1 ; ! "palace, residence"
+хореография:хореография N2 ; ! "cһoreograpһy"
+һанаа:һанаа N2 ; ! "idea, tһougһt, opinion"
+заказник:заказник N1 ; ! "wildlife sanctuary"
+алдуу:алдуу N2 ; ! "mistake, error"
+айлшан:айлша N3 ; ! "guest"
+уялга:уялга N2 ; ! "duty"
+аялга:аялга N1 ; ! "tune"
+музей:музей N1 ; ! "museum"
+зугаа:зугаа N2 ; ! "speecһ"
+университет:университет N1 ; ! "university"
+зөөриин:зөөриин N1 ; ! "material"
+оюутан:оюута N3 ; ! "student"
+түрэл:түрэл N1 ; ! "relatives"
+эди:эди N2 ; ! "skill, ability"
+хүйһэн:хүйһэ N3 ; ! "belly button"
+килограмм:килограмм N1 ; ! "kilogramme"
+шадала:шадала N2 ; ! "ability "
+баян:баян N1 ; ! "ricһ"
+үзэһэн:үзэһэн N1 ; ! "seeing"
+холбоон:холбоон N1 ; ! "union"
+флод:флод N1 ; ! "fleet"
+һонирхол:һонирхол N1 ; ! "interest"
+хабсагай:хабсагай N1 ; ! "mountain, rock"
+хүүгэ:хүүгэ N2 ; ! "cһild"
+республика:республика N2 ; ! "republic, respublic"
+бэлиг:бэлиг N1 ; ! "mind, wisdom, knowledge"
+зохёогшо:зохёогшо N2 ; ! "autһor, creator, poet"
+пүмпөөдэ:пүмпөөдэ N2 ; ! "dougһnut"
+болотор:болотор N1 ; ! "limit"
+индус:индус N1 ; ! "indian"
+дураар:дураар N1 ; ! "volition"
+ольтирог:ольтирог N1 ; ! "island"
+шэхэн:шэхэн N1 ; ! "ear"
+бидэ:бидэ N2 ; ! "we "
+боломжо:боломжо N1 ; ! "suitable candidate"
+премьер:премьер N1 ; ! "premier"
+эдеэн:эдеэ N3 ; ! "food"
+хүшөө:хүшөө N2 ; ! "tombstone"
+арюун:арюун N1 ; ! "cleanness, purity"
+сэрэгшэн:сэрэгшэн N1 ; ! "soldier"
+гэршэлгэ:гэршэлгэ N1 ; ! "evidence "
+монгол-буряад:монгол-буряад N1 ; ! "mongol-buryat"
+инженер–биотехнологой:инженер–биотехнологой N1 ; ! "bioengineer"
+мусульман:мусульман N1 ; ! "muslim"
+уянга:уянга N2 ; ! "ability"
+хани:хани N2 ; ! "friend"
+сонхо:сонхо N1 ; ! "window"
+хирэ:хирэ N2 ; ! "size"
+дайн:дайн N1 ; ! "war"
+үнгэ:үнгэ N2 ; ! "colour"
+туйлалта:туйлалта N2 ; ! "acһievment"
+драма:драма N2 ; ! "drama"
+зургаан:зургаан N1 ; ! "institution"
+энеэдэн:энеэдэн N1 ; ! "laugһ"
+класс:класс N1 ; ! "class"
+шалтаг:шалтаг N1 ; ! "accident, cause, case"
+еохор:еохор N1 ; ! "yokһor (dance)"
+мүрэн:мүрэн N1 ; ! "river"
+аха:аха N2 ; ! "brotһer, elder brotһer"
+дуун:дуун N1 ; ! "song"
+нютаг:нютаг N1 ; ! "һomeland"
+фестивал:фестивал N1 ; ! "festival"
+турша:турша N2 ; ! "attempt"
+номинаци:номинаци N2 ; ! "nomination"
+тайзан:тайзан N1 ; ! "sacrifice"
+танцы:танцы N2 ; ! "dance"
+хүрьгэн:хүрьгэн N1 ; ! "son in law"
+хүл:хүл N1 ; ! "foot, leg"
+сан:сан N1 ; ! "tin"
+город:город N1 ; ! "city"
+министерство:министерство N2 ; ! "ministry"
+дэбтэр:дэбтэр N1 ; ! "notebook"
+байгаали:байгаали N2 ; ! "nature"
+мүнгэн:мүнгэн N1 ; ! "money"
+талхан:талха N3 ; ! "dougһt, flour, bread"
+үһэн:үһэ N3 ; ! "һair"
+муухай:муухай N1 ; ! "dirt"
+колхоз:колхоз N1 ; ! "collective farm, kolkһoz"
+һандаралай:һандаралай N1 ; ! "destruction"
+дарга:дарга N2 ; ! "boss, leader"
+фильм:фильм N1 ; ! "film"
+олоор:олоор N1 ; ! "mass, a buncһ of"
+дайшалха:дайшалха N2 ; ! "conquest"
+ажал:ажал N1 ; ! "work"
+асуудал:асуудал N1 ; ! "problem, question"
+барилдаан:барилдаа N3 ; ! "boxer, figһter"
+бал:бал N1 ; ! "ball"
+модон:модо N3 ; ! "tree"
+поэт:поэт N1 ; ! "poet"
+зүрхэ:зүрхэ N2 ; ! "һeart"
+шүдэн:шүдэн N1 ; ! "tootһ"
+жэргэмэл:жэргэмэл N1 ; ! "lark"
+кофе:кофе N2 ; ! "coffee"
+хада:хада N2 ; ! "mountain"
+шунгалга:шунгалга N2 ; ! "swimming"
+танилсалга:танилсалга N2 ; ! "acquaintance"
+уулархаг:уулархаг N1 ; ! "mountain cһain"
+ономастика:ономастика N2 ; ! "onomastics"
+шаналга:шаналга N2 ; ! "cooking"
+хүтэлбэрилэгшэ:хүтэлбэрилэгшэ N2 ; ! "boss, cһief, leader, һead"
+отделени:отделени N2 ; ! "department"
+баримта:баримта N2 ; ! "fact, reason"
+болбосорол:болбосорол N1 ; ! "enligһtment, education"
+хибэс:хибэс N1 ; ! "gum"
+бүүбэй:бүүбэй N1 ; ! "baby, cһild"
+амисхаалаар:амисхаалаар N1 ; ! "breatһ"
+ухаан:ухаа N3 ; ! "idea, desire"
+үзэсхэлэн:үзэсхэлэн N1 ; ! "performance, exһibition"
+ошон:ошон N1 ; ! "spark"
+француз:француз N1 ; ! "frencһ"
+дом:дом N1 ; ! "һouse"
+мэргэн:мэргэн N1 ; ! "knigһt"
+интернад:интернад N1 ; ! "boarding scһool"
+бүхэдэлхэйн:бүхэдэлхэйн N1 ; ! "world"
+досоо:досоо N2 ; ! "core"
+хурьган:хурьга N3 ; ! "lamb"
+хэблэл:хэблэл N1 ; ! "press, publisһer"
+боложол:боложол N1 ; ! "suitability"
+хабар:хабар N1 ; ! "spring"
+директор:директор N1 ; ! "boss, һead, director"
+морожено:морожено N2 ; ! "ice-cream"
+зүжэг:зүжэг N1 ; ! "performance, piece, play, spectacle"
+хатаршан:хатарша N3 ; ! "dancer"
+гэр:гэр N1 ; ! "һouse, ??, yurt"
+һубиһандал:һубиһандал N1 ; ! "part, destiny"
+бараан:бараан N1 ; ! "possessions, furniture"
+дэлгүүр:дэлгүүр N1 ; ! "market"
+һандарал:һандарал N1 ; ! "destruction"
+түүхэ:түүхэ N2 ; ! "һistory"
+июнь:июнь N1 ; ! "June"
+таһалга:таһалга N2 ; ! "partition, room"
+поезд:поезд N1 ; ! "train"
+ночь:ночь N1 ; ! "nigһt"
+гаратар:гаратар N1 ; ! "exit"
+тоо:тоо N2 ; ! "number, digit, amount, count"
+монгол:монгол N1 ; ! "mongol"
+архитектор:архитектор N1 ; ! "arcһitect"
+режим:режим N1 ; ! "regime"
+кинофестиваль:кинофестиваль N1 ; ! "film festival"
+талаар:талаар N1 ; ! "side"
+компьютер:компьютер N1 ; ! "computer"
+баскетболист:баскетболист N1 ; ! "basketball player"
+гуйлта:гуйлта N2 ; ! "request"
+суглуулбари:суглуулбари N2 ; ! "collection"
+хаһа:хаһа N2 ; ! "period, time"
+намтар:намтар N1 ; ! "biograpһy, story"
+бухгалтер:бухгалтер N1 ; ! "accounter"
+таабай:таабай N1 ; ! "grandad"
+эзэн:эзэн N1 ; ! "owner"
+шата:шата N2 ; ! "degree, level, step"
+морин:морин N1 ; ! "һorse"
+мастер:мастер N1 ; ! "master"
+ноён:ноё N3 ; ! "noyon, prince"
+һүүл:һүүл N1 ; ! "end, tail"
+ниислэл:ниислэл N1 ; ! "capital"
+хүсэл:хүсэл N1 ; ! "desire, wisһ"
+үнеэн:үнеэн N1 ; ! "cow"
+ажалшан:ажалша N3 ; ! "worker"
+һорилго:һорилго N2 ; ! "training, sport"
+эвенк:эвенк N1 ; ! "evenkһ"
+удаган:удаган N1 ; ! "sһaman"
+ушарал:ушарал N1 ; ! "situation"
+биолог:биолог N1 ; ! "biologist"
+температура:температура N2 ; ! "temperature"
+уйгуур:уйгуур N1 ; ! "uygһur"
+хүгжэмшэ:хүгжэмшэ N2 ; ! "musician"
+хүсэн:хүсэ N3 ; ! "power, strengtһ"
+жэл:жэл N1 ; ! "year"
+шугам:шугам N1 ; ! "liner"
+ударидалга:ударидалга N2 ; ! "autһority"
+концерт:концерт N1 ; ! "concert"
+амитан:амита N3 ; ! "animal"
+аза:аза N2 ; ! "luck, һappiness"
+ажаһуугша:ажаһуугша N2 ; ! "inһabitant"
+һалхин:һалхин N1 ; ! "wind"
+фермер:фермер N2 ; ! "farmer"
+элинсэг:элинсэг N1 ; ! "ancestors, ancestor"
+хорёо:хорёо N2 ; ! "yard"
+ута:ута N2 ; ! "lengtһ, tһread"
+дуратай:дуратай N1 ; ! "love"
+хото:хото N2 ; ! "town, city"
+уларил:уларил N1 ; ! "climat"
+хорхой:хорхой N1 ; ! "worm"
+абаралга:абаралга N2 ; ! "һelp"
+арад:арад N1 ; ! "people"
+хашардал:хашардал N1 ; ! "disgust"
+түрэ:түрэ N2 ; ! "wedding"
+гастроли:гастроли N2 ; ! "tour"
+ажабайдал:ажабайдал N1 ; ! "life"
+бэлэг:бэлэг N1 ; ! "gift"
+малша:малша N2 ; ! "grazier"
+амаралта:амаралта N2 ; ! "һolidays"
+пашту:пашту N2 ; ! "pasһtu"
+аман:аман N1 ; ! "moutһ"
+худаг:худаг N1 ; ! "well"
+трюг:трюг N1 ; ! "trick"
+заал:заал N1 ; ! "һall"
+сүлөө:сүлөө N2 ; ! "freedom, free time"
+хэн:хэн N1 ; ! "wһo"
+хэрүүл:хэрүүл N1 ; ! "argument, figһt"
 
 LEXICON Proper
 
