@@ -9,6 +9,8 @@ Multichar_Symbols
 %<nom%>
 %<sym%>
 %<disc%>
+%<aux%>
+%<postadv%>
 
 %<acc%>
 %<dat%>
@@ -54,6 +56,7 @@ Multichar_Symbols
 %<gna%>
 %<gna_cond%>
 %<gna_prog%>
+%<gna_conc%>
 %<gna_perf%>
 
 %<qnt%>
@@ -176,16 +179,26 @@ LEXICON COP-PRED
 !% : COPULA ;
 CLIT ;
 
-LEXICON POSSESSIVE
+LEXICON POSSESSIVE-COMMON
 
 COP-PRED ;
 %<px1sg%>:%>%{м}%ни COP-PRED ;
+%<px1sg%>:%>м COP-PRED ; ! Dir/LR
 %<px2sg%>:%>шни COP-PRED ;
 %<px2sg%>:%>ш COP-PRED ;
 %<px3sg%>:%>нь COP-PRED ;
 %<px1pl%>:%>%{м%}най COP-PRED ;
 %<px2pl%>:%>тнай COP-PRED ;
+
+LEXICON POSSESSIVE
+
 %<refl%>:%>%{г%}%{A%}%{A%} COP-PRED ;
+POSSESSIVE-COMMON ;
+
+LEXICON POSSESSIVE-н
+
+%<refl%>:%>нг%{A%}%{A%} COP-PRED ;
+POSSESSIVE-COMMON ;
 
 LEXICON CASES-COMMON
 
@@ -200,7 +213,7 @@ LEXICON CASES-PL
 
 %<nom%>: COP-PRED ; 
 %<acc%>:%>%{и%}е POSSESSIVE ;                  ! -иие, -е, -гиие
-%<gen%>:%>%{A%}й POSSESSIVE ; 
+%<gen%>:%>%{A%}й POSSESSIVE-н ; 
 CASES-COMMON ; 
 
 LEXICON CASES-N1
@@ -208,8 +221,8 @@ LEXICON CASES-N1
 %<acc%>:%>%{и%}е POSSESSIVE ;                 ! -иие, -е, -гиие
 %<acc%>:%>%{и%}ие POSSESSIVE ;                ! -иие, -е, -гиие     ! FIXME: хүниие/хатарые
 %<acc%>:%>%{и%} POSSESSIVE ;                  ! FIXME: Colloquial? Тамминэни/Тамминэн
-%<gen%>:%>%{A%}й POSSESSIVE ; 
-%<gen%>:%>%{г%}%{A%}й POSSESSIVE ;            ! FIXME: Check this Дамдиновагай/Дамдинова
+%<gen%>:%>%{A%}й POSSESSIVE-н ; 
+%<gen%>:%>%{г%}%{A%}й POSSESSIVE-н ;            ! FIXME: Check this Дамдиновагай/Дамдинова
 CASES-COMMON ; 
 
 LEXICON CASES-N2
@@ -221,10 +234,10 @@ CASES-COMMON ;
 LEXICON CASES-N3
 
 %<acc%>:%>%{и%}е POSSESSIVE ;                  ! -иие, -е, -гиие
-%<gen%>:н%>%{A%}й POSSESSIVE ; 
-%<gen%>:%>%{A%}й POSSESSIVE ;                    ! FIXME: хөөрөөн/хөөрөөнэй
+%<gen%>:н%>%{A%}й POSSESSIVE-н ; 
+%<gen%>:%>%{A%}й POSSESSIVE-н ;                ! FIXME: хөөрөөн/хөөрөөнэй
 :н CASES-COMMON ; 
-: CASES-COMMON ;                                 ! FIXME: эхин/эхитэй
+: CASES-COMMON ;                               ! FIXME: эхин/эхитэй
 
 LEXICON SUBST-N1 
 
@@ -654,10 +667,12 @@ LEXICON Miscellaneous
 һаа%<disc%>:һаа # ;
 ааб%<disc%>:ааб # ;
 даа%<disc%>:даа # ;
-һэм%<disc%>:һэм # ;
 тус%<disc%>:тус # ;
 хынь%<disc%>:хынь # ;
 гүү%<disc%>:гүү # ;
+
+һэм%<aux%>:һэм V-FINITE-PERS ;
+гээшэ%<aux%>:гээшэ V-FINITE-PERS ; 
 
 бү%<neg%>:бү # ;
 
@@ -803,6 +818,7 @@ LEXICON Determiners
 зарим:зарим DET-QNT ; ! ""
 хамаг:хамаг DET-QNT ; ! ""
 хуу:хуу DET-QNT ; ! ""
+хэдэн:хэдэн DET-QNT ; ! "some"
 
 ɵɵрынгɵɵ:ɵɵрынгɵɵ DET-REF ; ! ""
 
@@ -904,7 +920,6 @@ LEXICON Nouns
 нара:нара N1 ; ! ""
 нарһан:нарһан N1 ; ! ""
 натри:натри N2 ; ! ""
-!наһан:наһан N1 ; ! "life"
 няма:няма N1 ; ! ""
 ород:ород N1 ; ! ""
 планетэ:планетэ N1 ; ! ""
@@ -1084,6 +1099,7 @@ LEXICON Nouns
 дүүн:дүүн N1 ; ! "song"
 импери:импери N2 ; ! "empire"
 дурадхал:дурадхал N1 ; ! "proposal"
+!наһан:наһан N1 ; ! "life"
 наһан:наһа N3 ; ! "age, life"
 оёор:оёор N1 ; ! "deptһ, bottom"
 туһаламжа:туһаламжа N1 ; ! "һelp"
@@ -1468,8 +1484,8 @@ dамдиновна:dамдиновна N2 ; ! "Damdinovna"
 адууһа:адууһа N2 ; ! "cattle"
 бүхы:бүхы N2 ; ! "all"
 холбоо:холбоо N2 ; ! "connection"
-артист:артист N1 ; ! "artist"
-спорт:спорт N1 ; ! "sport"
+артист:артист N2 ; ! "artist"
+спорт:спорт N2 ; ! "sport"
 охра:охра N2 ; ! "ocһer"
 зон:зо N3 ; ! "summer, people"
 тон:тон N1 ; ! "count"
@@ -1719,7 +1735,7 @@ dамдиновна:dамдиновна N2 ; ! "Damdinovna"
 холбоон:холбоон N1 ; ! "union"
 флод:флод N1 ; ! "fleet"
 һонирхол:һонирхол N1 ; ! "interest"
-хабсагай:хабсагай N1 ; ! "mountain, rock"
+хабсагайн:хабсагай N3 ; ! "mountain, rock"
 хүүгэ:хүүгэ N2 ; ! "cһild"
 республика:республика N2 ; ! "republic, respublic"
 бэлиг:бэлиг N1 ; ! "mind, wisdom, knowledge"
