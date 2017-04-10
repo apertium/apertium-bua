@@ -26,5 +26,5 @@ for line in $allcounts; do
 	done;
 done;
 
-echo $string
+#echo $string
 echo `calc $string`;

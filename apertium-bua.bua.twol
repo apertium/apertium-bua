@@ -3,11 +3,12 @@ Alphabet
  а б в г д е ё ж з и й к л м н о ө п р с т у ү ф х һ ц ч ш ь ы ъ э ю я
  %0 1 2 3 4 5 6 7 8 9
  %{D%}:д %{D%}:т 
- %{A%}:а %{A%}:э %{A%}:о %{A%}:ө ! Remove when harmony fixed
- %{U%}:у %{U%}:ү
+ %{A%}:а %{A%}:э %{A%}:о %{A%}:ө %{A%}:я %{A%}:е ! Remove when harmony fixed
+ %{U%}:у %{U%}:ү 
  %{н%}:0 %{н%}:н 
  %{м%}:0 %{м%}:м
  %{ң%}:н 
+ %{й%}:0
  %{i%}:0 %{i%}:и
  %{и%}:и %{и%}:ы
  %{г%}:0 
@@ -138,7 +139,7 @@ Rules
 
 "Some vowels delete before genitive {и}"
 Vx:0 <=> _ %{и%}:/[ :0 - [ а: ] ]* ;
-     where Vx in ( а )
+     where Vx in ( а %{A%} э )
      matched ;
 
 "ь before suffix"

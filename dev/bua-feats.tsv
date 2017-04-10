@@ -11,6 +11,8 @@ _	_	ger	_	_	_	VerbForm=Ger	_
 _	_	ger_past	_	_	VerbForm=Ger|Tense=Past	_	_
 _	_	gna	_	_	_	VerbForm=Converb	_
 _	_	gna_cond	_	_	VerbForm=Converb|Mood=Cond	_	_
+_	_	gna_prog	_	_	VerbForm=Converb|Aspect=Prog	_	_
+_	_	gna_perf	_	_	VerbForm=Converb|Aspect=Perf	_	_
 _	_	gpr_past	_	_	VerbForm=Part|Tense=Past	_	_
 _	_	hab	_	_	_	VerbForm=Fin|Aspect=Hab	_
 _	_	ifi	_	_	_	VerbForm=Fin|Tense=Past|Aspect=Perf	_
@@ -22,6 +24,9 @@ _	_	m	_	_	_	Gender=Msc	_
 _	_	mf	_	_	_	_	_
 _	_	neg	_	_	_	Polarity=Neg	_
 _	_	past	_	_	_	Tense=Past	_
+_	_	vol	_	_	_	Mood=Vol	_
+_	_	opt	_	_	_	Mood=Opt	_
+_	_	prsc	_	_	_	Mood=Prsc	_
 _	_	impf	_	_	_	VerbForm=Fin|Tense=Past|Aspect=Imp	_
 _	_	prc	_	_	_	VerbForm=Coverb	_
 _	_	prog	_	_	_	Aspect=Prog	_
