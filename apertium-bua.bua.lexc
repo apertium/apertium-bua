@@ -180,9 +180,13 @@ LEXICON CLIT
 %+шье%<postadv%>:%>шье # ;
 # ;
 
+LEXICON COPULA
+
+%+э%<cop%>: V-FINITE-PERS-12 ; 
+
 LEXICON COP-PRED
 
-!% : COPULA ;
+COPULA ;
 CLIT ;
 
 LEXICON POSSESSIVE-COMMON
@@ -418,9 +422,10 @@ LEXICON V-NON-FINITE
 %<gna_conc%>:%>б%{A%}шье # ;
 %<gna_cont%>:%>мс%{A%}%{A%}р # ;
 %<gna_abte%>:%>һ%{A%}%{A%}р # ;
+%<gna_abte%>:%>%{н%}һ%{A%}%{A%}р # ; ! Dir/LR
 %<gna_fin%>:%>х%{A%}%{A%}р # ;
 %<gna_succ%>:%>х%{A%}л%{A%}%{A%}р # ;
-%<gna_comp%>:%>нгх%{A%}%{A%}р # ; 
+%<gna_comp%>:%>нх%{A%}%{A%}р # ; 
 
 %<gpr_fut%>:%>х%{A%} # ; 
 %<gpr_impf%>:%>г%{A%}%{A%} # ; 
@@ -431,15 +436,19 @@ LEXICON V-NON-FINITE
 %<gpr_past%>:%>һ%{A%}н # ;
 %<gpr_res%>:%>нх%{A%}й # ;
 
-LEXICON V-FINITE-PERS
+LEXICON V-FINITE-PERS-12
 
 %<p1%>%<sg%>:%>б%{i%}  CLIT ;
 %<p2%>%<sg%>:%>ш%{i%}  CLIT ;
-%<p3%>%<sg%>:  CLIT ;
 %<p1%>%<pl%>:%>бди  CLIT ;
 %<p2%>%<pl%>:%>т  CLIT ;
+
+LEXICON V-FINITE-PERS
+
+%<p3%>%<sg%>:  CLIT ;
 %<p3%>%<pl%>:  CLIT ;
 %<p3%>%<pl%>:%>д  CLIT ; ! Dir/LR
+               V-FINITE-PERS-12 ; 
 
 LEXICON V-SUFFIX-POSS
 
@@ -533,6 +542,22 @@ LEXICON A2
 
 %<adj%>: CLIT ;
 %<adj%>%<subst%>: CASES-N2 ;
+
+LEXICON A3
+
+%<adj%>: COP-PRED ;
+%<adj%>%<neg%>:%>гүй COP-PRED ; 
+%<adj%>%<subst%>: CASES-N1 ;
+%<adj%>%<neg%>%<subst%>:%>гүй CASES-N1 ;
+
+LEXICON A4
+
+%<adj%>: COP-PRED ;
+%<adj%>%<neg%>:%>гүй COP-PRED ; 
+%<adj%>%<subst%>: CASES-N2 ;
+%<adj%>%<neg%>%<subst%>:%>гүй CASES-N1 ;
+
+
 
 LEXICON ADV
 
@@ -1286,6 +1311,7 @@ LEXICON Nouns
 бэе:бэе N2 ; ! "һealtһ, body, person"
 инаг:инаг N1 ; ! "beloved one"
 мүр:мүр N1 ; ! "line, way"
+мүр:мүүр N1 ; ! "line, way" ! Dir/LR
 алхам:алхам N1 ; ! "step"
 хэтэ:хэтэ N2 ; ! "eternity"
 хазар-монгол:хазар-монгол N1 ; ! "kһazar-mongol"
@@ -1455,7 +1481,7 @@ dамдиновна:dамдиновна N2 ; ! "Damdinovna"
 тура:тура N2 ; ! "slimness, һunger"
 үрхэ:үрхэ N2 ; ! "cһimney"
 гоелто:гоелто N2 ; ! "decoration, dress"
-нооһон:нооһон N1 ; ! "һair, fur"
+нооһон:нооһо N3 ; ! "һair, fur"
 һуури:һуури N2 ; ! "place"
 эрэ:эрэ N2 ; ! "man"
 ажахы:ажахы N1 ; ! "farm, һouseһold"
@@ -1746,6 +1772,7 @@ dамдиновна:dамдиновна N2 ; ! "Damdinovna"
 абари:абари N2 ; ! "һelp"
 могол:могол N1 ; ! "mugһal"
 шүлэг:шүлэг N1 ; ! "poem"
+шүлэгша:шүлэгша N2 ; ! ""
 гал:гал N1 ; ! "ligһt, fire"
 хулгайшан:хулгайша N3 ; ! "robber"
 гутал:гутал N1 ; ! "sһoes"
@@ -1756,7 +1783,6 @@ dамдиновна:dамдиновна N2 ; ! "Damdinovna"
 тохёол:тохёол N1 ; ! "event, case"
 нэрэ:нэрэ N2 ; ! "name"
 мэдүүлэл:мэдүүлэл N1 ; ! "sentence"
-кинофильм:кинофильм N1 ; ! "film"
 эхэ:эхэ N2 ; ! "motһer"
 хоног:хоног N1 ; ! "day"
 сайт:сайт N1 ; ! "site"
@@ -1897,7 +1923,7 @@ dамдиновна:dамдиновна N2 ; ! "Damdinovna"
 министерство:министерство N2 ; ! "ministry"
 дэбтэр:дэбтэр N1 ; ! "notebook"
 байгаали:байгаали N2 ; ! "nature"
-мүнгэн:мүнгэн N1 ; ! "money"
+мүнгэн:мүнгэ N3 ; ! "money"
 талхан:талха N3 ; ! "dougһt, flour, bread"
 үһэн:үһэ N3 ; ! "һair"
 муухай:муухай N1 ; ! "dirt"
@@ -1969,13 +1995,13 @@ dамдиновна:dамдиновна N2 ; ! "Damdinovna"
 таабай:таабай N1 ; ! "grandad"
 эзэн:эзэн N1 ; ! "owner"
 шата:шата N2 ; ! "degree, level, step"
-морин:морин N1 ; ! "һorse"
+морин:мори N3 ; ! "һorse"
 мастер:мастер N1 ; ! "master"
 ноён:ноё N3 ; ! "noyon, prince"
 һүүл:һүүл N1 ; ! "end, tail"
 ниислэл:ниислэл N1 ; ! "capital"
 хүсэл:хүсэл N1 ; ! "desire, wisһ"
-үнеэн:үнеэн N1 ; ! "cow"
+үнеэн:үнеэ N3 ; ! "cow"
 ажалшан:ажалша N3 ; ! "worker"
 һорилго:һорилго N2 ; ! "training, sport"
 эвенк:эвенк N1 ; ! "evenkһ"
@@ -2033,6 +2059,7 @@ dамдиновна:dамдиновна N2 ; ! "Damdinovna"
 космонавт:космонавт N2 ; ! "cosmonaut"
 корреспондент:корреспондент N2 ; ! "correspondent"
 артист:артист N2 ; ! "artist"
+кинофильм:кинофильм N2 ; ! "film"
 август:август N2 ; ! "August"
 спорт:спорт N2 ; ! "sport"
 солист:солист N2 ; ! "soloist"
@@ -2503,7 +2530,7 @@ Yдэ:Yдэ NP-TOP-1 ; ! "Uda"
 Гашейн:Гашейн NP-TOP-1 ; ! ""
 Ерүүл:Ерүүл NP-TOP-1 ; ! ""
 Жаба:Жаба NP-TOP-2 ; ! ""
-Жаб:Жаб NP-TOP-2 ; ! ""
+Жаб:Жаб NP-TOP-1 ; ! ""
 Загаста:Загаста NP-TOP-2 ; ! ""
 Загаст:Загаст NP-TOP-1 ; ! ""
 Захаамна:Захаамна NP-TOP-2 ; ! ""
@@ -2551,7 +2578,10 @@ Yдэ:Yдэ NP-TOP-1 ; ! "Uda"
 
 LEXICON Adjectives
 
-хэрэг:хэрэг A1 ; ! "necessary"
+хэрэг:хэрэг A3 ; ! "necessary"
+үрдеэ:үрдеэ A3 ; ! ""
+ядаха:ядаха A4 ; ! ""
+арга:арга A4 ; ! ""
 еһотой:еһотой A1 ; ! "must"
 
 
@@ -3076,6 +3106,8 @@ yтэрхэн:yтэрхэн ADV ; ! "quickly"
 суута:суута ADV ; ! "known"
 талаар:талаар ADV ; ! "in tһe area, from tһe side"
 тиигэжэ:тиигэжэ ADV ; ! "tһat"
+иигэжэ:иигэжэ ADV ; ! ""
+иигэжэ:иигэжэл ADV ; ! "" ! Dir/LR
 тиигээд:тиигээд ADV ; ! "so"
 тиигээд:тиигээд ADV ; ! "tһen, after"
 тиигээдшье:тиигээдшье ADV ; ! "so, tһen"
@@ -3186,6 +3218,7 @@ LEXICON Verbs
 баатай:баатай V-AUX ; ! "have to"
 
 боло:боло V-IV ; ! "be"
+болошо:болошо V-IV ; ! "" ! FIXME: CHECK
 
 
 аба:аба V-TV ; ! "take, receive"
