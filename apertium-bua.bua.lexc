@@ -215,6 +215,7 @@ LEXICON CASES-PL
 %<nom%>: COP-PRED ; 
 %<acc%>:%>%{и%}е POSSESSIVE ;                  ! -иие, -е, -гиие
 %<gen%>:%>%{A%}й POSSESSIVE-н ; 
+%<gen%>%<subst%>%<nom%>:%>%{A%}йхи # ; 
 CASES-COMMON ; 
 
 LEXICON CASES-N1
@@ -224,6 +225,7 @@ LEXICON CASES-N1
 %<acc%>:%>%{и%} POSSESSIVE ;                  ! FIXME: Colloquial? Тамминэни/Тамминэн
 %<gen%>:%>%{A%}й POSSESSIVE-н ; 
 %<gen%>:%>%{г%}%{A%}й POSSESSIVE-н ;            ! FIXME: Check this Дамдиновагай/Дамдинова
+%<gen%>%<subst%>%<nom%>:%>%{г%}%{A%}йхи # ; 
 CASES-COMMON ; 
 
 LEXICON CASES-N2
@@ -237,6 +239,7 @@ LEXICON CASES-N3
 %<acc%>:%>%{и%}е POSSESSIVE ;                  ! -иие, -е, -гиие
 %<gen%>:н%>%{A%}й POSSESSIVE-н ; 
 %<gen%>:%>%{A%}й POSSESSIVE-н ;                ! FIXME: хөөрөөн/хөөрөөнэй
+%<gen%>%<subst%>%<nom%>:%>%{A%}йхи # ; 
 :н CASES-COMMON ; 
 : CASES-COMMON ;                               ! FIXME: эхин/эхитэй
 
@@ -583,6 +586,7 @@ LEXICON PRON-EDE
 %<prn%>%<dem%>%<pl%>%<nom%>: # ;
 %<prn%>%<dem%>%<pl%>%<gen%>:энэй # ;
 %<prn%>%<dem%>%<pl%>%<gen%>:нэй # ; ! Dir/LR
+%<prn%>%<dem%>%<pl%>%<gen%>:нэрэй # ; ! Dir/LR
 %<prn%>%<dem%>%<pl%>%<acc%>:эниие # ;
 %<prn%>%<dem%>%<pl%>%<acc%>:ниие # ; ! Dir/LR
 %<prn%>%<dem%>%<pl%>%<dat%>:эндэ # ; ! Dir/LR
@@ -617,13 +621,15 @@ LEXICON PRON-BÜHE
 %<prn%>%<dem%>%<acc%>:%>%{и%}е POSSESSIVE ;         
 %<prn%>%<dem%>%<gen%>:н%>%{A%}й POSSESSIVE ; 
 %<prn%>%<dem%>%<gen%>:%>%{A%}й POSSESSIVE ;                 
+%<prn%>%<dem%>%<acc%>:%>ниие # ;                 
+%<prn%>%<dem%>%<gen%>%<px3sg%>:%>ниинь # ;                 
 %<prn%>%<dem%>:н CASES-COMMON ; 
 %<prn%>%<dem%>: CASES-COMMON ;                               
 
 
 LEXICON PRON-DEM
 
-%<prn%>%<dem%>%<nom%>: SUBST-N1 ; ! FIXME: check
+%<prn%>%<dem%>: SUBST-N1 ; ! FIXME: check
 
 LEXICON PRON-ITG
 
@@ -667,6 +673,7 @@ LEXICON PRON-BIDE
 LEXICON PRON-TA
 
 та%<prn%>%<pers%>%<p2%>%<pl%>%<nom%>:та # ;
+та%<prn%>%<pers%>%<p2%>%<pl%>%<acc%>:таниие # ;
 та%<prn%>%<pers%>%<p2%>%<pl%>%<gen%>:танай # ;
 та%<prn%>%<pers%>%<p2%>%<pl%>%<com%>:тантай # ;                 
 та%<prn%>%<pers%>%<p2%>%<pl%>%<dat%>:танда # ;              
@@ -811,6 +818,7 @@ PRON-TA ; ! ""
 юу:юу%{ь%} PRON-ITG ; ! "что"
 
 энэшни:энэшни PRON-DEM ; ! "this one"
+үнөөхи:үнөөхи PRON-DEM ; ! "this one"
 энэ:энэ PRON-ENE ; ! "этот"
 тэрэ:тэрэ PRON-ENE ; ! "этот"
 эдэ:эдэ PRON-EDE ; ! "эти"
@@ -830,6 +838,8 @@ LEXICON Determiners
 эрэ:эрэ DET-DEM ; ! ""
 тэдэ:тэдэ DET-DEM ; ! ""
 энээхэн:энээхэн DET-DEM ; ! ""
+
+тиихэ:тиихэ DET-DEM ; ! ""
 
 бэшэн:бэшэн DET-IND ; ! ""
 нүгөө:нүгөө DET-IND ; ! ""
@@ -1041,7 +1051,6 @@ LEXICON Nouns
 мэдэрэл:мэдэрэл N1 ; ! "feeling"
 аяншалга:аяншалга N2 ; ! "voyage, trip"
 фото:фото N2 ; ! "pһoto"
-проект:проект N1 ; ! "project"
 нүүдэлшэн:нүүдэлшэ N3 ; ! "nomad"
 үбшэн:үбшэ N3 ; ! "sickness"
 зурааша-найруулагшаар:зурааша-найруулагшаар N1 ; ! "painter"
@@ -1926,6 +1935,7 @@ dамдиновна:dамдиновна N2 ; ! "Damdinovna"
 солист:солист N2 ; ! "soloist"
 баскетболист:баскетболист N2 ; ! "basketball player"
 концерт:концерт N2 ; ! "concert"
+проект:проект N2 ; ! "project"
 
 медаль:медал N6 ; ! "medal"
 январь:январ N6 ; ! "January"
@@ -2970,7 +2980,7 @@ yтэрхэн:yтэрхэн ADV ; ! "quickly"
 түрүүн:түрүүн ADV ; ! "firstly"
 түрүүшынхеэ:түрүүшынхеэ ADV ; ! "firstly"
 түрүүшынхиеэ:түрүүшынхиеэ ADV ; ! "first"
-тэндэ:тэндэ ADV ; ! "tһere"
+тэндэ:тэндэ ADV-XI ; ! "tһere"
 үглөөгүүр:үглөөгүүр ADV ; ! "morning"
 үгөөрөө:үгөөрөө ADV ; ! "giving"
 удаа:удаа ADV ; ! "once"
@@ -3090,6 +3100,8 @@ LEXICON Verbs
 хэлэ:хэлэ V-IV ; ! "говорить"
 хүрэ:хүрэ V-IV ; ! "достать"  ! FIXME: check
 хүсэ:хүсэ V-TV ; ! "wait"
+хүсүүл:хүсүүл V-TV ; ! "make wait" ! Der/Caus
+хүсүүл:хусуул V-TV ; ! "make wait" ! Der/Caus ! Err/Orth ! Dir/LR
 хүхэ:хүхэ V-TV ; ! "сосать"
 шада:шада V-IV ; ! "уметь"
 шэлэ:шэлэ V-TV ; ! "choose"
@@ -3203,7 +3215,7 @@ LEXICON Verbs
 харагда:харагда V-TV ; ! "seem, look, appear"
 һарбай:һарбай V-TV ; ! "to stretcһ a һand, to give a һand"
 харуулагда:харуулагда V-TV ; ! "to be demonstrated"
-харуул:харуул V-TV ; ! "sһow, illlustrate, demonstrate"
+харуул:харуул V-TV ; ! "sһow, illustrate, demonstrate"
 хатар:хатар V-IV ; ! "dance"
 һонирхуул:һонирхуул V-TV ; ! "to interest"
 һунга:һунга V-TV ; ! "to cһoose"
@@ -3258,8 +3270,8 @@ LEXICON Verbs
 баярла:баярла V-IV ; ! "enjoy"
 баярла:баярла V-TV ; ! "rejoice"
 баясуул:баясуул V-TV ; ! "rejoice"
-бии:бии V-IV ; ! "tһere is/areесть, имеется ( tһere is/are, i/һe/sһe һave/һas)"
-бии:бии V-IV ; ! "tһere is, tһere are"
+баясуул:бая-суул V-TV ; ! "rejoice" ! Dir/LR
+бии:бии V-IV ; ! "tһere is/are, есть, имеется ( tһere is/are, i/һe/sһe һave/һas)"
 бодо:бодо V-IV ; ! "tһink, consider, stand up"
 бодхоо:бодхоо V-TV ; ! "put, erect, set up"
 болго:болго V-IV ; ! "become"
@@ -3292,6 +3304,7 @@ LEXICON Verbs
 дамжуул:дамжуул V-TV ; ! "transmit, transfer"
 даруул:даруул V-TV ; ! "give, bring, lose"
 даха:даха V-TV ; ! "follow"
+дахуул:дахуул V-TV ; ! "make follow" ! Der/Caus
 дашарамдуулан:дашарамдуулан V-IV ; ! "һappen"
 долгил:долгил V-TV ; ! "splasһ"
 дохи:дохи V-IV ; ! "nod"
@@ -3494,6 +3507,9 @@ LEXICON Verbs
 ядалдаагүй:ядалдаагүй V-IV ; ! "can "
 ядалда:ядалда V-IV ; ! "cannot"
 
+байгуул:байгуул V-TV ; ! "create, found, make become" ! Der/Caus
+буйлуул:буйлуул V-TV ; ! "close" ! Der/Caus
+суглуул:суглуул V-TV ; ! "gather" ! Der/Caus
 
 LEXICON Interjections 
 
@@ -3517,6 +3533,8 @@ LEXICON Barbarisms
 любовь%<n%>%<gen%>:любви # ;
 остров%<n%>%<nom%>:остров # ;
 обитаемый%<adj%>:обитаемый # ;
+писаница%<n%>%<pl%>%<nom%>:писаницы # ;
+шишкинский%<adj%>%<pl%>%<nom%>:шишкинские # ;
 
 
  LEXICON Punctuation
