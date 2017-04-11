@@ -27,6 +27,7 @@ Multichar_Symbols
 %<vaux%>
 
 %<caus%>
+%<coop%>
 %<pass%>
 
 %<neg%>
@@ -231,7 +232,8 @@ LEXICON CASES-N1
 
 %<acc%>:%>%{и%}е POSSESSIVE ;                 ! -иие, -е, -гиие
 %<acc%>:%>%{и%}ие POSSESSIVE ;                ! -иие, -е, -гиие     ! FIXME: хүниие/хатарые
-%<acc%>:%>%{и%} POSSESSIVE ;                  ! FIXME: Colloquial? Тамминэни/Тамминэн
+%<acc%>:%>и POSSESSIVE ;                      ! FIXME: Colloquial? Тамминэни/Тамминэн ! Dir/LR
+%<acc%>:%>ы POSSESSIVE ;                      ! FIXME: Colloquial? Тамминэни/Тамминэн ! Dir/LR
 %<gen%>:%>%{A%}й POSSESSIVE-н ; 
 %<gen%>:%>%{г%}%{A%}й POSSESSIVE-н ;            ! FIXME: Check this Дамдиновагай/Дамдинова
 %<gen%>%<subst%>%<nom%>:%>%{г%}%{A%}йхи # ; 
@@ -2398,6 +2400,7 @@ Yдэ:Yдэ NP-TOP-1 ; ! "Uda"
 Турка:Турка NP-TOP-2 ; ! ""
 Турку:Турку NP-TOP-2 ; ! ""
 Захаамна:Захаамна NP-TOP-2 ; ! ""
+Захаамнай:Захаамнай NP-TOP-1 ; ! ""
 Бэшүүра:Бэшүүра NP-TOP-2 ; ! ""
 Бэшүүр:Бэшүүр NP-TOP-1 ; ! ""
 Юра:Юра NP-ANT-M-2 ; ! ""
@@ -2586,7 +2589,7 @@ LEXICON Adjectives
 
 
 амиды:амиды A1 ; ! ""
-аргагүй:аргагүй A1 ; ! "impossible" ! Use/MT - productively derivational?
+!аргагүй:аргагүй A1 ; ! "impossible" ! Use/MT - productively derivational?
 бага:бага A1 ; ! ""
 бэрхэ:бэрхэ A1 ; ! ""
 гоё:гоё A1 ; ! "красиво"
@@ -2598,6 +2601,7 @@ LEXICON Adjectives
 хара:хара A1 ; ! ""
 хүйтэн:хүйтэн A1 ; ! "холодно"
 һайн:һайн A1 ; ! ""
+түрэл:түрэл A1 ; ! "native"
 
 амаралтын:амаралтын A1 ; ! ""   ! FIXME: Noun?
 
@@ -3687,6 +3691,7 @@ LEXICON Barbarisms
 писаница%<n%>%<pl%>%<nom%>:писаницы # ;
 шишкинский%<adj%>%<pl%>%<nom%>:шишкинские # ;
 тарбагатайский%<adj%>:тарбагатайская # ;
+Чингисхан%<np%>%<ant%>%<m%>%<gen%>:Чингисхана # ;
 
 
  LEXICON Punctuation
