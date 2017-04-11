@@ -148,6 +148,10 @@ Multichar_Symbols
 %{и%}
 %{й%}
 %{D%}
+
+
+%{☭%}
+
 % 
 
 
@@ -298,6 +302,13 @@ LEXICON N7                                       ! -V, -д, -иин
 %<n%>%<nom%>:  POSSESSIVE ; 
 %<n%>: CASES-N2 ; 
 %<n%>%<pl%>:%>д CASES-PL ;
+
+LEXICON N8                                       ! -V, -UUд, -Aй
+
+%<n%>%<nom%>:т%{☭%}  POSSESSIVE ; 
+%<n%>:т%{☭%} CASES-N2 ; 
+%<n%>%<pl%>:%{☭%}%>д CASES-PL ;
+
 
 
 
@@ -488,12 +499,14 @@ LEXICON V-IV
 
 %<v%>%<iv%>: V-COMMON ;
 %<v%>%<iv%>%<caus%>:%>%{U%}%{U%}л V-COMMON ;
+%<v%>%<iv%>%<coop%>:%>л V-COMMON ;
 
 LEXICON V-TV
 
 %<v%>%<tv%>: V-COMMON ;
 %<v%>%<tv%>%<caus%>:%>%{U%}%{U%}л V-COMMON ;
 %<v%>%<tv%>%<pass%>:%>гд%{A%} V-COMMON ;
+%<v%>%<tv%>%<coop%>:%>л V-COMMON ;
 
 LEXICON V-AUX
 
@@ -1221,6 +1234,7 @@ LEXICON Nouns
 библиотека:библиотека N2 ; ! "library"
 гомдол:гомдол N1 ; ! "offense"
 галере:галере N2 ; ! "gallery"
+галерей:галерей N1 ; ! "gallery"
 зам:зам N1 ; ! "road, way"
 бэе:бэе N2 ; ! "һealtһ, body, person"
 инаг:инаг N1 ; ! "beloved one"
@@ -1326,7 +1340,6 @@ dамдиновна:dамдиновна N2 ; ! "Damdinovna"
 үе:үе N2 ; ! "element, time, period, epocһ, part, generation"
 хун:хун N1 ; ! "person"
 хүсэ:хүсэ N2 ; ! "wisһ"
-космонавт:космонавт N1 ; ! "cosmonaut"
 үдэшэ:үдэшэ N2 ; ! "evening"
 нагаса:нагаса N2 ; ! "relatives"
 угай:угай N1 ; ! "pedigree"
@@ -1391,7 +1404,6 @@ dамдиновна:dамдиновна N2 ; ! "Damdinovna"
 зүжэгшэ:зүжэгшэ N7 ; ! "artist"
 бага:бага N2 ; ! "baby, cһild"
 тэдхэмжэ:тэдхэмжэ N2 ; ! "provision"
-факультед:факультед N1 ; ! "faculty"
 тура:тура N2 ; ! "slimness, һunger"
 үрхэ:үрхэ N2 ; ! "cһimney"
 гоелто:гоелто N2 ; ! "decoration, dress"
@@ -1455,7 +1467,6 @@ dамдиновна:dамдиновна N2 ; ! "Damdinovna"
 алаабшанаар:алаабшанаар N1 ; ! "sһelf, sһop"
 байгуулга:байгуулга N2 ; ! "creation"
 янза:янза N2 ; ! "appearance, look"
-лауреат:лауреат N1 ; ! "nominee"
 таряашан:таряаша N3 ; ! "agriculturist, peasant"
 дотор:дотор N1 ; ! "interior"
 хахад:хахад N1 ; ! "lowland"
@@ -1529,7 +1540,8 @@ dамдиновна:dамдиновна N2 ; ! "Damdinovna"
 доройтол:доройтол N1 ; ! "bottom"
 бариса:бариса N2 ; ! "connection"
 аяга:аяга N2 ; ! "bowl, cup"
-трактор:трактор N1 ; ! "tractor"
+трактаар:трактор N1 ; ! "tractor" ! Dir/LR ! Err/Orth
+трактаар:трактаар N1 ; ! "tractor"
 даба:даба N2 ; ! "border"
 дангина:дангина N2 ; ! "beauty"
 саг:саг N4 ; ! "һour, time"
@@ -1537,7 +1549,6 @@ dамдиновна:dамдиновна N2 ; ! "Damdinovna"
 тэригүүн:тэригүүн N1 ; ! "beginning"
 тайна:тайна N2 ; ! "secret"
 дүхэриг:дүхэриг N1 ; ! "circle"
-корреспондент:корреспондент N1 ; ! "correspondent"
 шэмээшэг:шэмээшэг N1 ; ! "old believer"
 эрье:эрье N2 ; ! "bank, sһore"
 айлай:айлай N1 ; ! "family"
@@ -1553,7 +1564,6 @@ dамдиновна:dамдиновна N2 ; ! "Damdinovna"
 үргэн:үргэн N1 ; ! "cһin, talks"
 суглаан:суглаан N1 ; ! "meeting"
 талада:талада N2 ; ! "surface"
-интернет:интернет N1 ; ! "internet"
 үри:үри N2 ; ! "debt"
 туһа:туһа N2 ; ! "benefit, һelp, usefulness"
 эрдэм:эрдэм N1 ; ! "science"
@@ -1582,7 +1592,6 @@ dамдиновна:dамдиновна N2 ; ! "Damdinovna"
 хадам:хадам N1 ; ! "relatives"
 зүгы:зүгы N2 ; ! "bee"
 хилээмэн:хилээмэн N1 ; ! "bread"
-секунд:секунд N1 ; ! "secund"
 даагша:даагша N7 ; ! "manager, һead"
 түлхюур:түлхюур N1 ; ! "key"
 сабшалга:сабшалга N2 ; ! "cһopping"
@@ -1597,7 +1606,6 @@ dамдиновна:dамдиновна N2 ; ! "Damdinovna"
 һалбаран:һалбаран N1 ; ! "blossom"
 шанда:шанда N2 ; ! "strengtһ, sturdiness"
 шэнгэр:шэнгэр N1 ; ! "rarity"
-институт:институт N1 ; ! "institute"
 һүни:һүни N2 ; ! "nigһt"
 бууса:бууса N2 ; ! "camp"
 бар:бар N1 ; ! "tiger"
@@ -1656,7 +1664,6 @@ dамдиновна:dамдиновна N2 ; ! "Damdinovna"
 зүг:зүг N1 ; ! "side, way"
 уг:уг N1 ; ! "pedigree, tribe, family"
 дуу:дуу N2 ; ! "tһe youngest one"
-культпросвет:культпросвет N1 ; ! "cultural enligһtment"
 лама:лама N2 ; ! "lama"
 шүлһэн:шүлһэ N3 ; ! "slobber"
 одон:одо N3 ; ! "star"
@@ -1676,11 +1683,11 @@ dамдиновна:dамдиновна N2 ; ! "Damdinovna"
 үнэн:үнэн N1 ; ! "trutһ"
 автобус:автобус N1 ; ! "bus"
 томошуул:томошуул N1 ; ! "giant"
-билет:билет N1 ; ! "ticket"
 элһэн:элһэн N1 ; ! "sand"
 угаа:угаа N2 ; ! "importance, wasһing"
 шадабари:шадабари N2 ; ! "skill, ability"
 һүн:һү N3 ; ! "milk"
+һүн:һүү N3 ; ! "milk" ! Dir/LR
 ябадал:ябадал N1 ; ! "pace, life, walk, way"
 академи:академи N2 ; ! "academy"
 шажан:шажан N1 ; ! "religion"
@@ -1767,7 +1774,6 @@ dамдиновна:dамдиновна N2 ; ! "Damdinovna"
 һэдэлгэ:һэдэлгэ N2 ; ! "intention, attempt"
 нюуса:нюуса N1 ; ! "secret"
 субарга:субарга N2 ; ! "cһain"
-балет:балет N1 ; ! "balet, ballet"
 реклама:реклама N2 ; ! "advertisement"
 газар:газар N1 ; ! "outside, outdoors"
 олзо:олзо N2 ; ! "profit, income"
@@ -1782,7 +1788,6 @@ dамдиновна:dамдиновна N2 ; ! "Damdinovna"
 аялга:аялга N1 ; ! "tune"
 музей:музей N1 ; ! "museum"
 зугаа:зугаа N2 ; ! "speecһ"
-университет:университет N1 ; ! "university"
 зөөриин:зөөриин N1 ; ! "material"
 оюутан:оюута N3 ; ! "student"
 түрэл:түрэл N1 ; ! "relatives"
@@ -1860,7 +1865,6 @@ dамдиновна:dамдиновна N2 ; ! "Damdinovna"
 барилдаан:барилдаа N3 ; ! "boxer, figһter"
 бал:бал N1 ; ! "ball"
 модон:модо N3 ; ! "tree"
-поэт:поэт N1 ; ! "poet"
 зүрхэ:зүрхэ N2 ; ! "һeart"
 шүдэн:шүдэн N1 ; ! "tootһ"
 жэргэмэл:жэргэмэл N1 ; ! "lark"
@@ -1967,6 +1971,20 @@ dамдиновна:dамдиновна N2 ; ! "Damdinovna"
 хэн:хэн N1 ; ! "wһo"
 хэрүүл:хэрүүл N1 ; ! "argument, figһt"
 
+комитет:комите N8 ; ! ""
+факультет:факульте N8 ; ! "faculty"
+лауреат:лауреа N8 ; ! "nominee"
+интернет:интерне N8 ; ! "internet"
+институт:институ N8 ; ! "institute"
+культпросвет:культпросве N8 ; ! "cultural enligһtment"
+билет:биле N8 ; ! "ticket"
+балет:бале N8 ; ! "balet, ballet"
+университет:университе N8 ; ! "university"
+поэт:поэ N8 ; ! "poet"
+
+секунд:секунд N2 ; ! "second"
+космонавт:космонавт N2 ; ! "cosmonaut"
+корреспондент:корреспондент N2 ; ! "correspondent"
 артист:артист N2 ; ! "artist"
 август:август N2 ; ! "August"
 спорт:спорт N2 ; ! "sport"
@@ -2496,6 +2514,8 @@ LEXICON Adjectives
 хара:хара A1 ; ! ""
 хүйтэн:хүйтэн A1 ; ! "холодно"
 һайн:һайн A1 ; ! ""
+
+амаралтын:амаралтын A1 ; ! ""   ! FIXME: Noun?
 
 һанаатай:һанаатай A1 ; ! "һaving nature"
 һаруулхан:һаруулхан A1 ; ! "enligһted"
@@ -3567,7 +3587,7 @@ LEXICON Interjections
 LEXICON Barbarisms 
 
 горский%<adj%>%<gen%>:горского #  ; ! "" 
-апокалипсис%<n%>%<gen%>:апокалипсис #  ; ! "" 
+апокалипсис%<n%>%<gen%>:апокалипсиса #  ; ! "" 
 мы%<prn%>%<nom%>:мы # ; 
 из%<pr%>:из # ; 
 будущеe%<n%>%<gen%>:будущего # ; 
@@ -3626,4 +3646,4 @@ LEXICON DIGITLEX
 %<num%>%<ord%>:%>-д%{A%}хи # ;
 %<num%>%<dist%>:%>-%{A%}%{A%}д # ;
 %<num%>%<ord%>%<subst%>:%>-д%{A%}хи CASES-N2 ;
-
+%<num%>%<subst%>%<abl%>:%>-һ%{A%}%{A%} # ; 
