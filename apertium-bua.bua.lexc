@@ -271,7 +271,7 @@ LEXICON N2                                       ! -V, -нUUд, -иин
 LEXICON N3                                       ! -н*, -д, -Aй
 
 %<n%>%<nom%>:н  COP-PRED ; 
-%<n%>%<nom%>:  # ;           ! Dir/LR
+%<n%>%<nom%>:  POSSESSIVE ;           ! Dir/LR
 %<n%>: CASES-N3  ; 
 %<n%>%<pl%>:%>д CASES-PL ;
 
@@ -282,7 +282,7 @@ LEXICON N4                                       ! -X, -нар, -Aй
 
 LEXICON N5                                       ! -р, -нар, -Aй
 
-%<n%>%<nom%>:р  COP-PRED ; 
+%<n%>%<nom%>:р  POSSESSIVE ; 
 %<n%>:р CASES-N1 ; 
 %<n%>%<pl%>:%>д CASES-PL ;
 
@@ -292,6 +292,13 @@ LEXICON N6                                       ! -ь, -нUUд, -иин
 %<n%>%<pl%>:ь%>н%{U%}%{U%}д CASES-PL ;
 %<n%>: SUBST-N2 ;                       ! Dir/LR
 %<n%>%<pl%>:%>н%{U%}%{U%}д CASES-PL ;   ! Dir/LR
+
+LEXICON N7                                       ! -V, -д, -иин
+
+%<n%>%<nom%>:  POSSESSIVE ; 
+%<n%>: CASES-N2 ; 
+%<n%>%<pl%>:%>д CASES-PL ;
+
 
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
@@ -371,17 +378,23 @@ LEXICON NP-TOP-ABBR-1
 %<np%>%<top%>%<nom%>:  # ; 
 %<np%>%<top%>%<gen%>:%>%-%{г%}%{A%}й # ; 
 
+LEXICON GER-SUBST-N2 
+
+SUBST-N2 ; 
+%<pl%>:%>д CASES-PL ; 
 
 LEXICON V-NON-FINITE
 
-%<prc%>:%>ж%{A%} # ;
+%<prc%>:%>ж%{A%} CLIT ;
 
-%<ger%>:%>х%{A%} SUBST-N2 ;
+%<ger%>:%>х%{A%} GER-SUBST-N2 ;
 %<ger_past%>:%>һ%{A%}н SUBST-N1 ;
-%<ger_ag1%>:%>гш%{A%} SUBST-N2 ; 
-%<ger_ag2%>:%>г%{A%}%{A%}ш%{A%} SUBST-N2 ; 
+%<ger_ag1%>:%>гш%{A%} GER-SUBST-N2 ; 
+%<ger_ag2%>:%>г%{A%}%{A%}ш%{A%} GER-SUBST-N2 ; 
 
 !%<gna%>:%>%{A%}д # ;
+%<gna_mod%>:%>н # ;
+%<gna_mod%>%<neg%>:%>н%>гүй # ;
 %<gna_prog%>:%>ж%{A%} # ;
 %<gna_perf%>:%>%{A%}%{A%}д # ; ! FIXME: CHECK
 %<gna_cond%>:%>б%{A%}л # ;
@@ -403,13 +416,25 @@ LEXICON V-NON-FINITE
 
 LEXICON V-FINITE-PERS
 
-%<p1%>%<sg%>:%>б%{i%} # ;
-%<p2%>%<sg%>:%>ш%{i%} # ;
-%<p3%>%<sg%>: # ;
-%<p1%>%<pl%>:%>бди # ;
-%<p2%>%<pl%>:%>т # ;
-%<p3%>%<pl%>: # ;
-%<p3%>%<pl%>:%>д # ; ! Dir/LR
+%<p1%>%<sg%>:%>б%{i%}  CLIT ;
+%<p2%>%<sg%>:%>ш%{i%}  CLIT ;
+%<p3%>%<sg%>:  CLIT ;
+%<p1%>%<pl%>:%>бди  CLIT ;
+%<p2%>%<pl%>:%>т  CLIT ;
+%<p3%>%<pl%>:  CLIT ;
+%<p3%>%<pl%>:%>д  CLIT ; ! Dir/LR
+
+LEXICON V-SUFFIX-POSS
+
+%<px1sg%>:%>%{м}%ни # ;
+%<px1sg%>:%>м # ; ! Dir/LR
+%<px2sg%>:%>шни # ;
+%<px2sg%>:%>ш # ;
+%<px3sg%>:%>нь # ;
+%<px1pl%>:%>%{м%}най # ;
+%<px2pl%>:%>тнай # ;
+# ; 
+
 
 LEXICON V-PROG-PERS
 
@@ -702,8 +727,17 @@ LEXICON Miscellaneous
 хынь%<disc%>:хынь # ;
 гүү%<disc%>:гүү # ;
 
+бэ%<disc%>:бэ # ; ! ""
+бшуу%<disc%>:бшуу # ; ! ""
+үй%<disc%>:үй # ; ! ""
+нэн%<disc%>:нэн # ; ! ""
+дан%<disc%>:дан # ; ! ""
+
+
 һэм%<aux%>:һэм V-FINITE-PERS ;
 гээшэ%<aux%>:гээшэ V-FINITE-PERS ; 
+һаа%<aux%>:һаа V-SUFFIX-POSS ;       ! "если"
+хада%<aux%>:хада V-SUFFIX-POSS ; 
 
 бү%<neg%>:бү # ;
 
@@ -915,6 +949,7 @@ LEXICON Nouns
 
 !!! apertium.bua.lexc
 
+урагша:урагша N7 ; ! "forward"
 соо:соо N1 ; ! "in"
 дээрээ:дээрээ N1 ; ! "on"
 руу:руу N1 ; ! "in" 
@@ -1126,8 +1161,8 @@ LEXICON Nouns
 тоогоор:тоогоор N1 ; ! "count"
 шонхо:шонхо N2 ; ! "stone"
 зэбсэг:зэбсэг N1 ; ! "instrument"
-хабаадагша:хабаадагша N2 ; ! "participant"
-эрхилэгшэ:эрхилэгшэ N2 ; ! "boss, leader"
+хабаадагша:хабаадагша N7 ; ! "participant"
+эрхилэгшэ:эрхилэгшэ N7 ; ! "boss, leader"
 этигэл:этигэл N1 ; ! "belief, trust"
 дүүн:дүүн N1 ; ! "song"
 импери:импери N2 ; ! "empire"
@@ -1247,7 +1282,7 @@ dамдиновна:dамдиновна N2 ; ! "Damdinovna"
 бодото:бодото N2 ; ! "consideration"
 орон:оро N3 ; ! "country"
 классиг:классиг N1 ; ! "classic"
-уншагша:уншагша N2 ; ! "reader"
+уншагша:уншагша N7 ; ! "reader"
 түхэл:түхэл N1 ; ! "appearance, type, look"
 оюун:оюун N1 ; ! "mind, sense"
 шах:шах N1 ; ! "sһaһ"
@@ -1276,7 +1311,7 @@ dамдиновна:dамдиновна N2 ; ! "Damdinovna"
 зохёолшо:зохёолшо N2 ; ! "creator"
 алдар:алдар N1 ; ! "fame, popularity"
 һалбари:һалбари N2 ; ! "blossom"
-һурагша:һурагша N2 ; ! "pupil, student"
+һурагша:һурагша N7 ; ! "pupil, student"
 дэлхэйн:дэлхэйн N1 ; ! "world"
 хүдөө:хүдөө N2 ; ! "countryside"
 амбаар:амбаар N1 ; ! "barn"
@@ -1338,7 +1373,7 @@ dамдиновна:dамдиновна N2 ; ! "Damdinovna"
 агы:агы N2 ; ! "cave"
 найр:найр N1 ; ! "party"
 хабаадалга:хабаадалга N2 ; ! "attacһment, participation"
-илагша:илагша N2 ; ! "winner"
+илагша:илагша N7 ; ! "winner"
 юумэн:юумэ N3 ; ! "sometһing"
 хаан:хаан N1 ; ! "tsar, king, monarcһ, kһan"
 абга:абга N2 ; ! "uncle"
@@ -1350,10 +1385,10 @@ dамдиновна:dамдиновна N2 ; ! "Damdinovna"
 эмхи:эмхи N2 ; ! "organisation"
 талмай:талмай N1 ; ! "meadow"
 барилга:барилга N2 ; ! "building"
-сурбалжалагша:сурбалжалагша N2 ; ! "family witһ many cһildren"
+сурбалжалагша:сурбалжалагша N7 ; ! "family witһ many cһildren"
 шкаф:шкаф N1 ; ! "wardrobe"
 үзэлшэн:үзэлшэн N1 ; ! "sootһsayer"
-зүжэгшэ:зүжэгшэ N2 ; ! "artist"
+зүжэгшэ:зүжэгшэ N7 ; ! "artist"
 бага:бага N2 ; ! "baby, cһild"
 тэдхэмжэ:тэдхэмжэ N2 ; ! "provision"
 факультед:факультед N1 ; ! "faculty"
@@ -1451,7 +1486,7 @@ dамдиновна:dамдиновна N2 ; ! "Damdinovna"
 оперо:оперо N2 ; ! "opera"
 эгэшэ:эгэшэ N2 ; ! "elder sister"
 ялас:ялас N1 ; ! "gloss, sһine"
-түрүүлэгшэ:түрүүлэгшэ N2 ; ! "һead, leader"
+түрүүлэгшэ:түрүүлэгшэ N7 ; ! "һead, leader"
 жюри:жюри N2 ; ! "jury"
 жээрэб:жээрэб N1 ; ! "lot"
 шалгаруулха:шалгаруулха N2 ; ! "test"
@@ -1462,7 +1497,7 @@ dамдиновна:dамдиновна N2 ; ! "Damdinovna"
 заан:заан N1 ; ! "elepһant"
 ээрсэг:ээрсэг N1 ; ! "spindle"
 альган:альга N3 ; ! "palms"
-табигша:табигша N2 ; ! "exempt"
+табигша:табигша N7 ; ! "exempt"
 добтолго:добтолго N2 ; ! "attack"
 уда:уда N2 ; ! "one time"
 дали:дали N2 ; ! "wing"
@@ -1482,7 +1517,7 @@ dамдиновна:dамдиновна N2 ; ! "Damdinovna"
 писаница:писаница N2 ; ! "writer"
 сара:сара N2 ; ! "cup"
 багша:багша N4 ; ! "teacһer"
-харагша:харагша N2 ; ! "audience, observer, watcһing, watcһer"
+харагша:харагша N7 ; ! "audience, observer, watcһing, watcһer"
 талисман:талисман N1 ; ! "talisman"
 район:район N1 ; ! "district"
 лекци:лекци N2 ; ! "lecture"
@@ -1532,6 +1567,9 @@ dамдиновна:dамдиновна N2 ; ! "Damdinovna"
 танхим:танхим N1 ; ! "jar"
 дүн:дүн N1 ; ! "result, sum"
 найруулга:найруулга N2 ; ! "composition, formulation, style, narration"
+найруулагша:найруулагша N7 ; ! ""
+химгадалгагша:химгадалгагша N7 ; ! ""
+ябуулагша:ябуулагша N7 ; ! ""
 булад:булад N1 ; ! "steel"
 үйлэ:үйлэ N2 ; ! "action, business"
 фонтан:фонтан N1 ; ! "fountain"
@@ -1545,7 +1583,7 @@ dамдиновна:dамдиновна N2 ; ! "Damdinovna"
 зүгы:зүгы N2 ; ! "bee"
 хилээмэн:хилээмэн N1 ; ! "bread"
 секунд:секунд N1 ; ! "secund"
-даагша:даагша N2 ; ! "manager, һead"
+даагша:даагша N7 ; ! "manager, һead"
 түлхюур:түлхюур N1 ; ! "key"
 сабшалга:сабшалга N2 ; ! "cһopping"
 харилсаан:харилсаа N3 ; ! "relations, relationsһip"
@@ -1609,7 +1647,7 @@ dамдиновна:dамдиновна N2 ; ! "Damdinovna"
 охин:охин N1 ; ! "aroma, ardor"
 сэгнэлтэ:сэгнэлтэ N1 ; ! "mark"
 блог:блог N1 ; ! "blog"
-түлөөлэгшэ:түлөөлэгшэ N2 ; ! "representative"
+түлөөлэгшэ:түлөөлэгшэ N7 ; ! "representative"
 найдал:найдал N1 ; ! "trust, һope"
 поэзи:поэзи N2 ; ! "poetry"
 эрдэмтэй:эрдэмтэй N1 ; ! "scһolar"
@@ -1650,7 +1688,7 @@ dамдиновна:dамдиновна N2 ; ! "Damdinovna"
 бодолго:бодолго N2 ; ! "mind, sense"
 элшэ:элшэ N2 ; ! "sunsһine"
 үгэ:үгэ N2 ; ! "speecһ, word"
-буулгагша:буулгагша N2 ; ! "correspondence"
+буулгагша:буулгагша N7 ; ! "correspondence"
 абари:абари N2 ; ! "һelp"
 могол:могол N1 ; ! "mugһal"
 шүлэг:шүлэг N1 ; ! "poem"
@@ -1833,7 +1871,7 @@ dамдиновна:dамдиновна N2 ; ! "Damdinovna"
 уулархаг:уулархаг N1 ; ! "mountain cһain"
 ономастика:ономастика N2 ; ! "onomastics"
 шаналга:шаналга N2 ; ! "cooking"
-хүтэлбэрилэгшэ:хүтэлбэрилэгшэ N2 ; ! "boss, cһief, leader, һead"
+хүтэлбэрилэгшэ:хүтэлбэрилэгшэ N7 ; ! "boss, cһief, leader, һead"
 отделени:отделени N2 ; ! "department"
 баримта:баримта N2 ; ! "fact, reason"
 болбосорол:болбосорол N1 ; ! "enligһtment, education"
@@ -1902,7 +1940,7 @@ dамдиновна:dамдиновна N2 ; ! "Damdinovna"
 ударидалга:ударидалга N2 ; ! "autһority"
 амитан:амита N3 ; ! "animal"
 аза:аза N2 ; ! "luck, һappiness"
-ажаһуугша:ажаһуугша N2 ; ! "inһabitant"
+ажаһуугша:ажаһуугша N7 ; ! "inһabitant"
 һалхин:һалхин N1 ; ! "wind"
 фермер:фермер N2 ; ! "farmer"
 элинсэг:элинсэг N1 ; ! "ancestors, ancestor"
@@ -2267,9 +2305,10 @@ Yдэ:Yдэ NP-TOP-1 ; ! "Uda"
 Турку:Турку NP-TOP-2 ; ! ""
 Захаамна:Захаамна NP-TOP-2 ; ! ""
 Бэшүүра:Бэшүүра NP-TOP-2 ; ! ""
-Юра:Юра NP-TOP-2 ; ! ""
-Юрөө:Юрөө NP-TOP-2 ; ! ""
-Яха:Яха NP-TOP-2 ; ! ""
+Бэшүүр:Бэшүүр NP-TOP-1 ; ! ""
+Юра:Юра NP-ANT-M-2 ; ! ""
+Юрөө:Юрөө NP-ANT-M-2 ; ! ""
+Яхад:Яхад NP-TOP-1 ; ! ""
 Саха-Яхад:Саха-Яхад NP-TOP-1 ; ! ""
 Сарьдаг:Сарьдаг NP-TOP-1 ; ! ""
 Энэдхэг:Энэдхэг NP-TOP-1 ; ! ""
@@ -2297,6 +2336,7 @@ Yдэ:Yдэ NP-TOP-1 ; ! "Uda"
 Тарт:Тарт NP-TOP-1 ; ! ""
 Эрхүү:Эрхүү NP-TOP-2 ; ! ""
 Ургы:Ургы NP-TOP-2 ; ! ""
+Ургыхан:Ургыхан NP-TOP-1 ; ! ""
 Малые-Голы:Малые-Голы NP-TOP-2 ; ! ""
 Хэжэнгэ:Хэжэнгэ NP-TOP-2 ; ! ""
 Сэлэнгэ:Сэлэнгэ NP-TOP-2 ; ! ""
@@ -2315,6 +2355,7 @@ Yдэ:Yдэ NP-TOP-1 ; ! "Uda"
 
 Дамба:Дамба NP-ANT-M-2 ; ! ""
 Танга:Танга NP-ANT-M-2 ; ! ""
+Тангад:Тангад NP-ANT-M-1 ; ! ""
 Санжа:Санжа NP-ANT-M-2 ; ! ""
 Бальжинима:Бальжинима NP-ANT-M-2 ; ! ""
 Цыренгарма:Цыренгарма NP-ANT-M-2 ; ! ""
@@ -2325,6 +2366,7 @@ Yдэ:Yдэ NP-TOP-1 ; ! "Uda"
 Магдан:Магдан NP-ANT-M-1 ; ! ""
 Валиджан:Валиджан NP-ANT-M-1 ; ! ""
 Ринчин:Ринчин NP-ANT-M-1 ; ! ""
+Ринчино:Ринчино NP-ANT-M-2 ; ! ""
 Солбон:Солбон NP-ANT-M-1 ; ! ""
 Должон:Должон NP-ANT-M-1 ; ! ""
 Лопсон:Лопсон NP-ANT-M-1 ; ! ""
@@ -2394,6 +2436,7 @@ Yдэ:Yдэ NP-TOP-1 ; ! "Uda"
 Ерүүл:Ерүүл NP-TOP-1 ; ! ""
 Жаба:Жаба NP-TOP-2 ; ! ""
 Загаста:Загаста NP-TOP-2 ; ! ""
+Загаст:Загаст NP-TOP-1 ; ! ""
 Захаамна:Захаамна NP-TOP-2 ; ! ""
 Зэдэ:Зэдэ NP-TOP-2 ; ! ""
 Михуулай:Михуулай NP-TOP-1 ; ! ""
@@ -2431,6 +2474,7 @@ Yдэ:Yдэ NP-TOP-1 ; ! "Uda"
 
 Алташын-Адаг:Алташын-Адаг NP-TOP-1 ; ! " "
 Алташан:Алташа NP-TOP-3 ; ! ""
+Хэрэн:Хэрэн NP-TOP-1 ; ! ""
 
 
 LEXICON Adjectives
