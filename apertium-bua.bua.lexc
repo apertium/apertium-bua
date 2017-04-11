@@ -141,7 +141,6 @@ Multichar_Symbols
 %{U%}
 %{г%}
 %{i%}         ! i / 0
-%{ь%}
 %{ң%}
 %{н%}
 %{м%}         ! м / 0
@@ -149,6 +148,8 @@ Multichar_Symbols
 %{й%}
 %{D%}
 
+%{ъ%}
+%{ь%}
 
 %{☭%}
 
@@ -695,55 +696,66 @@ LEXICON PRON-DEM
 
 LEXICON PRON-ITG
 
+%<prn%>%<itg%>%<nom%>:н CLIT ;
+%<prn%>%<itg%>%<nom%>: CLIT ; ! Dir/LR
 %<prn%>%<itg%>: SUBST-N3 ;
+
+LEXICON PRON-QNT
+
+%<prn%>%<itg%>: SUBST-N2 ;
+
 
 LEXICON PRON-BI
 
-би%<prn%>%<pers%>%<p1%>%<sg%>%<nom%>:би # ;
-би%<prn%>%<pers%>%<p1%>%<sg%>%<gen%>:минии # ;
-би%<prn%>%<pers%>%<p1%>%<sg%>%<gen%>:мини # ; ! Err/Orth
+би%<prn%>%<pers%>%<p1%>%<sg%>%<nom%>:би CLIT ;
+би%<prn%>%<pers%>%<p1%>%<sg%>%<gen%>:минии CLIT ;
+би%<prn%>%<pers%>%<p1%>%<sg%>%<gen%>:мини CLIT ; ! Err/Orth
 би%<prn%>%<pers%>%<p1%>%<sg%>%<gen%>%<subst%>:миниихи CASES-N1 ;
-би%<prn%>%<pers%>%<p1%>%<sg%>%<dat%>:намда # ;
-би%<prn%>%<pers%>%<p1%>%<sg%>%<gen%>:намай # ;
-би%<prn%>%<pers%>%<p1%>%<sg%>%<gen%>:намайе # ; ! FIXME: what's the difference?
-би%<prn%>%<pers%>%<p1%>%<sg%>%<com%>:намтай # ;
-би%<prn%>%<pers%>%<p1%>%<sg%>%<abl%>:намһаа # ;
+би%<prn%>%<pers%>%<p1%>%<sg%>%<dat%>:намда CLIT ;
+би%<prn%>%<pers%>%<p1%>%<sg%>%<gen%>:намай CLIT ;
+би%<prn%>%<pers%>%<p1%>%<sg%>%<gen%>:намайе CLIT ; ! FIXME: what's the difference?
+би%<prn%>%<pers%>%<p1%>%<sg%>%<com%>:намтай CLIT ;
+би%<prn%>%<pers%>%<p1%>%<sg%>%<ins%>:намаар CLIT ; 
+би%<prn%>%<pers%>%<p1%>%<sg%>%<abl%>:намһаа CLIT ;
 
 LEXICON PRON-SHI
 
-ши%<prn%>%<pers%>%<p2%>%<sg%>%<nom%>:ши # ;
-ши%<prn%>%<pers%>%<p2%>%<sg%>%<gen%>:шинии # ;
+ши%<prn%>%<pers%>%<p2%>%<sg%>%<nom%>:ши CLIT ;
+ши%<prn%>%<pers%>%<p2%>%<sg%>%<gen%>:шинии CLIT ;
 ши%<prn%>%<pers%>%<p2%>%<sg%>%<gen%>%<subst%>:шиниихи CASES-N1 ;
-ши%<prn%>%<pers%>%<p2%>%<sg%>%<dat%>:шамда # ;
-ши%<prn%>%<pers%>%<p2%>%<sg%>%<gen%>:шамай # ;
-ши%<prn%>%<pers%>%<p2%>%<sg%>%<gen%>:шамайе # ; ! FIXME: what's the difference?
-ши%<prn%>%<pers%>%<p2%>%<sg%>%<com%>:шамаар # ;
-ши%<prn%>%<pers%>%<p2%>%<sg%>%<abl%>:шамһаа # ;
+ши%<prn%>%<pers%>%<p2%>%<sg%>%<dat%>:шамда CLIT ;
+ши%<prn%>%<pers%>%<p2%>%<sg%>%<gen%>:шамай CLIT ;
+ши%<prn%>%<pers%>%<p2%>%<sg%>%<gen%>:шамайе CLIT ; ! FIXME: what's the difference?
+ши%<prn%>%<pers%>%<p2%>%<sg%>%<com%>:шамтай CLIT ; 
+ши%<prn%>%<pers%>%<p2%>%<sg%>%<ins%>:шамаар CLIT ;
+ши%<prn%>%<pers%>%<p2%>%<sg%>%<abl%>:шамһаа CLIT ;
 
 LEXICON PRON-BIDE
 
-бидэ%<prn%>%<pers%>%<p1%>%<pl%>%<nom%>:бидэ # ;
-бидэ%<prn%>%<pers%>%<p1%>%<pl%>%<gen%>:бидэнэй # ;
-бидэ%<prn%>%<pers%>%<p1%>%<pl%>%<gen%>:манай # ;
-бидэ%<prn%>%<pers%>%<p1%>%<pl%>%<gen%>:манайшье # ;
-бидэ%<prn%>%<pers%>%<p1%>%<pl%>%<com%>:мантай # ;                 
-бидэ%<prn%>%<pers%>%<p1%>%<pl%>%<dat%>:манда # ;              
-бидэ%<prn%>%<pers%>%<p1%>%<pl%>%<dat%>:маанарта # ; ! Dir/LR
-бидэ%<prn%>%<pers%>%<p1%>%<pl%>%<dat%>:маанадта # ; ! Dir/LR
-бидэ%<prn%>%<pers%>%<p1%>%<pl%>%<ins%>:манаар # ;             
-бидэ%<prn%>%<pers%>%<p1%>%<pl%>%<ins%>:маанараар # ; ! Dir/LR
-бидэ%<prn%>%<pers%>%<p1%>%<pl%>%<abl%>:манһаа # ;             
+бидэ%<prn%>%<pers%>%<p1%>%<pl%>%<nom%>:бидэ CLIT ;
+бидэ%<prn%>%<pers%>%<p1%>%<pl%>%<nom%>:манаа CLIT ; ! Dir/LR
+бидэ%<prn%>%<pers%>%<p1%>%<pl%>%<acc%>:маанарые CLIT ; ! Dir/LR
+бидэ%<prn%>%<pers%>%<p1%>%<pl%>%<gen%>:бидэнэй CLIT ;
+бидэ%<prn%>%<pers%>%<p1%>%<pl%>%<gen%>:манай CLIT ;
+бидэ%<prn%>%<pers%>%<p1%>%<pl%>%<gen%>:манайшье CLIT ;
+бидэ%<prn%>%<pers%>%<p1%>%<pl%>%<com%>:мантай CLIT ;                 
+бидэ%<prn%>%<pers%>%<p1%>%<pl%>%<dat%>:манда CLIT ;              
+бидэ%<prn%>%<pers%>%<p1%>%<pl%>%<dat%>:маанарта CLIT ; ! Dir/LR
+бидэ%<prn%>%<pers%>%<p1%>%<pl%>%<dat%>:маанадта CLIT ; ! Dir/LR
+бидэ%<prn%>%<pers%>%<p1%>%<pl%>%<ins%>:манаар CLIT ;             
+бидэ%<prn%>%<pers%>%<p1%>%<pl%>%<ins%>:маанараар CLIT ; ! Dir/LR
+бидэ%<prn%>%<pers%>%<p1%>%<pl%>%<abl%>:манһаа CLIT ;             
 
 
 LEXICON PRON-TA
 
-та%<prn%>%<pers%>%<p2%>%<pl%>%<nom%>:та # ;
-та%<prn%>%<pers%>%<p2%>%<pl%>%<acc%>:таниие # ;
-та%<prn%>%<pers%>%<p2%>%<pl%>%<gen%>:танай # ;
-та%<prn%>%<pers%>%<p2%>%<pl%>%<com%>:тантай # ;                 
-та%<prn%>%<pers%>%<p2%>%<pl%>%<dat%>:танда # ;              
-та%<prn%>%<pers%>%<p2%>%<pl%>%<ins%>:танаар # ;             
-та%<prn%>%<pers%>%<p2%>%<pl%>%<abl%>:танһаа # ;             
+та%<prn%>%<pers%>%<p2%>%<pl%>%<nom%>:та CLIT ;
+та%<prn%>%<pers%>%<p2%>%<pl%>%<acc%>:таниие CLIT ;
+та%<prn%>%<pers%>%<p2%>%<pl%>%<gen%>:танай CLIT ;
+та%<prn%>%<pers%>%<p2%>%<pl%>%<com%>:тантай CLIT ;                 
+та%<prn%>%<pers%>%<p2%>%<pl%>%<dat%>:танда CLIT ;              
+та%<prn%>%<pers%>%<p2%>%<pl%>%<ins%>:танаар CLIT ;             
+та%<prn%>%<pers%>%<p2%>%<pl%>%<abl%>:танһаа CLIT ;             
 
 
 
@@ -909,6 +921,8 @@ PRON-TA ; ! ""
 өөһэд:өөһэд PRON-ÖÖHED ; ! ""
 
 бүгэдэн:бүгэдэ PRON-BÜGEDEN ; ! ""
+
+хамаг:хамаг PRON-QNT ; ! ""
 
 LEXICON Determiners
 
