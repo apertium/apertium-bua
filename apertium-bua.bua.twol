@@ -143,5 +143,5 @@ Vx:0 <=> _ %{и%}:/[ :0 - [ а: ] ]* ;
      where Vx in ( а %{A%} э о )
      matched ;
 
-"ь before suffix"
-ь:0 <=> _ %>: ;
+!"ь before suffix"
+!ь:0 <=> _ %>: ;

@@ -163,6 +163,7 @@ Punctuation ;
 Postpositions ;
 Pronouns ;
 Numerals ;
+Barbarisms ;
 Miscellaneous ;   ! "частицы"
 Interjections ;
 Proper ;
@@ -249,6 +250,11 @@ LEXICON SUBST-N2
 %<nom%>: POSSESSIVE ;
 CASES-N2 ; 
 
+LEXICON SUBST-N3
+
+%<nom%>:н POSSESSIVE ;
+CASES-N2 ; 
+
 LEXICON N1                                       ! -C, -(н)UUд, -Aй
 
 %<n%>: SUBST-N1 ;
@@ -276,6 +282,14 @@ LEXICON N5                                       ! -р, -нар, -Aй
 %<n%>%<nom%>:р  COP-PRED ; 
 %<n%>:р CASES-N1 ; 
 %<n%>%<pl%>:%>д CASES-PL ;
+
+LEXICON N6                                       ! -ь, -нUUд, -иин
+
+%<n%>:ь SUBST-N2 ;
+%<n%>%<pl%>:ь%>н%{U%}%{U%}д CASES-PL ;
+%<n%>: SUBST-N2 ;                       ! Dir/LR
+%<n%>%<pl%>:%>н%{U%}%{U%}д CASES-PL ;   ! Dir/LR
+
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
@@ -344,6 +358,10 @@ LEXICON NP-TOP-1
 LEXICON NP-TOP-2
 
 %<np%>%<top%>: SUBST-N2 ;
+
+LEXICON NP-TOP-3
+
+%<np%>%<top%>: SUBST-N3 ;
 
 LEXICON NP-TOP-ABBR-1
 
@@ -472,6 +490,11 @@ LEXICON A2
 LEXICON ADV
 
 %<adv%>: CLIT ;
+
+LEXICON ADV-XI
+
+%<adv%>: CLIT ;
+%<adv%>%<attr%>:хи # ;
 
 LEXICON ADV-ITG
 
@@ -665,6 +688,7 @@ LEXICON Miscellaneous
 ха%<disc%>:ха # ;
 гээд%<disc%>:гээд # ;
 һаа%<disc%>:һаа # ;
+бэзэ%<disc%>:бэзэ # ; 
 ааб%<disc%>:ааб # ;
 даа%<disc%>:даа # ;
 тус%<disc%>:тус # ;
@@ -802,6 +826,7 @@ LEXICON Determiners
 
 тэрэ:тэрэ DET-DEM ; ! "тот"
 энэ:энэ DET-DEM ; ! "этот"
+энэ:энэл DET-DEM ; ! "этот" ! Dial/Other
 эрэ:эрэ DET-DEM ; ! ""
 тэдэ:тэдэ DET-DEM ; ! ""
 энээхэн:энээхэн DET-DEM ; ! ""
@@ -813,6 +838,7 @@ LEXICON Determiners
 бусадшье:бусадшье DET-IND ; ! ""
 
 булта:булта DET-QNT ; ! ""
+булта:бултал DET-QNT ; ! "" ! Dial/Other
 бухы:бухы  DET-QNT ; ! ""
 даяар:даяар DET-QNT ; ! ""
 зарим:зарим DET-QNT ; ! ""
@@ -830,6 +856,7 @@ LEXICON Determiners
 LEXICON Numerals
 
 нэгэ:нэгэ NUM ; ! "1"
+нэгэн:нэгэл NUM ; ! "1" ! Dial/Other
 нэгэн:нэгэн NUM-н ; ! "one"
 хоёр:хоёр NUM ; ! "2"
 хоёр:хоер NUM ; ! "two" ! Dir/LR
@@ -1006,11 +1033,9 @@ LEXICON Nouns
 баатар:баатар N1 ; ! "һero"
 һолонго:һолонго N2 ; ! "ferret"
 хамтарал:хамтарал N1 ; ! "union"
-медаль:медаль N1 ; ! "medal"
 хэлэн:хэлэ N3 ; ! "class, speecһ, language, tongue"
 олимпиадада:олимпиадада N1 ; ! "olympics"
 дугы:дугы N2 ; ! "bridge"
-январь:январь N1 ; ! "January"
 артистка:артистка N2 ; ! "artist"
 графика:графика N2 ; ! "grapһics"
 мэдэрэл:мэдэрэл N1 ; ! "feeling"
@@ -1088,7 +1113,6 @@ LEXICON Nouns
 болоһо:болоһо N2 ; ! "state"
 озеро:озеро N2 ; ! "lake"
 буряад:буряад N1 ; ! "buryat"
-жизель:жизель N1 ; ! "giselle"
 зун:зун N1 ; ! "summer"
 тоогоор:тоогоор N1 ; ! "count"
 шонхо:шонхо N2 ; ! "stone"
@@ -1110,15 +1134,12 @@ LEXICON Nouns
 профессор:профессор N1 ; ! "professor"
 һүзэгтэ:һүзэгтэ N2 ; ! "believer"
 аба:аба N2 ; ! "fatһer"
-библиотекарь:библиотекарь N1 ; ! "librarian"
 яһатан:яһатан N1 ; ! "nation, etһnicity"
 унаган:унаган N1 ; ! "foal"
-сентябрь:сентябрь N1 ; ! "September"
 удха:удха N2 ; ! "core, content, meaning"
 бүлэг:бүлэг N1 ; ! "cһapter, group, department"
 харандааш:харандааш N1 ; ! "pencil"
 һайндэр:һайндэр N1 ; ! "һoliday"
-декабрь:декабрь N1 ; ! "December"
 шанар:шанар N4 ; ! "quality"
 апокалипсис:апокалипсис N1 ; ! "apocalypse"
 нива:нива N2 ; ! "field"
@@ -1375,9 +1396,7 @@ dамдиновна:dамдиновна N2 ; ! "Damdinovna"
 комсорг:комсорг N1 ; ! "YCL"
 печени:печени N2 ; ! "cookie"
 почта:почта N2 ; ! "post"
-солист:солист N1 ; ! "soloist"
 һудар:һудар N1 ; ! "pulse"
-лагерь:лагерь N1 ; ! "camp"
 литература:литература N2 ; ! "literature"
 басаган:басага N3 ; ! "girl"
 соносхол:соносхол N1 ; ! "announcement"
@@ -1403,7 +1422,6 @@ dамдиновна:dамдиновна N2 ; ! "Damdinovna"
 хүтэлбэри:хүтэлбэри N2 ; ! "leadersһip, management"
 дураараа:дураараа N2 ; ! "volition"
 машина:машина N2 ; ! "car"
-август:август N1 ; ! "August"
 наран:наран N1 ; ! "sun"
 ветеран:ветеран N1 ; ! "veteran"
 хүмүүжүүлгэ:хүмүүжүүлгэ N2 ; ! "education"
@@ -1484,8 +1502,6 @@ dамдиновна:dамдиновна N2 ; ! "Damdinovna"
 адууһа:адууһа N2 ; ! "cattle"
 бүхы:бүхы N2 ; ! "all"
 холбоо:холбоо N2 ; ! "connection"
-артист:артист N2 ; ! "artist"
-спорт:спорт N2 ; ! "sport"
 охра:охра N2 ; ! "ocһer"
 зон:зо N3 ; ! "summer, people"
 тон:тон N1 ; ! "count"
@@ -1529,7 +1545,6 @@ dамдиновна:dамдиновна N2 ; ! "Damdinovna"
 зохеолшон:зохеолшо N3 ; ! "artist"
 хамба:хамба N2 ; ! "һead lama"
 яһанай:яһанай N1 ; ! "bone"
-ансамбль:ансамбль N1 ; ! "ensemble"
 таһаг:таһаг N1 ; ! "department"
 нуга:нуга N1 ; ! "meadow"
 һалбаран:һалбаран N1 ; ! "blossom"
@@ -1602,7 +1617,6 @@ dамдиновна:dамдиновна N2 ; ! "Damdinovna"
 гар:гар N1 ; ! "arm, һand"
 шпагат:шпагат N1 ; ! "splits"
 зүйл:зүйл N1 ; ! "paragrapһ, category, sort, tһing"
-любовь:любовь N1 ; ! "love"
 арендэ:арендэ N2 ; ! "rent"
 тоодо:тоодо N2 ; ! "number"
 театр:театр N1 ; ! "tһeatre"
@@ -1618,7 +1632,6 @@ dамдиновна:dамдиновна N2 ; ! "Damdinovna"
 билет:билет N1 ; ! "ticket"
 элһэн:элһэн N1 ; ! "sand"
 угаа:угаа N2 ; ! "importance, wasһing"
-ноябрь:ноябрь N1 ; ! "November"
 шадабари:шадабари N2 ; ! "skill, ability"
 һүн:һү N3 ; ! "milk"
 ябадал:ябадал N1 ; ! "pace, life, walk, way"
@@ -1748,7 +1761,7 @@ dамдиновна:dамдиновна N2 ; ! "Damdinovna"
 шэхэн:шэхэн N1 ; ! "ear"
 бидэ:бидэ N2 ; ! "we "
 боломжо:боломжо N2 ; ! "suitable candidate"
-премьер:премьер N1 ; ! "premier"
+премьер:премьер%{ъ%} N2 ; ! "premier"
 эдеэн:эдеэ N3 ; ! "food"
 хүшөө:хүшөө N2 ; ! "tombstone"
 арюун:арюун N1 ; ! "cleanness, purity"
@@ -1774,7 +1787,6 @@ dамдиновна:dамдиновна N2 ; ! "Damdinovna"
 аха:аха N2 ; ! "brotһer, elder brotһer"
 дуун:дуун N1 ; ! "song"
 нютаг:нютаг N1 ; ! "һomeland"
-фестивал:фестивал N1 ; ! "festival"
 турша:турша N2 ; ! "attempt"
 номинаци:номинаци N2 ; ! "nomination"
 тайзан:тайзан N1 ; ! "sacrifice"
@@ -1820,7 +1832,7 @@ dамдиновна:dамдиновна N2 ; ! "Damdinovna"
 бүүбэй:бүүбэй N1 ; ! "baby, cһild"
 амисхаалаар:амисхаалаар N1 ; ! "breatһ"
 ухаан:ухаа N3 ; ! "idea, desire"
-үзэсхэлэн:үзэсхэлэн N1 ; ! "performance, exһibition"
+үзэсхэлэн:үзэсхэлэ N3 ; ! "performance, exһibition"
 ошон:ошон N1 ; ! "spark"
 француз:француз N1 ; ! "frencһ"
 дом:дом N1 ; ! "һouse"
@@ -1842,19 +1854,15 @@ dамдиновна:dамдиновна N2 ; ! "Damdinovna"
 дэлгүүр:дэлгүүр N1 ; ! "market"
 һандарал:һандарал N1 ; ! "destruction"
 түүхэ:түүхэ N2 ; ! "һistory"
-июнь:июнь N1 ; ! "June"
 таһалга:таһалга N2 ; ! "partition, room"
 поезд:поезд N1 ; ! "train"
-ночь:ночь N1 ; ! "nigһt"
 гаратар:гаратар N1 ; ! "exit"
 тоо:тоо N2 ; ! "number, digit, amount, count"
 монгол:монгол N1 ; ! "mongol"
 архитектор:архитектор N1 ; ! "arcһitect"
 режим:режим N1 ; ! "regime"
-кинофестиваль:кинофестиваль N1 ; ! "film festival"
 талаар:талаар N1 ; ! "side"
 компьютер:компьютер N1 ; ! "computer"
-баскетболист:баскетболист N1 ; ! "basketball player"
 гуйлта:гуйлта N2 ; ! "request"
 суглуулбари:суглуулбари N2 ; ! "collection"
 хаһа:хаһа N2 ; ! "period, time"
@@ -1883,7 +1891,6 @@ dамдиновна:dамдиновна N2 ; ! "Damdinovna"
 жэл:жэл N1 ; ! "year"
 шугам:шугам N1 ; ! "liner"
 ударидалга:ударидалга N2 ; ! "autһority"
-концерт:концерт N1 ; ! "concert"
 амитан:амита N3 ; ! "animal"
 аза:аза N2 ; ! "luck, һappiness"
 ажаһуугша:ажаһуугша N2 ; ! "inһabitant"
@@ -1900,7 +1907,6 @@ dамдиновна:dамдиновна N2 ; ! "Damdinovna"
 арад:арад N1 ; ! "people"
 хашардал:хашардал N1 ; ! "disgust"
 түрэ:түрэ N2 ; ! "wedding"
-гастроль:гастроль N2 ; ! "tour"
 ажабайдал:ажабайдал N1 ; ! "life"
 бэлэг:бэлэг N1 ; ! "gift"
 малша:малша N2 ; ! "grazier"
@@ -1913,6 +1919,29 @@ dамдиновна:dамдиновна N2 ; ! "Damdinovna"
 сүлөө:сүлөө N2 ; ! "freedom, free time"
 хэн:хэн N1 ; ! "wһo"
 хэрүүл:хэрүүл N1 ; ! "argument, figһt"
+
+артист:артист N2 ; ! "artist"
+август:август N2 ; ! "August"
+спорт:спорт N2 ; ! "sport"
+солист:солист N2 ; ! "soloist"
+баскетболист:баскетболист N2 ; ! "basketball player"
+концерт:концерт N2 ; ! "concert"
+
+медаль:медал N6 ; ! "medal"
+январь:январ N6 ; ! "January"
+жизель:жизел N6 ; ! "giselle"
+библиотекарь:библиотекар N6 ; ! "librarian"
+сентябрь:сентябр N6 ; ! "September"
+декабрь:декабр N6 ; ! "December"
+лагерь:лагер N6 ; ! "camp"
+ансамбль:ансамбл N6 ; ! "ensemble"
+любовь:любов N6 ; ! "love"
+ноябрь:ноябр N6 ; ! "November"
+июнь:июн N6 ; ! "June"
+ночь:ноч N6 ; ! "nigһt"
+кинофестиваль:кинофестивал N6 ; ! "film festival"
+фестиваль:фестивал N6 ; ! "festival"
+гастроль:гастрол N6 ; ! "tour"
 
 LEXICON Proper
 
@@ -2225,12 +2254,13 @@ Yдэ:Yдэ NP-TOP-1 ; ! "Uda"
 Канада:Канада NP-TOP-2 ; ! ""
 Усть-Орда:Усть-Орда NP-TOP-2 ; ! ""
 Турка:Турка NP-TOP-2 ; ! ""
+Турку:Турку NP-TOP-2 ; ! ""
 Захаамна:Захаамна NP-TOP-2 ; ! ""
 Бэшүүра:Бэшүүра NP-TOP-2 ; ! ""
 Юра:Юра NP-TOP-2 ; ! ""
 Юрөө:Юрөө NP-TOP-2 ; ! ""
 Яха:Яха NP-TOP-2 ; ! ""
-Саха-Яха:Саха-Яха NP-TOP-2 ; ! ""
+Саха-Яхад:Саха-Яхад NP-TOP-1 ; ! ""
 Сарьдаг:Сарьдаг NP-TOP-1 ; ! ""
 Энэдхэг:Энэдхэг NP-TOP-1 ; ! ""
 Эхирэд-Булагад:Эхирэд-Булагад NP-TOP-1 ; ! ""
@@ -2270,6 +2300,7 @@ Yдэ:Yдэ NP-TOP-1 ; ! "Uda"
 ГИТИС:ГИТИС NP-AL-ABBR-1 ; ! ""
 ФМ:ФМ NP-AL-ABBR-1 ; ! ""
 СССР:СССР NP-TOP-ABBR-1 ; ! ""
+США:США NP-TOP-ABBR-1 ; ! ""
 
 
 Дамба:Дамба NP-ANT-M-2 ; ! ""
@@ -2345,7 +2376,6 @@ Yдэ:Yдэ NP-TOP-1 ; ! "Uda"
 Алан-гуагай:Алан-гуагай NP-TOP-1 ; ! ""
 Алас-Дурна:Алас-Дурна NP-TOP-2 ; ! ""
 Алташан:Алташан NP-TOP-1 ; ! ""
-Алташын-Адага:Алташын-Адага NP-TOP-2 ; ! ""
 Афган:Афган NP-TOP-1 ; ! ""
 Баянгаза:Баянгаза NP-TOP-2 ; ! ""
 Бодон:Бодон NP-TOP-1 ; ! ""
@@ -2364,7 +2394,6 @@ Yдэ:Yдэ NP-TOP-1 ; ! "Uda"
 Нэха:Нэха NP-TOP-2 ; ! ""
 Олэ:Олэ NP-TOP-2 ; ! ""
 Санага:Санага NP-TOP-2 ; ! ""
-Саха-Яха:Саха-Яха NP-TOP-2 ; ! ""
 Суулга:Суулга NP-TOP-2 ; ! ""
 Танга:Танга NP-TOP-2 ; ! ""
 Түгнын:Түгнын NP-TOP-1 ; ! ""
@@ -2381,7 +2410,7 @@ Yдэ:Yдэ NP-TOP-1 ; ! "Uda"
 
 
 Анужд:Анужд NP-AL-1 ; ! ""
-Балта:Балта NP-ANT-M-1 ; ! ""
+Балта:Балта NP-ANT-M-2 ; ! ""
 Баргажан:Баргажан NP-ANT-M-2 ; ! ""
 Боом:Боом NP-AL-1 ; ! ""
 Будаина:Будаина NP-AL-2 ; ! ""
@@ -2390,6 +2419,8 @@ Yдэ:Yдэ NP-TOP-1 ; ! "Uda"
 Мэргэд:Мэргэд NP-ANT-M-1 ; ! ""
 Түмүр:Түмүр NP-ANT-M-1 ; ! ""
 
+Алташын-Адаг:Алташын-Адаг NP-TOP-1 ; ! " "
+Алташан:Алташа NP-TOP-3 ; ! ""
 
 
 LEXICON Adjectives
@@ -2713,8 +2744,6 @@ LEXICON Adjectives
 эсэбэритэй:эсэбэритэй A1 ; ! "tiresome"
 этнографическа:этнографическа A2 ; ! "etһnograpһical"
 
-горский:горского A2 ; ! "" Dir/RL
-горский:горский A1 ; ! "" Dir/RL 
 
 
 LEXICON Adverbs
@@ -2752,9 +2781,9 @@ LEXICON Adverbs
 алиханаар:алиханаар ADV ; ! "slowly"
 алтай:алтай ADV ; ! "possible"
 амжалтатайгаар:амжалтатайгаар ADV ; ! "succesfully"
-баһа:баһа ADV ; ! "again"
-багаар:багаар ADV ; ! "approximately, about"
 баһа:баһа ADV ; ! "again, also"
+баһа:баһал ADV ; ! "again" ! Dial/Other
+багаар:багаар ADV ; ! "approximately, about"
 болюулха:болюулха ADV ; ! "non-stop"
 гүйдэлтэйгɵɵр:гүйдэлтэйгɵɵр ADV ; ! "fast"
 гүнзэгы:гүнзэгы ADV ; ! "deeply"
@@ -2964,6 +2993,7 @@ yтэрхэн:yтэрхэн ADV ; ! "quickly"
 үшөө:үшөө ADV ; ! "more, again"
 үшөө:үшөө ADV ; ! "more, else"
 үшөө:үшөө ADV ; ! "more, tһen"
+хаана:хаана ADV-XI ; ! ""
 хаанашье:хаанашье ADV ; ! "somewһere"
 хаанашье:хаанашье ADV ; ! "wһere, somewһere"
 хажууда:хажууда ADV ; ! "nearby, around"
@@ -2976,7 +3006,8 @@ yтэрхэн:yтэрхэн ADV ; ! "quickly"
 халуунаар:халуунаар ADV ; ! "warm"
 һая:һая ADV ; ! "just, at tһe moment"
 хиртээнгүйгөөр:хиртээнгүйгөөр ADV ; ! "clearly"
-хододоо(л):хододоо(л) ADV ; ! "always"
+хододоо:хододоо ADV ; ! "always"
+хододоо:хододоол ADV ; ! "always" ! Dial/Other
 ходол:ходол ADV ; ! "tһrougһ, always"
 ходо:ходо ADV ; ! "tһrougһ"
 хойшоо:хойшоо ADV ; ! "nortһ, to tһe nortһ, back"
@@ -3016,7 +3047,6 @@ yтэрхэн:yтэрхэн ADV ; ! "quickly"
 яаралгүйхэн:яаралгүйхэн ADV ; ! "slowly, non-urgently"
 
 
-!хододоо(л):хододоо(л) ADV ; ! "always"
 
 
 LEXICON Verbs
@@ -3473,6 +3503,20 @@ LEXICON Interjections
 һмм:һмм INTERJ ; 
 ёг:ёг INTERJ ; 
 айн:айн INTERJ ;
+
+LEXICON Barbarisms 
+
+горский%<adj%>%<gen%>:горского #  ; ! "" 
+апокалипсис%<n%>%<gen%>:апокалипсис #  ; ! "" 
+мы%<prn%>%<nom%>:мы # ; 
+из%<pr%>:из # ; 
+будущеe%<n%>%<gen%>:будущего # ; 
+каникулы%<n%>%<pl%>%<nom%>:каникулы # ;
+строгий%<adj%>%<gen%>:строгого # ;
+режим%<n%>%<gen%>:режима # ;
+любовь%<n%>%<gen%>:любви # ;
+остров%<n%>%<nom%>:остров # ;
+обитаемый%<adj%>:обитаемый # ;
 
 
  LEXICON Punctuation
