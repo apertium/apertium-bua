@@ -563,11 +563,11 @@ LEXICON A4
 
 LEXICON ADV
 
-%<adv%>: CLIT ;
+%<adv%>: COP-PRED ;
 
 LEXICON ADV-XI
 
-%<adv%>: CLIT ;
+%<adv%>: COP-PRED ;
 %<adv%>%<attr%>:хи # ;
 
 LEXICON ADV-ITG
@@ -620,13 +620,15 @@ LEXICON NUM
 
 %<num%>: # ;
 %<num%>%<ord%>:%>д%{A%}хи # ;
+%<num%>%<dim%>:%>х%{A%}н # ;
 %<num%>%<subst%>: CASES-N1 ;
 
 LEXICON NUM-н
 
 %<num%>: # ;
 %<num%>:н # ;
-%<num%>%<ord%>:%>д%{A%}хи # ;
+%<num%>%<ord%>:%>д%{A%}хи # ; 
+%<num%>%<dim%>:%>х%{A%}н # ;
 %<num%>%<subst%>: CASES-N1 ;
 %<num%>%<subst%>:н CASES-N1 ;
 
@@ -2086,6 +2088,8 @@ dамдиновна:dамдиновна N2 ; ! "Damdinovna"
 гастроль:гастрол N6 ; ! "tour"
 
 театрайхид:театрайхид N1 ; ! ""
+удаа:удаа N1 ; ! ""
+хойно:хойно N2 ; ! ""
 
 LEXICON Proper
 
@@ -2613,6 +2617,7 @@ LEXICON Adjectives
 үгэгдэһэн:үгэгдэһэн A1 ; ! "received"
 үдэшын:үдэшын A1 ; ! "evening"
 үмсын:үмсын A1 ; ! "own"
+түргэхэн:түргэхэн A1 ; ! ""
 үндэр:үндэр A1 ; ! "tall, һigһ"
 үнжэгэн:үнжэгэн A1 ; ! "delicate"
 үнэн:үнэн A1 ; ! "trutһful, real"
@@ -2915,12 +2920,17 @@ LEXICON Adverbs
 юундэ:юундэ ADV-ITG ; ! "why"
 ямараар:ямараар ADV-ITG ; ! "how"
 хэзээ:хэзээ ADV-ITG ; ! "when"
+хаанаһаа:хаанаһаа ADV-ITG ; ! "откуда"
+хаана:хаана ADV-XI ; ! "где"
 
 хамта:хамта ADV ; ! "вместе"
 бэшэ:бэшэ ADV ; ! "не"
 ехэ:ехэ ADV ; ! "very, really"
 хурдаар:хурдаар ADV ; ! "quickly" FIXME: CHECK to make sure not compositional
 үсэгэлдэр:үсэгэлдэр ADV ; ! "yesterday"
+
+
+дороһоо:дороһоо ADV ; ! ""
 
 һүүлшын:һүүлшын ADV ; ! "last"
 һайн:һайн ADV ; ! "well"
@@ -2956,7 +2966,8 @@ LEXICON Adverbs
 гэнтэ:гэнтэ ADV ; ! "suddenly"
 дүрэ:дүрэ ADV ; ! "appearing"
 даллаха:даллаха ADV ; ! "to wave"
-доро:доро ADV ; ! "below"
+доро:доро ADV-XI ; ! "below"
+тиигэбэл:тиигэбэл ADV ; ! "если так, в таком случае"
 дутуу:дутуу ADV ; ! "completely"
 дуугай:дуугай ADV ; ! "quietly"
 дэлгэн:дэлгэн ADV ; ! "in detail"
@@ -2984,8 +2995,7 @@ LEXICON Adverbs
 олон:олон ADV ; ! "many, mucһ"
 ори:ори ADV ; ! "all, quite, very"
 оройдоол:оройдоол ADV ; ! "only, just"
-сааша:сааша ADV ; ! "furter"
-сааша:сааша ADV ; ! "tһen, afterwords"
+сааша:сааша ADV ; ! "further"
 сарюун:сарюун ADV ; ! "fine, perfectly"
 соробхилно:соробхилно ADV ; ! "firely"
 сэбэр:сэбэр ADV ; ! "clear, transparent"
@@ -3153,11 +3163,7 @@ yтэрхэн:yтэрхэн ADV ; ! "quickly"
 үсөөгөө:үсөөгөө ADV ; ! "little"
 үсөөн:үсөөн ADV ; ! "small"
 уужам:уужам ADV ; ! "widely"
-үшөө:үшөө ADV ; ! "again, more"
 үшөө:үшөө ADV ; ! "more, again"
-үшөө:үшөө ADV ; ! "more, else"
-үшөө:үшөө ADV ; ! "more, tһen"
-хаана:хаана ADV-XI ; ! ""
 хаанашье:хаанашье ADV ; ! "somewһere"
 хаанашье:хаанашье ADV ; ! "wһere, somewһere"
 хажууда:хажууда ADV ; ! "nearby, around"
@@ -3357,8 +3363,8 @@ LEXICON Verbs
 уу:уу V-TV ; ! "drink"
 үхэ:үхэ V-IV ; ! "to die"
 уяр:уяр V-IV ; ! "melt"
-хаана:хаана V-IV ; ! "wһere_am_I"
-хаана:хаана V-IV ; ! "wһere_are_you"
+!хаана:хаана V-IV ; ! "wһere_am_I" 
+!хаана:хаана V-IV ; ! "wһere_are_you"
 хаа:хаа V-TV ; ! "close"
 һажа:һажа V-TV ; ! "to follow"
 хали:хали V-IV ; ! " to plod, to walk slowly"
