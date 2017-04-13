@@ -23,6 +23,7 @@ dev/nouns.py -text
 tests/N-acc.yaml -text
 tests/N-dat.yaml -text
 tests/N-gen.yaml -text
+tests/N-ins.yaml -text
 tests/N-nouns_n.yaml -text
 tests/N-pl.yaml -text
 tests/N-various_gt-norm.yaml -text

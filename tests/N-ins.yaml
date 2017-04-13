@@ -1,0 +1,10 @@
+Config:
+  hfst:
+    App: hfst-lookup
+    Gen: ../bua.autogen.hfst
+    Morph: ../bua.automorf.hfst
+
+
+Tests:
+  "Yotisation with -и final":
+    экспедици<n><ins> : экспедицеэр    

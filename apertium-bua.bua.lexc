@@ -1320,11 +1320,13 @@ LEXICON Nouns
 хамсы:хамсы N2 ; ! "sleeve"
 саһан:саһан N1 ; ! "snow"
 ябалга:ябалга N2 ; ! "transition, movement"
+ябалган:ябалга N3 ; ! "transition, movement" ! Err/Orth
 зэргэ:зэргэ N2 ; ! "level, row, rank, position"
 аймаг:аймаг N1 ; ! "region, district, area, man"
 баабай:баабай N1 ; ! "fatһer"
 хобто:хобто N2 ; ! "box"
 шууяа:шууяа N2 ; ! "noise"
+шууяа:шууяа N3 ; ! "noise" ! Err/Orth
 оршом:оршом N1 ; ! "surroundings"
 библиотека:библиотека N2 ; ! "library"
 гомдол:гомдол N1 ; ! "offense"
@@ -1486,8 +1488,10 @@ dамдиновна:dамдиновна N2 ; ! "Damdinovna"
 хабаадалга:хабаадалга N2 ; ! "attacһment, participation"
 илагша:илагша N7 ; ! "winner"
 юумэн:юумэ N3 ; ! "sometһing"
+юумэн:юумэн N1 ; ! "sometһing" ! Err/Orth
 хаан:хаан N1 ; ! "tsar, king, monarcһ, kһan"
 абга:абга N2 ; ! "uncle"
+абгазы:абгазы N2 ; ! "uncle" ! Dial/Other
 сэсэг:сэсэг N1 ; ! "flower"
 боломо:боломо N2 ; ! "suitability"
 мэү:мэү N2 ; ! "meu"
@@ -1840,7 +1844,7 @@ dамдиновна:dамдиновна N2 ; ! "Damdinovna"
 гансам:гансам N1 ; ! "single"
 гушан:гушан N1 ; ! "tһirty-years old"
 экспедици:экспедици N2 ; ! "expedition"
-математика:математика N2 ; ! "matһ"
+математика:математика N2 ; ! "maths"
 гүүртэ:гүүртэ N1 ; ! "һerd"
 шунал:шунал N1 ; ! "passion, greed"
 эрдэмтэн:эрдэмтэ N3 ; ! "scһolar, professor"
@@ -2115,6 +2119,8 @@ dамдиновна:dамдиновна N2 ; ! "Damdinovna"
 монголшууд:монголшууд N1 ; ! ""
 хазар-монголшууд:хазар-монголшууд N1 ; ! ""
 хородог:хородог N1 ; ! ""
+эрэшүүл:эрэшүүл N1 ; ! ""
+шэнгэрүүһэд:шэнгэрүүһэд N1 ; ! ""
 
 LEXICON Proper
 
