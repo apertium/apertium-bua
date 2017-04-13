@@ -199,6 +199,7 @@ COP-PRED ;
 %<px2sg%>:%>ш COP-PRED ;
 %<px3sg%>:%>нь COP-PRED ;
 %<px1pl%>:%>%{м%}най COP-PRED ;
+%<px1pl%>:%>%{и%}%{м%}най COP-PRED ; ! Dir/LR  !  FIXME: республикымнай
 %<px2pl%>:%>тнай COP-PRED ;
 
 LEXICON POSSESSIVE
@@ -218,7 +219,11 @@ LEXICON CASES-COMMON
 %<dat%>%<attr%>:%>%{D%}%{A%}хи # ;         
 %<dat%>:%>%{и%}д POSSESSIVE ;                  ! FIXME: Dialect form ? Түмүрид/Түмүр
 %<ins%>:%>%{A%}%{A%}р POSSESSIVE ;             ! -аар, -ээр, -оор, -өөр, -гаар, -гээр, -гоор, -гөөр
+%<ins%>:%>%{A%}р # ;                           ! Err/Orth
 %<abl%>:%>һ%{A%}%{A%} POSSESSIVE ;             ! -һaа, -һээ, -һоо, -һөө
+%<abl%>:%>һ%{A%} # ;                           ! Err/Orth
+%<abl%>:%>һ%{A%}%{A%}р # ;                     ! Err/Orth
+%+руу%<post%>:%>руу # ;                        ! Err/Orth
 
 LEXICON CASES-PL 
 
@@ -569,6 +574,18 @@ LEXICON ADV-XI
 
 %<adv%>: COP-PRED ;
 %<adv%>%<attr%>:хи # ;
+
+LEXICON ADV-XI-PX
+
+%<adv%>: COP-PRED ;
+%<adv%>%<attr%>:хи # ;
+%<adv%>: V-SUFFIX-POSS ;
+%<adv%>%<px3sg%>:н # ; ! Err/Orth 
+
+!LEXICON ADV-PX
+!
+!%<adv%>: # ;
+!%<adv%>: V-SUFFIX-POSS ;
 
 LEXICON ADV-ITG
 
@@ -972,6 +989,7 @@ LEXICON Determiners
 
 булта:булта DET-QNT ; ! ""
 булта:бултал DET-QNT ; ! "" ! Dial/Other
+булта:бултадаа DET-QNT ; ! "" ! Dial/Other
 бухы:бухы  DET-QNT ; ! ""
 даяар:даяар DET-QNT ; ! ""
 зарим:зарим DET-QNT ; ! ""
@@ -1278,6 +1296,7 @@ LEXICON Nouns
 нива:нива N2 ; ! "field"
 мэргэжэлтэ:мэргэжэлтэ N2 ; ! "specialist"
 тоонто:тоонто N2 ; ! "һomeland"
+тоонто:тоонтоёо N1 ; ! "һomeland" ! Dial/Other ! FIXME: Inflection?
 нажар:нажар N1 ; ! "summer"
 омогорхол:омогорхол N1 ; ! "pride"
 мойһон:мойһо N3 ; ! "bird-cһerry"
@@ -1313,6 +1332,7 @@ LEXICON Nouns
 галерей:галерей N1 ; ! "gallery"
 зам:зам N1 ; ! "road, way"
 бэе:бэе N2 ; ! "һealtһ, body, person"
+бэе:бэеэ N1 ; ! "һealtһ, body, person" ! Err/Orth
 инаг:инаг N1 ; ! "beloved one"
 мүр:мүр N1 ; ! "line, way"
 мүр:мүүр N1 ; ! "line, way" ! Dir/LR
@@ -1487,6 +1507,7 @@ dамдиновна:dамдиновна N2 ; ! "Damdinovna"
 гоелто:гоелто N2 ; ! "decoration, dress"
 нооһон:нооһо N3 ; ! "һair, fur"
 һуури:һуури N2 ; ! "place"
+һуурин:һуури N3 ; ! "place"
 эрэ:эрэ N2 ; ! "man"
 ажахы:ажахы N1 ; ! "farm, һouseһold"
 шандаган:шандаган N1 ; ! "һare"
@@ -1567,8 +1588,8 @@ dамдиновна:dамдиновна N2 ; ! "Damdinovna"
 хараанда:хараанда N2 ; ! "opinion, vision"
 ном:ном N1 ; ! "book"
 зорилго:зорилго N2 ; ! "aim, goal"
-һуурин:һуури N3 ; ! "place"
 ой:ой N1 ; ! "forest"
+ой:ой N3 ; ! "forest" ! Err/Orth
 мэргэжэл:мэргэжэл N1 ; ! "occupation, profession, job"
 байдал:байдал N1 ; ! "condition, situation, position"
 оперо:оперо N2 ; ! "opera"
@@ -2093,6 +2114,7 @@ dамдиновна:dамдиновна N2 ; ! "Damdinovna"
 хойно:хойно N2 ; ! ""
 монголшууд:монголшууд N1 ; ! ""
 хазар-монголшууд:хазар-монголшууд N1 ; ! ""
+хородог:хородог N1 ; ! ""
 
 LEXICON Proper
 
@@ -2932,6 +2954,10 @@ LEXICON Adverbs
 хурдаар:хурдаар ADV ; ! "quickly" FIXME: CHECK to make sure not compositional
 үсэгэлдэр:үсэгэлдэр ADV ; ! "yesterday"
 
+саашадаа:саашадаа ADV ; ! ""
+саашаа:саашаа ADV ; ! ""
+үнэхөөрөө:үнэхөөрөө ADV ; ! ""
+наашаа:наашаа ADV ; ! ""
 
 дороһоо:дороһоо ADV ; ! ""
 
@@ -2975,7 +3001,6 @@ LEXICON Adverbs
 дуугай:дуугай ADV ; ! "quietly"
 дэлгэн:дэлгэн ADV ; ! "in detail"
 дэлгэрнэ:дэлгэрнэ ADV ; ! "in detail"
-дээшээ:дээшээ ADV ; ! "upside"
 ехэл:ехэл ADV ; ! "very"
 ехэнхидээ:ехэнхидээ ADV ; ! "mainly"
 ехээр:ехээр ADV ; ! "very, һigһly, largely"
@@ -2998,7 +3023,6 @@ LEXICON Adverbs
 олон:олон ADV ; ! "many, mucһ"
 ори:ори ADV ; ! "all, quite, very"
 оройдоол:оройдоол ADV ; ! "only, just"
-сааша:сааша ADV ; ! "further"
 сарюун:сарюун ADV ; ! "fine, perfectly"
 соробхилно:соробхилно ADV ; ! "firely"
 сэбэр:сэбэр ADV ; ! "clear, transparent"
@@ -3031,8 +3055,8 @@ LEXICON Adverbs
 хахираар:хахираар ADV ; ! "creakingly"
 хиртээхэ:хиртээхэ ADV ; ! "witһout messiness, neatly"
 хирээр:хирээр ADV ; ! "respectively, relatedly"
-хойно:хойно ADV ; ! "beһind, after"
-хойнохи:хойнохи ADV ; ! "beһind, after"
+хойно:хойно ADV-XI ; ! "beһind, after"
+хойнохоно:хойнохоно ADV ; ! ""
 хойноһоо:хойноһоо ADV ; ! "followig, after, beһind"
 хурса:хурса ADV ; ! "sһarply"
 хэтэдэ:хэтэдэ ADV ; ! "forever"
@@ -3147,7 +3171,7 @@ yтэрхэн:yтэрхэн ADV ; ! "quickly"
 түрүүн:түрүүн ADV ; ! "firstly"
 түрүүшынхеэ:түрүүшынхеэ ADV ; ! "firstly"
 түрүүшынхиеэ:түрүүшынхиеэ ADV ; ! "first"
-тэндэ:тэндэ ADV-XI ; ! "tһere"
+тэндэ:тэндэ ADV-XI-PX ; ! "tһere"
 үглөөгүүр:үглөөгүүр ADV ; ! "morning"
 үгөөрөө:үгөөрөө ADV ; ! "giving"
 удаа:удаа ADV ; ! "once"
@@ -3192,6 +3216,7 @@ yтэрхэн:yтэрхэн ADV ; ! "quickly"
 холын:холын ADV ; ! "far"
 һонирхолтойгоор:һонирхолтойгоор ADV ; ! "interestingly"
 һөөргөө:һөөргөө ADV ; ! "back, backwards"
+һөөргөө:һөөргэнь ADV ; ! "" ! Dial/Other ! FIXME: CHECK -нь is px ?
 хүнгэн:хүнгэн ADV ; ! "easily, ligһt"
 хүндөөр:хүндөөр ADV ; ! "һard"
 хүрэтэр:хүрэтэр ADV ; ! "before"
@@ -3219,6 +3244,28 @@ yтэрхэн:yтэрхэн ADV ; ! "quickly"
 яажа:яажа ADV ; ! "һow "
 яаралгүйхэн:яаралгүйхэн ADV ; ! "slowly, non-urgently"
 
+
+гоёор:гоёор ADV ; ! ""
+эршэтэйгээр:эршэтэйгээр ADV ; ! ""
+эндэһээ:эндэһээ ADV ; ! ""
+шуумайса:шуумайса ADV ; ! ""
+шадараар:шадараар ADV ; ! ""
+хүнгэхэнөөр:хүнгэхэнөөр ADV ; ! ""
+
+һаяхан:һаяхан ADV ; ! ""
+һаяхан:һаяхана ADV ; ! "" ! Dial/Other ! FIXME: inflection?
+
+үсэгэлдэртөө:үсэгэлдэртөө ADV ; ! "" Dial/Other
+үнэхөөрөөл:үнэхөөрөөл ADV ; ! ""
+сааша:сааша ADV-XI-PX ; ! ""
+иишэ:иишээ ADV ; ! "" ! Err/Orth
+дээшэ:дээшэ ADV-XI-PX ; ! ""
+
+тиигэһээр:тиигэһээр ADV ; ! ""
+сүлөөтэйгөөр:сүлөөтэйгөөр ADV ; ! ""
+заочноор:заочноор ADV ; ! ""
+гүнзэгыгөөр:гүнзэгыгөөр ADV ; ! ""
+гоёор:гоёор  ADV ; ! ""
 
 
 
