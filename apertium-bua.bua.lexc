@@ -173,6 +173,7 @@ Barbarisms ;
 Miscellaneous ;   ! "частицы"
 Interjections ;
 Proper ;
+Missing ; 
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
@@ -392,14 +393,17 @@ LEXICON NP-AL-ABBR-1
 LEXICON NP-TOP-1
 
 %<np%>%<top%>: SUBST-N1 ;
+%<np%>%<top%>%<pl%>:%>%{н%}%{U%}%{U%}д CASES-PL ;
 
 LEXICON NP-TOP-2
 
 %<np%>%<top%>: SUBST-N2 ;
+%<np%>%<top%>%<pl%>:%>н%{U%}%{U%}д CASES-PL ;
 
 LEXICON NP-TOP-3
 
 %<np%>%<top%>: SUBST-N3 ;
+%<np%>%<top%>%<pl%>:%>д CASES-PL ;
 
 LEXICON NP-TOP-ABBR-1
 
@@ -445,7 +449,7 @@ LEXICON V-NON-FINITE
 
 LEXICON V-FINITE-PERS-12
 
-%<p1%>%<sg%>:%>б%{i%}  CLIT ;
+%<p1%>%<sg%>:%>%{м%}б%{i%}  CLIT ;
 %<p2%>%<sg%>:%>ш%{i%}  CLIT ;
 %<p1%>%<pl%>:%>бди  CLIT ;
 %<p2%>%<pl%>:%>т  CLIT ;
@@ -481,7 +485,7 @@ LEXICON V-FINITE
 %<aor%>%<prog%>:%>н%{A%}б V-PROG-PERS ;
 
 !FIXME: CHECK
-%<aor%>%<qst%>:%>х%{A%}б # ;
+%<aor%>%<qst%>:%>х%{A%}б V-FINITE-PERS ;
 %<aor%>%<neg%>:%>х%{A%}гүй # ;  ! FIXME: CHECK
 
 %<aor%>%<evid%>:%>х%{A%}% юм # ;
@@ -497,7 +501,7 @@ LEXICON V-FINITE
 %<past%>%<evid%>:%>һ%{A%}н% юм # ;
 
 %<hab%>:%>д%{A%}г V-FINITE-PERS ;
-%<hab%>%<neg%>:%>д%{A%}ггүй # ;
+%<hab%>%<neg%>:%>д%{A%}ггүй V-FINITE-PERS ;
 
 %<hab%>%<evid%>:%>д%{A%}г% юм # ;
 %<hab%>%<evid%>%<neg%>:%>д%{A%}ггүй% юм # ;
@@ -2435,7 +2439,7 @@ Yдэ:Yдэ NP-TOP-1 ; ! "Uda"
 Турка:Турка NP-TOP-2 ; ! ""
 Турку:Турку NP-TOP-2 ; ! ""
 Захаамна:Захаамна NP-TOP-2 ; ! ""
-Захаамнай:Захаамнай NP-TOP-1 ; ! ""
+Захаамин:Захаамин NP-TOP-1 ; ! ""
 Бэшүүра:Бэшүүра NP-TOP-2 ; ! ""
 Бэшүүр:Бэшүүр NP-TOP-1 ; ! ""
 Юра:Юра NP-ANT-M-2 ; ! ""
@@ -2580,6 +2584,7 @@ Yдэ:Yдэ NP-TOP-1 ; ! "Uda"
 Москва:Москва NP-TOP-2 ; ! ""
 Нэха:Нэха NP-TOP-2 ; ! ""
 Олэ:Олэ NP-TOP-2 ; ! ""
+Ола:Ола NP-TOP-2 ; ! ""
 Санага:Санага NP-TOP-2 ; ! ""
 Суулга:Суулга NP-TOP-2 ; ! ""
 Танга:Танга NP-TOP-2 ; ! ""
@@ -3728,6 +3733,8 @@ LEXICON Verbs
 буйлуул:буйлуул V-TV ; ! "close" ! Der/Caus
 суглуул:суглуул V-TV ; ! "gather" ! Der/Caus
 
+оройгдо:оройгдо V-TV ; ! ""
+
 LEXICON Interjections 
 
 зай:зай INTERJ ;
@@ -3755,10 +3762,24 @@ LEXICON Barbarisms
 тарбагатайский%<adj%>:тарбагатайская # ;
 Чингисхан%<np%>%<ant%>%<m%>%<gen%>:Чингисхана # ;
 
+LEXICON Missing
 
- LEXICON Punctuation
-!===================!
+! This is a list of forms that the transducer cannot currently 
+! generate. The forms should be put into the general morphological
+! model as soon as possible. Some of them are errors, these should
+! be taken care of with an error model.
 
+Олэ%<np%>%<top%>%<gen%>:Олой # ; 
+Пекка%<np%>%<ant%>%<m%>%<gen%>:Пеккинэй # ;
+Цыпелма%<np%>%<ant%>%<f%>%<acc%>:Цыпелмаае # ;
+Ринчинов%<np%>%<cog%>%<m%>%<gen%>:Ринчиногой # ; ! Err/Orth
+Гаутамаарүндэһэлһэн%<np%>%<al%>%<nom%>:Гаутамаарүндэһэлһэн # ;
+Шанага%<np%>%<al%>%<acc%>:Шанагаяа # ;
+үгэ%<v%>%<tv%>%<aor%>:үгөө V-FINITE-PERS ; ! "give"
+ерэ%<v%>%<iv%>%<impf%>:ерээ V-FINITE-PERS ; ! "come"
+эльбэ%<v%>%<tv%>%<impf%>:эльбээ V-FINITE-PERS ; ! "caress, smooth"
+
+LEXICON Punctuation
 
 %.%<sent%>:%. # ;
 %.%.%<sent%>:%.%. # ;
