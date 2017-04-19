@@ -419,7 +419,9 @@ SUBST-N2 ;
 LEXICON V-NON-FINITE
 
 %<prc%>:%>ж%{A%} CLIT ;
+%<prc%>:%>ж%{A%}л CLIT ;
 
+%<ger%>:%>х%{A%}л SUBST-N1 ; ! FIXME: CHECK
 %<ger%>:%>х%{A%} GER-SUBST-N2 ;
 %<ger_past%>:%>һ%{A%}н SUBST-N1 ;
 %<ger_ag1%>:%>гш%{A%} GER-SUBST-N2 ; 
@@ -458,6 +460,7 @@ LEXICON V-NON-FINITE
 %<gpr_qual%>:%>м%{A%}%{A%}р # ; 
 %<gpr_past%>:%>һ%{A%}н # ;
 %<gpr_res%>:%>нх%{A%}й # ;
+%<gpr_res%>:%>%{A%}нх%{A%}й # ; 
 
 LEXICON V-FINITE-PERS-12
 
@@ -475,7 +478,7 @@ LEXICON V-FINITE-PERS
 
 LEXICON V-SUFFIX-POSS
 
-%<px1sg%>:%>%{м}%ни # ;
+%<px1sg%>:%>%{м%}ни # ;
 %<px1sg%>:%>м # ; ! Dir/LR
 %<px2sg%>:%>шни # ;
 %<px2sg%>:%>ш # ;
@@ -3446,6 +3449,8 @@ LEXICON Verbs
 гээшэ:гээшэ V-IV ; ! "am I"
 даба:даба V-TV ; ! "to cross"
 дайра:дайра V-TV ; ! "to toucһ"
+дайралда:дайралда V-TV ; ! "" ! FIXME: CHECK
+дайралса:дайралса V-TV ; ! "" ! FIXME: CHECK
 диилэ:диилэ V-TV ; ! "to win"
 доһолго:доһолго V-TV ; ! "sһake"
 дүлэтэ:дүлэтэ V-IV ; ! "to flame"
@@ -3573,6 +3578,7 @@ LEXICON Verbs
 атаарха:атаарха V-IV ; ! "envy"
 аяншал:аяншал V-IV ; ! "travel"
 багта:багта V-IV ; ! "fit, get on"
+багта:багтаа V-IV ; ! "fit, get on" ! FIXME: CHECK
 багшал:багшал V-TV ; ! "teacһ"
 байлсаатай:байлсаатай V-IV ; ! "sһould"
 байша:байша V-IV ; ! "appear, occur"
