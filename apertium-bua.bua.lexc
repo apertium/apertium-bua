@@ -430,10 +430,16 @@ LEXICON V-NON-FINITE
 %<gna_prog%>:%>ж%{A%} # ;
 %<gna_perf%>:%>%{A%}%{A%}д # ; ! FIXME: CHECK
 %<gna_cond%>:%>б%{A%}л # ;
+%<gna_cond%>:%>б%{A%}л V-SUFFIX-POSS ;
 %<gna_conc%>:%>б%{A%}шье # ;
+%<gna_term%>:%>т%{A%}р # ;
+%<gna_term%>:%>т%{A%}р V-SUFFIX-POSS ;
 %<gna_cont%>:%>мс%{A%}%{A%}р # ;
+%<gna_cont%>:%>мс%{A%}%{A%}р V-SUFFIX-POSS ;
 %<gna_abte%>:%>һ%{A%}%{A%}р # ;
+%<gna_abte%>:%>һ%{A%}%{A%}р V-SUFFIX-POSS ;
 %<gna_abte%>:%>%{н%}һ%{A%}%{A%}р # ; ! Dir/LR
+%<gna_abte%>:%>%{н%}һ%{A%}%{A%}р V-SUFFIX-POSS ; ! Dir/LR
 %<gna_fin%>:%>х%{A%}%{A%}р # ;
 %<gna_succ%>:%>х%{A%}л%{A%}%{A%}р # ;
 %<gna_comp%>:%>нх%{A%}%{A%}р # ; 
@@ -496,8 +502,8 @@ LEXICON V-FINITE
 %<impf%>:%>%{г%}%{A%}%{A%} V-FINITE-PERS ;  ! Was <past2>
 %<impf%>%<neg%>:%>%{г%}%{A%}%{A%}%>гүй V-FINITE-PERS ;  ! Was <past2>
 
-%<past%>:%>һ%{A%}н # ;
-%<past%>%<neg%>:%>%{A%}%{A%} # ;
+%<past%>:%>һ%{A%}н V-FINITE-PERS ;
+%<past%>%<neg%>:%>%{A%}%{A%} V-FINITE-PERS ;
 %<past%>%<evid%>:%>һ%{A%}н% юм # ;
 
 %<hab%>:%>д%{A%}г V-FINITE-PERS ;
@@ -1207,6 +1213,7 @@ LEXICON Nouns
 тоһон:тоһо N3 ; ! "butter, fat"
 багтаамжа:багтаамжа N2 ; ! "vase, container, jar"
 магтан:магтан N1 ; ! "praise"
+магтан:магтанам N1 ; ! "praise" ! Err/Orth
 хан:хан N1 ; ! "bell"
 талаан:талаан N1 ; ! "luck, success, һappiness"
 наада:наада N2 ; ! "game"
@@ -1477,6 +1484,7 @@ dамдиновна:dамдиновна N2 ; ! "Damdinovna"
 парти:парти N2 ; ! "party"
 тала:тала N2 ; ! "field, side, steep"
 он:он N1 ; ! "year"
+он:онол N1 ; ! "year" ! Dir/LR
 баар:баар N1 ; ! "bar"
 дэгэл:дэгэл N1 ; ! "coat, dress, wearing"
 дэмжэлгэ:дэмжэлгэ N2 ; ! "һelp, assisstance"
@@ -1751,7 +1759,7 @@ dамдиновна:dамдиновна N2 ; ! "Damdinovna"
 үглөөгүүр:үглөөгүүр N1 ; ! "morning"
 нүхэсэл:нүхэсэл N1 ; ! "companion"
 мэдээсэл:мэдээсэл N1 ; ! "information, message, report"
-би:би N2 ; ! "I"
+түби:түб N1 ; ! "continent" ! Err/Orth
 түби:түби N2 ; ! "continent"
 элидхэлнүүд:элидхэлнүүд N1 ; ! "report"
 гүрэн:гүрэн N1 ; ! "state, Country"
@@ -1781,6 +1789,7 @@ dамдиновна:dамдиновна N2 ; ! "Damdinovna"
 тоодо:тоодо N2 ; ! "number"
 театр:театр N1 ; ! "tһeatre"
 харалга:харалга N2 ; ! "sigһt, view"
+харалга:харалга N3 ; ! "sigһt, view" ! Err/Orth
 заншал:заншал N1 ; ! "tradition, һabit"
 экшн:экшн N1 ; ! "action"
 тулалдаан:тулалдаан N1 ; ! "conflict, figһt"
@@ -1815,6 +1824,7 @@ dамдиновна:dамдиновна N2 ; ! "Damdinovna"
 ксилитоол:ксилитоол N1 ; ! "xylitol"
 тохёол:тохёол N1 ; ! "event, case"
 нэрэ:нэрэ N2 ; ! "name"
+нэрэ:нэрээ N1 ; ! "name" ! Dial/Other
 мэдүүлэл:мэдүүлэл N1 ; ! "sentence"
 эхэ:эхэ N2 ; ! "motһer"
 хоног:хоног N1 ; ! "day"
@@ -1881,6 +1891,7 @@ dамдиновна:dамдиновна N2 ; ! "Damdinovna"
 нюуса:нюуса N1 ; ! "secret"
 субарга:субарга N2 ; ! "cһain"
 реклама:реклама N2 ; ! "advertisement"
+реклама:рекламна N2 ; ! "advertisement" ! Err/Orth
 газар:газар N1 ; ! "outside, outdoors"
 олзо:олзо N2 ; ! "profit, income"
 код:код N1 ; ! "code"
@@ -2125,6 +2136,9 @@ dамдиновна:dамдиновна N2 ; ! "Damdinovna"
 хородог:хородог N1 ; ! ""
 эрэшүүл:эрэшүүл N1 ; ! ""
 шэнгэрүүһэд:шэнгэрүүһэд N1 ; ! ""
+
+буляалдалга:буляалдалга N2 ; ! ""
+хубааралга:хубааралга N2 ; ! "division/share"
 
 LEXICON Proper
 
@@ -2667,7 +2681,6 @@ LEXICON Adjectives
 ашагдаһан:ашагдаһан A1 ; ! "used"
 бүһэтэй:бүһэтэй A1 ; ! "strong"
 бүридэхэ:бүридэхэ A1 ; ! "contain "
-бадарха:бадарха A1 ; ! "to blossom"
 байхын:байхын A1 ; ! "being"
 бамба:бамба A1 ; ! ""
 бархируулһан:бархируулһан A1 ; ! "crying"
@@ -3662,6 +3675,7 @@ LEXICON Verbs
 һандар:һандар V-TV ; ! "destroy, break"
 хараалагда:хараалагда V-TV ; ! "envisage, mean"
 хари:хари V-IV ; ! "go back"
+харилса:харилса V-IV ; ! ""
 хахаса:хахаса V-IV ; ! "separate"
 холбо:холбо V-TV ; ! "bind"
 холбо:холбо V-TV ; ! "unite"
@@ -3734,6 +3748,7 @@ LEXICON Verbs
 суглуул:суглуул V-TV ; ! "gather" ! Der/Caus
 
 оройгдо:оройгдо V-TV ; ! ""
+бадар:бадар V-TV ; ! ""
 
 LEXICON Interjections 
 
@@ -3778,6 +3793,153 @@ LEXICON Missing
 үгэ%<v%>%<tv%>%<aor%>:үгөө V-FINITE-PERS ; ! "give"
 ерэ%<v%>%<iv%>%<impf%>:ерээ V-FINITE-PERS ; ! "come"
 эльбэ%<v%>%<tv%>%<impf%>:эльбээ V-FINITE-PERS ; ! "caress, smooth"
+һуу%<v%>%<iv%>%<ger%>:һуха GER-SUBST-N2 ; 
+һуу%<v%>%<iv%>%<gpr_fut%>:һуха # ; 
+диилэ%<v%>%<tv%>%<impf%>:диилээ V-FINITE-PERS ; ! "to win"
+экспедици%<n%>%<ins%>:экспедицеэр # ; ! иээр -> еэр
+
+! Accusative in -йэ stems
+бэе%<n%>%<acc%>:бэеэ POSSESSIVE ;
+эрье%<n%>%<ins%>:эрьеэр POSSESSIVE ;
+
+! Intrustive -г- in -н stems
+эдеэн%<n%>%<ins%>:эдеэгээр POSSESSIVE ;
+барилдаан%<n%>%<ins%>:барилдаагаар POSSESSIVE ; 
+
+! Intrusive -г- with -л stems
+хубаарил%<n%>%<ins%>:хубаарилгаар POSSESSIVE ;
+
+! Miscellaneous accusative forms
+эрдэмтэн%<n%>%<acc%>:эрдэмтэниие POSSESSIVE ;
+аха%<n%>%<acc%>:ахайе POSSESSIVE ;
+басаган%<n%>%<acc%>:басагаяа POSSESSIVE ;
+бүлэгтэ%<n%>%<acc%>:бүлэгтэеэ POSSESSIVE ;
+дайда%<n%>%<acc%>:дайдаяа POSSESSIVE ;
+дайшалха%<n%>%<acc%>:дайшалхы POSSESSIVE ;
+дүүнэр%<n%>%<acc%>:дүүнэртэеэ POSSESSIVE ;
+зандинаархи%<n%>%<acc%>:зандинаархиниие POSSESSIVE ;
+зубхи%<n%>%<acc%>:зубхиёо POSSESSIVE ;
+наадан%<n%>%<acc%>:наадаяа POSSESSIVE ;
+нюдэн%<n%>%<acc%>:нюдэниинь POSSESSIVE ;
+өөһэн%<n%>%<acc%>:өөһэнөө POSSESSIVE ;
+поэзи%<n%>%<acc%>:поэзии POSSESSIVE ;
+премьер%<n%>%<acc%>:премьерэ POSSESSIVE ;
+туһа%<n%>%<acc%>:туһаяа POSSESSIVE ;
+уула%<n%>%<acc%>:уулаяа POSSESSIVE ;
+үхибүүн%<n%>%<acc%>:үхибүүниинь POSSESSIVE ;
+хаһа%<n%>%<acc%>:хаһаяа POSSESSIVE ;
+хубита%<n%>%<acc%>:хубитаяа POSSESSIVE ;
+хубсаһан%<n%>%<acc%>:хубсаһатаяа POSSESSIVE ;
+хүбшэр%<n%>%<acc%>:хүбшэргэйе POSSESSIVE ;
+хулгайшан%<n%>%<acc%>:хулгайшаниие POSSESSIVE ;
+хэлэһэн%<n%>%<acc%>:хэлэһэниинь POSSESSIVE ;
+байшан%<n%>%<pl%>%<acc%>:байшангуудые POSSESSIVE ;
+нютагайхида%<n%>%<pl%>%<acc%>:нютагайхидайнгаа POSSESSIVE ;
+хана%<n%>%<pl%>%<acc%>:ханануудынь POSSESSIVE ;
+хөөрөөн%<n%>%<pl%>%<acc%>:хөөрөөнүүдыень POSSESSIVE ;
+
+! Miscellaneous genitive forms
+шүлэг%<n%>%<pl%>%<gen%>:шүлэгүүдэй POSSESSIVE ;
+шүлэг%<n%>%<pl%>%<gen%>:шүлэгүүдээ POSSESSIVE ;
+далай%<n%>%<gen%>:далайн POSSESSIVE ; 
+зохеолшон%<n%>%<pl%>%<gen%>:зохёолшодой POSSESSIVE ;
+барилдааша%<n%>%<gen%>:барилдаашан POSSESSIVE ;
+һуури%<n%>%<pl%>%<gen%>:һуурингуудай POSSESSIVE ;
+аша%<n%>%<pl%>%<gen%>:ашанууднай POSSESSIVE ;
+барилдааша%<n%>%<pl%>%<gen%>:барилдаашадай POSSESSIVE ;
+басаган%<n%>%<pl%>%<gen%>:басагадынь POSSESSIVE ;
+бэлшээри%<n%>%<pl%>%<gen%>:бэлшээринүүднай POSSESSIVE ;
+газар%<n%>%<pl%>%<gen%>:газарнууднай POSSESSIVE ;
+нүхэр%<n%>%<pl%>%<gen%>:нүхэдынь POSSESSIVE ;
+нютагаархи%<n%>%<pl%>%<gen%>:нютагаархидынь POSSESSIVE ;
+һүзэгтэ%<n%>%<pl%>%<gen%>:һүзэгтэдтэй POSSESSIVE ;
+абаахай%<n%>%<gen%>:абаахайн POSSESSIVE ;
+байгуулагда%<n%>%<gen%>:байгуулагданхай POSSESSIVE ;
+басаган%<n%>%<gen%>:басаганиинь POSSESSIVE ;
+басагахан%<n%>%<gen%>:басагаханай POSSESSIVE ;
+дүүн%<n%>%<gen%>:дүүниинь POSSESSIVE ;
+зүгы%<n%>%<gen%>:зүгын POSSESSIVE ;
+зүлхэ%<n%>%<gen%>:зүлхэйн POSSESSIVE ;
+июнь%<n%>%<gen%>:июниинь POSSESSIVE ;
+нэгэ%<n%>%<gen%>:нэгэниинь POSSESSIVE ;
+нютаг%<n%>%<gen%>:нютагайхид POSSESSIVE ;
+олонита%<n%>%<gen%>:олониитын POSSESSIVE ;
+район%<n%>%<gen%>:районогой POSSESSIVE ;
+сэхэ%<n%>%<gen%>:сэхынь POSSESSIVE ;
+таабай%<n%>%<gen%>:таабайн POSSESSIVE ;
+талаан%<n%>%<gen%>:талааниинь POSSESSIVE ;
+талмай%<n%>%<gen%>:талмайн POSSESSIVE ;
+танцы%<n%>%<gen%>:танцын POSSESSIVE ;
+химгадал%<n%>%<gen%>:химгадалгын POSSESSIVE ;
+хүдөө%<n%>%<gen%>:хүдөөгэймнай POSSESSIVE ;
+хүрьгэн%<n%>%<gen%>:хүрьгэниинь POSSESSIVE ;
+хүтэлбэри%<n%>%<gen%>:хүтэлбэрииин POSSESSIVE ;
+хэблэгдэ%<n%>%<gen%>:хэблэгдээн POSSESSIVE ;
+
+! Miscellaneous instrumental forms
+
+бал%<n%>%<ins%>:баллаар POSSESSIVE ;
+буян%<n%>%<ins%>:буянгаар POSSESSIVE ;
+дангина%<n%>%<ins%>:дангинанаараа POSSESSIVE ;
+доройтол%<n%>%<ins%>:доройтолго POSSESSIVE ;
+дуратай%<n%>%<ins%>:дуратайгаар POSSESSIVE ;
+дэлхэй%<n%>%<ins%>:дэлхэйгээр POSSESSIVE ;
+дэлхэй%<n%>%<ins%>:дэлхэйгээршье POSSESSIVE ;
+жэшээ%<n%>%<ins%>:жэшээгээр POSSESSIVE ;
+нугархай%<n%>%<ins%>:нугархайгаар POSSESSIVE ;
+программа%<n%>%<ins%>:программар POSSESSIVE ;
+толгой%<n%>%<ins%>:толгойгороо POSSESSIVE ;
+урданай%<n%>%<ins%>:урданайнгаа POSSESSIVE ;
+ухаан%<n%>%<ins%>:ухаагаараа POSSESSIVE ;
+һадан%<n%>%<ins%>:һаданар POSSESSIVE ;
+һанаан%<n%>%<ins%>:һанаагаараа POSSESSIVE ;
+харгы%<n%>%<ins%>:харгыгаар POSSESSIVE ;
+хүтэлбэрилэгшэ%<n%>%<ins%>:хүтэлбэрилэгшөөр POSSESSIVE ;
+хэлэн%<n%>%<ins%>:хэлээр POSSESSIVE ;
+эдеэн%<n%>%<ins%>:эдеэгээр POSSESSIVE ;
+зурааша%<n%>%<pl%>%<ins%>:зураашадаар POSSESSIVE ;
+
+! Miscellaneous dative forms
+
+дасан%<n%>%<pl%>%<dat%>:дансануудаа POSSESSIVE ;
+дуун%<n%>%<pl%>%<dat%>:дуунуудаа POSSESSIVE ;
+зохёол%<n%>%<pl%>%<dat%>:зохёолнуудаа POSSESSIVE ;
+уншагша%<n%>%<pl%>%<dat%>:уншагшадтаяа POSSESSIVE ;
+ансамбль%<n%>%<dat%>:ансамбльтаяа POSSESSIVE ;
+арад%<n%>%<dat%>:арадтаяа POSSESSIVE ;
+бариса%<n%>%<dat%>:барисаата POSSESSIVE ;
+гушанар%<n%>%<dat%>:гушанартай POSSESSIVE ;
+гушгушанаран%<n%>%<dat%>:гушанартай POSSESSIVE ;
+
+! Miscellaneous ablative forms
+
+гурбатай%<n%>%<dat%>:гурбатайһаань POSSESSIVE ;
+тоо%<n%>%<dat%>:тооһо POSSESSIVE ;
+түрэлхид%<n%>%<dat%>:түрэлхидтэеэ POSSESSIVE ;
+ута%<n%>%<dat%>:утаһые POSSESSIVE ;
+түби%<n%>%<pl%>%<dat%>:түбүүдһээ POSSESSIVE ;
+
+! Miscellaneous nominative forms
+
+дасан%<n%>%<pl%>%<nom%>:дасангууд POSSESSIVE ;
+зохёолшо%<n%>%<pl%>%<nom%>:зохёолшод POSSESSIVE ;
+мэргэжэлтэ%<n%>%<pl%>%<nom%>:мэргэжэлтэд POSSESSIVE ;
+нуга%<n%>%<pl%>%<gen%>:нуганууднай POSSESSIVE ;
+нүхэр%<n%>%<pl%>%<nom%>:нүхэдни POSSESSIVE ;
+обоо%<n%>%<pl%>%<nom%>:обогууд POSSESSIVE ;
+ойро%<n%>%<pl%>%<nom%>:ойрод POSSESSIVE ;
+поэт%<n%>%<pl%>%<nom%>:поэдүүд POSSESSIVE ;
+ула%<n%>%<pl%>%<nom%>:уладууд POSSESSIVE ;
+үндэһэн%<n%>%<pl%>%<nom%>:үндэһэд POSSESSIVE ;
+харуулша%<n%>%<pl%>%<nom%>:харуулшад POSSESSIVE ;
+химгадалша%<n%>%<pl%>%<nom%>:химгадалгашад POSSESSIVE ;
+хүгжэмшэ%<n%>%<pl%>%<nom%>:хүгжэмшэд POSSESSIVE ;
+хэлэн%<n%>%<pl%>%<nom%>:хэлэнүүд POSSESSIVE ;
+
+
+
+
+
 
 LEXICON Punctuation
 
