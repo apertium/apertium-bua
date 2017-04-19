@@ -460,7 +460,7 @@ LEXICON V-NON-FINITE
 %<gpr_qual%>:%>м%{A%}%{A%}р # ; 
 %<gpr_past%>:%>һ%{A%}н # ;
 %<gpr_res%>:%>нх%{A%}й # ;
-%<gpr_res%>:%>%{A%}нх%{A%}й # ; 
+%<gpr_res%>:%>%{A%}нх%{A%}й # ;  ! FIXME: CHECK
 
 LEXICON V-FINITE-PERS-12
 
@@ -3831,6 +3831,7 @@ LEXICON Verbs
 
 оройгдо:оройгдо V-TV ; ! ""
 бадар:бадар V-TV ; ! ""
+зобо:зобо V-IV ; ! ""
 
 LEXICON Interjections 
 
