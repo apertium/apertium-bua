@@ -447,6 +447,9 @@ LEXICON V-NON-FINITE
 %<gna_succ%>:%>х%{A%}л%{A%}%{A%}р # ;
 %<gna_comp%>:%>нх%{A%}%{A%}р # ; 
 
+%<neg%>%<gna_while%>:%>%{A%}%{A%}гүйдэ # ; 
+%<neg%>%<gna_still%>:%>%{A%}%{A%}дүйдэ # ; 
+
 %<gpr_fut%>:%>х%{A%} # ; 
 %<gpr_impf%>:%>г%{A%}%{A%} # ; 
 %<gpr_impf%>:%>г%{A%}%{A%}%>гүй # ; 
@@ -484,7 +487,10 @@ LEXICON V-SUFFIX-POSS
 
 LEXICON V-PROG-PERS
 
-%<p2%>%<sg%>:%>ши # ;
+%<p1%>%<sg%>:%>би CLIT ;
+%<p2%>%<sg%>:%>ши CLIT ;
+%<p1%>%<pl%>:%>ди CLIT ;
+%<p2%>%<pl%>:%>та CLIT ;
 
 LEXICON V-FINITE
 
@@ -661,7 +667,7 @@ LEXICON NUM-н
 %<num%>:н # ;
 %<num%>%<ord%>:%>д%{A%}хи # ; 
 %<num%>%<dim%>:%>х%{A%}н # ;
-%<num%>%<subst%>: CASES-N1 ;
+%<num%>%<subst%>: CASES-N3 ;
 %<num%>%<subst%>:н CASES-N1 ;
 
 LEXICON NUM-DIST 
@@ -723,8 +729,34 @@ LEXICON PRON-ÖÖRÖÖ
 
 LEXICON PRON-ÖÖHED
 
+%<prn%>%<ref%>%<nom%>: # ; 
 %<prn%>%<ref%>%<nom%>:өө # ; 
 %<prn%>%<ref%>%<gen%>:ын # ;   
+
+LEXICON PRON-ÖÖDÖÖ
+
+%<prn%>%<ref%>%<nom%>: # ; 
+
+
+LEXICON PRON-ÖÖHEN
+
+%<prn%>%<dem%>%<nom%>: # ;                               
+%<prn%>%<dem%>%<nom%>:н # ;                               
+%<prn%>%<dem%>%<acc%>:н%>өө POSSESSIVE ;         
+%<prn%>%<dem%>%<gen%>:н%>%{A%}й POSSESSIVE ; 
+%<prn%>%<dem%>%<gen%>:%>%{A%}й POSSESSIVE ;                 
+%<prn%>%<dem%>%<acc%>:%>иие # ;                 
+%<prn%>%<dem%>%<gen%>%<px3sg%>:%>иинь # ;                 
+%<prn%>%<dem%>:н CASES-COMMON ; 
+%<prn%>%<dem%>: CASES-COMMON ;                               
+
+LEXICON PRON-TEREEHEN
+
+%<prn%>%<dem%>%<nom%>: # ;                               
+%<prn%>%<dem%>%<nom%>:н # ;                               
+%<prn%>%<dem%>%<gen%>:нэй # ;                               
+%<prn%>%<dem%>%<dat%>:ндэ # ;                               
+%<prn%>%<dem%>%<acc%>:ниие # ;                               
 
 LEXICON PRON-BÜHE
 
@@ -751,14 +783,29 @@ LEXICON PRON-BÜGEDEN
 %<prn%>%<dem%>: CASES-COMMON ;                               
 
 
+LEXICON PRON-IND-1
+
+%<prn%>%<ind%>: SUBST-N1 ; ! FIXME: check
+
+LEXICON PRON-IND-2
+
+%<prn%>%<ind%>: SUBST-N2 ; ! FIXME: check
+
+LEXICON PRON-IND-3
+
+%<prn%>%<ind%>: SUBST-N3 ; ! FIXME: check
+
+
+
+
 LEXICON PRON-DEM
 
 %<prn%>%<dem%>: SUBST-N1 ; ! FIXME: check
 
 LEXICON PRON-ITG
 
-%<prn%>%<itg%>%<nom%>:н CLIT ;
-%<prn%>%<itg%>%<nom%>: CLIT ; ! Dir/LR
+%<prn%>%<itg%>%<nom%>:н COP-PRED ;
+%<prn%>%<itg%>%<nom%>: COP-PRED ; ! Dir/LR
 %<prn%>%<itg%>: SUBST-N3 ;
 
 LEXICON PRON-QNT
@@ -776,6 +823,7 @@ LEXICON PRON-BI
 би%<prn%>%<pers%>%<p1%>%<sg%>%<gen%>:намай CLIT ;
 би%<prn%>%<pers%>%<p1%>%<sg%>%<gen%>:намайе CLIT ; ! FIXME: what's the difference?
 би%<prn%>%<pers%>%<p1%>%<sg%>%<com%>:намтай CLIT ;
+би%<prn%>%<pers%>%<p1%>%<sg%>%<com%>:намтаяа CLIT ; ! FIXME: what is this -яа
 би%<prn%>%<pers%>%<p1%>%<sg%>%<ins%>:намаар CLIT ; 
 би%<prn%>%<pers%>%<p1%>%<sg%>%<abl%>:намһаа CLIT ;
 
@@ -803,6 +851,7 @@ LEXICON PRON-BIDE
 бидэ%<prn%>%<pers%>%<p1%>%<pl%>%<dat%>:манда CLIT ;              
 бидэ%<prn%>%<pers%>%<p1%>%<pl%>%<dat%>:маанарта CLIT ; ! Dir/LR
 бидэ%<prn%>%<pers%>%<p1%>%<pl%>%<dat%>:маанадта CLIT ; ! Dir/LR
+бидэ%<prn%>%<pers%>%<p1%>%<pl%>%<dat%>:бидэнтэеэ CLIT ; ! Dir/LR
 бидэ%<prn%>%<pers%>%<p1%>%<pl%>%<ins%>:манаар CLIT ;             
 бидэ%<prn%>%<pers%>%<p1%>%<pl%>%<ins%>:маанараар CLIT ; ! Dir/LR
 бидэ%<prn%>%<pers%>%<p1%>%<pl%>%<abl%>:манһаа CLIT ;             
@@ -853,6 +902,8 @@ LEXICON Miscellaneous
 
 һэм%<aux%>:һэм V-FINITE-PERS ;
 гээшэ%<aux%>:гээшэ V-FINITE-PERS ; 
+гээшэ%<aux%>%<prog%>:гээшэб V-PROG-PERS ; 
+гээшэ%<aux%>%<prog%>:гээшэби V-PROG-PERS ; 
 һаа%<aux%>:һаа V-SUFFIX-POSS ;       ! "если"
 хада%<aux%>:хада V-SUFFIX-POSS ; 
 юмби%<aux%>:юмби V-FINITE-PERS ;
@@ -983,15 +1034,27 @@ PRON-TA ; ! ""
 эдэ:эдэ PRON-EDE ; ! "эти"
 тэдэ:тэдэ PRON-EDE ; ! "эти"
 
+энээхэн:энээхэ PRON-TEREEHEN ;
+тэрээхэн:тэрээхэ PRON-TEREEHEN ; 
+
 бүхэ:бүхэ PRON-BÜHE ; ! ""
 
 өөрөө:өөр PRON-ÖÖRÖÖ ;  ! "сам"
 
 өөһэд:өөһэд PRON-ÖÖHED ; ! ""
+өөһэн:өөһэ PRON-ÖÖHEN ; ! ""
 
 бүгэдэн:бүгэдэ PRON-BÜGEDEN ; ! ""
 
 хамаг:хамаг PRON-QNT ; ! ""
+
+бусад:бусад PRON-IND-1 ; 
+булта:булта PRON-IND-2 ; ! ""
+булта:булта PRON-IND-3 ; ! ""
+
+өөдөө:өөдөө PRON-ÖÖDÖÖ ; ! ""
+
+олонхи:олонхи PRON-IND-2 ; ! ""
 
 LEXICON Determiners
 
@@ -1072,6 +1135,7 @@ LEXICON Nouns
 хүүгэн:хүүгэ N3 ; ! "ребёнок"
 архитектор:архитектор N4 ; ! "архитектор"
 аха:аха N4 ; ! "братан"
+аха:аха N2 ; ! "brotһer, elder brotһer"
 эхэ:эхэ N4 ; ! "женщина"
 нүхэр:нүхэ N5 ; ! "друг"
 хүн:хүн N1 ; ! "люди"
@@ -1967,7 +2031,6 @@ dамдиновна:dамдиновна N2 ; ! "Damdinovna"
 шалтаг:шалтаг N1 ; ! "accident, cause, case"
 еохор:еохор N1 ; ! "yokһor (dance)"
 мүрэн:мүрэн N1 ; ! "river"
-аха:аха N2 ; ! "brotһer, elder brotһer"
 дуун:дуун N1 ; ! "song"
 нютаг:нютаг N1 ; ! "һomeland"
 турша:турша N2 ; ! "attempt"
@@ -3834,7 +3897,7 @@ LEXICON Missing
 зубхи%<n%>%<acc%>:зубхиёо POSSESSIVE ;
 наадан%<n%>%<acc%>:наадаяа POSSESSIVE ;
 нюдэн%<n%>%<acc%>:нюдэниинь POSSESSIVE ;
-өөһэн%<n%>%<acc%>:өөһэнөө POSSESSIVE ;
+өөһэн%<prn%>%<ref%>%<acc%>:өөһэнөө POSSESSIVE ;
 поэзи%<n%>%<acc%>:поэзии POSSESSIVE ;
 премьер%<n%>%<acc%>:премьерэ POSSESSIVE ;
 туһа%<n%>%<acc%>:туһаяа POSSESSIVE ;
@@ -3850,6 +3913,7 @@ LEXICON Missing
 нютагайхида%<n%>%<pl%>%<acc%>:нютагайхидайнгаа POSSESSIVE ;
 хана%<n%>%<pl%>%<acc%>:ханануудынь POSSESSIVE ;
 хөөрөөн%<n%>%<pl%>%<acc%>:хөөрөөнүүдыень POSSESSIVE ;
+үүдэн%<n%>%<acc%>:үүдээ POSSESSIVE ;
 
 ! Miscellaneous genitive forms
 шүлэг%<n%>%<pl%>%<gen%>:шүлэгүүдэй POSSESSIVE ;
@@ -3888,6 +3952,7 @@ LEXICON Missing
 хүрьгэн%<n%>%<gen%>:хүрьгэниинь POSSESSIVE ;
 хүтэлбэри%<n%>%<gen%>:хүтэлбэрииин POSSESSIVE ;
 хэблэгдэ%<n%>%<gen%>:хэблэгдээн POSSESSIVE ;
+сонхо%<n%>%<gen%>:сонхоной POSSESSIVE ;
 
 ! Miscellaneous instrumental forms
 
@@ -3950,9 +4015,9 @@ LEXICON Missing
 хэлэн%<n%>%<pl%>%<nom%>:хэлэнүүд POSSESSIVE ;
 
 
-
-
-
+бултанай%<prn%>%<ind%>%<abl%>:бултанайнгаа # ;
+булта%<prn%>%<ind%>%<acc%>:бултые POSSESSIVE ; 
+булта%<prn%>%<ind%>%<acc%>:бултаниие POSSESSIVE ; 
 
 LEXICON Punctuation
 
