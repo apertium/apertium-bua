@@ -4021,10 +4021,27 @@ LEXICON Missing
 хүгжэмшэ%<n%>%<pl%>%<nom%>:хүгжэмшэд POSSESSIVE ;
 хэлэн%<n%>%<pl%>%<nom%>:хэлэнүүд POSSESSIVE ;
 
+! Miscellaneous pronoun forms
 
 бултанай%<prn%>%<ind%>%<abl%>:бултанайнгаа # ;
 булта%<prn%>%<ind%>%<acc%>:бултые POSSESSIVE ; 
 булта%<prn%>%<ind%>%<acc%>:бултаниие POSSESSIVE ; 
+
+! Miscellaneous verbal forms
+
+шэнжэл%<v%>%<tv%>%<ger%>%<acc%>:шэнжэлхэеэ POSSESSIVE ;
+хүдэл%<v%>%<tv%>%<ger%>%<acc%>:хүдэлхэеэ POSSESSIVE ;
+тэжээ%<v%>%<tv%>%<ger%>%<acc%>:тэжээхэеэ POSSESSIVE ;
+бэелүүл%<v%>%<tv%>%<ger%>%<acc%>:бэелүүлхэеэ POSSESSIVE ;
+бэдэр%<v%>%<tv%>%<ger%>%<acc%>:бэдэрхэеэ POSSESSIVE ;
+бүтээ%<v%>%<tv%>%<ger%>%<acc%>:бүтээхэеэ POSSESSIVE ;
+бай%<v%>%<iv%>%<ger%>%<acc%>:байхаяа POSSESSIVE ; 
+яба%<v%>%<iv%>%<ger%>%<acc%>:ябахаяа POSSESSIVE ; 
+шада%<v%>%<iv%>%<ger%>%<acc%>:шадахаяа POSSESSIVE ; 
+һура%<v%>%<tv%>%<ger%>%<acc%>:һурахаяа POSSESSIVE ; 
+хатар%<v%>%<tv%>%<ger%>%<acc%>:хатархаяа POSSESSIVE ; 
+сахи%<v%>%<tv%>%<ger%>%<acc%>:сахихаяа POSSESSIVE ; 
+
 
 LEXICON Punctuation
 
