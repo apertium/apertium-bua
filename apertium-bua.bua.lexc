@@ -143,6 +143,7 @@ Multichar_Symbols
 %{г%}
 %{i%}         ! i / 0
 %{ң%}
+%{б%}         ! б / м / 0
 %{н%}
 %{м%}         ! м / 0
 %{и%}
@@ -423,6 +424,8 @@ LEXICON V-NON-FINITE
 %<ger_past%>:%>һ%{A%}н SUBST-N1 ;
 %<ger_ag1%>:%>гш%{A%} GER-SUBST-N2 ; 
 %<ger_ag2%>:%>г%{A%}%{A%}ш%{A%} GER-SUBST-N2 ; 
+%<neg%>%<ger_ag2%>:%>г%{A%}%{A%}ш%{A%}%>гүй GER-SUBST-N2 ; 
+%<neg%>%<ger_ag2%>:%>г%{A%}%{A%}%>гүй%>ш%{A%} GER-SUBST-N2 ; 
 
 !%<gna%>:%>%{A%}д # ;
 %<gna_mod%>:%>н # ;
@@ -457,7 +460,7 @@ LEXICON V-FINITE-PERS-12
 
 %<p1%>%<sg%>:%>%{м%}б%{i%}  CLIT ;
 %<p2%>%<sg%>:%>ш%{i%}  CLIT ;
-%<p1%>%<pl%>:%>бди  CLIT ;
+%<p1%>%<pl%>:%>%{б%}ди  CLIT ;
 %<p2%>%<pl%>:%>т  CLIT ;
 
 LEXICON V-FINITE-PERS
@@ -486,6 +489,7 @@ LEXICON V-PROG-PERS
 LEXICON V-FINITE
 
 %<aor%>:%>н%{A%} V-FINITE-PERS ;
+%<aor%>:%>н%{A%}л V-FINITE-PERS ; ! Dir/LR ! Dial/Other
 %<aor%>%<neg%>:%>н%{A%}гүй V-FINITE-PERS ;
 
 %<aor%>%<prog%>:%>н%{A%}б V-PROG-PERS ;
@@ -554,6 +558,7 @@ LEXICON A1
 
 %<adj%>: CLIT ;
 %<adj%>%<subst%>: CASES-N1 ;
+%<adj%>%<subst%>%<pl%>:%>%{U%}%{U%}д CASES-PL ;
 
 LEXICON A2
 
@@ -832,6 +837,7 @@ LEXICON Miscellaneous
 ааб%<disc%>:ааб # ;
 даа%<disc%>:даа # ;
 тус%<disc%>:тус # ;
+тусда%<disc%>:тусда # ;
 хынь%<disc%>:хынь # ;
 гүү%<disc%>:гүү # ;
 
@@ -840,18 +846,25 @@ LEXICON Miscellaneous
 үй%<disc%>:үй # ; ! ""
 нэн%<disc%>:нэн # ; ! ""
 дан%<disc%>:дан # ; ! ""
+бута%<disc%>:бута # ;
 
+һадаһад%<disc%>:һадаһад # ;
+һадаһадай%<disc%>:һадаһадай # ;
 
 һэм%<aux%>:һэм V-FINITE-PERS ;
 гээшэ%<aux%>:гээшэ V-FINITE-PERS ; 
 һаа%<aux%>:һаа V-SUFFIX-POSS ;       ! "если"
 хада%<aux%>:хада V-SUFFIX-POSS ; 
+юмби%<aux%>:юмби V-FINITE-PERS ;
+
+бэлэй%<aux%>:бэлэй V-FINITE-PERS ; 
 
 хэрбэ%<aux%>:хэрбэ V-SUFFIX-POSS ; 
 хэрбэ%<aux%>:хэрбэеэ # ;
 хэрбэ%<aux%>:хэрбээ # ; 
 
 бү%<neg%>:бү # ;
+
 
 LEXICON Conjunctions
 
