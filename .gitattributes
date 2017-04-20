@@ -13,7 +13,6 @@
 /bua.prob -text svneol=unset#unset
 /configure.ac -text
 dev/bua-feats.tsv -text
-dev/conllu-morph.py -text
 dev/countstems.sh -text
 dev/lexicon.bxr.tsv -text
 dev/merge-lemmas.py -text
