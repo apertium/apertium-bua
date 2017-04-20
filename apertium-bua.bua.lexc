@@ -250,6 +250,7 @@ LEXICON CASES-N2
 
 %<acc%>:%>%{и%}е POSSESSIVE ;                  ! -иие, -е, -гиие
 %<gen%>:%>%{и%}н POSSESSIVE ; 
+%<gen%>:%>%{и%}нь # ;                           ! FIXME: This is probably wrong
 CASES-COMMON ; 
 
 LEXICON CASES-N3
@@ -3833,6 +3834,10 @@ LEXICON Verbs
 бадар:бадар V-TV ; ! ""
 зобо:зобо V-IV ; ! ""
 
+хэблэ:хэблэ V-TV ; ! ""
+хэблэгдэ:хэблэгдэ V-IV ; ! ""
+дамжуулагда:дамжуулагда V-IV ; ! ""
+
 LEXICON Interjections 
 
 зай:зай INTERJ ;
@@ -4042,6 +4047,15 @@ LEXICON Missing
 хатар%<v%>%<tv%>%<ger%>%<acc%>:хатархаяа POSSESSIVE ; 
 сахи%<v%>%<tv%>%<ger%>%<acc%>:сахихаяа POSSESSIVE ; 
 
+гэршэлэ%<v%>%<iv%>%<gpr_hab%>:гэршэлдэг # ; 
+гүүлэжэрхи%<v%>%<iv%>%<gpr_hab%>:гүүлэжэрхидэг # ; 
+хэлэжэрхи%<v%>%<iv%>%<gpr_hab%>:хэлэжэрхидэг # ; 
+хүлгөө%<v%>%<iv%>%<gpr_hab%>:хүлгөөдэг # ; 
+бүтээ%<v%>%<iv%>%<gpr_hab%>:бүтэдэг # ; 
+дайралса%<v%>%<iv%>%<gpr_hab%>:дайралсадаг # ; 
+дайралда%<v%>%<iv%>%<gpr_hab%>:дайралдадаг # ; 
+гаргашалагда%<v%>%<iv%>%<gpr_hab%>:гаргашалагдадаг # ; 
+ядалса%<v%>%<iv%>%<gpr_hab%>:ядалсадаг # ; 
 
 LEXICON Punctuation
 
