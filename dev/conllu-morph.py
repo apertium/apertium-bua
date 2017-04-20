@@ -184,10 +184,12 @@ for blokk in sys.stdin.read().split('\n\n'): #{
 #	print('# text = %s' % (tekst));
 	for line in blokk.split('\n'): #{
 		row = line.split('\t');
-		morfres = morf.lookup(row[1]);
-		if morfres == (): #{
-			morfres = morf.lookup(row[1].lower());
-		#}
+		morfres = [];
+
+		morfres = morfres + list(morf.lookup(row[1].lower()));
+		morfres = morfres + list(morf.lookup(row[1].title()));
+		morfres = morfres + list(morf.lookup(row[1]));
+
 		retres = apertium_convert(morfres, apertium_symbs);
 		best = best_analysis(row[2], row[3], row[5], retres);
 		if best != (): #{

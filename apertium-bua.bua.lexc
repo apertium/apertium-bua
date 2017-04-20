@@ -589,6 +589,9 @@ LEXICON A4
 %<adj%>%<subst%>: CASES-N2 ;
 %<adj%>%<neg%>%<subst%>:%>гүй CASES-N1 ;
 
+LEXICON A5                                       ! Adjectives which are just n.gen
+
+%<adj%>: # ;
 
 
 LEXICON ADV
@@ -2243,6 +2246,8 @@ LEXICON Proper
 
 Саяан:Саяан NP-TOP-1 ; ! ""
 Саяан:Саяан NP-ANT-M-1 ; ! ""
+Баяр:Баяр NP-ANT-M-1 ; ! ""
+Бурхан:Бурхан NP-ANT-M-1 ; ! ""
 Баярто:Баярто NP-ANT-M-2 ; ! ""
 Валерий:Валерий NP-ANT-M-1 ; ! ""
 
@@ -2335,6 +2340,9 @@ Yдэ:Yдэ NP-TOP-1 ; ! "Uda"
 Эрхүүгэй:Эрхүүгэй NP-TOP-1 ; ! "Irkutsk"
 Япон:Япон NP-TOP-1 ; ! "Japan"
 
+Арсалан:Арсалан NP-ANT-M-1 ; ! ""
+Блог:Блог NP-COG-MF-1 ; ! ""
+
 Антонов:Антонов NP-COG-OV ; ! "Antonov"
 Арсаланов:Арсаланов NP-COG-OV ; ! "Arsalanov"
 Бабасанов:Бабасанов NP-COG-OV ; ! "Babasanov"
@@ -2425,7 +2433,6 @@ Yдэ:Yдэ NP-TOP-1 ; ! "Uda"
 Улаан%-Үдэ:Улаан%-Үдэ NP-TOP-2 ; ! ""
 
 Алексей:Алексей NP-ANT-M-1 ; ! ""
-Арсаланов:Арсаланов NP-COG-OV ; ! ""
 Аюров:Аюров NP-COG-OV ; ! ""
 Аюшеев:Аюшеев NP-COG-OV ; ! ""
 Багадаев:Багадаев NP-COG-OV ; ! ""
@@ -2515,6 +2522,8 @@ Yдэ:Yдэ NP-TOP-1 ; ! "Uda"
 Анна:Анна NP-ANT-F-2 ; ! ""
 Борис:Борис NP-ANT-M-1 ; ! ""
 Булат:Булат NP-ANT-M-1 ; ! ""
+Булад:Булад NP-ANT-M-1 ; ! ""
+Булаг:Булаг NP-ANT-M-1 ; ! ""
 Вениамин:Вениамин NP-ANT-M-1 ; ! ""
 Григорий:Григорий NP-ANT-M-1 ; ! ""
 Евгения:Евгения NP-ANT-F-2 ; ! ""
@@ -2572,6 +2581,7 @@ Yдэ:Yдэ NP-TOP-1 ; ! "Uda"
 Сэлэнгэ:Сэлэнгэ NP-TOP-2 ; ! ""
 Үдэ:Үдэ NP-TOP-2 ; ! ""
 Улаан-Үдэ:Улаан-Үдэ NP-TOP-2 ; ! ""
+Улаан-%<np%>%<top%>:Улаан- # ; ! ""
 Ленэ:Ленэ NP-TOP-2 ; ! ""
 Шэбэртэ:Шэбэртэ NP-TOP-2 ; ! ""
 Шэтэ:Шэтэ NP-TOP-2 ; ! ""
@@ -2654,6 +2664,8 @@ Yдэ:Yдэ NP-TOP-1 ; ! "Uda"
 Морихиро:Морихиро NP-COG-MF-2 ; ! ""
 Лангхау:Лангхау NP-COG-MF-2 ; ! ""
 
+Зүлхэ:Зүлхэ NP-AL-2 ; ! ""
+
 Аби:Аби NP-TOP-2 ; ! ""
 Алан-гуагай:Алан-гуагай NP-TOP-1 ; ! ""
 Алас-Дурна:Алас-Дурна NP-TOP-2 ; ! ""
@@ -2712,6 +2724,7 @@ Yдэ:Yдэ NP-TOP-1 ; ! "Uda"
 Монголшууд:Монголшууд NP-AL-PL ; ! ""
 Могоолнууд:Могоолнууд NP-AL-PL ; ! ""
 
+зандин:зандин NP-AL-1 ; ! "Zandin"
 
 LEXICON Adjectives
 
@@ -3040,6 +3053,7 @@ LEXICON Adjectives
 эсэбэритэй:эсэбэритэй A1 ; ! "tiresome"
 этнографическа:этнографическа A2 ; ! "etһnograpһical"
 
+хотын:хотын A5 ; ! ""
 
 
 LEXICON Adverbs
@@ -4056,6 +4070,224 @@ LEXICON Missing
 дайралда%<v%>%<iv%>%<gpr_hab%>:дайралдадаг # ; 
 гаргашалагда%<v%>%<iv%>%<gpr_hab%>:гаргашалагдадаг # ; 
 ядалса%<v%>%<iv%>%<gpr_hab%>:ядалсадаг # ; 
+
+тара%<v%>%<iv%>%<gpr_hab%>:тараадаг # ;
+
+
+! Random verbal stuff that is incorrectly categorised:
+
+аба%<v%>%<TD%>%<ger%>:абанги # ; ! "advcl: gerund
+аба%<v%>%<TD%>%<prc%>:абалга # ; ! "csubj: participle
+аба%<v%>%<TD%>:абабабди # ; ! "root: verb,
+абар%<v%>%<TD%>%<imp%>:абарыт # ; ! "root: imperative
+аргал%<v%>%<TD%>%<neg%>%<ger%>:аргагүйдэнэб # ; ! "parataxis: gerund
+аргал%<v%>%<TD%>%<neg%>%<ger%>:аргамгүй # ; ! "root: gerund
+асар%<v%>%<TD%>%<ger%>:асарбат # ; ! "root: gerund
+асуу%<v%>%<TD%>%<ger%>:асууһааб # ; ! "parataxis: gerund
+аяншал%<v%>%<TD%>%<prc%>:аяншалан # ; ! "xcomp: participle
+бай%<v%>%<TD%>%<dial%>:байһаниинь # ; ! "cop: dial
+бай%<v%>%<TD%>%<ger%>:байг # ; ! "parataxis: gerund
+бии%<v%>%<TD%>%<ger%>:биибди # ; ! "ccomp: gerund
+болго%<v%>%<TD%>%<prc%>:болгогдоһон # ; ! "acl: participle
+боло%<v%>%<TD%>:болохогүйнь # ; ! "ccomp: dial/other
+буса%<v%>%<TD%>%<ger%>:бусашаһан # ; ! "parataxis: gerund
+буса%<v%>%<TD%>%<prc%>:бусааха # ; ! "root: participle
+буудажархи%<v%>%<TD%>:буудажархеоб # ; ! "root: verb,
+буудажархи%<v%>%<TD%>:буудажархёоб # ; ! "root: verb,
+бэелүүл%<v%>%<TD%>%<prc%>:бэелүүлсэһэн # ; ! "acl: participle
+бэлэглэ%<v%>%<TD%>%<ger%>:бэлэглээ # ; ! "root: gerund
+бэшэ%<v%>%<TD%>%<ger%>:бэшээ # ; ! "root: gerund
+гара%<v%>%<TD%>%<ger%>:гарашооб # ; ! "root: gerund
+гара%<v%>%<TD%>:гарашаба # ; ! "root: verb,
+гэ%<v%>%<TD%>%<ger%>:гээ # ; ! "advcl: gerund
+гэ%<v%>%<TD%>%<prc%>:гэмэ # ; ! "amod: participle
+гэ%<v%>%<TD%>:гээшье # ; ! "root: dial/other
+гэлсэ%<v%>%<TD%>%<ger%>:гэлсээбди # ; ! "root: gerund
+гэршэлэ%<v%>%<TD%>%<ger%>:гэршэлээ # ; ! "root: gerund
+гэршэлэ%<v%>%<TD%>:гэршэлбэ # ; ! "root: verb,
+гээшэ%<v%>%<TD%>:гээшэбииб # ; ! "parataxis: verb,
+даба%<v%>%<TD%>%<neg%>%<ger%>:дабашагүй # ; ! "conj: gerund
+дүлэтэ%<v%>%<TD%>%<prc%>:дүлөөр # ; ! "root: participle
+дура%<v%>%<TD%>%<neg%>%<ger%>:дурагүй # ; ! "root: gerund,
+дура%<v%>%<TD%>%<prc%>:дуратайл # ; ! "root: participle
+дуугар%<v%>%<TD%>%<ger%>:дуугаргажа # ; ! "xcomp: gerund
+дуула%<v%>%<TD%>%<ger%>:дуулалдаа # ; ! "root: gerund
+дүүргэ%<v%>%<TD%>%<ger%>:дүүргээ # ; ! "parataxis: gerund
+дүүргэ%<v%>%<TD%>%<ger%>:дүүргээ # ; ! "root: gerund
+дүүргэ%<v%>%<TD%>%<ger%>:дүүргээд # ; ! "acl: gerund
+дүүргэ%<v%>%<TD%>%<ger%>:дүүргээд # ; ! "advcl: gerund
+дэлгэ%<v%>%<TD%>%<ger%>:дэлгээгдэнхэй # ; ! "root: gerund
+дэлгэ%<v%>%<TD%>%<ger%>:дэлгээд # ; ! "advcl: gerund
+ерэ%<v%>%<TD%>%<ger%>:ерэгты # ; ! "parataxis: gerund
+ерэ%<v%>%<TD%>%<ger%>:ерэмсээрээ # ; ! "root: gerund
+золгохо%<v%>%<TD%>:золгохобиб # ; ! "root: verb,
+зуга%<v%>%<TD%>%<ger%>:зугадаа # ; ! "root: gerund
+зууршал%<v%>%<TD%>%<prc%>:зууршалагдаһан # ; ! "root: participle
+зэдэлшэ%<v%>%<TD%>%<prc%>:зэдэлшэхэдэл # ; ! "root: participle
+мэдэхэ%<v%>%<TD%>%<ger%>:мэдээд # ; ! "advcl: gerund
+мэдэхэ%<v%>%<TD%>:мэдэхэбибди # ; ! "root: verb,
+мэхэлэгдэхэ%<v%>%<TD%>%<prc%>:мэхэлэгдээд # ; ! "xcomp: participle
+найруул%<v%>%<TD%>%<prc%>:найруулан # ; ! "xcomp: participle
+нэбтэрүүлэгдэхэ%<v%>%<TD%>%<prc%>:нэбтэрүүлэгдэн # ; ! "xcomp: participle
+нэрлэ%<v%>%<TD%>%<ger%>:нэрлээд # ; ! "root: gerund
+ололсохо%<v%>%<TD%>:ололсожо # ; ! "advcl: verb,
+оруулагдаша%<v%>%<TD%>:оруулагдана # ; ! "parataxis: verb,
+орхи%<v%>%<TD%>:орхеоб # ; ! "advcl: verb,
+орхи%<v%>%<TD%>:орхеоб # ; ! "root: verb,
+ошо%<v%>%<TD%>:ошобобди # ; ! "root: verb,
+сошоо%<v%>%<TD%>%<ger%>:соошоогоо # ; ! "root: gerund
+суглуулагдаха%<v%>%<TD%>%<prc%>:суглуулагдаһан # ; ! "acl: participle
+суглуулагдаха%<v%>%<TD%>:суглуулагдана # ; ! "root: verb,
+таби%<v%>%<TD%>:табибагүй # ; ! "root: verb,
+табигда%<v%>%<TD%>%<prc%>:табигдаһаан # ; ! "root: participle
+табилха%<v%>%<TD%>%<ger%>:табилсаа # ; ! "root: gerund
+табилха%<v%>%<TD%>%<ger%>:табяа # ; ! "root: gerund
+тайлбарил%<v%>%<TD%>%<ger%>:тайлбарилаатай # ; ! "parataxis: gerund
+тара%<v%>%<TD%>%<ger%>:тараашад # ; ! "root: gerund
+тара%<v%>%<TD%>%<ger%>:тараашадбди # ; ! "root: gerund
+тара%<v%>%<TD%>:тарааха # ; ! "root: verb,
+таһалха%<v%>%<TD%>:таһалхагүйн # ; ! "parataxis: verb,
+тогто%<v%>%<TD%>%<neg%>%<ger%>:тогтошонгүй # ; ! "advcl: gerund
+тодор%<v%>%<TD%>:тодорбо # ; ! "advcl: verb,
+торо%<v%>%<TD%>%<neg%>:тоороггүй # ; ! "parataxis: err/orth
+тү%<v%>%<TD%>:түхөөбэ # ; ! "root: verb,
+түбхинэ%<v%>%<TD%>%<prc%>:түбхинөө # ; ! "root: participle
+туда%<v%>%<TD%>%<ger%>:тудашоо # ; ! "root: gerund
+тула%<v%>%<TD%>%<ger%>:тулада # ; ! "root: gerund
+турша%<v%>%<TD%>%<ger%>:туршагты # ; ! "xcomp: gerund
+түрэ%<v%>%<TD%>%<ger%>:түрөө # ; ! "root: gerund
+тэбэрил%<v%>%<TD%>%<prc%>:тэбэрилдээд # ; ! "advcl: participle
+тэжээ%<v%>%<TD%>%<prc%>:тэжээгты # ; ! "parataxis: participle
+тэмдэглэ%<v%>%<TD%>%<ger%>:тэмдэглээ # ; ! "parataxis: gerund
+угта%<v%>%<TD%>%<ger%>:угтагдаа # ; ! "root: gerund
+үгы%<v%>%<TD%>:үгыбши # ; ! "root: verb,
+үгэ%<v%>%<TD%>:угаагыш # ; ! "xcomp: verb,
+үзэ%<v%>%<TD%>%<neg%>%<ger%>:үзөөгүй # ; ! "root: gerund
+үзэ%<v%>%<TD%>%<ger%>:үзэе # ; ! "root: gerund
+үзэдэ%<v%>%<TD%>%<ger%>:үзэлгэ # ; ! "root: gerund
+үзэдэ%<v%>%<TD%>%<prc%>:үзэдэгынь # ; ! "xcomp: participle
+үлэшэ%<v%>%<TD%>%<ger%>:үлөөд # ; ! "acl: gerund
+үлэшэ%<v%>%<TD%>%<prc%>:үлэшэһэн # ; ! "acl: participle
+үлэшэ%<v%>%<TD%>:үлэшэнэ # ; ! "root: verb,
+урба%<v%>%<TD%>%<neg%>%<prc%>:урбашагүй # ; ! "xcomp: participle
+үргэ%<v%>%<TD%>%<ger%>:үргөөш # ; ! "root: gerund
+үргэ%<v%>%<TD%>%<ger%>:үргэе # ; ! "parataxis: gerund
+үргэлжэл%<v%>%<TD%>%<ger%>:үргэлжэлүүлэгдээ # ; ! "root: gerund
+уряал%<v%>%<TD%>%<ger%>:уряа # ; ! "parataxis: gerund
+хаана%<v%>%<TD%>:хаанабииб # ; ! "root: verb,
+хабаада%<v%>%<TD%>%<prc%>:хабаадалсаһан # ; ! "advcl: participle
+хабаада%<v%>%<TD%>%<prc%>:хабаатай # ; ! "acl: participle
+хабаада%<v%>%<TD%>:хабаададагта # ; ! "root: verb,
+хам%<v%>%<TD%>%<prc%>:хамжан # ; ! "acl: participle
+һамбаашал%<v%>%<TD%>%<ger%>:һамбаашалан # ; ! "xcomp: gerund
+һана%<v%>%<TD%>%<ger%>:һананам # ; ! "root: gerund
+һана%<v%>%<TD%>%<ger%>:һанашадагби # ; ! "advcl: gerund
+ханга%<v%>%<TD%>%<neg%>%<ger%>:хангаһангүй # ; ! "root: gerund
+хара%<v%>%<TD%>%<prc%>:хараада # ; ! "xcomp: participle
+харуул%<v%>%<TD%>%<ger%>:харуулан # ; ! "root: gerund
+харуулагда%<v%>%<TD%>:харуулагданаа # ; ! "root: verb,
+холи%<v%>%<TD%>%<prc%>:холисолдоһон # ; ! "acl: participle
+һонирхо%<v%>%<TD%>:һонирхобобди # ; ! "parataxis: verb,
+хөөрэлдэ%<v%>%<TD%>%<ger%>:хөөрэлдөөд # ; ! "root: gerund
+хоро%<v%>%<TD%>%<neg%>%<ger%>:хорогүй # ; ! "acl: gerund,
+хубилга%<v%>%<TD%>%<neg%>%<ger%>:хубилгаагүйгөөр # ; ! "parataxis: gerund,
+хүгжэ%<v%>%<TD%>%<ger%>:хүгжэнги # ; ! "parataxis: gerund
+хүдэл%<v%>%<TD%>%<neg%>%<ger%>:хүдэлгөөгүйгөөр # ; ! "parataxis: gerund,
+хүдэл%<v%>%<TD%>%<prc%>:хүдэлгөөжэ # ; ! "xcomp: participle
+хужарла%<v%>%<TD%>%<prc%>:хужарлуулыт # ; ! "advcl: participle
+хүндэл%<v%>%<TD%>%<prc%>:хүндэлэн # ; ! "parataxis: participle
+һургажархи%<v%>%<TD%>%<ger%>:һургажархихань # ; ! "parataxis: gerund
+хүсэ%<v%>%<TD%>%<ger%>:хүсэлдэшэхэдэнь # ; ! "xcomp: gerund
+хүсэ%<v%>%<TD%>%<prc%>:хусуулаагүйгөөр # ; ! "xcomp: participle
+хушажархи%<v%>%<TD%>%<ger%>:хушажархёо # ; ! "root: gerund
+һэлгэ%<v%>%<TD%>%<ger%>:һэлгэлдэн # ; ! "root: gerund
+хэлсэ%<v%>%<TD%>%<neg%>%<ger%>:хэлсүүлхэгүйн # ; ! "ccomp: gerund,
+хэлсэ%<v%>%<TD%>%<neg%>%<ger%>:хэлсүүлээгүйгөөр # ; ! "parataxis: gerund,
+хэлсэ%<v%>%<TD%>%<ger%>:хэлсээн # ; ! "root: gerund
+хэлэ%<v%>%<TD%>%<ger%>:хэлэгдээ # ; ! "root: gerund
+хэлэ%<v%>%<TD%>:хэлэхэеэ # ; ! "xcomp: verb,
+һэргээ%<v%>%<TD%>%<prc%>:һэргээе # ; ! "xcomp: participle
+һэргээ%<v%>%<TD%>%<prc%>:һэргээжэ # ; ! "parataxis: participle
+хэрэглэ%<v%>%<TD%>%<prc%>:хэрэглэгдэхэеэ # ; ! "xcomp: participle
+шата%<v%>%<TD%>%<ger%>:шаташаһан # ; ! "parataxis: gerund
+шудал%<v%>%<TD%>%<ger%>:шудалагдан # ; ! "root: gerund
+шудал%<v%>%<TD%>%<prc%>:шудалагдажал # ; ! "root: participle
+шэглэ%<v%>%<TD%>%<ger%>:шэглэлтэй # ; ! "acl: gerund
+шэмэглэ%<v%>%<TD%>%<ger%>:шэмэглэжэрхёо # ; ! "root: gerund
+шэнжэл%<v%>%<TD%>%<ger%>:шэнжэлэгдээ # ; ! "root: gerund
+шэнжэл%<v%>%<TD%>%<prc%>:шэнжэлэн # ; ! "xcomp: participle
+шэнжэл%<v%>%<TD%>:шэнжэлбэб # ; ! "root: verb,
+эдлэ%<v%>%<TD%>:эдлээ # ; ! "root: verb,
+элсүүлэн%<v%>%<TD%>%<ger%>:элсүүлэнхэй # ; ! "root: gerund
+эмхидхэ%<v%>%<TD%>:эмхидхээ # ; ! "advcl: verb,
+энеэбхил%<v%>%<TD%>%<ger%>:энеэбхилэн # ; ! "advcl: gerund
+эрхил%<v%>%<TD%>%<ger%>:эрхилхэдэл # ; ! "root: gerund
+эхил%<v%>%<TD%>%<ger%>:эхилхэдээл # ; ! "ccomp: gerund
+яба%<v%>%<TD%>%<ger%>:ябахадаал # ; ! "root: gerund
+ябалса%<v%>%<TD%>:ябалсааб # ; ! "root: verb,
+
+! Random adjective stuff
+
+абаад%<adj%>:абаад # ;
+арадай%<adj%>:арадай # ;
+байһан%<adj%>:байһан # ;
+бодолтой%<adj%>:бодолтой # ;
+боломо%<adj%>:боломжотой # ;
+бороотой%<adj%>:бороотой # ;
+бэлигтэй%<adj%>:бэлигтэй # ;
+бэлшээритэй%<adj%>:бэлшээритэй # ;
+габьяата%<adj%>:габьяата # ;
+гайхаа%<adj%>:гайхаа # ;
+гэрэлтэ%<adj%>:гэрэлтэ # ;
+ерэһэн%<adj%>:ерэһэн # ;
+жаргалтай%<adj%>:жаргалтай # ;
+заншалта%<adj%>:заншалта # ;
+зохёоһон%<adj%>:зохёоһон # ;
+зугаатай%<adj%>:зугаатай # ;
+зүүн%<adj%>:зүүн # ;
+монгол%<adj%>:монгол # ;
+мүртэй%<adj%>:мүртэй # ;
+мэргэжэлтэй%<adj%>:мэргэжэлтэй # ;
+нүүдэлшэ%<adj%>:нүүдэлшэ # ;
+олон%<adj%>:оло # ;
+ондо%<adj%>:ондоо # ;
+өөрын%<adj%>:өөрын # ;
+ороһон%<adj%>:ороһон # ;
+оршоһон%<adj%>:оршоһон # ;
+сэдьхэлтэй%<adj%>:сэдьхэлтэй # ;
+табигдаһан%<adj%>:табигдаһан # ;
+таһалһан%<adj%>:таһалһан # ;
+түбхинэһэн%<adj%>:түбхинэһэн # ;
+туйлаһан%<adj%>:туйлаһан # ;
+түрүүн%<adj%>:түрүү # ;
+түүхэтэй%<adj%>:түүхэтэ # ;
+удхатай%<adj%>:удхатай # ;
+үйлэдбэрилһэн%<adj%>:үйлэдбэрилһэн # ;
+урдын%<adj%>:урдын # ;
+ухаатай%<adj%>:ухаатай # ;
+уялгата%<adj%>:уялгата # ;
+факультативна%<adj%>:факультативна # ;
+хабсагай%<adj%>:хабсагай # ;
+һайхан%<adj%>:һайханиие # ;
+һонирхолтой%<adj%>:һонирхолтой # ;
+һонирхоһон%<adj%>:һонирхоһон # ;
+хоолойтой%<adj%>:хоолойтой # ;
+хубиин%<adj%>:хубиин # ;
+хүндэтэй%<adj%>:хүндэтэй # ;
+хүндэтэй%<adj%>:хүндэтэ # ;
+һураһан%<adj%>:һураһан # ;
+хүсэнтэй%<adj%>:хүсэнтэй # ;
+хүсэтэй%<adj%>:хүсэтэй # ;
+хүүгэдэй%<adj%>:хүүгэдэй # ;
+һүүлэй%<adj%>:һүүлэй # ;
+хэблэлэй%<adj%>:хэблэлэй # ;
+хэлэтэй%<adj%>:хэлэтэй # ;
+шадабаритай%<adj%>:шадабаритай # ;
+шадалтай%<adj%>:шадалтай # ;
+эмхидхэгдэһэн%<adj%>:эмхидхэгдэһэн # ;
+юрэнхы%<adj%>:юрэнхылэгшэ # ;
+
+
 
 LEXICON Punctuation
 

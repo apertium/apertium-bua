@@ -21,7 +21,7 @@ _	_	imp	_	_	_	VerbForm=Fin|Mood=Imp	_
 _	_	ind	_	_	_	PronType=Ind	_
 _	_	itg	_	_	_	PronType=Itg	_
 _	_	iv	_	_	_	_	_
-_	_	m	_	_	_	Gender=Msc	_
+_	_	m	_	_	_	Gender=Masc	_
 _	_	mf	_	_	_	_	_
 _	_	neg	_	_	_	Polarity=Neg	_
 _	_	past	_	_	_	Tense=Past	_
@@ -32,7 +32,7 @@ _	_	impf	_	_	_	VerbForm=Fin|Tense=Past|Aspect=Imp	_
 _	_	prc	_	_	_	VerbForm=Coverb	_
 _	_	prog	_	_	_	Aspect=Prog	_
 _	_	px3sg	_	_	_	Number[psor]=Sing|Person[psor]=3	_
-_	_	qnt	_	_	_	_	_
+_	_	qnt	_	_	_	PronType=Ind	_
 _	_	ref	_	_	_	PronType=Ref	_
 _	_	refl	_	_	_	_	_
 _	_	subst	_	_	_	_	_
@@ -51,6 +51,7 @@ _	_	p3	_	_	_	Person=3	_
 _	_	pers	_	_	_	PronType=Prs	_
 _	_	dem	_	_	_	PronType=Dem	_
 _	abbr	_	_	_	NOUN	_	_
+_	adj	_	amod	_	ADJ	_	amod
 _	adj	_	_	_	ADJ	_	_
 _	adv	_	_	_	ADV	_	_
 _	cm	_	_	_	PUNCT	_	_
