@@ -1,0 +1,222 @@
+[47DEQpj8HBSa#0] -e @@@  а б а >:0 б {А}:а
+     ---------------------------------
+     Rule "Deletion of first of two {А}s after a vowel" fails:
+     #:0 а б а >:0 б HERE ---> {А}:а #:0 
+     
+     Rule "Some vowels delete before genitive {и}  fails:
+     #:0 а б а >:0 б HERE ---> {А}:а #:0 
+     
+     Rule "Vowels also delete before {U} of caus  fails:
+     #:0 а б а >:0 б HERE ---> {А}:а #:0 
+     
+     Rule "t to d thing" fails:
+     #:0 а б а >:0 б HERE ---> {А}:а #:0 
+     
+     Rule "{и} deletes after й and long vowels" fails:
+     #:0 а б а >:0 б HERE ---> {А}:а #:0 
+     
+     Rule "ь to i before suffix genitive" fails:
+     #:0 а б а >:0 б HERE ---> {А}:а #:0 
+     
+     FAIL: а б а >:0 б {А}:а REJECTED
+     
+     Test failed.
+
+-e @@@  П а р и с >:0 т {А}:а
+     ---------------------------------
+     Rule "Deletion of first of two {А}s after a vowel" fails:
+     #:0 П а р и с >:0 т HERE ---> {А}:а #:0 
+     
+     Rule "Some vowels delete before genitive {и}  fails:
+     #:0 П а р и с >:0 т HERE ---> {А}:а #:0 
+     
+     Rule "Vowels also delete before {U} of caus  fails:
+     #:0 П а р и с >:0 т HERE ---> {А}:а #:0 
+     
+     Rule "t to d thing" fails:
+     #:0 П а р и с >:0 т HERE ---> {А}:а #:0 
+     
+     Rule "{и} deletes after й and long vowels" fails:
+     #:0 П а р и с >:0 т HERE ---> {А}:а #:0 
+     
+     Rule "ь to i before suffix genitive" fails:
+     #:0 П а р и с >:0 т HERE ---> {А}:а #:0 
+     
+     FAIL: П а р и с >:0 т {А}:а REJECTED
+     
+     Test failed.
+
+-e @@@  х у р г у у л и >:0 д {А}:а
+     ---------------------------------
+     Rule "Deletion of first of two {А}s after a vowel" fails:
+     #:0 х у р г у у л и >:0 д HERE ---> {А}:а #:0 
+     
+     Rule "Some vowels delete before genitive {и}  fails:
+     #:0 х у р г у у л и >:0 д HERE ---> {А}:а #:0 
+     
+     Rule "Vowels also delete before {U} of caus  fails:
+     #:0 х у р г у у л и >:0 д HERE ---> {А}:а #:0 
+     
+     Rule "t to d thing" fails:
+     #:0 х у р г у у л и >:0 д HERE ---> {А}:а #:0 
+     
+     Rule "{и} deletes after й and long vowels" fails:
+     #:0 х у р г у у л и >:0 д HERE ---> {А}:а #:0 
+     
+     Rule "ь to i before suffix genitive" fails:
+     #:0 х у р г у у л и >:0 д HERE ---> {А}:а #:0 
+     
+     FAIL: х у р г у у л и >:0 д {А}:а REJECTED
+     
+     Test failed.
+
+-e @@@  х ө ө р ө ө н >:0 {A}:э й
+     ---------------------------------
+     Test passed.
+
+-e @@@  ю у {ь}:0 >:0 {г}:г {А}:э {А}:э
+     ---------------------------------
+     Rule "Deletion of first of two {А}s after a vowel" fails:
+     #:0 ю у {ь}:0 >:0 {г}:г HERE ---> {А}:э {А}:э #:0 
+     
+     Rule "Some vowels delete before genitive {и}  fails:
+     #:0 ю у {ь}:0 >:0 {г}:г HERE ---> {А}:э {А}:э #:0 
+     
+     Rule "Vowels also delete before {U} of caus  fails:
+     #:0 ю у {ь}:0 >:0 {г}:г HERE ---> {А}:э {А}:э #:0 
+     
+     Rule "t to d thing" fails:
+     #:0 ю у {ь}:0 >:0 {г}:г HERE ---> {А}:э {А}:э #:0 
+     
+     Rule "{и} deletes after й and long vowels" fails:
+     #:0 ю у {ь}:0 >:0 {г}:г HERE ---> {А}:э {А}:э #:0 
+     
+     Rule "ь to i before suffix genitive" fails:
+     #:0 ю у {ь}:0 >:0 {г}:г HERE ---> {А}:э {А}:э #:0 
+     
+     FAIL: ю у {ь}:0 >:0 {г}:г {А}:э {А}:э REJECTED
+     
+     Test failed.
+
+-e @@@  м а ш и н а >:0 {г}:0 {А}:0 {А}:а
+     ---------------------------------
+     Rule "Deletion of first of two {А}s after a vowel" fails:
+     #:0 м а ш и н а >:0 {г}:0 HERE ---> {А}:0 {А}:а #:0 
+     
+     Rule "Some vowels delete before genitive {и}  fails:
+     #:0 м а ш и н а >:0 {г}:0 HERE ---> {А}:0 {А}:а #:0 
+     
+     Rule "Vowels also delete before {U} of caus  fails:
+     #:0 м а ш и н а >:0 {г}:0 HERE ---> {А}:0 {А}:а #:0 
+     
+     Rule "t to d thing" fails:
+     #:0 м а ш и н а >:0 {г}:0 HERE ---> {А}:0 {А}:а #:0 
+     
+     Rule "{и} deletes after й and long vowels" fails:
+     #:0 м а ш и н а >:0 {г}:0 HERE ---> {А}:0 {А}:а #:0 
+     
+     Rule "ь to i before suffix genitive" fails:
+     #:0 м а ш и н а >:0 {г}:0 HERE ---> {А}:0 {А}:а #:0 
+     
+     FAIL: м а ш и н а >:0 {г}:0 {А}:0 {А}:а REJECTED
+     
+     Test failed.
+
+-e @@@  ү б г э >:0 {г}:0 {А}:е {А}:э
+     ---------------------------------
+     Rule "Deletion of first of two {А}s after a vowel" fails:
+     #:0 ү б г э >:0 {г}:0 HERE ---> {А}:е {А}:э #:0 
+     
+     Rule "Some vowels delete before genitive {и}  fails:
+     #:0 ү б г э >:0 {г}:0 HERE ---> {А}:е {А}:э #:0 
+     
+     Rule "Vowels also delete before {U} of caus  fails:
+     #:0 ү б г э >:0 {г}:0 HERE ---> {А}:е {А}:э #:0 
+     
+     Rule "t to d thing" fails:
+     #:0 ү б г э >:0 {г}:0 HERE ---> {А}:е {А}:э #:0 
+     
+     Rule "{и} deletes after й and long vowels" fails:
+     #:0 ү б г э >:0 {г}:0 HERE ---> {А}:е {А}:э #:0 
+     
+     Rule "ь to i before suffix genitive" fails:
+     #:0 ү б г э >:0 {г}:0 HERE ---> {А}:е {А}:э #:0 
+     
+     FAIL: ү б г э >:0 {г}:0 {А}:е {А}:э REJECTED
+     
+     Test failed.
+
+-e @@@  ү н э н >:0 {г}:0 {А}:э {А}:э
+     ---------------------------------
+     Rule "Deletion of first of two {А}s after a vowel" fails:
+     #:0 ү н э н >:0 {г}:0 HERE ---> {А}:э {А}:э #:0 
+     
+     Rule "Some vowels delete before genitive {и}  fails:
+     #:0 ү н э н >:0 {г}:0 HERE ---> {А}:э {А}:э #:0 
+     
+     Rule "Vowels also delete before {U} of caus  fails:
+     #:0 ү н э н >:0 {г}:0 HERE ---> {А}:э {А}:э #:0 
+     
+     Rule "t to d thing" fails:
+     #:0 ү н э н >:0 {г}:0 HERE ---> {А}:э {А}:э #:0 
+     
+     Rule "{и} deletes after й and long vowels" fails:
+     #:0 ү н э н >:0 {г}:0 HERE ---> {А}:э {А}:э #:0 
+     
+     Rule "ь to i before suffix genitive" fails:
+     #:0 ү н э н >:0 {г}:0 HERE ---> {А}:э {А}:э #:0 
+     
+     FAIL: ү н э н >:0 {г}:0 {А}:э {А}:э REJECTED
+     
+     Test failed.
+
+-e @@@  х о р ё о >:0 {г}:г {А}:о {А}:о
+     ---------------------------------
+     Rule "Deletion of first of two {А}s after a vowel" fails:
+     #:0 х о р ё о >:0 {г}:г HERE ---> {А}:о {А}:о #:0 
+     
+     Rule "Some vowels delete before genitive {и}  fails:
+     #:0 х о р ё о >:0 {г}:г HERE ---> {А}:о {А}:о #:0 
+     
+     Rule "Vowels also delete before {U} of caus  fails:
+     #:0 х о р ё о >:0 {г}:г HERE ---> {А}:о {А}:о #:0 
+     
+     Rule "t to d thing" fails:
+     #:0 х о р ё о >:0 {г}:г HERE ---> {А}:о {А}:о #:0 
+     
+     Rule "{и} deletes after й and long vowels" fails:
+     #:0 х о р ё о >:0 {г}:г HERE ---> {А}:о {А}:о #:0 
+     
+     Rule "ь to i before suffix genitive" fails:
+     #:0 х о р ё о >:0 {г}:г HERE ---> {А}:о {А}:о #:0 
+     
+     FAIL: х о р ё о >:0 {г}:г {А}:о {А}:о REJECTED
+     
+     Test failed.
+
+-e @@@  ж о р о о >:0 {г}:г {А}:о й
+     ---------------------------------
+     Rule "Deletion of first of two {А}s after a vowel" fails:
+     #:0 ж о р о о >:0 {г}:г HERE ---> {А}:о й #:0 
+     
+     Rule "Some vowels delete before genitive {и}  fails:
+     #:0 ж о р о о >:0 {г}:г HERE ---> {А}:о й #:0 
+     
+     Rule "Vowels also delete before {U} of caus  fails:
+     #:0 ж о р о о >:0 {г}:г HERE ---> {А}:о й #:0 
+     
+     Rule "t to d thing" fails:
+     #:0 ж о р о о >:0 {г}:г HERE ---> {А}:о й #:0 
+     
+     Rule "{и} deletes after й and long vowels" fails:
+     #:0 ж о р о о >:0 {г}:г HERE ---> {А}:о й #:0 
+     
+     Rule "ь to i before suffix genitive" fails:
+     #:0 ж о р о о >:0 {г}:г HERE ---> {А}:о й #:0 
+     
+     FAIL: ж о р о о >:0 {г}:г {А}:о й REJECTED
+     
+     Test failed.
+
+1/10 passed.
+[/47DEQpj8HBSa]

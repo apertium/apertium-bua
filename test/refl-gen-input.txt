@@ -1,0 +1,8 @@
+# [twol] after consonant
+^үнэн<n><nom><refl>$
+# [twol] after short vowels not э и
+^машина<n><nom><refl>$
+# [twol] after э
+^үбгэ<n><nom><refl>$
+# [twol] after long vowel
+^хорёо<n><nom><refl>$

@@ -1,0 +1,74 @@
+[-y2g2yzhKei0#0] ^мориной/морин<n><gen>$
+[/-y2g2yzhKei0]
+[2x4HzTfIZkrG#0] ^хурданай/хурдан<n><gen>/хурдан<n><nom><px1pl>$
+[/2x4HzTfIZkrG]
+[656r-KoBGJqq#0] ^үһэнэй/үһэн<n><gen>$
+[/656r-KoBGJqq]
+[6dYUpwzFVdvK#0] ^киногой/*киногой$
+[/6dYUpwzFVdvK]
+[E0PRCKdrkdte#0] ^дугын/*дугын$
+[/E0PRCKdrkdte]
+[FfebeBtlruev#0] ^вазын/ваза<n><gen>$
+[/FfebeBtlruev]
+[G65szoIwqjpD#0] ^һарын/һара<n><gen>$
+[/G65szoIwqjpD]
+[JNG7yY9n3hng#0] ^һанаанай/һанаан<n><gen>/һанаа<n><nom><px1pl>/һанаан<n><nom><px1pl>$
+[/JNG7yY9n3hng]
+[Jqzfz819rPPE#0] ^һагбын/*һагбын$
+[/Jqzfz819rPPE]
+[LytCA-qPnBWd#0] ^ан/ан<n><nom>$
+[/LytCA-qPnBWd]
+[N8Zav7MIMBb2#0] ^хулгайшай/*хулгайшай$
+[/N8Zav7MIMBb2]
+[PYtStVTN2m88#0] ^жороогой/жороо<n><gen>$
+[/PYtStVTN2m88]
+[PZj2KxieM0w_#0] ^бэшэгэй/бэшэг<n><gen>$
+[/PZj2KxieM0w_]
+[R5kKPlmpEGA5#0] ^хотын/хото<n><gen>/хотын<adj>$
+[/R5kKPlmpEGA5]
+[RMvFGJ_OoRRh#0] ^ахын/аха<n><gen>$
+[/RMvFGJ_OoRRh]
+[SQzIdhroh7-H#0] ^уулын/уула<n><gen>$
+[/SQzIdhroh7-H]
+[SrqLrvKDbJ-i#0] ^заанай/заан<n><gen>$
+[/SrqLrvKDbJ-i]
+[T2sZBqtQ_2uY#0] ^ангай/ан<n><gen>$
+[/T2sZBqtQ_2uY]
+[U1Ve0WEBC9ea#0] ^номой/ном<n><gen>$
+[/U1Ve0WEBC9ea]
+[V1tXv6WAnv0j#0] ^жэмэсэй/жэмэс<n><gen>$
+[/V1tXv6WAnv0j]
+[XE5WzurI8Plm#0] ^эжын/эжын<n><nom>$
+[/XE5WzurI8Plm]
+[Y81cBAfWBFE_#0] ^хүнэй/хүн<n><gen>/хүн<n><gen>/хүнэй<n><nom>$
+[/Y81cBAfWBFE_]
+[_NsviJfnBhp5#0] ^шонхын/шонхо<n><gen>$
+[/_NsviJfnBhp5]
+[_ZPJQVT9mJ0Q#0] ^һургуулиин/һургуули<n><gen>$
+[/_ZPJQVT9mJ0Q]
+[_jigsm4RJP2J#0] ^хурдай/*хурдай$
+[/_jigsm4RJP2J]
+[cEGUCCG-p2_5#0] ^наһай/*наһай$
+[/cEGUCCG-p2_5]
+[dJBfDBmjDMVR#0] ^наһанай/наһан<n><gen>/наһан<n><nom><px1pl>$
+[/dJBfDBmjDMVR]
+[j_mSjjNJT7ic#0] ^газарай/газар<n><gen>$
+[/j_mSjjNJT7ic]
+[jkv8Yam1krDQ#0] ^нюдэнэй/нюдэн<n><gen>$
+[/jkv8Yam1krDQ]
+[nP4iA_uY083f#0] ^бүлын/бүлэ<n><gen>$
+[/nP4iA_uY083f]
+[nWUS-fwymrNK#0] ^һалхинай/һалхин<n><gen>$
+[/nWUS-fwymrNK]
+[nv-hoSyEjkyZ#0] ^хулгайшанай/хулгайшан<n><gen>/хулгайшан<n><nom><px1pl>$
+[/nv-hoSyEjkyZ]
+[p-vHLcdQr-CZ#0] ^нохойн/*нохойн$
+[/p-vHLcdQr-CZ]
+[pAoGhqqmC_C0#0] ^курсын/*курсын$
+[/pAoGhqqmC_C0]
+[rzewvR-zCeIk#0] ^үнэнэй/үнэн<n><gen>/үнэн<adj><subst><gen>$
+[/rzewvR-zCeIk]
+[tFgu-qNksYmW#0] ^жороо/жороо<n><nom>$
+[/tFgu-qNksYmW]
+[zYxMTuxPMB4k#0] ^кексын/кексэ<n><gen>$
+[/zYxMTuxPMB4k]

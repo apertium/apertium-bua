@@ -1,0 +1,30 @@
+# plain дА
+^аха<n><dat>$
+^һургуули<n><dat>$
+^ном<n><dat>$
+^нохой<n><dat>$
+^жороо<n><dat>$
+^морин<n><dat>$
+^һанаан<n><dat>$
+^ан<n><dat>$
+# vowel stem -дA
+^үе<n><dat>$
+# optional н then дА
+^наһан<n><dat>$
+^наһан<n><dat>$
+^хурдан<n><dat>$
+^хурдан<n><dat>$
+^хэмжээн<n><dat>$
+^хэмжээн<n><dat>$
+^хулгайшан<n><dat>$
+^хулгайшан<n><dat>$
+# stem ending in -р then тA
+^газарта<n><dat>$
+# plurals plus тА
+^аха<n><pl><dat>$
+^һургуули<n><pl><dat>$
+^ном<n><pl><dat>$
+^нохой<n><pl><dat>$
+^морин<n><pl><dat>$
+^жороо<n><pl><dat>$
+^ан<n><pl><dat>$

@@ -1,0 +1,44 @@
+# -{г}{A}й genitive, consonant-final
+^ном<n><gen>$
+^морин<n><gen>$
+^һанаан<n><gen>$
+# -{г}{A}й genitive, vowel-final
+^жороо<n><nom>$
+^жороо<n><gen>$
+# -{г}{A}й genitive, ң-final
+^ан<n><nom>$
+^ан<n><gen>$
+# -ин genitive
+^аха<n><gen>$
+^уула<n><gen>$
+^һургуули<n><gen>$
+# -ин genitive, diphthong final
+^нохой<n><gen>$
+# stems with {н}
+^наһан<n><gen>$
+^наһан<n><gen>$
+^хурдан<n><gen>$
+^хурдан<n><gen>$
+^хулгайшан<n><gen>$
+^хулгайшан<n><gen>$
+# Miscellaneous genitive
+^курс<n><gen>$
+^шонхо<n><gen>$
+^кино<n><gen>$
+^кэксэ<n><gen>$
+^дугы<n><gen>$
+^эжы<n><gen>$
+^үнэн<n><gen>$
+^үһэн<n><gen>$
+^хүн<n><gen>$
+^хото<n><gen>$
+^һагба<n><gen>$
+^һалхин<n><gen>$
+^һара<n><gen>$
+^заан<n><gen>$
+^жэмэс<n><gen>$
+^нюдэн<n><gen>$
+^газар<n><gen>$
+^бэшэг<n><gen>$
+^бүлэ<n><gen>$
+^ваза<n><gen>$

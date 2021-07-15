@@ -1,0 +1,212 @@
+[-y2g2yzhKei0#0] ^мориной/морин<n><gen>$
+[/-y2g2yzhKei0]
+[21jE1EM41bUv#0] ^нохойнуудые/нохой<n><pl><acc>$
+[/21jE1EM41bUv]
+[2Mf2PP0O5MGf#0] ^нохойе/нохой<n><acc>$
+[/2Mf2PP0O5MGf]
+[3W5alRauKY_T#0] ^аханарай/аха<n><pl><gen>$
+[/3W5alRauKY_T]
+[54KlodeW-u4n#0] ^ахаар/аха<n><ins>$
+[/54KlodeW-u4n]
+[6DeqBk0w9SO6#0] ^ахаһаа/аха<n><abl>$
+[/6DeqBk0w9SO6]
+[6HLNzTm_inme#0] ^һанаанда/һанаан<n><dat>$
+[/6HLNzTm_inme]
+[6U9Wj7v5nznl#0] ^морёор/*морёор$
+[/6U9Wj7v5nznl]
+[6pzBXJfK6YOK#0] ^номые/ном<n><acc>/ном<n><acc><refl>$
+[/6pzBXJfK6YOK]
+[6w9JcaSjnUCV#0] ^жороонуудаар/жороо<n><pl><ins>$
+[/6w9JcaSjnUCV]
+[7ANOXt0B7ybS#0] ^жорооһоо/жороо<n><abl>$
+[/7ANOXt0B7ybS]
+[7uE9_zF7waOZ#0] ^нохойһоо/нохой<n><abl>$
+[/7uE9_zF7waOZ]
+[8LARZ_rIuSjS#0] ^жороонуудһаа/жороо<n><pl><abl>$
+[/8LARZ_rIuSjS]
+[8obqHU-FViSX#0] ^ангуудта/ан<n><pl><dat>$
+[/8obqHU-FViSX]
+[9gbtX1glS-76#0] ^аханарһаа/аха<n><pl><abl>$
+[/9gbtX1glS-76]
+[AfxqoYOlXnpK#0] ^номтой/ном<n><com>$
+[/AfxqoYOlXnpK]
+[BggziIINuojl#0] ^һургуулинуудые/һургуули<n><pl><acc>$
+[/BggziIINuojl]
+[BkUPlBprtcvU#0] ^мориндо/морин<n><dat>$
+[/BkUPlBprtcvU]
+[CGOkYg3Mq4fd#0] ^нохойнуудһаа/нохой<n><pl><abl>$
+[/CGOkYg3Mq4fd]
+[Cbe7r2SrYmRy#0] ^моридоор/морин<n><pl><ins>$
+[/Cbe7r2SrYmRy]
+[CegqoIYHeVTx#0] ^моридһоо/морин<n><pl><abl>$
+[/CegqoIYHeVTx]
+[ClJ0RJEuaM64#0] ^аханарта/аха<n><pl><dat>$
+[/ClJ0RJEuaM64]
+[CqRFqjzXzLUU#0] ^нохойнууд/нохой<n><pl><nom>$
+[/CqRFqjzXzLUU]
+[D8kcAvx17CRG#0] ^һургуулинуудта/һургуули<n><pl><dat>$
+[/D8kcAvx17CRG]
+[DV3-Eom0y-bq#0] ^ангаар/*ангаар$
+[/DV3-Eom0y-bq]
+[EwO0CqrHolvj#0] ^нохойнуудта/нохой<n><pl><dat>$
+[/EwO0CqrHolvj]
+[FTqFMXzFPCx0#0] ^һургуулинуудһаа/һургуули<n><pl><abl>$
+[/FTqFMXzFPCx0]
+[FfejFBhrDjVN#0] ^һанаае/*һанаае$
+[/FfejFBhrDjVN]
+[FpHtpEhIWTuE#0] ^һанаанһаа/һанаан<n><abl>$
+[/FpHtpEhIWTuE]
+[GWK40XpMy-ZA#0] ^номуудаар/ном<n><pl><ins>$
+[/GWK40XpMy-ZA]
+[Gtw6zMluBUHI#0] ^жороодо/жороо<n><dat>$
+[/Gtw6zMluBUHI]
+[GyvYYVqZ_Svl#0] ^моринтой/морин<n><com>$
+[/GyvYYVqZ_Svl]
+[HHsEMW5ZV-Al#0] ^морин/морин<n><nom>$
+[/HHsEMW5ZV-Al]
+[HUx5AuJd9N_X#0] ^моридой/морин<n><pl><gen>$
+[/HUx5AuJd9N_X]
+[I0f-D4TYof6C#0] ^моридтой/морин<n><pl><com>$
+[/I0f-D4TYof6C]
+[IKUX1hw2r2gF#0] ^жороогоор/*жороогоор$
+[/IKUX1hw2r2gF]
+[INxH5thfBj4j#0] ^ангуудтай/ан<n><pl><com>$
+[/INxH5thfBj4j]
+[JNG7yY9n3hng#0] ^һанаанай/һанаан<n><gen>/һанаа<n><nom><px1pl>/һанаан<n><nom><px1pl>$
+[/JNG7yY9n3hng]
+[Jn-D3Ex922wr#0] ^нохойгоор/*нохойгоор$
+[/Jn-D3Ex922wr]
+[K6iyYhPLeXZo#0] ^антай/ан<n><com>$
+[/K6iyYhPLeXZo]
+[K7-uqieqTbSc#0] ^жороонууд/жороо<n><pl><nom>$
+[/K7-uqieqTbSc]
+[Lqoei82uzRuz#0] ^нохойнуудай/нохой<n><pl><gen>$
+[/Lqoei82uzRuz]
+[LytCA-qPnBWd#0] ^ан/ан<n><nom>$
+[/LytCA-qPnBWd]
+[NSLVPKrWgUMY#0] ^анда/ан<n><dat>$
+[/NSLVPKrWgUMY]
+[NZE5KWdWk73-#0] ^һургуулинуудаар/һургуули<n><pl><ins>$
+[/NZE5KWdWk73-]
+[NlYfdqbJ1rpP#0] ^ангуудые/ан<n><pl><acc>$
+[/NlYfdqbJ1rpP]
+[O4zqeROpk_GH#0] ^аха/аха<n><nom>$
+[/O4zqeROpk_GH]
+[O863AauNu1TE#0] ^ахада/аха<n><dat>$
+[/O863AauNu1TE]
+[OYC3mz0fZkVW#0] ^мориие/морин<n><acc>$
+[/OYC3mz0fZkVW]
+[P1hg9OzoPu0f#0] ^аханар/аха<n><pl><nom>$
+[/P1hg9OzoPu0f]
+[PYtStVTN2m88#0] ^жороогой/жороо<n><gen>$
+[/PYtStVTN2m88]
+[QUJnYN3SrSRX#0] ^нохой/нохой<n><nom>$
+[/QUJnYN3SrSRX]
+[QY0xRb5zM6TC#0] ^номоор/ном<n><ins>$
+[/QY0xRb5zM6TC]
+[RMvFGJ_OoRRh#0] ^ахын/аха<n><gen>$
+[/RMvFGJ_OoRRh]
+[RdA8m1SMQAaJ#0] ^номуудтай/ном<n><pl><com>$
+[/RdA8m1SMQAaJ]
+[Sot3u9r11AWi#0] ^морид/морин<n><pl><nom>$
+[/Sot3u9r11AWi]
+[T2sZBqtQ_2uY#0] ^ангай/ан<n><gen>$
+[/T2sZBqtQ_2uY]
+[Tbco5FYcUKyF#0] ^һургуулинуудай/һургуули<n><pl><gen>$
+[/Tbco5FYcUKyF]
+[Tzxuo98Ayg5j#0] ^номуудые/ном<n><pl><acc>$
+[/Tzxuo98Ayg5j]
+[U1Ve0WEBC9ea#0] ^номой/ном<n><gen>$
+[/U1Ve0WEBC9ea]
+[UM_CZbdHkGdl#0] ^ангуудаар/ан<n><pl><ins>$
+[/UM_CZbdHkGdl]
+[VNejT1fyO8FL#0] ^ангһаа/*ангһаа$
+[/VNejT1fyO8FL]
+[VRpLCus5zIoY#0] ^нохойдо/нохой<n><dat>$
+[/VRpLCus5zIoY]
+[Vkzic_dr8Lfz#0] ^һанаагаар/*һанаагаар$
+[/Vkzic_dr8Lfz]
+[WsDPzubrbVPN#0] ^һургуулида/һургуули<n><dat>$
+[/WsDPzubrbVPN]
+[Y7CfHW-1MJwv#0] ^аханартай/аха<n><pl><com>$
+[/Y7CfHW-1MJwv]
+[YYvt2YeBVI-u#0] ^номуудһаа/ном<n><pl><abl>$
+[/YYvt2YeBVI-u]
+[YxCOQrKlhCxW#0] ^һанаантай/һанаан<n><com>$
+[/YxCOQrKlhCxW]
+[ZyCR0kaPJI-k#0] ^нохойнуудтай/нохой<n><pl><com>$
+[/ZyCR0kaPJI-k]
+[_VhEmFR6QrWx#0] ^номууд/ном<n><pl><nom>$
+[/_VhEmFR6QrWx]
+[_ZPJQVT9mJ0Q#0] ^һургуулиин/һургуули<n><gen>$
+[/_ZPJQVT9mJ0Q]
+[alK3UEdVJjeG#0] ^жороонуудта/жороо<n><pl><dat>$
+[/alK3UEdVJjeG]
+[b3ezROY3Yvmr#0] ^ахые/аха<n><acc>$
+[/b3ezROY3Yvmr]
+[bVNRpS-jQl90#0] ^һургуули/һургуули<n><nom>$
+[/bVNRpS-jQl90]
+[bqVOAcnM5D03#0] ^һургууляар/*һургууляар$
+[/bqVOAcnM5D03]
+[cNZgyATme0v7#0] ^һургуулиһаа/һургуули<n><abl>$
+[/cNZgyATme0v7]
+[d2awe5uOqZhg#0] ^жороонуудай/жороо<n><pl><gen>$
+[/d2awe5uOqZhg]
+[dAgq3mK0cqeX#0] ^моридые/морин<n><pl><acc>$
+[/dAgq3mK0cqeX]
+[dErbdhGwRGCf#0] ^нохойнуудаар/нохой<n><pl><ins>$
+[/dErbdhGwRGCf]
+[i6Fed8PDpIMd#0] ^ангые/*ангые$
+[/i6Fed8PDpIMd]
+[jWLQa4V_EfS0#0] ^моритой/морин<n><com>$
+[/jWLQa4V_EfS0]
+[k1ovfU7sZGkJ#0] ^номдо/ном<n><dat>$
+[/k1ovfU7sZGkJ]
+[kFJcA5k_thtS#0] ^моринһоо/морин<n><abl>$
+[/kFJcA5k_thtS]
+[krxfZON_gydH#0] ^жороотой/жороо<n><com>$
+[/krxfZON_gydH]
+[lMlw1iLmI2KB#0] ^жороонуудые/жороо<n><pl><acc>$
+[/lMlw1iLmI2KB]
+[lvk7hHw97q47#0] ^моридто/морин<n><pl><dat>$
+[/lvk7hHw97q47]
+[m-vZ0esDCvdu#0] ^ном/ном<n><nom>$
+[/m-vZ0esDCvdu]
+[mzDir07K5uXr#0] ^жороое/*жороое$
+[/mzDir07K5uXr]
+[nCidmI5_e7OW#0] ^жороонуудтай/жороо<n><pl><com>$
+[/nCidmI5_e7OW]
+[oEoWLjFh1bX0#0] ^ангуудай/ан<n><pl><gen>$
+[/oEoWLjFh1bX0]
+[oMNGTO9J7VXl#0] ^номуудай/ном<n><pl><gen>$
+[/oMNGTO9J7VXl]
+[p-vHLcdQr-CZ#0] ^нохойн/*нохойн$
+[/p-vHLcdQr-CZ]
+[ql10ojfs-Gok#0] ^һанаан/һанаан<n><nom>$
+[/ql10ojfs-Gok]
+[quaR2Hb_YxQo#0] ^номһоо/ном<n><abl>$
+[/quaR2Hb_YxQo]
+[r4_HsExbd6ou#0] ^һургуулинуудтай/һургуули<n><pl><com>$
+[/r4_HsExbd6ou]
+[rSnX9AWhYCRB#0] ^нохойтой/нохой<n><com>$
+[/rSnX9AWhYCRB]
+[s66sJJyuWa6B#0] ^ахатай/аха<n><com>$
+[/s66sJJyuWa6B]
+[s6KmWD8xaTz8#0] ^аханараар/аха<n><pl><ins>$
+[/s6KmWD8xaTz8]
+[tFgu-qNksYmW#0] ^жороо/жороо<n><nom>$
+[/tFgu-qNksYmW]
+[vGHr7c8idvxZ#0] ^ангууд/ан<n><pl><nom>$
+[/vGHr7c8idvxZ]
+[wVsMgAZIOhnz#0] ^һургуулиие/һургуули<n><acc>$
+[/wVsMgAZIOhnz]
+[yUEel_V9TyDS#0] ^аханарые/аха<n><pl><acc>$
+[/yUEel_V9TyDS]
+[yeSj4K39vqv3#0] ^һургуулитай/һургуули<n><com>$
+[/yeSj4K39vqv3]
+[zIwcO_8h7Qa4#0] ^номуудта/ном<n><pl><dat>$
+[/zIwcO_8h7Qa4]
+[zMAO8CtBI_eB#0] ^ангуудһаа/ан<n><pl><abl>$
+[/zMAO8CtBI_eB]
+[zwQvYMJwjHQy#0] ^һургуулинууд/һургуули<n><pl><nom>$
+[/zwQvYMJwjHQy]

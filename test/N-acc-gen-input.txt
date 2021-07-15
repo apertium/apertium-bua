@@ -1,0 +1,14 @@
+# nouns ending in {н}
+^наһан<n><acc>$
+^хурдан<n><acc>$
+^хэмжээн<n><acc>$
+# regular nouns
+^аха<n><acc>$
+^һургуули<n><acc>$
+^ном<n><acc>$
+^нохой<n><acc>$
+^жороо<n><acc>$
+^морин<n><acc>$
+^һанаан<n><acc>$
+# noun with {ң}
+^ан<n><acc>$

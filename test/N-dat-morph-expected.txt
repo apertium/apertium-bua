@@ -1,0 +1,50 @@
+[3zCBtoEzXYhz#0] ^наһанда/наһан<n><dat>$
+[/3zCBtoEzXYhz]
+[4Wtjyo8J_G4p#0] ^хурданда/хурдан<n><dat>$
+[/4Wtjyo8J_G4p]
+[6HLNzTm_inme#0] ^һанаанда/һанаан<n><dat>$
+[/6HLNzTm_inme]
+[8obqHU-FViSX#0] ^ангуудта/ан<n><pl><dat>$
+[/8obqHU-FViSX]
+[BkUPlBprtcvU#0] ^мориндо/морин<n><dat>$
+[/BkUPlBprtcvU]
+[ClJ0RJEuaM64#0] ^аханарта/аха<n><pl><dat>$
+[/ClJ0RJEuaM64]
+[D8kcAvx17CRG#0] ^һургуулинуудта/һургуули<n><pl><dat>$
+[/D8kcAvx17CRG]
+[EeB9g_rMHOyD#0] ^хэмжээдэ/хэмжээ<n><dat>/хэмжээн<n><dat>$
+[/EeB9g_rMHOyD]
+[EwO0CqrHolvj#0] ^нохойнуудта/нохой<n><pl><dat>$
+[/EwO0CqrHolvj]
+[Gtw6zMluBUHI#0] ^жороодо/жороо<n><dat>$
+[/Gtw6zMluBUHI]
+[NSLVPKrWgUMY#0] ^анда/ан<n><dat>$
+[/NSLVPKrWgUMY]
+[O863AauNu1TE#0] ^ахада/аха<n><dat>$
+[/O863AauNu1TE]
+[Pa5csFH81g1o#0] ^хурдада/хурдан<n><dat>$
+[/Pa5csFH81g1o]
+[Ums4FuLwbTn8#0] ^үедэ/үе<n><dat>$
+[/Ums4FuLwbTn8]
+[VRpLCus5zIoY#0] ^нохойдо/нохой<n><dat>$
+[/VRpLCus5zIoY]
+[WsDPzubrbVPN#0] ^һургуулида/һургуули<n><dat>$
+[/WsDPzubrbVPN]
+[_kJ-f-GMMSTL#0] ^газарта/газар<n><dat>$
+[/_kJ-f-GMMSTL]
+[alK3UEdVJjeG#0] ^жороонуудта/жороо<n><pl><dat>$
+[/alK3UEdVJjeG]
+[ghuw1_CwyES5#0] ^наһада/наһан<n><dat>$
+[/ghuw1_CwyES5]
+[irmGqX0tCVSJ#0] ^хулгайшада/хулгайшан<n><dat>$
+[/irmGqX0tCVSJ]
+[k1ovfU7sZGkJ#0] ^номдо/ном<n><dat>$
+[/k1ovfU7sZGkJ]
+[lvk7hHw97q47#0] ^моридто/морин<n><pl><dat>$
+[/lvk7hHw97q47]
+[taruP2y8a5PX#0] ^хулгайшанда/хулгайшан<n><dat>$
+[/taruP2y8a5PX]
+[uO_Wo2E7i1AQ#0] ^хэмжээндэ/хэмжээн<n><dat>$
+[/uO_Wo2E7i1AQ]
+[zIwcO_8h7Qa4#0] ^номуудта/ном<n><pl><dat>$
+[/zIwcO_8h7Qa4]

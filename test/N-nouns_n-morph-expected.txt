@@ -1,0 +1,90 @@
+[21inIaDkL4SD#0] ^хурдан/хурдан<n><nom>$
+[/21inIaDkL4SD]
+[2x4HzTfIZkrG#0] ^хурданай/хурдан<n><gen>/хурдан<n><nom><px1pl>$
+[/2x4HzTfIZkrG]
+[3zCBtoEzXYhz#0] ^наһанда/наһан<n><dat>$
+[/3zCBtoEzXYhz]
+[4Wtjyo8J_G4p#0] ^хурданда/хурдан<n><dat>$
+[/4Wtjyo8J_G4p]
+[8ogILEF-222l#0] ^хулгайшыe/*хулгайшыe$
+[/8ogILEF-222l]
+[Ar7WNuqqTTSY#0] ^хэмжээнэй/хэмжээн<n><gen>$
+[/Ar7WNuqqTTSY]
+[C04rG5cYsocJ#0] ^хурдые/хурдан<n><acc>$
+[/C04rG5cYsocJ]
+[EeB9g_rMHOyD#0] ^хэмжээдэ/хэмжээ<n><dat>/хэмжээн<n><dat>$
+[/EeB9g_rMHOyD]
+[GIoqrpinK0hV#0] ^хэмжээд/хэмжээн<n><pl><nom>$
+[/GIoqrpinK0hV]
+[GhzP_BGkw9Yf#0] ^хулгайша/хулгайшан<n><nom>$
+[/GhzP_BGkw9Yf]
+[LBwhvAkGwD4b#0] ^хэмжээй/*хэмжээй$
+[/LBwhvAkGwD4b]
+[LKQxa1Db9-LT#0] ^хулгайшанаар/хулгайшан<n><ins>$
+[/LKQxa1Db9-LT]
+[LmwwICTM47fU#0] ^наһанаар/наһан<n><ins>$
+[/LmwwICTM47fU]
+[N8Zav7MIMBb2#0] ^хулгайшай/*хулгайшай$
+[/N8Zav7MIMBb2]
+[Pa5csFH81g1o#0] ^хурдада/хурдан<n><dat>$
+[/Pa5csFH81g1o]
+[U-QK1ceHhv-Q#0] ^наһаһаа/наһан<n><abl>$
+[/U-QK1ceHhv-Q]
+[UqToZNxH1y2I#0] ^хулгайшанһаа/хулгайшан<n><abl>$
+[/UqToZNxH1y2I]
+[Uy-vGoQWQwYj#0] ^хэмжээн/хэмжээн<n><nom>$
+[/Uy-vGoQWQwYj]
+[VtM2r1rtD943#0] ^хулгайшаһаа/хулгайшан<n><abl>$
+[/VtM2r1rtD943]
+[YOOin5kh1AKZ#0] ^хэмжээнээр/хэмжээн<n><ins>$
+[/YOOin5kh1AKZ]
+[_jigsm4RJP2J#0] ^хурдай/*хурдай$
+[/_jigsm4RJP2J]
+[_kXemek_UWlU#0] ^хулгайшанар/хулгайшан<n><ins>$
+[/_kXemek_UWlU]
+[a0cBCLzAnbXf#0] ^хулгайшан/хулгайшан<n><nom>$
+[/a0cBCLzAnbXf]
+[c3Wm5YmFPVGk#0] ^хэмжээнһээ/хэмжээн<n><abl>$
+[/c3Wm5YmFPVGk]
+[cEGUCCG-p2_5#0] ^наһай/*наһай$
+[/cEGUCCG-p2_5]
+[cyfQUV3MJ4_C#0] ^наһан/наһан<n><nom>$
+[/cyfQUV3MJ4_C]
+[dJBfDBmjDMVR#0] ^наһанай/наһан<n><gen>/наһан<n><nom><px1pl>$
+[/dJBfDBmjDMVR]
+[fibeJXVAdqSp#0] ^хурдаһаа/хурдан<n><abl>$
+[/fibeJXVAdqSp]
+[gBkYv633VgZn#0] ^хэмжээе/*хэмжээе$
+[/gBkYv633VgZn]
+[ghuw1_CwyES5#0] ^наһада/наһан<n><dat>$
+[/ghuw1_CwyES5]
+[iBFj-p2VMfiv#0] ^наһыe/*наһыe$
+[/iBFj-p2VMfiv]
+[irmGqX0tCVSJ#0] ^хулгайшада/хулгайшан<n><dat>$
+[/irmGqX0tCVSJ]
+[j97Pfc55HeqA#0] ^наһад/наһан<n><pl><nom>$
+[/j97Pfc55HeqA]
+[lQHoZO30D1WC#0] ^хурданаар/хурдан<n><ins>$
+[/lQHoZO30D1WC]
+[lt516cljhoJK#0] ^хурдад/хурдан<n><pl><nom>$
+[/lt516cljhoJK]
+[nv-hoSyEjkyZ#0] ^хулгайшанай/хулгайшан<n><gen>/хулгайшан<n><nom><px1pl>$
+[/nv-hoSyEjkyZ]
+[oLzfkUHElWLx#0] ^наһаар/наһан<n><ins>$
+[/oLzfkUHElWLx]
+[oVduVZxCsGUw#0] ^хэмжээр/*хэмжээр$
+[/oVduVZxCsGUw]
+[q08AmP23LivZ#0] ^хулгайшаар/хулгайшан<n><ins>$
+[/q08AmP23LivZ]
+[sDl5r4kUXjpU#0] ^хэмжээһээ/хэмжээ<n><abl>/хэмжээн<n><abl>$
+[/sDl5r4kUXjpU]
+[sOow4wkSAnSS#0] ^хурдаар/хурдан<n><ins>/хурдаар<adv>$
+[/sOow4wkSAnSS]
+[taruP2y8a5PX#0] ^хулгайшанда/хулгайшан<n><dat>$
+[/taruP2y8a5PX]
+[uO_Wo2E7i1AQ#0] ^хэмжээндэ/хэмжээн<n><dat>$
+[/uO_Wo2E7i1AQ]
+[ufSPF0fm6xLi#0] ^хурданһаа/хурдан<n><abl>$
+[/ufSPF0fm6xLi]
+[v1Hc9wDfWnjn#0] ^наһанһаа/наһан<n><abl>$
+[/v1Hc9wDfWnjn]

@@ -1,0 +1,28 @@
+# т-д
+^поэт<n><pl><nom>$
+# Miscellaneous
+^курс<n><pl><nom>$
+^шонхо<n><pl><nom>$
+^шонхо<n><pl><nom>$
+^кино<n><pl><nom>$
+^кино<n><pl><nom>$
+^кэксэ<n><pl><nom>$
+^дугы<n><pl><nom>$
+^эжы<n><pl><nom>$
+^үнэн<n><pl><nom>$
+^үнэн<n><pl><nom>$
+^үһэн<n><pl><nom>$
+^үһэн<n><pl><nom>$
+^хүн<n><pl><nom>$
+^хото<n><pl><nom>$
+^һагба<n><pl><nom>$
+^һалхин<n><pl><nom>$
+^һалхин<n><pl><nom>$
+^һара<n><pl><nom>$
+^заан<n><pl><nom>$
+^жэмэс<n><pl><nom>$
+^нюдэн<n><pl><nom>$
+^газар<n><pl><nom>$
+^бэшэг<n><pl><nom>$
+^бүлэ<n><pl><nom>$
+^ваза<n><pl><nom>$

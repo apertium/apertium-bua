@@ -1,0 +1,52 @@
+[1v8A4caqmsdD#0] ^курснууд/курс<n><pl><nom>$
+[/1v8A4caqmsdD]
+[3DI1Seb6cUCn#0] ^шонхонууд/шонхо<n><pl><nom>$
+[/3DI1Seb6cUCn]
+[7Sys72sAblzb#0] ^хүнүүд/хүн<n><pl><nom>$
+[/7Sys72sAblzb]
+[7ujKHDjjDFF7#0] ^һагбанууд/һагба<n><pl><nom>$
+[/7ujKHDjjDFF7]
+[A5KbwyOrM6OX#0] ^бүлэнүүд/бүлэ<n><pl><nom>$
+[/A5KbwyOrM6OX]
+[JRNqeVUMbg1j#0] ^үһэнүүд/үһэ<n><pl><nom>$
+[/JRNqeVUMbg1j]
+[MlSaTJz_VIjR#0] ^үнэн/үнэн<adj>/үнэн<n><nom>$
+[/MlSaTJz_VIjR]
+[N5wK5D0PnB_j#0] ^үнэнүүд/үнэн<adj><subst><pl><nom>/үнэн<n><pl><nom>$
+[/N5wK5D0PnB_j]
+[N6uPY6HIEz_9#0] ^эжынүүд/эжы<n><pl><nom>$
+[/N6uPY6HIEz_9]
+[OLKQvraJZuuA#0] ^жэмэсүүд/жэмэс<n><pl><nom>$
+[/OLKQvraJZuuA]
+[Ra3_nBukkSyw#0] ^дугынууд/дугы<n><pl><nom>$
+[/Ra3_nBukkSyw]
+[TLAXLHS6dkR1#0] ^хотонууд/хото<n><pl><nom>$
+[/TLAXLHS6dkR1]
+[YMhkms1jYUnO#0] ^кинонууд/кино<n><pl><nom>$
+[/YMhkms1jYUnO]
+[Z12DSANNBhf2#0] ^вазанууд/ваза<n><pl><nom>$
+[/Z12DSANNBhf2]
+[_Sp2Rt_TqomN#0] ^кино/кино<n><nom>$
+[/_Sp2Rt_TqomN]
+[a0YuJ5pXs8vE#0] ^һалхин/һалхин<n><nom>$
+[/a0YuJ5pXs8vE]
+[dEu13Me3a3Yf#0] ^поэдүүд/поэт<n><pl><nom>$
+[/dEu13Me3a3Yf]
+[g46eVwwWjiEs#0] ^заанууд/заан<n><pl><nom>$
+[/g46eVwwWjiEs]
+[hIqg4MPdq26k#0] ^һалхинууд/һалхин<n><pl><nom>$
+[/hIqg4MPdq26k]
+[kXr2t2WxLEiT#0] ^һаранууд/һара<n><pl><nom>$
+[/kXr2t2WxLEiT]
+[mf6gN3wYDQqW#0] ^шонхо/шонхо<n><nom>$
+[/mf6gN3wYDQqW]
+[qVzw27StvMuh#0] ^газарнууд/газар<n><pl><nom>$
+[/qVzw27StvMuh]
+[tZHkSGJIfNuZ#0] ^үһэн/үһэн<n><nom>$
+[/tZHkSGJIfNuZ]
+[yLfiGYfmfdKR#0] ^кэксэнууд/*кэксэнууд$
+[/yLfiGYfmfdKR]
+[yw5V5YPs107i#0] ^бэшэгүүд/бэшэг<n><pl><nom>$
+[/yw5V5YPs107i]
+[zp8061-ugC_4#0] ^нюдэнүүд/нюдэн<n><pl><nom>$
+[/zp8061-ugC_4]

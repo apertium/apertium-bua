@@ -1,0 +1,70 @@
+{
+    "N-ins": {
+        "input": "N-ins-input.txt",
+        "mode": "bua-morph"
+    },
+    "N-ins-gen": {
+        "input": "N-ins-gen-input.txt",
+        "mode": "bua-gener"
+    },
+    "N-various_gt-norm": {
+        "input": "N-various_gt-norm-input.txt",
+        "mode": "bua-morph"
+    },
+    "N-various_gt-norm-gen": {
+        "input": "N-various_gt-norm-gen-input.txt",
+        "mode": "bua-gener"
+    },
+    "N-nouns_n": {
+        "input": "N-nouns_n-input.txt",
+        "mode": "bua-morph"
+    },
+    "N-nouns_n-gen": {
+        "input": "N-nouns_n-gen-input.txt",
+        "mode": "bua-gener"
+    },
+    "N-gen": {
+        "input": "N-gen-input.txt",
+        "mode": "bua-morph"
+    },
+    "N-gen-gen": {
+        "input": "N-gen-gen-input.txt",
+        "mode": "bua-gener"
+    },
+    "N-acc": {
+        "input": "N-acc-input.txt",
+        "mode": "bua-morph"
+    },
+    "N-acc-gen": {
+        "input": "N-acc-gen-input.txt",
+        "mode": "bua-gener"
+    },
+    "N-pl": {
+        "input": "N-pl-input.txt",
+        "mode": "bua-morph"
+    },
+    "N-pl-gen": {
+        "input": "N-pl-gen-input.txt",
+        "mode": "bua-gener"
+    },
+    "refl": {
+        "input": "refl-input.txt",
+        "mode": "bua-morph"
+    },
+    "refl-gen": {
+        "input": "refl-gen-input.txt",
+        "mode": "bua-gener"
+    },
+    "N-dat": {
+        "input": "N-dat-input.txt",
+        "mode": "bua-morph"
+    },
+    "N-dat-gen": {
+        "input": "N-dat-gen-input.txt",
+        "mode": "bua-gener"
+    },
+    "twol": {
+        "input": null,
+        "command": "test/run-twol-pairtests.sh"
+    }
+}
